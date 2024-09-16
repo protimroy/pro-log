@@ -1,9 +1,10 @@
 ---
 slug: /docs
 title: Goku Docs
-template: basic.html
+template: page.html
+allow_html: true
 ---
 
-[Back home](/goku)
+[Back home]({{site_root}})
 
-- [Page](/goku/docs/page)
+- [Page]({{site_root}}/docs/page)
