@@ -7,3 +7,4 @@ template: page.html
 
 
 This is the home page.
+This has been updated to use the new docs folder.
