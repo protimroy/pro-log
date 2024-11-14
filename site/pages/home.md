@@ -1,7 +1,7 @@
 ---
 slug: /
 title: Pro'Log
-description: Hi, this is Protim. I am documenting most of my learnings in the field of Computer Science here. We are working with the thread style of blogs introduced by Distill.pub. As well as the single webpage per project style executed by David Ha/Hardmaru and Anthropic.
+description: Hi, this is Protim. I am documenting most of my learnings in the field of Computer Science here. We are working with the thread style of blogs introduced by Distill.pub and OpenAI. As well as the single webpage per project style executed by David Ha/Hardmaru and Anthropic.
 
 allow_html: true
 template: page.html
