@@ -1,7 +1,7 @@
 ---
 slug: /
 title: Pro'Log
-description: Hi, this is Protim. I am documenting most of my learnings in the field of Computer Science here. We are working with the thread style of blogs introduced by <a href=https://distill.pub/2020/circuits/>Distill.pub</a> and OpenAI. As well as the single webpage per project style executed by David Ha/Hardmaru and Anthropic.
+description: Hi, this is Protim. I am documenting most of my learnings in the field of Computer Science here. We are working with the thread style of blogs introduced by Distill.pub[1] and OpenAI. As well as the single webpage per research project executed by David Ha/Hardmaru[2] and Anthropic[3].
 
 allow_html: true
 template: page.html
@@ -11,6 +11,9 @@ template: page.html
 
 
 
+[1]https://distill.pub/2020/circuits/
+[2]https://worldmodels.github.io
+[3]https://transformer-circuits.pub/
 
 
 <a href=https://protimroy.github.io>Protim Roy</a> &copy; 2024<br>
