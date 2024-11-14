@@ -1,10 +1,17 @@
 ---
 slug: /
-title: Test
+title: Pro'Log
+description: Hi, this is Protim. I am documenting most of my learnings in the field of Computer Science here. I am going to be
+using a threaded format for each topic I explore. 
 allow_html: true
 template: page.html
 ---
 
 
-This is the home page.
-This has been updated to use the new docs folder.
+
+
+
+
+
+<a https://protimroy.github.io/>Protim Roy &copy; 2024<br>
+Made with <a https://github.com/sea-grass/goku/>Goku &copy; 2024
