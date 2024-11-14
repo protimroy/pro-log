@@ -1,8 +1,7 @@
 ---
 slug: /
 title: Pro'Log
-description: Hi, this is Protim. I am documenting most of my learnings in the field of Computer Science here. I am going to be
-using a threaded format for each topic I explore. 
+description: Hi, this is Protim. I am documenting most of my learnings in the field of Computer Science here. 
 allow_html: true
 template: page.html
 ---
