@@ -12,5 +12,5 @@ template: page.html
 
 
 
-<a https://protimroy.github.io/>Protim Roy &copy; 2024<br>
-Made with <a https://github.com/sea-grass/goku/>Goku &copy; 2024
+<a href=https://protimroy.github.io/>Protim Roy &copy; 2024<br>
+Made with <a href=https://github.com/sea-grass/goku/>Goku &copy; 2024
