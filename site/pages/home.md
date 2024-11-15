@@ -1,24 +1,10 @@
 ---
 slug: /
 title: Pro'Log
-description: Hi, this is Protim. I am documenting most of my learnings in the field of Computer Science here.
+description: Hi, this is Protim. I am documenting most of my learnings in the fields of artificial intelligence, machine learning, deep learning, generative ai, ..etc, here.
 allow_html: true
 template: page.html
 ---
-
-
-<table>
-  <tr>
-    <th>November 2024</th>
-  </tr>
-  <tr>
-    <td> ## Bitcoin Paper Critique <br> A critique of the original bitcoin paper originally written for a graduate class.</td>
-  </tr>
-  <tr>
-    <td> **Original version** </td>
-  </tr>
-</table>
-
 
 <table>
   <tr>
