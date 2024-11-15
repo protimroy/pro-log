@@ -11,7 +11,7 @@ template: page.html
     <th>November 2024</th>
   </tr>
   <tr>
-    <td>Basis <br> A neural netowork library written in Python3 and NumPy used as an early framework.</td>
+    <td>Basis <br> A neural network library written in Python3 and NumPy used as an early framework.</td>
   </tr>
 </table>
 
