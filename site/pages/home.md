@@ -6,18 +6,26 @@ allow_html: true
 template: page.html
 ---
 
+
+<table>
+  <tr>
+    <th>November 2024</th>
+  </tr>
+  <tr>
+    <td> ## Bitcoin Paper Critique <br> A critique of the original bitcoin paper originally written for a graduate class.</td>
+  </tr>
+  <tr>
+    <td> **Original version** </td>
+  </tr>
+</table>
+
+
 <table>
   <tr>
     <th>November 2024</th>
   </tr>
   <tr>
     <td>Basis <br> A neural netowork library written in Python3 and NumPy used as an early framework.</td>
-  </tr>
-  <tr>
-    <td>Visualizations</td>
-  </tr>
-  <tr>
-    <td>Utilities</td>
   </tr>
 </table>
 
