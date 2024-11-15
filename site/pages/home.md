@@ -6,22 +6,17 @@ allow_html: true
 template: page.html
 ---
 
-
-##### November 2024
-#### Basis
-##### Basis is a neural network library written in Python3 and NumPy.
-- **Subtopic 1.1**
-  - Detail 1.1.1
-  - Detail 1.1.2
-- **Subtopic 1.2**
-  - Detail 1.2.1
-  - Detail 1.2.2
+|----------|
+|##### November 2024|
+|### Basis|
+|##### Basis is a neural network library written in Python3 and NumPy.|
+|----------|
 
 
-### About this Thread Project
+
+#### About this Thread Project
 
 Inspired by [1],[2],[3].<br>
-
 
 <a href=https://distill.pub/2020/circuits/>[1]https://distill.pub/2020/circuits/</a><br>
 <a href=https://worldmodels.github.io>[2]https://worldmodels.github.io</a><br>
