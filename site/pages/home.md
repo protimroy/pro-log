@@ -8,24 +8,16 @@ template: page.html
 
 <table>
   <tr>
-    <th>Column 1</th>
-    <th>Column 2</th>
-    <th>Column 3</th>
+    <th>November 2024</th>
   </tr>
   <tr>
-    <td>Row 1, Col 1</td>
-    <td>Row 1, Col 2</td>
-    <td>Row 1, Col 3</td>
+    <td>Basis <br> A neural netowork library written in Python3 and NumPy used as an early framework.</td>
   </tr>
   <tr>
-    <td>Row 2, Col 1</td>
-    <td>Row 2, Col 2</td>
-    <td>Row 2, Col 3</td>
+    <td>Visualizations</td>
   </tr>
   <tr>
-    <td>Row 3, Col 1</td>
-    <td>Row 3, Col 2</td>
-    <td>Row 3, Col 3</td>
+    <td>Utilities</td>
   </tr>
 </table>
 
