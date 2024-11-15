@@ -6,11 +6,28 @@ allow_html: true
 template: page.html
 ---
 
-|----------|
-|##### November 2024|
-|### Basis|
-|##### Basis is a neural network library written in Python3 and NumPy.|
-|----------|
+<table>
+  <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+    <th>Column 3</th>
+  </tr>
+  <tr>
+    <td>Row 1, Col 1</td>
+    <td>Row 1, Col 2</td>
+    <td>Row 1, Col 3</td>
+  </tr>
+  <tr>
+    <td>Row 2, Col 1</td>
+    <td>Row 2, Col 2</td>
+    <td>Row 2, Col 3</td>
+  </tr>
+  <tr>
+    <td>Row 3, Col 1</td>
+    <td>Row 3, Col 2</td>
+    <td>Row 3, Col 3</td>
+  </tr>
+</table>
 
 
 
