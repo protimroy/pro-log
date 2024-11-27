@@ -8,7 +8,7 @@ template: page.html
 
 <table>
   <tr>
-    <th style="text-color:white;background-color:lavender;opacity:10%;">November 2024</th>
+    <th>November 2024</th>
     <!-- <th>November 2024</th> -->
   </tr>
   <tr>
