@@ -1,6 +1,6 @@
 ---
 slug: /
-title: Pro'Log
+title: Pro-Log
 description: Hi, this is Protim. I am documenting most of my learnings in the fields of artificial intelligence, machine learning, deep learning, generative ai, ..etc, here.
 allow_html: true
 template: page.html
@@ -28,5 +28,5 @@ This is an ever growing list.<br>
 <a href=https://lilianweng.github.io/>[4]https://lilianweng.github.io/</a><br>
 
 
-<a href=https://protimroy.github.io>Protim Roy</a> &copy; 2024<br>
+<a href=https://protimroy.com>Protim Roy</a> &copy; 2024<br>
 Made with <a href=https://github.com/sea-grass/goku>Goku</a> &copy; 2024
