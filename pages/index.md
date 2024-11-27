@@ -13,7 +13,7 @@ template: page.html
   </tr>
   <!--make a div to hold text with a background color -->
   <tr>
-    <td><div style="background-color:lavender;">Basis<br>A neural network library written in Python3 and NumPy used as an early framework.</div>Backpropagation through custom layers</td>
+    <td><div style="background-color:#E6E6FA;">Basis<br>A neural network library written in Python3 and NumPy used as an early framework.</div>Backpropagation through custom layers</td>
   </tr>
 
 </table>
