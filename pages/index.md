@@ -8,7 +8,8 @@ template: page.html
 
 <table>
   <tr>
-    <th>November 2024</th>
+    <th style="text-color:black;background-color:lavender;opacity:10%;">November 2024</th>
+    <!-- <th>November 2024</th> -->
   </tr>
   <tr>
     <td>Basis <br> A neural network library written in Python3 and NumPy used as an early framework.</td>
