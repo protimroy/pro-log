@@ -18,7 +18,7 @@ template: page.html
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: -9px;
+    margin-left: -8.9px;
     margin-top: -6.5px;
   }
 </style>
