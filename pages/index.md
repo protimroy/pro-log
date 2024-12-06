@@ -12,6 +12,9 @@ template: page.html
     margin-left: -8.5px;
     
   }
+  .is-lavender{
+    background-color: rgba(230, 230, 250, 0.25);
+  }
 
   .titlepost {
     font-family: 'Inter';
@@ -31,13 +34,14 @@ template: page.html
   }
 
 .firstpost {
-    background-color: rgba(230, 230, 250, 0.25);
+  
+    /* background-color: rgba(230, 230, 250, 0.25);*/
     height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: -8.5px;
-    margin-top: -6px;
+    margin-top: -5.5px;
     position: relative;
 }
 
@@ -72,7 +76,7 @@ template: page.html
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr class="is-lavender">
       <td>
         <a href="https://github.com/protimroy/basis" class="firstpost">
           <span class="titlepost">Basis</span>
@@ -82,9 +86,6 @@ template: page.html
     </tr>
   </tbody>
 </table>
-
-
-
 
 #### About this Thread Project
 
