@@ -10,6 +10,7 @@ template: page.html
   .date {
     font-family: 'Inter';
     margin-left: -8.5px;
+    
   }
 
   .titlepost {
@@ -17,14 +18,16 @@ template: page.html
     font-size: 24px;
     font-style: italic;
     margin-top: -28px;
-    margin-left: 18.5px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
   }
 
   .textpost {
     font-family: 'Inter';
+    display: flex;
     align-items: center;
-    justify-content: left;
-    margin-left: -55px;
+    justify-content: right;
   }
 
 .firstpost {
@@ -34,7 +37,7 @@ template: page.html
     align-items: center;
     justify-content: center;
     margin-left: -8.5px;
-    margin-top: -6.5px;
+    margin-top: -6px;
     position: relative;
 }
 
