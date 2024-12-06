@@ -9,12 +9,11 @@ template: page.html
 <style>
   .title {
     font-family: 'Inter';
-    font-size: 28px;
+    font-size: 24px;
     font-style: italic;
   }
   .firstpost {
     background-color:rgba(230, 230, 250, 0.25);
-    width:103.5%;
     height: 75px;
     display: flex;
     align-items: center;
