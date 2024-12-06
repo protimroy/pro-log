@@ -7,37 +7,78 @@ template: page.html
 ---
 
 <style>
-  .title {
+  .date {
+    font-family: 'Inter';
+    margin-left: -8.5px;
+  }
+
+  .titlepost {
     font-family: 'Inter';
     font-size: 24px;
     font-style: italic;
+    margin-top: -28px;
+    margin-left: 18.5px;
   }
-  .firstpost {
-    background-color:rgba(230, 230, 250, 0.25);
+
+  .textpost {
+    font-family: 'Inter';
+    align-items: center;
+    justify-content: left;
+    margin-left: -55px;
+  }
+
+.firstpost {
+    background-color: rgba(230, 230, 250, 0.25);
     height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: -8.5px;
     margin-top: -6.5px;
+    position: relative;
+}
+
+.firstpost::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    border-left: 2px solid transparent;
+    transition: width 0.3s, border-color 0.3s;
+}
+
+.firstpost:hover::before {
+    width: 2px;
+    border-color: black;
+}
+
+  .childpost {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: -8.5px;
   }
 </style>
 
 <table class="table">
   <thead>
     <tr>
-    <th><div>NOVEMBER 2024</div></th>
+      <th><div class="date">NOVEMBER 2024</div></th>
     </tr>
   </thead>
   <tbody>
-  <tr>
-  <td><div class=firstpost><span class=title>Basis</span>
-    <br>A neural network library written in Python3 and NumPy used as an early framework.
-  </div>Backpropagation through custom layers</td>
-  </tr>
+    <tr>
+      <td>
+        <a href="https://github.com/protimroy/basis" class="firstpost">
+          <span class="titlepost">Basis</span>
+          <span class="textpost"><br><br>A neural network library written in Python3 and NumPy used as an early framework.</span>
+        </a>
+      </td>
+    </tr>
   </tbody>
 </table>
-
 
 
 
