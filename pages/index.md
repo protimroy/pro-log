@@ -6,17 +6,40 @@ allow_html: true
 template: page.html
 ---
 
-<table>
-  <tr>
-    <th>November 2024</th>
-    <!-- <th>November 2024</th> -->
-  </tr>
-  <!--make a div to hold text with a background color -->
-  <tr>
-    <td><div style="background-color:rgba(230, 230, 250, 0.25);">Basis<br>A neural network library written in Python3 and NumPy used as an early framework.</div>Backpropagation through custom layers</td>
-  </tr>
+<style>
+  .title {
+    font-family: 'Inter';
+    font-size: 28px;
+    font-style: italic;
+  }
+  .firstpost {
+    background-color:rgba(230, 230, 250, 0.25);
+    width:103.5%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -9px;
+    margin-top: -6.5px;
+  }
+</style>
 
+<table class="table">
+  <thead>
+    <tr>
+    <th><div>NOVEMBER 2024</div></th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><div class=firstpost><span class=title>Basis</span>
+    <br>A neural network library written in Python3 and NumPy used as an early framework.
+  </div>Backpropagation through custom layers</td>
+  </tr>
+  </tbody>
 </table>
+
+
 
 
 
