@@ -69,23 +69,36 @@
     font-family: 'Inter';
     margin-left: -8.5px;
   }
-  .firstpost {
-    background-color: rgba(230, 230, 250, 0.25);
-  }
+
   .postcontainer {
+    background-color: rgba(230, 230, 250, 0.25);
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    position: relative;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  .postcontainer:hover {
+    border-left: 2px solid black;
+  }
+  .firstpost {
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
   }
-  .titlepost {
+  .post_title {
     font-family: 'Inter';
     font-size: 24px;
     font-style: italic;
     margin-top: -5%;
     margin-right: -11%;
   }
-  .textpost {
+  .post_text {
     font-family: 'Inter';
   }
 </style>
@@ -96,11 +109,11 @@
     </tr>
   </thead>
   <tbody>
-    <tr class="firstpost">
+    <tr class="postcontainer">
       <td>
-        <a href="https://github.com/protimroy/basis" class="postcontainer">
-          <span class="titlepost">Basis</span>
-          <span class="textpost"><br><br>A neural network library written in Python3 and NumPy used as an early framework.</span>
+        <a href="https://github.com/protimroy/basis" class="firstpost">
+          <span class="post_title">Basis</span>
+          <span class="post_text"><br><br>A neural network library written in Python3 and NumPy used as an early framework.</span>
         </a>
       </td>
     </tr>
