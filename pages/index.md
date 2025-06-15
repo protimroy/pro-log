@@ -56,7 +56,7 @@ template: page.html
       <td>
         <a href="https://github.com/protimroy/basis" class="firstpost">
           <span class="post_title">Basis</span>
-          <span class="post_text"><br><br>A neural network library written in Python3 and tensorflow used as an early framework.</span>
+          <span class="post_text"><br><br>A neural network library written in low-level PyTorch. The laboratory for exploring and experimenting about the inner workings of neural networks</span>
         </a>
       </td>
     </tr>
