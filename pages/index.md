@@ -48,7 +48,7 @@ template: page.html
 <table class="table">
   <thead>
     <tr>
-      <th><div class="date">NOVEMBER 2024</div></th>
+      <th><div class="date">June 2025</div></th>
     </tr>
   </thead>
   <tbody>
