@@ -2,6 +2,8 @@
 
 pro-log is a normal Goku consumer site.
 
+This repo is not using the full internal Goku build system. It builds as a regular site that depends on Goku through `build.zig.zon`.
+
 ## Requirements
 
 - Zig 0.15.0-dev.885+e83776595
@@ -24,7 +26,7 @@ The generated site is written to `build/`.
 
 ## Notes
 
-- This repo is no longer using the full internal Goku build system.
-- `build.zig` is now the same simple consumer pattern used by the other site repos.
-- This site is pinned to the current `v0.1.0-dev` Goku line for Zig `0.15.0-dev.885+e83776595`.
-- The template is wired for the `theme` and `component` hooks used by this site.
+- `build.zig` uses the same simple consumer pattern as the other site repos.
+- Goku is pinned through `build.zig.zon` to `protimroy/goku` on the `v0.1.0-dev` branch.
+- CI is expected to use the same Zig compiler version as local development: `0.15.0-dev.885+e83776595`.
+- The site template currently uses the `theme` and `component` hooks.
