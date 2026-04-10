@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Research Article</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/bulma.css" />
+    <link rel="stylesheet" type="text/css" href="/component.css" />
+    <style>a[href^="https://"]::after {
+        content: " [*]";
+      }
+      .navbar-menu {
+        box-shadow: none;
+      }</style>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <nav class="navbar mb-4" role="navigation">
+          <div class="navbar-menu is-active">
+            <div class="navbar-start">
+              <a href="/" class="navbar-item">Back home</a>
+            </div>
+            <div class="navbar-end">
+
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="container" id="content">
+        <h1 class="title">
+          <span class="icon-text"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z" />
+  <path d="M10 2c1 .5 2 2 2 5" />
+</svg>
+
+            <span>Sample Research Article</span></span>
+        </h1>
+        <style>.meta-container { font-size: .7rem; }</style>
+<div class="table-container meta-container">
+<table class="table">
+<thead>
+<tr><th colspan="2">Meta</th></tr>
+</thead>
+<tbody><tr><th>slug</th><td>/sample-research-article</td><tr><th>title</th><td>Sample Research Article</td><tr><th>template</th><td>page.html</td><tr><th>description</th><td>A short research-style note on using synthetic tasks to study reasoning failures in small language models.</td></tbody>
+</table>
+</div>
+        
+        <p class="subtitle" style="font-size:95%;" >A short research-style note on using synthetic tasks to study reasoning failures in small language models.</p>
+        <section class="content" style="font-size:75%;" >
+          <h6 id="abstract">Abstract</h6>
+<p>
+This note sketches a lightweight research program for studying how small language models fail on multi-step reasoning. The core idea is to avoid benchmark sprawl and instead build a narrow family of synthetic tasks where each problem isolates one failure mode: state tracking, tool selection, symbolic consistency, or long-horizon dependency management. With that setup, it becomes easier to tell whether a model is genuinely reasoning or only matching familiar surface patterns.</p><h6 id="motivation">Motivation</h6>
+<p>
+A common problem in language-model evaluation is that broad benchmarks mix too many variables together. A single score might reflect pretraining overlap, prompt sensitivity, formatting issues, or true reasoning capability. That makes it difficult to decide what to improve next.</p><p>
+For a smaller research project, a better approach is often to define a controlled problem family with three properties:</p><ul>
+<li>
+every example can be generated programmatically,</li><li>
+the ground-truth answer can be checked automatically,</li><li>
+the tasks can be scaled gradually from easy to hard.</li></ul>
+<p>
+This gives us a clean experimental loop without needing a large annotation budget.</p><h6 id="proposed-task-family">Proposed Task Family</h6>
+<p>
+Consider a synthetic environment where the model receives:</p><ul>
+<li>
+a small world state,</li><li>
+a list of allowed operations,</li><li>
+a target query about the final state.</li></ul>
+<p>
+An example might look like this:</p><pre><code class="language-text">State:
+- Box A contains a red key.
+- Box B contains a blue key.
+- Drawer C is locked.
+
+Rules:
+- A red key opens Drawer C.
+- If Drawer C is opened, a note inside says: "Swap the contents of Box A and Box B."
+
+Question:
+Which key is in Box A at the end?
+</code></pre><p>
+This kind of task is intentionally simple for a human, but useful for analysis because the model must:</p><ol>
+<li>
+infer which action is relevant,</li><li>
+update the world state correctly,</li><li>
+avoid contradictions in the final answer.</li></ol><h6 id="experimental-setup">Experimental Setup</h6>
+<p>
+The study can be split into four tiers.</p><p>
+Tier 1 measures direct answer accuracy.</p><p>
+Tier 2 collects chain-of-thought style reasoning traces, not to optimize for verbosity, but to inspect whether the intermediate updates are consistent.</p><p>
+Tier 3 introduces distractor rules that are locally plausible but globally irrelevant.</p><p>
+Tier 4 adds distribution shift by renaming entities, shuffling presentation order, or converting the same task into a table rather than prose.</p><p>
+If performance collapses mainly under Tier 4, the model may be relying more on formatting regularities than on stable internal state updates.</p><h6 id="what-to-measure">What To Measure</h6>
+<p>
+Instead of only logging final accuracy, I would track three additional metrics:</p><ul>
+<li>
+step consistency: whether each intermediate statement remains compatible with the original rules,</li><li>
+repair rate: whether a model can recover after making an early mistake when asked to verify its own reasoning,</li><li>
+distractor sensitivity: how much accuracy drops when irrelevant but believable rules are inserted.</li></ul>
+<p>
+These are more diagnostic than a single aggregate score because they separate different kinds of reasoning failure.</p><h6 id="expected-findings">Expected Findings</h6>
+<p>
+My expectation is that small models will do reasonably well when the required reasoning depth is low and the surface form is familiar, but they will degrade quickly when the same logic is expressed in a less common format or when the number of state transitions grows.</p><p>
+I would also expect self-verification prompts to help only when the model's latent representation already contains the correct state. If the internal representation is wrong, asking for a second pass may only produce a more polished explanation of the same mistake.</p><h6 id="why-this-matters">Why This Matters</h6>
+<p>
+A compact synthetic benchmark like this is useful because it helps answer a very practical question: when a model fails, is it because the world model is weak, the prompt format is brittle, or the evaluation itself is noisy?</p><p>
+That distinction matters for both product work and research. If the problem is formatting brittleness, prompt design may be enough. If the problem is unstable state tracking, the fix probably needs to happen at the model or training-data level.</p><h6 id="next-steps">Next Steps</h6>
+<p>
+The natural extension is to pair these tasks with intervention experiments:</p><ul>
+<li>
+compare base prompting with tool-assisted execution,</li><li>
+compare free-form reasoning with structured scratchpads,</li><li>
+compare answer-only supervision with trace-level supervision.</li></ul>
+<p>
+That would turn this from a toy article into a practical mini-benchmark for studying when reasoning systems are robust and when they are mostly performing pattern completion.</p><p>
+Author: <a href="https://www.protimroy.com">Protim Roy</a> with help from GPT-5.4 <br>Date: 2026-04-10</p>
+        </section>
+      </div>
+    </section>
+    <script src="/htmx.js"></script>
+    <script src="/component.js"></script>
+  </body>
+</html>
