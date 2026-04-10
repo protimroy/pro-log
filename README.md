@@ -26,5 +26,5 @@ The generated site is written to `build/`.
 
 - This repo is no longer using the full internal Goku build system.
 - `build.zig` is now the same simple consumer pattern used by the other site repos.
-- This site is pinned to the `v0.0.9-dev` Goku line.
-- The template is wired for the `theme` and `component` hooks supported by the `v0.0.9-dev` line.
+- This site is pinned to the current `v0.1.0-dev` Goku line for Zig `0.15.0-dev.885+e83776595`.
+- The template is wired for the `theme` and `component` hooks used by this site.
