@@ -55,7 +55,7 @@ template: page.html
     <tr class="postcontainer">
       <td>
         <span class="post_title">Research</span>
-        <span class="post_text"><br><br><a href="/sample-research-article">Sample research article on synthetic reasoning benchmarks for language models.</a></span>
+        <span class="post_text"><br><br><a href="/pro-log/sample-research-article/">Sample research article on synthetic reasoning benchmarks for language models.</a></span>
       </td>
     </tr>
   </tbody>
