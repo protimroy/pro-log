@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic reasoning calibration curve</title>
+  <desc id="desc">A simple line chart showing performance degradation as reasoning depth increases.</desc>
+  <rect width="640" height="360" fill="#fcfcfb" />
+  <g stroke="#d6d3d1" stroke-width="1">
+    <line x1="80" y1="60" x2="80" y2="300" />
+    <line x1="80" y1="300" x2="560" y2="300" />
+    <line x1="80" y1="120" x2="560" y2="120" />
+    <line x1="80" y1="180" x2="560" y2="180" />
+    <line x1="80" y1="240" x2="560" y2="240" />
+  </g>
+  <g fill="#57534e" font-family="sans-serif" font-size="16">
+    <text x="62" y="306">0</text>
+    <text x="48" y="246">25</text>
+    <text x="48" y="186">50</text>
+    <text x="48" y="126">75</text>
+    <text x="36" y="66">100</text>
+    <text x="96" y="326">1</text>
+    <text x="210" y="326">2</text>
+    <text x="324" y="326">3</text>
+    <text x="438" y="326">4</text>
+    <text x="552" y="326">5</text>
+    <text x="210" y="348">reasoning depth</text>
+    <text x="18" y="38">accuracy</text>
+  </g>
+  <polyline fill="none" stroke="#1d4ed8" stroke-width="4" points="100,88 200,118 300,154 400,202 500,262" />
+  <g fill="#1d4ed8">
+    <circle cx="100" cy="88" r="6" />
+    <circle cx="200" cy="118" r="6" />
+    <circle cx="300" cy="154" r="6" />
+    <circle cx="400" cy="202" r="6" />
+    <circle cx="500" cy="262" r="6" />
+  </g>
+  <text x="332" y="112" fill="#1d4ed8" font-family="sans-serif" font-size="16">small-model accuracy by task depth</text>
+</svg>

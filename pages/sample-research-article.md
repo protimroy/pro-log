@@ -3,12 +3,17 @@ slug: /sample-research-article
 title: Sample Research Article
 description: A short research-style note on using synthetic tasks to study reasoning failures in small language models.
 allow_html: true
-template: page.html
+options_toc: true
+template: article.html
 ---
 
 ###### Abstract
 
-This note sketches a lightweight research program for studying how small language models fail on multi-step reasoning. The core idea is to avoid benchmark sprawl and instead build a narrow family of synthetic tasks where each problem isolates one failure mode: state tracking, tool selection, symbolic consistency, or long-horizon dependency management. With that setup, it becomes easier to tell whether a model is genuinely reasoning or only matching familiar surface patterns.
+This note sketches a lightweight research program for studying how small language models fail on multi-step reasoning. The core idea is to avoid benchmark sprawl and instead build a narrow family of synthetic tasks where each problem isolates one failure mode: state tracking, tool selection, symbolic consistency, or long-horizon dependency management. With that setup, it becomes easier to tell whether a model is genuinely reasoning or only matching familiar surface patterns.^[The article is intentionally narrow: the point is to create a testbed that supports diagnosis, not a benchmark that tries to measure every possible capability at once.]
+
+:::interactive research-plot.js Threshold sweep
+Drag the threshold to see how a tiny classification toy problem changes its false-positive and false-negative counts.
+:::
 
 ###### Motivation
 
@@ -21,6 +26,10 @@ For a smaller research project, a better approach is often to define a controlle
 - the tasks can be scaled gradually from easy to hard.
 
 This gives us a clean experimental loop without needing a large annotation budget.
+
+:::figure Synthetic calibration curve for increasing task depth
+![A synthetic calibration curve that drops as reasoning depth increases.](/assets/research-curve.svg)
+:::
 
 ###### Proposed Task Family
 
@@ -52,6 +61,10 @@ This kind of task is intentionally simple for a human, but useful for analysis b
 2. update the world state correctly,
 3. avoid contradictions in the final answer.
 
+:::margin-figure Failure analysis tends to improve when every task can be generated, scored, and perturbed automatically.
+![A compact research curve repeated in the margin to emphasize the shape of degradation.](/assets/research-curve.svg)
+:::
+
 ###### Experimental Setup
 
 The study can be split into four tiers.
@@ -65,6 +78,10 @@ Tier 3 introduces distractor rules that are locally plausible but globally irrel
 Tier 4 adds distribution shift by renaming entities, shuffling presentation order, or converting the same task into a table rather than prose.
 
 If performance collapses mainly under Tier 4, the model may be relying more on formatting regularities than on stable internal state updates.
+
+:::details Why synthetic tasks are useful
+Synthetic tasks let you separate logic depth from surface-form familiarity. That makes it easier to tell whether improvements come from better reasoning or just from matching a common benchmark format.
+:::
 
 ###### What To Measure
 
