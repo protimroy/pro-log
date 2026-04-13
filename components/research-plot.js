@@ -1,139 +1,181 @@
 const markup = [
-  '<div class="research-plot" data-threshold="0.50">',
-  '  <div class="research-plot-controls">',
-  '    <label>',
-  '      Decision threshold',
-  '      <input class="research-threshold" type="range" min="0.10" max="0.90" step="0.01" value="0.50" />',
+  '<div class="rp-root">',
+  '  <div class="rp-controls">',
+  '    <label class="rp-label">Decision threshold',
+  '      <input type="range" class="rp-slider" min="0.05" max="0.95" step="0.01" value="0.50">',
+  '      <span class="rp-val">0.50</span>',
   '    </label>',
   '  </div>',
-  '  <div class="research-plot-frame">',
-  '    <svg viewBox="0 0 400 240" role="img" aria-label="Synthetic threshold sweep plot">',
-  '      <rect x="40" y="20" width="320" height="180" fill="#fcfcfb" stroke="#d4d4d4"></rect>',
-  '      <line x1="40" y1="200" x2="360" y2="200" stroke="#666"></line>',
-  '      <line x1="40" y1="20" x2="40" y2="200" stroke="#666"></line>',
-  '      <line class="threshold-line" x1="200" y1="20" x2="200" y2="200" stroke="#111827" stroke-dasharray="6 4"></line>',
-  '      <circle class="research-point" cx="78" cy="74" r="6" fill="#2563eb" opacity="0.9"></circle>',
-  '      <circle class="research-point" cx="118" cy="92" r="6" fill="#2563eb" opacity="0.9"></circle>',
-  '      <circle class="research-point" cx="152" cy="110" r="6" fill="#2563eb" opacity="0.9"></circle>',
-  '      <circle class="research-point" cx="196" cy="122" r="6" fill="#2563eb" opacity="0.9"></circle>',
-  '      <circle class="research-point" cx="234" cy="146" r="6" fill="#ef4444" opacity="0.9"></circle>',
-  '      <circle class="research-point" cx="274" cy="162" r="6" fill="#ef4444" opacity="0.9"></circle>',
-  '      <circle class="research-point" cx="306" cy="178" r="6" fill="#ef4444" opacity="0.9"></circle>',
-  '      <circle class="research-point" cx="338" cy="196" r="6" fill="#ef4444" opacity="0.9"></circle>',
-  '      <text x="360" y="225" text-anchor="end">feature score</text>',
-  '      <text x="12" y="24" text-anchor="start">confidence</text>',
-  '    </svg>',
+  '  <div class="rp-chart"></div>',
+  '  <div class="rp-metrics">',
+  '    <div class="rp-metric"><span class="rp-metric-label">Precision</span><span class="rp-metric-value rp-precision">-</span></div>',
+  '    <div class="rp-metric"><span class="rp-metric-label">Recall</span><span class="rp-metric-value rp-recall">-</span></div>',
+  '    <div class="rp-metric"><span class="rp-metric-label">F1 Score</span><span class="rp-metric-value rp-f1">-</span></div>',
+  '    <div class="rp-metric"><span class="rp-metric-label">Accuracy</span><span class="rp-metric-value rp-accuracy">-</span></div>',
   '  </div>',
-  '  <div class="plot-summary">',
-  '    <div><strong>threshold</strong><span class="metric-threshold">0.50</span></div>',
-  '    <div><strong>true positives</strong><span class="metric-tp">4</span></div>',
-  '    <div><strong>false positives</strong><span class="metric-fp">0</span></div>',
-  '    <div><strong>true negatives</strong><span class="metric-tn">4</span></div>',
-  '    <div><strong>false negatives</strong><span class="metric-fn">0</span></div>',
-  '  </div>',
-  '</div>',
+  '</div>'
 ].join('');
 
 export const render = () => markup;
 
 export const style = `
-.research-plot-controls {
+.rp-controls {
   margin-bottom: 1rem;
 }
 
-.research-plot-controls label {
-  display: grid;
-  gap: 0.45rem;
+.rp-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-.research-plot-frame {
+.rp-slider {
+  flex: 1;
+}
+
+.rp-val {
+  min-width: 2.5em;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.rp-chart {
   margin-bottom: 1rem;
 }
 
-.research-plot-frame svg {
-  width: 100%;
-  height: auto;
+.rp-chart figure {
+  margin: 0;
 }
 
-.plot-summary {
+.rp-metrics {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   gap: 0.75rem;
 }
 
-.plot-summary div {
+.rp-metric {
   padding: 0.7rem 0.8rem;
   border: 1px solid #dbdbdb;
   background: #fafaf8;
 }
 
-.plot-summary strong,
-.plot-summary span {
+.rp-metric-label {
   display: block;
-}
-
-.plot-summary strong {
   margin-bottom: 0.2rem;
   font-size: 0.75rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: #5c5c5c;
 }
 
-.plot-summary span {
+.rp-metric-value {
+  display: block;
   font-size: 1.1rem;
+  font-variant-numeric: tabular-nums;
 }
 `;
 
 export const script = `
-Array.from(document.querySelectorAll('.research-plot')).forEach(function (root) {
-  if (root.dataset.bound === 'true') return;
-  root.dataset.bound = 'true';
+(function() {
+  var data = [
+    {score: 0.05, label: 0, jy: -0.12},
+    {score: 0.12, label: 0, jy: 0.08},
+    {score: 0.18, label: 0, jy: -0.06},
+    {score: 0.23, label: 0, jy: 0.14},
+    {score: 0.29, label: 0, jy: -0.10},
+    {score: 0.34, label: 0, jy: 0.05},
+    {score: 0.40, label: 0, jy: -0.15},
+    {score: 0.44, label: 0, jy: 0.11},
+    {score: 0.51, label: 0, jy: -0.07},
+    {score: 0.57, label: 0, jy: 0.03},
+    {score: 0.63, label: 0, jy: -0.13},
+    {score: 0.72, label: 0, jy: 0.09},
+    {score: 0.31, label: 1, jy: 0.12},
+    {score: 0.38, label: 1, jy: -0.08},
+    {score: 0.45, label: 1, jy: 0.15},
+    {score: 0.50, label: 1, jy: -0.11},
+    {score: 0.55, label: 1, jy: 0.06},
+    {score: 0.61, label: 1, jy: -0.14},
+    {score: 0.66, label: 1, jy: 0.10},
+    {score: 0.73, label: 1, jy: -0.04},
+    {score: 0.78, label: 1, jy: 0.13},
+    {score: 0.83, label: 1, jy: -0.09},
+    {score: 0.88, label: 1, jy: 0.07},
+    {score: 0.93, label: 1, jy: -0.12}
+  ];
 
-  var slider = root.querySelector('.research-threshold');
-  var thresholdValue = root.querySelector('.metric-threshold');
-  var line = root.querySelector('.threshold-line');
-  var tpNode = root.querySelector('.metric-tp');
-  var fpNode = root.querySelector('.metric-fp');
-  var tnNode = root.querySelector('.metric-tn');
-  var fnNode = root.querySelector('.metric-fn');
-  var points = Array.from(root.querySelectorAll('.research-point'));
+  document.querySelectorAll('.rp-root').forEach(function(root) {
+    if (root.dataset.bound) return;
+    root.dataset.bound = 'true';
 
-  function updateMetrics() {
-    var threshold = Number(slider.value);
-    var lineX = 40 + threshold * 320;
-    var tp = 0;
-    var fp = 0;
-    var tn = 0;
-    var fn = 0;
+    var slider = root.querySelector('.rp-slider');
+    var valEl = root.querySelector('.rp-val');
+    var chartEl = root.querySelector('.rp-chart');
 
-    thresholdValue.textContent = threshold.toFixed(2);
-    line.setAttribute('x1', String(lineX));
-    line.setAttribute('x2', String(lineX));
+    function classify(d, t) {
+      var predicted = d.score >= t ? 1 : 0;
+      if (predicted === 1 && d.label === 1) return 'True Positive';
+      if (predicted === 1 && d.label === 0) return 'False Positive';
+      if (predicted === 0 && d.label === 0) return 'True Negative';
+      return 'False Negative';
+    }
 
-    points.forEach(function (point, index) {
-      var cx = Number(point.getAttribute('cx'));
-      var normalizedX = (cx - 40) / 320;
-      var predictedPositive = normalizedX <= threshold;
-      var actualPositive = index < 4;
+    function update() {
+      var t = Number(slider.value);
+      valEl.textContent = t.toFixed(2);
+      chartEl.innerHTML = '';
 
-      if (predictedPositive && actualPositive) tp += 1;
-      else if (predictedPositive && !actualPositive) fp += 1;
-      else if (!predictedPositive && actualPositive) fn += 1;
-      else tn += 1;
+      var classified = data.map(function(d) {
+        return {score: d.score, y: d.label + d.jy, outcome: classify(d, t)};
+      });
 
-      point.setAttribute('fill', predictedPositive ? '#2563eb' : '#ef4444');
-    });
+      var w = chartEl.clientWidth || 560;
+      var chart = Plot.plot({
+        width: w,
+        height: 260,
+        marginLeft: 60,
+        marginBottom: 40,
+        marginTop: 30,
+        style: {fontSize: '13px', background: 'transparent'},
+        x: {label: 'Model score \\u2192', domain: [0, 1]},
+        y: {label: null, domain: [-0.35, 1.35], ticks: [0, 1], tickFormat: function(d) { return d === 0 ? 'Negative' : 'Positive'; }},
+        color: {
+          domain: ['True Positive', 'True Negative', 'False Positive', 'False Negative'],
+          range: ['#2563eb', '#6b7280', '#ef4444', '#f59e0b'],
+          legend: true
+        },
+        marks: [
+          Plot.ruleX([t], {stroke: '#111827', strokeDasharray: '6 4', strokeWidth: 1.5}),
+          Plot.dot(classified, {x: 'score', y: 'y', fill: 'outcome', r: 5.5, stroke: '#fff', strokeWidth: 1})
+        ]
+      });
 
-    tpNode.textContent = String(tp);
-    fpNode.textContent = String(fp);
-    tnNode.textContent = String(tn);
-    fnNode.textContent = String(fn);
-  }
+      chartEl.appendChild(chart);
 
-  slider.addEventListener('input', updateMetrics);
-  updateMetrics();
-});
+      var tp = 0, fp = 0, tn = 0, fn = 0;
+      classified.forEach(function(d) {
+        if (d.outcome === 'True Positive') tp++;
+        else if (d.outcome === 'False Positive') fp++;
+        else if (d.outcome === 'True Negative') tn++;
+        else fn++;
+      });
+
+      var precision = tp + fp > 0 ? tp / (tp + fp) : 0;
+      var recall = tp + fn > 0 ? tp / (tp + fn) : 0;
+      var f1 = precision + recall > 0 ? 2 * precision * recall / (precision + recall) : 0;
+      var accuracy = (tp + tn) / data.length;
+
+      root.querySelector('.rp-precision').textContent = precision.toFixed(2);
+      root.querySelector('.rp-recall').textContent = recall.toFixed(2);
+      root.querySelector('.rp-f1').textContent = f1.toFixed(2);
+      root.querySelector('.rp-accuracy').textContent = accuracy.toFixed(2);
+    }
+
+    slider.addEventListener('input', update);
+    update();
+  });
+})();
 `;
