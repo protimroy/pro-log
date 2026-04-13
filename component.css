@@ -1,49 +1,58 @@
 
-.research-plot-controls {
+.rp-controls {
   margin-bottom: 1rem;
 }
 
-.research-plot-controls label {
-  display: grid;
-  gap: 0.45rem;
+.rp-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-.research-plot-frame {
+.rp-slider {
+  flex: 1;
+}
+
+.rp-val {
+  min-width: 2.5em;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.rp-chart {
   margin-bottom: 1rem;
 }
 
-.research-plot-frame svg {
-  width: 100%;
-  height: auto;
+.rp-chart figure {
+  margin: 0;
 }
 
-.plot-summary {
+.rp-metrics {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   gap: 0.75rem;
 }
 
-.plot-summary div {
+.rp-metric {
   padding: 0.7rem 0.8rem;
   border: 1px solid #dbdbdb;
   background: #fafaf8;
 }
 
-.plot-summary strong,
-.plot-summary span {
+.rp-metric-label {
   display: block;
-}
-
-.plot-summary strong {
   margin-bottom: 0.2rem;
   font-size: 0.75rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: #5c5c5c;
 }
 
-.plot-summary span {
+.rp-metric-value {
+  display: block;
   font-size: 1.1rem;
+  font-variant-numeric: tabular-nums;
 }
