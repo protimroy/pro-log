@@ -1,9 +1,15 @@
 name: Build and Publish
 
 on:
+  pull_request:
   push:
     branches:
       - master
+  workflow_dispatch:
+
+env:
+  ALOPEX_REF: 311fe2c6753b6ae5641cbb728e8fff30c96da35a
+  ALOPEX_REPO_TOKEN: ${{ secrets.ALOPEX_REPO_TOKEN }}
 
 jobs:
   build-and-publish:
@@ -11,13 +17,65 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
-      - uses: mlugg/setup-zig@v2
+      - name: Checkout Pro Log
+        uses: actions/checkout@v4
+
+      - name: Set up Zig
+        uses: mlugg/setup-zig@v2
         with:
           version: 0.15.0-dev.885+e83776595
-      - name: Build
+
+      - name: Build Pro Log shell
         run: zig build site
+
+      - name: Checkout ALOPEX publication source
+        if: env.ALOPEX_REPO_TOKEN != ''
+        uses: actions/checkout@v4
+        with:
+          repository: protimroy/alopex_article
+          ref: ${{ env.ALOPEX_REF }}
+          token: ${{ env.ALOPEX_REPO_TOKEN }}
+          path: .build/alopex
+          persist-credentials: false
+
+      - name: Set up Node
+        if: env.ALOPEX_REPO_TOKEN != ''
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: .build/alopex/package-lock.json
+
+      - name: Build ALOPEX microsite
+        if: env.ALOPEX_REPO_TOKEN != ''
+        working-directory: .build/alopex
+        run: |
+          npm ci
+          npm run check:site
+          npm run check:layout
+          npm run build -- --base=/pro-log/alopex/
+          npm run check:bundle
+
+      - name: Mount ALOPEX under Pro Log
+        if: env.ALOPEX_REPO_TOKEN != ''
+        run: |
+          rm -rf build/alopex
+          mkdir -p build/alopex
+          cp -R .build/alopex/dist/. build/alopex/
+          test -f build/alopex/index.html
+          grep -q '/pro-log/alopex/' build/alopex/index.html
+
+      - name: Require private publication source for deploy
+        if: github.event_name != 'pull_request'
+        run: |
+          test -n "$ALOPEX_REPO_TOKEN" || {
+            echo "ALOPEX_REPO_TOKEN is required to publish /pro-log/alopex/."
+            exit 1
+          }
+          test -f build/alopex/index.html
+
       - name: Publish
+        if: github.event_name != 'pull_request'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
