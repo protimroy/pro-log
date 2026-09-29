@@ -30,3 +30,24 @@ The generated site is written to `build/`.
 - Goku is pinned through `build.zig.zon` to `protimroy/goku` on the `v0.1.0-dev` branch.
 - CI is expected to use the same Zig compiler version as local development: `0.15.0-dev.885+e83776595`.
 - The site template currently uses the `theme` and `component` hooks.
+
+
+## ALOPEX microsite
+
+The ALOPEX research publication is mounted at:
+
+```text
+/pro-log/alopex/
+```
+
+The deploy workflow builds the private `protimroy/alopex_article` repository as a Vite microsite with base path `/pro-log/alopex/`, then copies the generated `dist/` tree into Pro Log's `build/alopex/` before GitHub Pages publication.
+
+The deployment is pinned to ALOPEX commit:
+
+```text
+62212e8c2f6e87285b999d7d53c49c3df34b6884
+```
+
+This pin keeps publication reproducible. Update `ALOPEX_REF` in `.github/workflows/build-and-publish.yml` when a reviewed ALOPEX release should be published.
+
+Because `alopex_article` is private, the Pro Log repository needs an `ALOPEX_REPO_TOKEN` Actions secret with read-only Contents access to `protimroy/alopex_article`. The normal repository `GITHUB_TOKEN` remains responsible only for publishing Pro Log's `gh-pages` branch.
