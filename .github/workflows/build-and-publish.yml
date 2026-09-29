@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
+
+env:
+  ALOPEX_REF: 62212e8c2f6e87285b999d7d53c49c3df34b6884
 
 jobs:
   build-and-publish:
@@ -11,12 +15,50 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
-      - uses: mlugg/setup-zig@v2
+      - name: Checkout Pro Log
+        uses: actions/checkout@v4
+
+      - name: Set up Zig
+        uses: mlugg/setup-zig@v2
         with:
           version: 0.15.0-dev.885+e83776595
-      - name: Build
+
+      - name: Build Pro Log shell
         run: zig build site
+
+      - name: Checkout ALOPEX publication source
+        uses: actions/checkout@v4
+        with:
+          repository: protimroy/alopex_article
+          ref: ${{ env.ALOPEX_REF }}
+          token: ${{ secrets.ALOPEX_REPO_TOKEN }}
+          path: .build/alopex
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: .build/alopex/package-lock.json
+
+      - name: Build ALOPEX microsite
+        working-directory: .build/alopex
+        run: |
+          npm ci
+          npm run check:site
+          npm run check:layout
+          npm run build -- --base=/pro-log/alopex/
+          npm run check:bundle
+
+      - name: Mount ALOPEX under Pro Log
+        run: |
+          rm -rf build/alopex
+          mkdir -p build/alopex
+          cp -R .build/alopex/dist/. build/alopex/
+          test -f build/alopex/index.html
+          grep -q '/pro-log/alopex/' build/alopex/index.html
+
       - name: Publish
         uses: peaceiris/actions-gh-pages@v4
         with:
