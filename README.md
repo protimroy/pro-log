@@ -45,7 +45,7 @@ The deploy workflow builds the private `protimroy/alopex_article` repository as 
 The deployment is pinned to ALOPEX commit:
 
 ```text
-62212e8c2f6e87285b999d7d53c49c3df34b6884
+311fe2c6753b6ae5641cbb728e8fff30c96da35a
 ```
 
 This pin keeps publication reproducible. Update `ALOPEX_REF` in `.github/workflows/build-and-publish.yml` when a reviewed ALOPEX release should be published.
