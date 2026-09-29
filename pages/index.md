@@ -48,6 +48,22 @@ template: page.html
 <table class="table">
   <thead>
     <tr>
+      <th><div class="date">SEPTEMBER 2026</div></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="postcontainer">
+      <td>
+        <span class="post_title">Research</span>
+        <span class="post_text"><br><br><a href="/pro-log/alopex/">ALOPEX: A Partial Negative Result — from correlative learning to an unresolved SLM-scale test.</a></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table">
+  <thead>
+    <tr>
       <th><div class="date">APRIL 2026</div></th>
     </tr>
   </thead>
