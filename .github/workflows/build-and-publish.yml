@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  ALOPEX_REF: 62212e8c2f6e87285b999d7d53c49c3df34b6884
+  ALOPEX_REF: 311fe2c6753b6ae5641cbb728e8fff30c96da35a
 
 jobs:
   build-and-publish:
