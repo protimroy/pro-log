@@ -1,0 +1,79 @@
+{
+  "artifact_sha256": "98cbd72c2b8d46af3556c322f4e916d28bf6fcd94098975082ec35bd818d32f8",
+  "freeze_id": "20260826T070034Z-7000e126d7c0",
+  "schema_version": 1,
+  "source_sha256": "7000e126d7c085a55733e8351c9b88246ffe549f79a3da81443ca9efe9998c2f",
+  "statistical_policy": {
+    "best_metric": "best test accuracy with epoch reported",
+    "efficiency_metrics": [
+      "wall_clock_seconds",
+      "logical_probe_rows",
+      "directions_or_K"
+    ],
+    "missingness": "not-executed is never imputed",
+    "primary_seed_aggregation": "median when >=3 seeds; otherwise display every seed",
+    "uncertainty": "percentile bootstrap 95% CI, 5000 resamples"
+  },
+  "status": "frozen",
+  "summary": {
+    "fd_large": null,
+    "fd_small": {
+      "1": {
+        "best_acc": 0.5056,
+        "best_epoch": 8,
+        "elapsed_sec": 33.66007642099794,
+        "final_acc": 0.5056
+      },
+      "16": {
+        "best_acc": 0.8009,
+        "best_epoch": 8,
+        "elapsed_sec": 144.2974101840009,
+        "final_acc": 0.8009
+      },
+      "32": {
+        "best_acc": 0.8351,
+        "best_epoch": 8,
+        "elapsed_sec": 279.56472075700003,
+        "final_acc": 0.8351
+      },
+      "4": {
+        "best_acc": 0.6917,
+        "best_epoch": 8,
+        "elapsed_sec": 49.039584826001374,
+        "final_acc": 0.6917
+      },
+      "64": {
+        "best_acc": 0.8597,
+        "best_epoch": 8,
+        "elapsed_sec": 538.6276063609985,
+        "final_acc": 0.8597
+      },
+      "8": {
+        "best_acc": 0.7526,
+        "best_epoch": 8,
+        "elapsed_sec": 81.39503603200137,
+        "final_acc": 0.7526
+      }
+    },
+    "v43": {
+      "adamw": {
+        "best_acc": 0.978,
+        "best_epoch": 8,
+        "elapsed_sec": 29.54572697000185,
+        "final_acc": 0.978
+      },
+      "v43_full": {
+        "best_acc": 0.9687,
+        "best_epoch": 8,
+        "elapsed_sec": 180.08709437300058,
+        "final_acc": 0.9687
+      },
+      "v43_hybrid": {
+        "best_acc": 0.9721,
+        "best_epoch": 8,
+        "elapsed_sec": 205.55392656900221,
+        "final_acc": 0.9721
+      }
+    }
+  }
+}

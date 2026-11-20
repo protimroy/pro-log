@@ -1,0 +1,10 @@
+{
+  "source": "alopex_article/src/content/paper.mdx",
+  "source_sha256": "54e83bf9a8ea9563f3a9c0920f7cfc57adfabfa2a9a2b91791a09a2930744bac",
+  "page_sha256": "0f3443f6c1dc04778f43453771989d6e8e7769de19604e9731c61f6088b75114",
+  "evidence_sha256": "8625b5c3b7f895ebf354a972db09c2929249efd5ed8cb8a5da6a80e155dfbaa4",
+  "archived_report_sha256": "71790c4ce8b3b265a89db7a3f48cc331b202ccbb6bf8c5d97d5b52cce211d316",
+  "sections": 12,
+  "equation_families": 6,
+  "equations": 38
+}

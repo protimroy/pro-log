@@ -1,2 +1,4 @@
 build
 .zig-cache
+*.code-workspace
+pages/sample-research-article.md

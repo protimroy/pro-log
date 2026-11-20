@@ -2,6 +2,7 @@
 slug: /
 title: Pro-Log
 description: Hi, this is Protim. I am documenting most of my learnings in the fields of artificial intelligence, machine learning, deep learning, generative ai, ..etc, here.
+canonical_url: "https://www.protimroy.com/pro-log/"
 allow_html: true
 template: page.html
 ---
@@ -43,19 +44,42 @@ template: page.html
   .post_text {
     font-family: 'Inter';
   }
+  .alopex-index {
+    width: 100%;
+  }
+  .alopex-index .postcontainer {
+    height: auto;
+    min-height: 75px;
+    justify-content: flex-start;
+    padding: 12px 18px;
+  }
+  .alopex-index .post_title {
+    display: block;
+    margin: 0;
+    font-size: 20px;
+  }
+  .alopex-index .post_text {
+    display: block;
+  }
 </style>
 
-<table class="table">
+<table class="table alopex-index">
   <thead>
     <tr>
-      <th><div class="date">APRIL 2026</div></th>
+      <th><div class="date">RESEARCH</div></th>
     </tr>
   </thead>
   <tbody>
     <tr class="postcontainer">
       <td>
-        <span class="post_title">Research</span>
-        <span class="post_text"><br><br><a href="/pro-log/sample-research-article/">Sample research article on synthetic reasoning benchmarks for language models.</a></span>
+        <span class="post_title">Activation-Space ALOPEX</span>
+        <span class="post_text"><a href="/pro-log/activation-space-alopex/">Activation-space learning and the ALOPEX family experiments</a></span>
+      </td>
+    </tr>
+    <tr class="postcontainer">
+      <td>
+        <span class="post_title">ALOPEX</span>
+        <span class="post_text"><a href="/pro-log/alopex-partial-negative-result/">ALOPEX: A Partial Negative Result</a></span>
       </td>
     </tr>
   </tbody>
