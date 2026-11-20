@@ -1,9 +1,11 @@
 name: Build and Publish
 
 on:
+  pull_request:
   push:
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
   build-and-publish:
@@ -11,13 +13,14 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: mlugg/setup-zig@v2
         with:
           version: 0.15.0-dev.885+e83776595
       - name: Build
         run: zig build site
       - name: Publish
+        if: github.event_name != 'pull_request'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
