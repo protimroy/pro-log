@@ -1,0 +1,24 @@
+
+body:has(.family-evidence) .article-shell { max-width: 72rem; }
+body:has(.family-evidence) .article-header { max-width: 54rem; margin-bottom: 3rem; }
+body:has(.family-evidence) .article-title { font-family: Georgia, serif; font-size: 3rem; line-height: 1.08; font-weight: 600; }
+body:has(.family-evidence) .article-kicker { color: #1d6659; letter-spacing: 0; }
+body:has(.family-evidence) .article-toc { padding: 0; border: 0; border-top: 2px solid #1d2926; background: transparent; }
+body:has(.family-evidence) .article-toc summary { cursor: pointer; padding: .8rem 0; font-size: .8rem; font-weight: 700; text-transform: uppercase; }
+body:has(.family-evidence) .article-toc a { display: block; color: #596a64; font-size: .85rem; line-height: 1.4; }
+body:has(.family-evidence) .article-content .content { color: #1d2926; line-height: 1.8; }
+body:has(.family-evidence) .article-content .content > h6 { font-family: Georgia, serif; font-size: 1.65rem; line-height: 1.25; letter-spacing: 0; text-transform: none; border-top: 1px solid #d7ded9; padding-top: 1.75rem; margin-top: 3rem; }
+body:has(.family-evidence) .article-content .content a { color: #1d6659; }
+body:has(.family-evidence) .article-content .content table { display: block; max-width: 100%; overflow-x: auto; }
+@media (min-width: 1024px) { body:has(.family-evidence) .article-grid { grid-template-columns: minmax(0, 14rem) minmax(0, 1fr); gap: 3rem; } body:has(.family-evidence) .article-toc { position: sticky; top: 1.5rem; max-height: calc(100vh - 3rem); overflow-y: auto; } }
+@media (max-width: 600px) { body:has(.family-evidence) .article-title { font-size: 2.25rem; } body:has(.family-evidence) .article-content .content > h6 { font-size: 1.4rem; } }
+.family-evidence-control { margin-bottom: 1.5rem; }
+.family-evidence-control label { display: grid; gap: .4rem; max-width: 20rem; font-size: .85rem; font-weight: 700; }
+.family-evidence-control select { width: 100%; padding: .5rem; border: 1px solid #9faea6; background: white; color: #1d2926; font: inherit; }
+.family-cohort + .family-cohort { margin-top: 1.75rem; }
+.family-cohort h3 { margin: 0 0 .25rem; font-size: 1.05rem; }
+.family-cohort p { margin: 0 0 .65rem; color: #596a64; font-size: .85rem; }
+.family-cohort table { width: 100%; font-size: .85rem; }
+.family-cohort th, .family-cohort td { padding: .5rem; vertical-align: middle; }
+.family-cohort meter { display: block; width: 100%; min-width: 4rem; height: .65rem; accent-color: #1d6659; }
+.family-cohort[hidden] { display: none; }

@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Activation-Space ALOPEX</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.protimroy.com/pro-log/activation-space-alopex/"><meta name="description" content="What happens when correlative learning measures consequences inside a neural network?"><meta property="og:title" content="Activation-Space ALOPEX"><meta property="og:type" content="article"><meta property="og:url" content="https://www.protimroy.com/pro-log/activation-space-alopex/"><meta property="og:description" content="What happens when correlative learning measures consequences inside a neural network?"><meta name="twitter:description" content="What happens when correlative learning measures consequences inside a neural network?"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Activation-Space ALOPEX">
+    <link rel="stylesheet" type="text/css" href="/pro-log/bulma.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.10.0/styles/github.min.css">
+    <link rel="stylesheet" type="text/css" href="/pro-log/component.css" />
+    <style>
+      .article-shell {
+        max-width: 60rem;
+        margin: 0 auto;
+        padding: 2.5rem 1.5rem 4rem;
+      }
+      .article-topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid #dbdbdb;
+        font-size: 0.95rem;
+      }
+      .article-topbar a {
+        color: inherit;
+      }
+      .article-header {
+        margin-bottom: 2rem;
+      }
+      .article-kicker {
+        margin-bottom: 0.75rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #5c5c5c;
+      }
+      .article-title {
+        margin-bottom: 1rem;
+        line-height: 1.05;
+      }
+      .article-dek {
+        max-width: 44rem;
+        margin: 0;
+        color: #4a4a4a;
+        font-size: 1.15rem;
+      }
+      .article-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem 1.5rem;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: #5c5c5c;
+      }
+      .article-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2rem;
+      }
+      .article-toc {
+        padding: 1rem 1.1rem;
+        border: 1px solid #dbdbdb;
+        background: #fafaf8;
+      }
+      .article-toc:empty {
+        display: none;
+      }
+      .article-toc ul {
+        margin: 0;
+      }
+      .article-toc li + li {
+        margin-top: 0.45rem;
+      }
+      .article-content {
+        max-width: 46rem;
+      }
+      .article-content .content {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+      .article-content .content > h6 {
+        margin-top: 2.4rem;
+        margin-bottom: 0.8rem;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .article-content .content > p:first-child {
+        font-size: 1.08rem;
+      }
+      .article-content pre {
+        padding: 1rem 1.15rem;
+        overflow-x: auto;
+        border: 1px solid #dbdbdb;
+        background: #f7f7f4;
+      }
+      .admonition { margin: 1.5rem 0; padding: 1rem; border-left: 0.35rem solid #4a4a4a; background: #f7f7f4; }
+      .admonition-title { margin-bottom: 0.5rem; font-weight: 700; text-transform: uppercase; font-size: 0.8rem; }
+      .details-block { margin: 1.5rem 0; padding: 0; border: 1px solid #dbdbdb; border-radius: 0; overflow: hidden; }
+      .details-block > summary { display: block; list-style: none; position: relative; margin: 0; padding: 0.85rem 2.75rem 0.85rem 1rem; cursor: pointer; font-weight: 700; background: #fafaf8; user-select: none; }
+      .details-block > summary::-webkit-details-marker { display: none; }
+      .details-block > summary::after { content: "+"; position: absolute; top: 50%; right: 1rem; transform: translateY(-50%); font-size: 1rem; font-weight: 400; }
+      .details-block[open] > summary { border-bottom: 1px solid #dbdbdb; }
+      .details-block[open] > summary::after { content: "-"; }
+      .details-block > :not(summary) { margin: 0; padding: 0.85rem 1rem 1rem; }
+      .article-figure, .margin-figure, .interactive-figure { margin: 2rem 0; }
+      .article-figure img, .margin-figure img { display: block; width: 100%; border: 0; background: transparent; }
+      .interactive-figure img, .interactive-figure svg { display: block; width: 100%; border: 0; background: transparent; }
+      .article-figure figcaption, .margin-figure figcaption, .interactive-figure figcaption { margin-top: 0.75rem; color: #5c5c5c; font-size: 0.95rem; }
+      .interactive-figure-frame { padding: 1rem; border: 1px solid #dbdbdb; background: #ffffff; }
+      .citation-group, .footnote-ref { font-size: 0.9em; }
+      .sidenote { display: inline-block; margin: 0.15rem 0.35rem; padding-left: 0.75rem; border-left: 2px solid #dbdbdb; color: #5c5c5c; font-size: 0.9rem; }
+      .sidenote-number { margin-right: 0.35rem; font-weight: 700; }
+      @media screen and (min-width: 1024px) {
+        .article-grid {
+          grid-template-columns: minmax(0, 12rem) minmax(0, 1fr);
+          align-items: start;
+        }
+      }
+      @media screen and (min-width: 1216px) {
+        .sidenote { float: right; clear: right; width: 14rem; margin-right: -16rem; margin-left: 1rem; margin-top: 0.25rem; }
+        .margin-figure { float: right; clear: right; width: 16rem; margin-right: -18rem; margin-left: 1.5rem; margin-top: 0.35rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="article-shell">
+      <div class="article-topbar">
+        <a href="https://www.protimroy.com/">Back home</a>
+        <a href="/pro-log/">Pro-Log</a>
+      </div>
+      <header class="article-header">
+        <p class="article-kicker">Research Note</p>
+        <h1 class="title article-title">Activation-Space ALOPEX</h1>
+        <p class="article-dek">What happens when correlative learning measures consequences inside a neural network?</p>
+        <div class="article-meta">
+          <span>6 min read</span>
+        </div>
+      </header>
+      <div class="article-grid">
+        <aside class="article-toc">
+          <nav class="table-of-contents"><p class="menu-label">Contents</p><ul class="menu-list"><li class="toc-level-6"><a href="#the-question">The Question</a></li><li class="toc-level-6"><a href="#from-global-consequence-to-local-credit">From Global Consequence To Local Credit</a></li><li class="toc-level-6"><a href="#measuring-in-activation-space">Measuring In Activation Space</a></li><li class="toc-level-6"><a href="#experiments-kept-separate">Experiments, Kept Separate</a></li><li class="toc-level-6"><a href="#exactness-is-not-coverage">Exactness Is Not Coverage</a></li><li class="toc-level-6"><a href="#the-family-branches">The Family Branches</a></li><li class="toc-level-6"><a href="#what-the-results-do-and-do-not-show">What The Results Do And Do Not Show</a></li><li class="toc-level-6"><a href="#sources-and-further-reading">Sources And Further Reading</a></li></ul></nav>
+        </aside>
+        <main class="article-content">
+          <div class="content">
+            <h6 id="the-question">The Question</h6>
+<p>
+ALOPEX is a family of methods that uses perturbations and their observed consequences to guide learning. In a neural network, the difficult question is not only whether a change improved the loss. It is how to assign that outcome to the parts of the network that caused it.</p><p>
+Activation-Space ALOPEX changes where that question is asked. Instead of perturbing a large vector of weights, it intervenes at a hidden representation, measures the downstream consequence, and uses the input to that layer to construct local parameter evidence. The method retains correlative memory, but it does not eliminate the need for task-relevant measurements or prove that the resulting credit is complete.</p><p>
+The experiments below are a research record, not a claim that ALOPEX has replaced backpropagation. They include a single-seed MNIST reproduction, a short sensor-control pilot, and a separate learned-credit hybrid. Their architectures, budgets, and methods differ.</p><h6 id="from-global-consequence-to-local-credit">From Global Consequence To Local Credit</h6>
+<p>
+The original ALOPEX work used correlations between perturbations and responses to identify visual receptive fields. Later work adapted correlative learning to feedforward and recurrent neural networks. The recovered mini-batch ALOPEX translation is a narrower historical starting point: its default includes gradient-seeded warmup, so it is not strictly gradient-free throughout. The written thesis is available, but equivalence between the recovered translation and the exact submitted notebook is unresolved.</p><p>
+The subsequent recovered branches changed how consequences were attributed:</p><p>
+| Branch | Intervention or measurement | What it addressed | What remained |
+| --- | --- | --- | --- |
+| Historical-Credit | Credit a previous move using a later loss change | Avoid explicit paired probes | A global, potentially stale signal |
+| Same-Batch Replay | Re-evaluate the same examples after the move | Improve loss pairing | Several moving layers can still share one consequence |
+| Block-Replay | Restrict a replayed intervention to one block | Make spatial attribution less ambiguous | Local credit is still incomplete |
+| Activation-Space | Perturb hidden preactivations and reconstruct local evidence | Change the measurement space | Finite probes still cover only sampled directions |</p><p>
+The archive does not support a complete account of every version between Block-Replay and the recovered Activation-Space branch. Missing versions should not be read as failed experiments.</p><h6 id="measuring-in-activation-space">Measuring In Activation Space</h6>
+<p>
+Consider a hidden preactivation <code>a</code>, an example loss <code>E</code>, a direction <code>u</code>, and a probe radius <code>sigma</code>. A paired measurement compares the loss after opposite interventions:</p><pre><code class="language-text">c = [E(a - sigma u) - E(a + sigma u)] / (2 sigma)
+</code></pre><p>
+The sign convention makes <code>c u</code> a favorable-direction signal. Averaging over sampled directions estimates hidden credit; it is not automatically the full gradient. Crucially, the implementation keeps the consequence per example before using cached layer inputs to construct weight evidence. It also scales the probe radius with a running estimate of activation magnitude.</p><p>
+The recovered hybrid-head variant uses a supervised local output signal. Thus, even when the hidden sensor uses function evaluations, a description of the complete method must also specify what happens at the output and how evidence drives updates.</p><h6 id="experiments-kept-separate">Experiments, Kept Separate</h6>
+<figure class="interactive-figure"><div class="interactive-figure-frame">
+<div class="family-evidence">
+  <div class="family-evidence-control" hidden>
+    <label>Experiment cohort
+      <select aria-label="Experiment cohort">
+        <option value="all">All cohorts</option>
+        <option value="mnist">MNIST activation-space</option>
+        <option value="pilot">Sensor-control pilot</option>
+        <option value="cifar">Learned-credit CIFAR-10</option>
+      </select>
+    </label>
+  </div>
+  <section class="family-cohort" data-cohort="mnist" aria-labelledby="family-mnist">
+    <h3 id="family-mnist">Activation-space on MNIST</h3>
+    <p>784 → 1024 → 10 · 1 seed · 8 epochs · best test accuracy</p>
+    <table><thead><tr><th scope="col">Method</th><th scope="col">Accuracy</th><th scope="col">Recorded time</th></tr></thead><tbody>
+      <tr><th scope="row">AdamW</th><td><meter min="0" max="100" value="97.80">97.80%</meter> 97.80%</td><td>29.5 s</td></tr>
+      <tr><th scope="row">Activation-Space · hybrid head</th><td><meter min="0" max="100" value="97.21">97.21%</meter> 97.21%</td><td>205.6 s</td></tr>
+      <tr><th scope="row">Activation-Space · full probes</th><td><meter min="0" max="100" value="96.87">96.87%</meter> 96.87%</td><td>180.1 s</td></tr>
+    </tbody></table>
+  </section>
+  <section class="family-cohort" data-cohort="pilot" aria-labelledby="family-pilot">
+    <h3 id="family-pilot">Short sensor-control pilot</h3>
+    <p>390 steps · 2 seeds · held-out training validation · mean accuracy</p>
+    <table><thead><tr><th scope="col">Method</th><th scope="col">Accuracy</th></tr></thead><tbody>
+      <tr><th scope="row">Two-Timescale Activation-Space</th><td><meter min="0" max="100" value="29.70">29.70%</meter> 29.70%</td></tr>
+      <tr><th scope="row">Matched-JVP Control</th><td><meter min="0" max="100" value="28.75">28.75%</meter> 28.75%</td></tr>
+      <tr><th scope="row">Learned Credit-Map Hybrid</th><td><meter min="0" max="100" value="44.14">44.14%</meter> 44.14%</td></tr>
+      <tr><th scope="row">AdamW</th><td><meter min="0" max="100" value="42.61">42.61%</meter> 42.61%</td></tr>
+    </tbody></table>
+  </section>
+  <section class="family-cohort" data-cohort="cifar" aria-labelledby="family-cifar">
+    <h3 id="family-cifar">Learned-credit hybrid on CIFAR-10</h3>
+    <p>W512 / d7 residual MLP · 3 paired seeds · 50 epochs · mean accuracy</p>
+    <table><thead><tr><th scope="col">Method</th><th scope="col">Accuracy</th></tr></thead><tbody>
+      <tr><th scope="row">Learned Credit-Map Hybrid</th><td><meter min="0" max="100" value="57.79">57.79%</meter> 57.79%</td></tr>
+      <tr><th scope="row">AdamW</th><td><meter min="0" max="100" value="60.93">60.93%</meter> 60.93%</td></tr>
+    </tbody></table>
+  </section>
+</div></div><figcaption><strong>Recorded experiment outcomes</strong> These are different cohorts, not a combined leaderboard. Percentages are accuracy.</figcaption></figure>
+<p>
+The MNIST table is a <strong>single-seed, eight-epoch</strong> frozen reproduction on a shared-initialization 784-to-1024-to-10 model. Its best test accuracies are descriptive, not an uncertainty estimate. In this run the hybrid-head variant took about 206 seconds versus about 30 seconds for AdamW; equal epochs are not equal compute.</p><p>
+The 390-step pilot used two seeds and held-out training validation. Replacing the repaired derivative-free sensor with matched per-example JVPs changed the two outcomes by <strong>+0.04 and -1.94 percentage points</strong>. The mixed result does not show that exact derivatives are generally unhelpful; it says this substitution did not consistently improve the tested learner in this short pilot.</p><p>
+The learned-credit CIFAR-10 cohort is a different method and experiment. Its three paired seeds, 50-epoch horizon, and residual-MLP architecture must not be pooled with either result above. Its practical five-point engineering criterion is not an equivalence test.</p><h6 id="exactness-is-not-coverage">Exactness Is Not Coverage</h6>
+<p>
+An exact directional derivative answers how the loss changes along one chosen direction. A finite difference approximates the same kind of directional measurement, with error that depends on the probe radius and local function. Neither reveals components outside the measured span.</p><pre><code class="language-text">useful credit = credit in the measured span + credit outside it
+</code></pre><p>
+Cleaner coefficients can improve what is measured without recovering what is missing. In the separate 64-hidden parameter-JVP sweep, recorded final accuracy increased from 50.56% at one direction to 85.97% at 64 directions while elapsed time rose from about 34 to 539 seconds. That is one run under one protocol, not a universal monotonicity result or a direct comparison with the 1024-hidden activation-space run. An older finite-difference versus JVP frozen control failed its measurement contract and should not be used as a causal comparison.</p><h6 id="the-family-branches">The Family Branches</h6>
+<p>
+<strong>Activation-Space ALOPEX</strong> uses antithetic hidden interventions, per-example consequences, local reconstruction, and persistent correlative state. Its recovered rule is distinct from the later two-timescale branch.</p><p>
+<strong>Activation-JVP ALOPEX</strong> replaces finite hidden-space consequences with exact directional derivatives while retaining a C/S-style state and clipped update. A recovered digits source establishes a mechanism and update ordering; it is not a fresh rerun or complete recovery of the historical program.</p><p>
+<strong>Two-Timescale Activation-Space ALOPEX</strong> uses function evaluations for its sensor, persistent low-rank C/S state, and a separate full transient path for current credit. Basis refresh and state transport are part of the method; the elementwise slower-state transport is a heuristic, not exact covariance transport.</p><p>
+<strong>Matched-JVP Control</strong> changes the repaired branch's sensor while retaining its C/S comparison target and actuator. This is the short pilot above, not a full-horizon final comparison.</p><p>
+<strong>Learned Credit-Map Hybrid</strong> uses sparse directional measurements to train a map from output residuals to hidden credit and applies the reconstructed parameter evidence with AdamW. It changes both persistent representation and actuator, so its complete-method results cannot isolate the effect of a better sensor. It is ALOPEX-inspired, not a purely derivative-free ALOPEX implementation.</p><h6 id="what-the-results-do-and-do-not-show">What The Results Do And Do Not Show</h6>
+<p>
+The experiments show a useful way to restructure the credit problem: intervene in a representation, retain example-level consequences, and reconstruct local parameter evidence. They also show that improving a sensor is not the same as acquiring enough directional coverage.</p><p>
+In the recorded learned-credit residual-MLP scaling family, the depth-32 cohort exceeded the project's five-percentage-point gap criterion. An off-policy layerwise oracle diagnostic at width 512, depth 32 (epoch 20, two calibration seeds) clarifies why: hidden-credit cosine alignment falls monotonically from 0.998 immediately below the linear head (stage 31; 99.4% of the oracle single-layer loss drop) to 0.675 at the earliest stage (stage 0; 37.9% of the oracle loss drop), and even a noise-free fresh mean Jacobian (0.721) or oracle ridge-fitted shared matrix (0.732) cannot recover input-conditioned Jacobian variation across 31 nonlinear blocks. A corrected resident-step benchmark measured 5.203 ms for the hybrid and 2.104 ms for AdamW in one session; that is not end-to-end training throughput. In a separate five-seed CIFAR-10 convolutional probe extension, extending training from 390 to 1,170 steps raised validation accuracy from 39.14% to 42.26% while AdamW rose from 51.95% to 58.06%, widening the gap from 12.80 to 15.79 percentage points. A separate 113.3-million-parameter two-timescale result demonstrates execution, not competitive convergence. No recorded autoregressive small-language-model training result establishes transfer to that setting.</p><p>
+The source's separate schema-v2 campaign remains staging. It cannot support new headline performance, causal, or multiseed conclusions until complete and its release checks pass. No experiment was rerun for this article.</p><h6 id="sources-and-further-reading">Sources And Further Reading</h6>
+<ul>
+<li>
+<a href="/pro-log/alopex-partial-negative-result/">ALOPEX: A Partial Negative Result</a> contains the wider research narrative, derivations, evidence boundaries, references, and reader-data download.</li><li>
+<a href="/pro-log/assets/alopex/family-frozen-statistics-d86e9abd96be.json">Frozen MNIST and parameter-JVP statistics</a> are the source reader's frozen single-seed record, including the unexecuted large-model arm.</li><li>
+<a href="https://doi.org/10.1016/0042-6989(74)90024-8">Harth and Tzanakou, 1974</a>, the original receptive-field ALOPEX record.</li><li>
+<a href="https://doi.org/10.1162/neco.1994.6.3.469">Unnikrishnan and Venugopal, 1994</a>, ALOPEX for feedforward and recurrent networks.</li><li>
+<a href="https://doi.org/10.1142/S0129065701000928">Bia, 2001</a>, ALOPEX-B.</li><li>
+<a href="https://hdl.handle.net/10214/27818">Roy, 2023</a>, <em>Mini-Batch Alopex-b For Training Neural Networks</em>.</li></ul>
+<p>
+The pilot and learned-credit values are reader-replay summaries from <code>src/data/chapterCloseEvidence.js</code>, included in the wider article's evidence download. These are distinct records, not independent replications performed for this page.</p>
+          </div>
+          
+        </main>
+      </div>
+    </div>
+    <script src="/pro-log/htmx.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.10.0/lib/highlight.min.js"></script><script>document.addEventListener('DOMContentLoaded', function () { if (window.hljs) { window.hljs.highlightAll(); } });</script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.17/dist/plot.umd.min.js"></script>
+    <script src="/pro-log/component.js"></script>
+  </body>
+</html>

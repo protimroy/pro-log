@@ -1,0 +1,1839 @@
+{
+  "schema_version": 1,
+  "status": "reader-replay-not-independent-reproduction",
+  "scientificEvidence": {
+    "canonical": {
+      "label": "Canonical shallow · W512 / d7",
+      "architecture": "3072 → 512 → 6×512 → 10",
+      "parameters": 3154442,
+      "seeds": [
+        1523,
+        1524,
+        1525
+      ],
+      "epochs": 50,
+      "steps": 19500,
+      "batch": 128,
+      "split": "official test",
+      "config": {
+        "estimator": "control_variate",
+        "rank": 16,
+        "lr": 0.001,
+        "prior_rate": 1,
+        "correction": false
+      },
+      "pairs": [
+        {
+          "seed": 1523,
+          "hfd": 57.25,
+          "adamw": 60.550000000000004,
+          "gap": 3.300000000000003
+        },
+        {
+          "seed": 1524,
+          "hfd": 58.24,
+          "adamw": 61.199999999999996,
+          "gap": 2.959999999999996
+        },
+        {
+          "seed": 1525,
+          "hfd": 57.89,
+          "adamw": 61.029999999999994,
+          "gap": 3.1399999999999983
+        }
+      ],
+      "hfd": {
+        "mean": 57.79333333333334,
+        "sd": 0.5020292156173127
+      },
+      "adamw": {
+        "mean": 60.92666666666666,
+        "sd": 0.3370954365359014
+      },
+      "gap": {
+        "mean": 3.1333333333333324,
+        "sd": 0.1700980109623111,
+        "ci95": [
+          2.711,
+          3.556
+        ],
+        "minimum": 5,
+        "strong": 2
+      },
+      "curves": [
+        {
+          "method": "Learned Credit-Map Hybrid",
+          "seed": 1523,
+          "points": [
+            [
+              1,
+              41.260000000000005
+            ],
+            [
+              2,
+              44.43
+            ],
+            [
+              3,
+              46.050000000000004
+            ],
+            [
+              4,
+              45.97
+            ],
+            [
+              5,
+              47.949999999999996
+            ],
+            [
+              6,
+              48.620000000000005
+            ],
+            [
+              7,
+              49.01
+            ],
+            [
+              8,
+              49.79
+            ],
+            [
+              9,
+              48.14
+            ],
+            [
+              10,
+              49.730000000000004
+            ],
+            [
+              11,
+              50.24999999999999
+            ],
+            [
+              12,
+              50.96000000000001
+            ],
+            [
+              13,
+              49.78
+            ],
+            [
+              14,
+              50.44
+            ],
+            [
+              15,
+              49.7
+            ],
+            [
+              16,
+              51.03
+            ],
+            [
+              17,
+              50.160000000000004
+            ],
+            [
+              18,
+              51.239999999999995
+            ],
+            [
+              19,
+              51.99
+            ],
+            [
+              20,
+              51.9
+            ],
+            [
+              21,
+              52.18000000000001
+            ],
+            [
+              22,
+              52.6
+            ],
+            [
+              23,
+              51.980000000000004
+            ],
+            [
+              24,
+              53.400000000000006
+            ],
+            [
+              25,
+              52.959999999999994
+            ],
+            [
+              26,
+              53.92
+            ],
+            [
+              27,
+              54.14
+            ],
+            [
+              28,
+              54.010000000000005
+            ],
+            [
+              29,
+              55.21
+            ],
+            [
+              30,
+              54.879999999999995
+            ],
+            [
+              31,
+              54.690000000000005
+            ],
+            [
+              32,
+              55.08
+            ],
+            [
+              33,
+              55.61000000000001
+            ],
+            [
+              34,
+              55.769999999999996
+            ],
+            [
+              35,
+              55.58
+            ],
+            [
+              36,
+              56.169999999999995
+            ],
+            [
+              37,
+              56.720000000000006
+            ],
+            [
+              38,
+              56.8
+            ],
+            [
+              39,
+              56.56
+            ],
+            [
+              40,
+              56.89999999999999
+            ],
+            [
+              41,
+              56.97
+            ],
+            [
+              42,
+              57.24
+            ],
+            [
+              43,
+              57.05
+            ],
+            [
+              44,
+              57.18
+            ],
+            [
+              45,
+              57.14
+            ],
+            [
+              46,
+              57.089999999999996
+            ],
+            [
+              47,
+              57.220000000000006
+            ],
+            [
+              48,
+              57.25
+            ],
+            [
+              49,
+              57.269999999999996
+            ],
+            [
+              50,
+              57.25
+            ]
+          ]
+        },
+        {
+          "method": "AdamW",
+          "seed": 1523,
+          "points": [
+            [
+              1,
+              39.43
+            ],
+            [
+              2,
+              44.89
+            ],
+            [
+              3,
+              47.68
+            ],
+            [
+              4,
+              46.9
+            ],
+            [
+              5,
+              48.64
+            ],
+            [
+              6,
+              49.36
+            ],
+            [
+              7,
+              50.79
+            ],
+            [
+              8,
+              50.86000000000001
+            ],
+            [
+              9,
+              50.06
+            ],
+            [
+              10,
+              52.33
+            ],
+            [
+              11,
+              52.470000000000006
+            ],
+            [
+              12,
+              54.08
+            ],
+            [
+              13,
+              52.2
+            ],
+            [
+              14,
+              53.410000000000004
+            ],
+            [
+              15,
+              52.019999999999996
+            ],
+            [
+              16,
+              54.010000000000005
+            ],
+            [
+              17,
+              53.56999999999999
+            ],
+            [
+              18,
+              55.76
+            ],
+            [
+              19,
+              55.19
+            ],
+            [
+              20,
+              55.55
+            ],
+            [
+              21,
+              56.11000000000001
+            ],
+            [
+              22,
+              55.44
+            ],
+            [
+              23,
+              56.00000000000001
+            ],
+            [
+              24,
+              55.800000000000004
+            ],
+            [
+              25,
+              56.05
+            ],
+            [
+              26,
+              57.37
+            ],
+            [
+              27,
+              57.08
+            ],
+            [
+              28,
+              57.099999999999994
+            ],
+            [
+              29,
+              58.5
+            ],
+            [
+              30,
+              58.17
+            ],
+            [
+              31,
+              58.650000000000006
+            ],
+            [
+              32,
+              58.24
+            ],
+            [
+              33,
+              58.91
+            ],
+            [
+              34,
+              59.27
+            ],
+            [
+              35,
+              59.199999999999996
+            ],
+            [
+              36,
+              59.62
+            ],
+            [
+              37,
+              59.3
+            ],
+            [
+              38,
+              59.89
+            ],
+            [
+              39,
+              59.47
+            ],
+            [
+              40,
+              60.19
+            ],
+            [
+              41,
+              60.14000000000001
+            ],
+            [
+              42,
+              60.25
+            ],
+            [
+              43,
+              60.480000000000004
+            ],
+            [
+              44,
+              60.36
+            ],
+            [
+              45,
+              60.709999999999994
+            ],
+            [
+              46,
+              60.49
+            ],
+            [
+              47,
+              60.58
+            ],
+            [
+              48,
+              60.61
+            ],
+            [
+              49,
+              60.529999999999994
+            ],
+            [
+              50,
+              60.550000000000004
+            ]
+          ]
+        },
+        {
+          "method": "Learned Credit-Map Hybrid",
+          "seed": 1524,
+          "points": [
+            [
+              1,
+              42.199999999999996
+            ],
+            [
+              2,
+              44.05
+            ],
+            [
+              3,
+              45.540000000000006
+            ],
+            [
+              4,
+              46.75
+            ],
+            [
+              5,
+              47.14
+            ],
+            [
+              6,
+              47.05
+            ],
+            [
+              7,
+              48.51
+            ],
+            [
+              8,
+              48.32
+            ],
+            [
+              9,
+              48.230000000000004
+            ],
+            [
+              10,
+              49.559999999999995
+            ],
+            [
+              11,
+              48.9
+            ],
+            [
+              12,
+              50.29
+            ],
+            [
+              13,
+              51.11
+            ],
+            [
+              14,
+              51.27
+            ],
+            [
+              15,
+              49.41
+            ],
+            [
+              16,
+              51.76
+            ],
+            [
+              17,
+              51.57000000000001
+            ],
+            [
+              18,
+              52.61
+            ],
+            [
+              19,
+              52.35999999999999
+            ],
+            [
+              20,
+              51.67
+            ],
+            [
+              21,
+              52.73
+            ],
+            [
+              22,
+              52.349999999999994
+            ],
+            [
+              23,
+              52.690000000000005
+            ],
+            [
+              24,
+              53.71
+            ],
+            [
+              25,
+              53.26
+            ],
+            [
+              26,
+              53.87
+            ],
+            [
+              27,
+              54.6
+            ],
+            [
+              28,
+              54.300000000000004
+            ],
+            [
+              29,
+              55.93
+            ],
+            [
+              30,
+              55.98
+            ],
+            [
+              31,
+              56.269999999999996
+            ],
+            [
+              32,
+              56.34
+            ],
+            [
+              33,
+              56.730000000000004
+            ],
+            [
+              34,
+              56.589999999999996
+            ],
+            [
+              35,
+              56.74
+            ],
+            [
+              36,
+              57.34
+            ],
+            [
+              37,
+              57.45
+            ],
+            [
+              38,
+              57.49999999999999
+            ],
+            [
+              39,
+              57.57
+            ],
+            [
+              40,
+              57.91
+            ],
+            [
+              41,
+              57.8
+            ],
+            [
+              42,
+              57.98
+            ],
+            [
+              43,
+              58.32000000000001
+            ],
+            [
+              44,
+              58.14
+            ],
+            [
+              45,
+              58.160000000000004
+            ],
+            [
+              46,
+              58.08
+            ],
+            [
+              47,
+              58.26
+            ],
+            [
+              48,
+              58.220000000000006
+            ],
+            [
+              49,
+              58.199999999999996
+            ],
+            [
+              50,
+              58.24
+            ]
+          ]
+        },
+        {
+          "method": "AdamW",
+          "seed": 1524,
+          "points": [
+            [
+              1,
+              42.27
+            ],
+            [
+              2,
+              44.36
+            ],
+            [
+              3,
+              46.64
+            ],
+            [
+              4,
+              47.48
+            ],
+            [
+              5,
+              48.27
+            ],
+            [
+              6,
+              48.449999999999996
+            ],
+            [
+              7,
+              49.919999999999995
+            ],
+            [
+              8,
+              51
+            ],
+            [
+              9,
+              50.18
+            ],
+            [
+              10,
+              51.57000000000001
+            ],
+            [
+              11,
+              51.51
+            ],
+            [
+              12,
+              52.72
+            ],
+            [
+              13,
+              53.339999999999996
+            ],
+            [
+              14,
+              54.24
+            ],
+            [
+              15,
+              52.83
+            ],
+            [
+              16,
+              54.910000000000004
+            ],
+            [
+              17,
+              55.13
+            ],
+            [
+              18,
+              55.96
+            ],
+            [
+              19,
+              55.379999999999995
+            ],
+            [
+              20,
+              55.57
+            ],
+            [
+              21,
+              56.489999999999995
+            ],
+            [
+              22,
+              55.71
+            ],
+            [
+              23,
+              55.96
+            ],
+            [
+              24,
+              56.99999999999999
+            ],
+            [
+              25,
+              56.410000000000004
+            ],
+            [
+              26,
+              57.269999999999996
+            ],
+            [
+              27,
+              57.63
+            ],
+            [
+              28,
+              58.06
+            ],
+            [
+              29,
+              58.18
+            ],
+            [
+              30,
+              58.93000000000001
+            ],
+            [
+              31,
+              58.97
+            ],
+            [
+              32,
+              59.29
+            ],
+            [
+              33,
+              58.940000000000005
+            ],
+            [
+              34,
+              59.84
+            ],
+            [
+              35,
+              59.46
+            ],
+            [
+              36,
+              59.919999999999995
+            ],
+            [
+              37,
+              59.419999999999995
+            ],
+            [
+              38,
+              59.97
+            ],
+            [
+              39,
+              59.99
+            ],
+            [
+              40,
+              60.28
+            ],
+            [
+              41,
+              60.540000000000006
+            ],
+            [
+              42,
+              60.67
+            ],
+            [
+              43,
+              60.96
+            ],
+            [
+              44,
+              60.73
+            ],
+            [
+              45,
+              60.940000000000005
+            ],
+            [
+              46,
+              61.23
+            ],
+            [
+              47,
+              61.18
+            ],
+            [
+              48,
+              61.18
+            ],
+            [
+              49,
+              61.17
+            ],
+            [
+              50,
+              61.199999999999996
+            ]
+          ]
+        },
+        {
+          "method": "Learned Credit-Map Hybrid",
+          "seed": 1525,
+          "points": [
+            [
+              1,
+              40.97
+            ],
+            [
+              2,
+              44.019999999999996
+            ],
+            [
+              3,
+              45.93
+            ],
+            [
+              4,
+              46.04
+            ],
+            [
+              5,
+              47.92
+            ],
+            [
+              6,
+              48.72
+            ],
+            [
+              7,
+              49.16
+            ],
+            [
+              8,
+              50.3
+            ],
+            [
+              9,
+              50.23
+            ],
+            [
+              10,
+              50.129999999999995
+            ],
+            [
+              11,
+              49.63
+            ],
+            [
+              12,
+              49.87
+            ],
+            [
+              13,
+              51.349999999999994
+            ],
+            [
+              14,
+              51.33
+            ],
+            [
+              15,
+              50.41
+            ],
+            [
+              16,
+              51.64
+            ],
+            [
+              17,
+              51.29
+            ],
+            [
+              18,
+              51.78
+            ],
+            [
+              19,
+              51.55
+            ],
+            [
+              20,
+              52.449999999999996
+            ],
+            [
+              21,
+              52.059999999999995
+            ],
+            [
+              22,
+              52.6
+            ],
+            [
+              23,
+              53.52
+            ],
+            [
+              24,
+              53.21
+            ],
+            [
+              25,
+              53.669999999999995
+            ],
+            [
+              26,
+              54.35
+            ],
+            [
+              27,
+              54.97
+            ],
+            [
+              28,
+              54.93
+            ],
+            [
+              29,
+              54.56999999999999
+            ],
+            [
+              30,
+              55.279999999999994
+            ],
+            [
+              31,
+              55.510000000000005
+            ],
+            [
+              32,
+              56.21000000000001
+            ],
+            [
+              33,
+              56.26
+            ],
+            [
+              34,
+              56.25
+            ],
+            [
+              35,
+              56.489999999999995
+            ],
+            [
+              36,
+              56.49999999999999
+            ],
+            [
+              37,
+              56.779999999999994
+            ],
+            [
+              38,
+              57.13
+            ],
+            [
+              39,
+              57.52
+            ],
+            [
+              40,
+              57.05
+            ],
+            [
+              41,
+              57.38999999999999
+            ],
+            [
+              42,
+              57.730000000000004
+            ],
+            [
+              43,
+              57.599999999999994
+            ],
+            [
+              44,
+              57.92
+            ],
+            [
+              45,
+              57.65
+            ],
+            [
+              46,
+              57.76
+            ],
+            [
+              47,
+              57.85
+            ],
+            [
+              48,
+              57.91
+            ],
+            [
+              49,
+              57.93000000000001
+            ],
+            [
+              50,
+              57.89
+            ]
+          ]
+        },
+        {
+          "method": "AdamW",
+          "seed": 1525,
+          "points": [
+            [
+              1,
+              42.1
+            ],
+            [
+              2,
+              45.24
+            ],
+            [
+              3,
+              47.48
+            ],
+            [
+              4,
+              48.35
+            ],
+            [
+              5,
+              49.62
+            ],
+            [
+              6,
+              50.5
+            ],
+            [
+              7,
+              51.339999999999996
+            ],
+            [
+              8,
+              51.519999999999996
+            ],
+            [
+              9,
+              51.89
+            ],
+            [
+              10,
+              51.93
+            ],
+            [
+              11,
+              52.629999999999995
+            ],
+            [
+              12,
+              52.980000000000004
+            ],
+            [
+              13,
+              53.52
+            ],
+            [
+              14,
+              54.08
+            ],
+            [
+              15,
+              53.15
+            ],
+            [
+              16,
+              54.449999999999996
+            ],
+            [
+              17,
+              54.81
+            ],
+            [
+              18,
+              55.089999999999996
+            ],
+            [
+              19,
+              55.97
+            ],
+            [
+              20,
+              56.32
+            ],
+            [
+              21,
+              55.36
+            ],
+            [
+              22,
+              56.38999999999999
+            ],
+            [
+              23,
+              56.910000000000004
+            ],
+            [
+              24,
+              56.99999999999999
+            ],
+            [
+              25,
+              57.14
+            ],
+            [
+              26,
+              57.879999999999995
+            ],
+            [
+              27,
+              57.84
+            ],
+            [
+              28,
+              58.45
+            ],
+            [
+              29,
+              58.63
+            ],
+            [
+              30,
+              58.8
+            ],
+            [
+              31,
+              58.8
+            ],
+            [
+              32,
+              59.14
+            ],
+            [
+              33,
+              59.9
+            ],
+            [
+              34,
+              59.940000000000005
+            ],
+            [
+              35,
+              59.97
+            ],
+            [
+              36,
+              59.940000000000005
+            ],
+            [
+              37,
+              59.919999999999995
+            ],
+            [
+              38,
+              60.31999999999999
+            ],
+            [
+              39,
+              60.550000000000004
+            ],
+            [
+              40,
+              60.6
+            ],
+            [
+              41,
+              60.84
+            ],
+            [
+              42,
+              60.78
+            ],
+            [
+              43,
+              61.019999999999996
+            ],
+            [
+              44,
+              61.029999999999994
+            ],
+            [
+              45,
+              61.12
+            ],
+            [
+              46,
+              60.97
+            ],
+            [
+              47,
+              61.09
+            ],
+            [
+              48,
+              61
+            ],
+            [
+              49,
+              61.050000000000004
+            ],
+            [
+              50,
+              61.029999999999994
+            ]
+          ]
+        }
+      ],
+      "source": "hfd_jp_scaling_results(1).json / cases/canonical"
+    },
+    "scaling": [
+      {
+        "id": "w512-d7",
+        "label": "W512 · d7",
+        "width": 512,
+        "hiddenStages": 7,
+        "status": "complete",
+        "pairs": [
+          {
+            "seed": 1523,
+            "hfd": 57.25,
+            "adamw": 60.550000000000004,
+            "gap": 3.300000000000003
+          },
+          {
+            "seed": 1524,
+            "hfd": 58.24,
+            "adamw": 61.199999999999996,
+            "gap": 2.959999999999996
+          },
+          {
+            "seed": 1525,
+            "hfd": 57.89,
+            "adamw": 61.029999999999994,
+            "gap": 3.1399999999999983
+          }
+        ],
+        "hfdMean": 57.79333333333334,
+        "hfdSD": 0.5020292156173127,
+        "adamwMean": 60.92666666666666,
+        "adamwSD": 0.3370954365359014,
+        "gapMean": 3.1333333333333324,
+        "gapSD": 0.1700980109623111,
+        "minPass": true,
+        "strongPass": false
+      },
+      {
+        "id": "w1024-d7",
+        "label": "W1024 · d7",
+        "width": 1024,
+        "hiddenStages": 7,
+        "status": "complete",
+        "pairs": [
+          {
+            "seed": 1523,
+            "hfd": 58.599999999999994,
+            "adamw": 61.24000000000001,
+            "gap": 2.640000000000009
+          },
+          {
+            "seed": 1524,
+            "hfd": 58.46,
+            "adamw": 61.919999999999995,
+            "gap": 3.4599999999999964
+          },
+          {
+            "seed": 1525,
+            "hfd": 58.52,
+            "adamw": 61.45,
+            "gap": 2.9299999999999993
+          }
+        ],
+        "hfdMean": 58.526666666666664,
+        "hfdSD": 0.0702376916856814,
+        "adamwMean": 61.53666666666667,
+        "adamwSD": 0.34818577416851526,
+        "gapMean": 3.0100000000000016,
+        "gapSD": 0.4158124577258299,
+        "minPass": true,
+        "strongPass": false
+      },
+      {
+        "id": "w2048-d7",
+        "label": "W2048 · d7",
+        "width": 2048,
+        "hiddenStages": 7,
+        "status": "complete",
+        "pairs": [
+          {
+            "seed": 1523,
+            "hfd": 58.209999999999994,
+            "adamw": 62.31,
+            "gap": 4.100000000000003
+          },
+          {
+            "seed": 1524,
+            "hfd": 58.099999999999994,
+            "adamw": 62.22,
+            "gap": 4.120000000000001
+          },
+          {
+            "seed": 1525,
+            "hfd": 57.58,
+            "adamw": 61.73,
+            "gap": 4.149999999999999
+          }
+        ],
+        "hfdMean": 57.96333333333333,
+        "hfdSD": 0.3365016097039235,
+        "adamwMean": 62.086666666666666,
+        "adamwSD": 0.3121431295629215,
+        "gapMean": 4.123333333333334,
+        "gapSD": 0.025166114784233532,
+        "minPass": true,
+        "strongPass": false
+      },
+      {
+        "id": "w512-d16",
+        "label": "W512 · d16",
+        "width": 512,
+        "hiddenStages": 16,
+        "status": "complete",
+        "pairs": [
+          {
+            "seed": 1523,
+            "hfd": 58.330000000000005,
+            "adamw": 62.73,
+            "gap": 4.399999999999993
+          },
+          {
+            "seed": 1524,
+            "hfd": 58.63,
+            "adamw": 62.660000000000004,
+            "gap": 4.03
+          },
+          {
+            "seed": 1525,
+            "hfd": 58.03,
+            "adamw": 62.72,
+            "gap": 4.689999999999994
+          }
+        ],
+        "hfdMean": 58.330000000000005,
+        "hfdSD": 0.3000000000000007,
+        "adamwMean": 62.70333333333333,
+        "adamwSD": 0.03785938897199836,
+        "gapMean": 4.3733333333333295,
+        "gapSD": 0.33080709383767937,
+        "minPass": true,
+        "strongPass": false
+      },
+      {
+        "id": "w512-d32",
+        "label": "W512 · d32",
+        "width": 512,
+        "hiddenStages": 32,
+        "status": "complete",
+        "pairs": [
+          {
+            "seed": 1523,
+            "hfd": 57.75,
+            "adamw": 63.29,
+            "gap": 5.540000000000001
+          },
+          {
+            "seed": 1524,
+            "hfd": 58.720000000000006,
+            "adamw": 63.260000000000005,
+            "gap": 4.539999999999999
+          },
+          {
+            "seed": 1525,
+            "hfd": 57.53,
+            "adamw": 62.94,
+            "gap": 5.409999999999993
+          }
+        ],
+        "hfdMean": 58,
+        "hfdSD": 0.6331666447310722,
+        "adamwMean": 63.163333333333334,
+        "adamwSD": 0.19399312702602178,
+        "gapMean": 5.163333333333331,
+        "gapSD": 0.5437217425607812,
+        "minPass": false,
+        "strongPass": false
+      },
+      {
+        "id": "w512-d32-latest",
+        "label": "W512 · d32 · latest GPU",
+        "width": 512,
+        "hiddenStages": 32,
+        "status": "complete-separate-snapshot",
+        "pairs": [],
+        "hfdMean": 57.86,
+        "adamwMean": 62.99,
+        "gapMean": 5.127,
+        "minPass": false,
+        "strongPass": false
+      }
+    ],
+    "protocol": [
+      [
+        "canonical-shallow",
+        "residual MLP; W512, 7 hidden stages",
+        "1523, 1524, 1525",
+        "50 epochs; 19,500 steps",
+        "official test"
+      ],
+      [
+        "latest-gpu-depth32",
+        "residual MLP; W512, 32 hidden stages",
+        "1523, 1524, 1525",
+        "50 epochs; 19,500 steps",
+        "official test"
+      ],
+      [
+        "mechanism-calibration",
+        "residual MLP; W512, 7 hidden stages",
+        "1519, 1520",
+        "390 steps",
+        "held-out training validation"
+      ],
+      [
+        "scaling-width1024",
+        "residual MLP; W1024, 7 hidden stages",
+        "3 paired seeds",
+        "50 epochs; 19,500 steps",
+        "official test"
+      ],
+      [
+        "scaling-width2048",
+        "residual MLP; W2048, 7 hidden stages",
+        "3 paired seeds",
+        "50 epochs; 19,500 steps",
+        "official test"
+      ],
+      [
+        "scaling-depth16",
+        "residual MLP; W512, 16 hidden stages",
+        "3 paired seeds",
+        "50 epochs; 19,500 steps",
+        "official test"
+      ],
+      [
+        "scaling-depth32",
+        "residual MLP; W512, 32 hidden stages",
+        "3 paired seeds",
+        "50 epochs; 19,500 steps",
+        "official test"
+      ],
+      [
+        "scaling-depth64",
+        "residual MLP; W512, 64 hidden stages",
+        "incomplete; no completed pairs",
+        "50 epochs planned",
+        "official test"
+      ],
+      [
+        "historical-v70-cnn",
+        "Historical CNN Probe Extension; exact configuration unaudited",
+        "5 replicate aggregates",
+        "1,170 steps",
+        "validation"
+      ]
+    ],
+    "canonicalSettings": [
+      [
+        "Training / test examples",
+        "50,000 / 10,000"
+      ],
+      [
+        "Directional rank per hidden site",
+        "16"
+      ],
+      [
+        "Directions per full step",
+        "112"
+      ],
+      [
+        "Base learning rate",
+        "0.001"
+      ],
+      [
+        "Prior update rate",
+        "1"
+      ],
+      [
+        "Residual correction",
+        "disabled · biased predictor"
+      ],
+      [
+        "Minimum / strong mean-gap gates",
+        "5 / 2 percentage points"
+      ],
+      [
+        "Sample SD convention",
+        "ddof = 1"
+      ]
+    ],
+    "cnn": {
+      "rows": [
+        {
+          "steps": 390,
+          "adamw": 51.948,
+          "alopex": 39.144,
+          "replicates": 5
+        },
+        {
+          "steps": 780,
+          "adamw": 55.864,
+          "alopex": 40.832,
+          "replicates": 5
+        },
+        {
+          "steps": 1170,
+          "adamw": 58.056,
+          "alopex": 42.264,
+          "replicates": 5
+        }
+      ],
+      "gap": 15.792
+    }
+  },
+  "chapterCloseEvidence": {
+    "canonical": {
+      "id": "canonical-shallow",
+      "label": "Canonical shallow · W512 / d7",
+      "evidenceClass": "verified frozen evidence",
+      "seedCount": 3,
+      "horizon": "50 epochs · 19,500 steps",
+      "hfd": {
+        "mean": 57.79,
+        "sd": 0.5
+      },
+      "adamw": {
+        "mean": 60.93,
+        "sd": 0.34
+      },
+      "gap": 3.13,
+      "ci95": [
+        2.711,
+        3.556
+      ],
+      "minimumGate": true,
+      "strongGate": false
+    },
+    "scaling": [
+      {
+        "id": "canonical",
+        "label": "W512 · d7",
+        "hfd": 57.79,
+        "adamw": 60.93,
+        "gap": 3.13,
+        "passed": true,
+        "evidence": "canonical"
+      },
+      {
+        "id": "w1024",
+        "label": "W1024 · d7",
+        "hfd": 58.53,
+        "adamw": 61.54,
+        "gap": 3.01,
+        "passed": true,
+        "evidence": "scaling"
+      },
+      {
+        "id": "w2048",
+        "label": "W2048 · d7",
+        "hfd": 57.96,
+        "adamw": 62.09,
+        "gap": 4.12,
+        "passed": true,
+        "evidence": "scaling"
+      },
+      {
+        "id": "d16",
+        "label": "W512 · d16",
+        "hfd": 58.33,
+        "adamw": 62.7,
+        "gap": 4.37,
+        "passed": true,
+        "evidence": "scaling"
+      },
+      {
+        "id": "d32-historical",
+        "label": "W512 · d32 · historical",
+        "hfd": 58,
+        "adamw": 63.16,
+        "gap": 5.16,
+        "passed": false,
+        "evidence": "scaling"
+      },
+      {
+        "id": "d32-latest",
+        "label": "W512 · d32 · latest",
+        "hfd": 57.86,
+        "adamw": 62.99,
+        "gap": 5.127,
+        "passed": false,
+        "evidence": "latest GPU snapshot"
+      }
+    ],
+    "calibration": {
+      "label": "390-step mechanism calibration",
+      "seedCount": 2,
+      "split": "held-out-training-validation",
+      "values": [
+        {
+          "method": "Learned Credit-Map Hybrid",
+          "mean": 44.14
+        },
+        {
+          "method": "AdamW",
+          "mean": 42.61
+        },
+        {
+          "method": "Two-Timescale Activation-Space ALOPEX",
+          "mean": 29.7
+        },
+        {
+          "method": "Matched-JVP Control",
+          "mean": 28.75
+        }
+      ],
+      "sensorChanges": [
+        0.04,
+        -1.94
+      ]
+    },
+    "timing": {
+      "label": "Corrected resident-step benchmark · W512 / d32",
+      "hfdMs": 5.203,
+      "adamwMs": 2.104,
+      "deltaMs": 3.099,
+      "ratio": 2.473,
+      "windowsPerMethod": 4,
+      "stepsPerWindow": 512,
+      "sessions": 1
+    },
+    "cnn": {
+      "label": "Historical CNN Probe Extension",
+      "evidenceClass": "historical-negative",
+      "seedCount": 5,
+      "horizonSteps": 1170,
+      "alopex": 42.264,
+      "adamw": 58.056,
+      "gap": 15.792
+    }
+  },
+  "evidenceReplaySource": {
+    "acceptanceTest": "publication/tests/integration/publication-data.test.mjs",
+    "verifiedReport": "reference_notebooks_with_scripts/backprop_free_blog_v1/backprop_free_blog_v1/VERIFIED_REPORT.md",
+    "lineage": "reference_notebooks_with_scripts/backprop_free_blog_v1/backprop_free_blog_v1/LINEAGE.md"
+  },
+  "scaleMilestones": [
+    {
+      "id": "xor",
+      "label": "XOR",
+      "architecture": "2 → 8 → 1",
+      "parameters": 33,
+      "track": "quality",
+      "method": "ALOPEX family",
+      "experiment": "Feasibility",
+      "result": "Executed small-network learning; establishes the starting scale.",
+      "evidence": "historical executed experiment"
+    },
+    {
+      "id": "mnist",
+      "label": "MNIST · Activation-Space ALOPEX",
+      "architecture": "784 → 1024 → 10",
+      "parameters": 814090,
+      "track": "quality",
+      "method": "Activation-Space ALOPEX · hybrid head",
+      "experiment": "Function-space credit",
+      "result": "Full-width hidden-preactivation experiment on MNIST; first ~10^6-parameter milestone.",
+      "evidence": "frozen Activation-Space ALOPEX brief"
+    },
+    {
+      "id": "w512d7",
+      "label": "CIFAR W512 · d7",
+      "architecture": "3072 → 512 → 6×512 → 10",
+      "parameters": 3154442,
+      "track": "quality",
+      "method": "Learned Credit-Map Hybrid",
+      "experiment": "Canonical CIFAR",
+      "result": "57.79% vs 60.93% AdamW; paired gap 3.13 pp.",
+      "evidence": "frozen 3-seed, 50-epoch result"
+    },
+    {
+      "id": "w1024d7",
+      "label": "CIFAR W1024 · d7",
+      "architecture": "3072 → 1024 → 6×1024 → 10",
+      "parameters": 9454602,
+      "track": "quality",
+      "method": "Learned Credit-Map Hybrid",
+      "experiment": "Width scaling",
+      "result": "58.53% vs 61.54% AdamW; paired gap 3.01 pp.",
+      "evidence": "frozen 3-seed, 50-epoch result"
+    },
+    {
+      "id": "w2048d7",
+      "label": "CIFAR W2048 · d7",
+      "architecture": "3072 → 2048 → 6×2048 → 10",
+      "parameters": 31492106,
+      "track": "quality",
+      "method": "Learned Credit-Map Hybrid",
+      "experiment": "Width scaling",
+      "result": "57.96% vs 62.09% AdamW; paired gap 4.12 pp.",
+      "evidence": "frozen 3-seed, 50-epoch result"
+    },
+    {
+      "id": "p113m",
+      "label": "113.3M residual MLP",
+      "architecture": "3072 → 4096 → 6×4096 → 10",
+      "parameters": 113315850,
+      "track": "mechanism",
+      "method": "Two-Timescale Activation-Space ALOPEX scaling campaign",
+      "experiment": "Mechanism / systems scale",
+      "result": "K=4, rank=64, changing minibatches, derivative-free consequence probes, no reverse-mode autodiff.",
+      "evidence": "executed scaling reference; not a convergence benchmark"
+    }
+  ],
+  "depthMilestones": [
+    {
+      "id": "d16",
+      "label": "W512 · d16",
+      "architecture": "3072 → 512 → 15×512 → 10",
+      "parameters": 5518346,
+      "result": "Learned Credit-Map Hybrid 58.33% vs AdamW 62.70%; gap 4.37 pp.",
+      "evidence": "frozen 3-seed scaling result"
+    },
+    {
+      "id": "d32",
+      "label": "W512 · d32",
+      "architecture": "3072 → 512 → 31×512 → 10",
+      "parameters": 9720842,
+      "result": "Completed later depth-32 cohorts crossed the 5 pp practical gap boundary.",
+      "evidence": "separate completed deep snapshot"
+    }
+  ],
+  "scaleSummary": {
+    "minParameters": 33,
+    "maxParameters": 113315850,
+    "ratio": 3433813.6363636362,
+    "orders": 6.535776720966074
+  }
+}
