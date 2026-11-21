@@ -70,6 +70,14 @@ ChatGPT proposed eight parameter tuples from the task specification before seein
 
 The selected ChatGPT patch reached 100% target success with zero protected score drift across all three tasks. Structured search matched both outcomes and had lower average drift in the band between the edit and protected regions. Giving every method the exact task center made this a useful locality check, and the structured control shows why uniform random search alone would overstate the evidence for LLM assistance. These were three tasks and one ChatGPT proposal batch.
 
-###### Next experiment: infer an edit from examples
+###### Prior work and the next test
 
-The next test will give the model and controls labeled examples of the desired changes and preservation constraints, with the location and shape of the edit left to infer. I will compare the language model with a fitted geometric control and budget-matched search before carrying the protocol to a predefined MNIST confusion slice.
+Compiling a known algorithm into weights has a precedent in Lindner et al.’s Tracr. Inferring the algorithm from examples adds a distinct source of error. Several expressions can agree on a small sample, a central problem in programming by example. Our next from-scratch experiment will score the inferred expression on fresh inputs, then compare the compiled network against the expression itself. [Tracr](https://arxiv.org/abs/2301.05062) · [Programming by Examples](https://www.microsoft.com/en-us/research/publication/programming-examples-applications-ambiguity-resolutions-approach/)
+
+LLM-SR already combines language-model proposals with numerical coefficient fitting. Its benchmark follow-up uses transformed and synthetic tasks to reduce the advantage of recognizing familiar equations. We will give an LLM, a symbolic search procedure and a randomly initialized backpropagation learner the same examples from unnamed piecewise-linear functions. Fitting coefficients on the LLM’s chosen expression adds a fourth comparison that isolates the value of numerical refinement. [LLM-SR](https://arxiv.org/abs/2404.18400) · [LLM-SRBench](https://arxiv.org/abs/2504.10415)
+
+For the editing experiments, Mitchell et al.’s work on the scope of model edits motivates measuring both successful corrections and changes elsewhere. R01 established a tie with structured search when the target location was supplied. A follow-up will withhold the edit geometry and compare against a backpropagation learner with access to the same residual family. [Memory-Based Model Editing at Scale](https://arxiv.org/abs/2206.06520)
+
+###### Code, evidence and reproduction
+
+The public snapshot contains the XOR and MNIST scripts, dependency lock, baseline metrics, R01 proposal batch, evaluator, and per-task results. The replay command evaluates the stored proposals. The proposed R02 protocol records the comparisons and measurements before any R02 results are reported. [Reproduction guide, literature review and protocol](https://github.com/protimroy/pro-log/tree/500c12999a40d4486df578d41d5671925c9fbbda/evidence/function-space-programming) · [R01 proposals and raw results](https://github.com/protimroy/pro-log/tree/500c12999a40d4486df578d41d5671925c9fbbda/evidence/function-space-programming/runs/r01-xor-pilot)
