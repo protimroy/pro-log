@@ -1,0 +1,1657 @@
+{
+  "seed": 2874030462,
+  "candidateFunctions": 637,
+  "steps": 0,
+  "stages": [
+    {
+      "labels": 2,
+      "tasks": [
+        {
+          "id": 0,
+          "consistent": 13,
+          "teacherFits": false,
+          "teacher": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 4,
+              "total": 21,
+              "ce": 9.714322578880331
+            }
+          },
+          "symbolic": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 5,
+              "total": 21,
+              "ce": 9.14289400745176
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 1,
+          "consistent": 13,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 2,
+          "consistent": 13,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 3,
+          "consistent": 13,
+          "teacherFits": true,
+          "teacher": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 8,
+              "total": 21,
+              "ce": 7.428608293166044
+            }
+          },
+          "symbolic": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 8,
+              "total": 21,
+              "ce": 7.428608293166044
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 4,
+          "consistent": 13,
+          "teacherFits": true,
+          "teacher": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 7,
+              "total": 21,
+              "ce": 8.000036864594616
+            }
+          },
+          "symbolic": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 7,
+              "total": 21,
+              "ce": 8.000036864594616
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 5,
+          "consistent": 13,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 6,
+          "consistent": 13,
+          "teacherFits": true,
+          "teacher": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 5,
+              "total": 21,
+              "ce": 9.14289400745176
+            }
+          },
+          "symbolic": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 5,
+              "total": 21,
+              "ce": 9.14289400745176
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 7,
+          "consistent": 13,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 8,
+          "consistent": 13,
+          "teacherFits": true,
+          "teacher": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 4,
+              "total": 21,
+              "ce": 9.714322578880331
+            }
+          },
+          "symbolic": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 4,
+              "total": 21,
+              "ce": 9.714322578880331
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 9,
+          "consistent": 13,
+          "teacherFits": true,
+          "teacher": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 6,
+              "total": 21,
+              "ce": 8.571465436023187
+            }
+          },
+          "symbolic": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 6,
+              "total": 21,
+              "ce": 8.571465436023187
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 10,
+          "consistent": 13,
+          "teacherFits": true,
+          "teacher": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 5,
+              "total": 21,
+              "ce": 9.14289400745176
+            }
+          },
+          "symbolic": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 5,
+              "total": 21,
+              "ce": 9.14289400745176
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 11,
+          "consistent": 13,
+          "teacherFits": true,
+          "teacher": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 5,
+              "total": 21,
+              "ce": 9.14289400745176
+            }
+          },
+          "symbolic": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 5,
+              "total": 21,
+              "ce": 9.14289400745176
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        }
+      ],
+      "summary": {
+        "teacher": {
+          "exact": 4,
+          "primitive": 12,
+          "composition": 128
+        },
+        "symbolic": {
+          "exact": 4,
+          "primitive": 12,
+          "composition": 129
+        },
+        "oracle": {
+          "exact": 12,
+          "primitive": 36,
+          "composition": 252
+        }
+      }
+    },
+    {
+      "labels": 3,
+      "tasks": [
+        {
+          "id": 0,
+          "consistent": 2,
+          "teacherFits": false,
+          "teacher": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 4,
+              "total": 21,
+              "ce": 9.714322578880331
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 1,
+          "consistent": 1,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 2,
+          "consistent": 1,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 3,
+          "consistent": 2,
+          "teacherFits": true,
+          "teacher": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 10,
+              "total": 21,
+              "ce": 6.285751150308902
+            }
+          },
+          "symbolic": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 10,
+              "total": 21,
+              "ce": 6.285751150308902
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 4,
+          "consistent": 2,
+          "teacherFits": true,
+          "teacher": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 8,
+              "total": 21,
+              "ce": 7.428608293166044
+            }
+          },
+          "symbolic": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 8,
+              "total": 21,
+              "ce": 7.428608293166044
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 5,
+          "consistent": 1,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 6,
+          "consistent": 2,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 7,
+          "consistent": 1,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 8,
+          "consistent": 2,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 9,
+          "consistent": 2,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 10,
+          "consistent": 2,
+          "teacherFits": true,
+          "teacher": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 9,
+              "total": 21,
+              "ce": 6.857179721737473
+            }
+          },
+          "symbolic": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 9,
+              "total": 21,
+              "ce": 6.857179721737473
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 11,
+          "consistent": 2,
+          "teacherFits": true,
+          "teacher": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 8,
+              "total": 21,
+              "ce": 7.428608293166044
+            }
+          },
+          "symbolic": {
+            "exact": false,
+            "primitive": {
+              "correct": 0,
+              "total": 3,
+              "ce": 12.000036864594612
+            },
+            "composition": {
+              "correct": 8,
+              "total": 21,
+              "ce": 7.428608293166044
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        }
+      ],
+      "summary": {
+        "teacher": {
+          "exact": 7,
+          "primitive": 21,
+          "composition": 186
+        },
+        "symbolic": {
+          "exact": 8,
+          "primitive": 24,
+          "composition": 203
+        },
+        "oracle": {
+          "exact": 12,
+          "primitive": 36,
+          "composition": 252
+        }
+      }
+    },
+    {
+      "labels": 4,
+      "tasks": [
+        {
+          "id": 0,
+          "consistent": 1,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 1,
+          "consistent": 1,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 2,
+          "consistent": 1,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 3,
+          "consistent": 1,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 4,
+          "consistent": 1,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 5,
+          "consistent": 1,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 6,
+          "consistent": 1,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 7,
+          "consistent": 1,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 8,
+          "consistent": 1,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 9,
+          "consistent": 1,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 10,
+          "consistent": 1,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        },
+        {
+          "id": 11,
+          "consistent": 1,
+          "teacherFits": true,
+          "teacher": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "symbolic": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          },
+          "oracle": {
+            "exact": true,
+            "primitive": {
+              "correct": 3,
+              "total": 3,
+              "ce": 0.00003686459461251696
+            },
+            "composition": {
+              "correct": 21,
+              "total": 21,
+              "ce": 0.00003686459461251695
+            }
+          }
+        }
+      ],
+      "summary": {
+        "teacher": {
+          "exact": 12,
+          "primitive": 36,
+          "composition": 252
+        },
+        "symbolic": {
+          "exact": 12,
+          "primitive": 36,
+          "composition": 252
+        },
+        "oracle": {
+          "exact": 12,
+          "primitive": 36,
+          "composition": 252
+        }
+      }
+    }
+  ]
+}

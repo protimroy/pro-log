@@ -1,4 +1,5 @@
 import { readFileSync } from 'node:fs'
+import { pathToFileURL } from 'node:url'
 
 // R06 CPU reference. ES module, no dependencies.
 const N = 7, V = 10, D = 26, H = 13, M = 63
@@ -92,7 +93,7 @@ function label(ops,a,b,x) {
   const [s,t]=ops[a], [u,v]=ops[b]
   return mod(u*mod(s*x+t)+v)
 }
-function compile(ops) {
+export function compile(ops, apply = label) {
   const p=create(null)
   for(let i=0;i<V;i++)p.E[i*D+i]=1
   for(let t=0;t<3;t++)p.P[t*D+V+t]=1
@@ -109,13 +110,13 @@ function compile(ops) {
   for(let a=0;a<3;a++)for(let b=0;b<3;b++)for(let x=0;x<N;x++){
     for(const j of [x,offset+a,offset+3+b])p.U[n*D+j]=1
     p.b[n]=-2.5
-    p.W[(result+label(ops,a,b,x))*M+n]=2
+    p.W[(result+apply(ops,a,b,x))*M+n]=2
     n++
   }
   for(let y=0;y<N;y++)p.C[y*D+result+y]=12
   return p
 }
-function score(p,rows){
+export function score(p,rows){
   let correct=0,loss=0
   for(const row of rows){
     const {logits}=forward(p,row)
@@ -185,5 +186,7 @@ function evaluate({truth,packets,proposals}){
   return {stepsPerBaseline:steps,parameters:Object.values(create(null)).reduce((n,x)=>n+x.length,0),gradientMaxError,tasks}
 }
 
-const input = JSON.parse(readFileSync(new URL('../runs/r06-zero-training/tasks.json', import.meta.url), 'utf8'))
-console.log(JSON.stringify(evaluate(input), null, 2))
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  const input = JSON.parse(readFileSync(new URL('../runs/r06-zero-training/tasks.json', import.meta.url), 'utf8'))
+  console.log(JSON.stringify(evaluate(input), null, 2))
+}
