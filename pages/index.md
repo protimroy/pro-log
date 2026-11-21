@@ -72,6 +72,12 @@ template: page.html
   <tbody>
     <tr class="postcontainer">
       <td>
+        <span class="post_title">Function Space Programming</span>
+        <span class="post_text"><a href="/pro-log/function-space-programming/">Verified XOR and MNIST baselines for LLM-assisted function edits</a></span>
+      </td>
+    </tr>
+    <tr class="postcontainer">
+      <td>
         <span class="post_title">Activation-Space ALOPEX</span>
         <span class="post_text"><a href="/pro-log/activation-space-alopex/">Activation-space learning and the ALOPEX family experiments</a></span>
       </td>
