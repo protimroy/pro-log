@@ -106,6 +106,12 @@ Full fine-tuning on eight or 32 new-task examples scored 15/312 and 12/312, resp
 
 Tracr provides a precedent for compiling known programs into Transformer weights. SERAC motivates measuring how well an edit preserves behavior outside its intended scope. [Tracr](https://arxiv.org/abs/2301.05062) · [SERAC](https://arxiv.org/abs/2206.06520)
 
+###### R06 · From examples to an untrained Transformer
+
+The objective is to generate the function a target model would otherwise learn from task data, then compile it into a fresh Transformer and evaluate it at zero gradient updates. XOR showed direct installation in an MLP. R05 compiled a supplied arithmetic program. R06 gives the teacher six labeled examples per task and asks it to infer the operations.
+
+Across six tasks, the teacher’s compiled Transformer got 48/48 unseen single-operation inputs and 168/168 unseen compositions correct. A symbolic solver given the same affine family also got every answer right. A randomly initialized Transformer of the same architecture, trained on the same examples for 250 Adam updates from three starts, fit all training labels and got 79/504 composition predictions right. The teacher and symbolic solver knew the affine family, and the compiler enumerated a small finite domain. These results demonstrate zero-update task acquisition for this grammar and show why a matched symbolic control matters. [R06 report, prompts, results, and replay](https://github.com/protimroy/pro-log/tree/3f11994010fce03e8d19259e45312cede503246d/evidence/function-space-programming/runs/r06-zero-training)
+
 ###### Code, evidence and reproduction
 
 The public snapshot contains the XOR and MNIST scripts, dependency lock, baseline metrics, R01 proposal batch, evaluator, and per-task results. The replay command evaluates the stored proposals. The R02 release records the executed comparison, including the labeled samples, frozen proposal batch, seed and checkpoint parameters. The original protocol documents the proposed setup and the R02 run notes record deviations. [Reproduction guide, literature review and protocol](https://github.com/protimroy/pro-log/tree/500c12999a40d4486df578d41d5671925c9fbbda/evidence/function-space-programming) · [R01 proposals and raw results](https://github.com/protimroy/pro-log/tree/500c12999a40d4486df578d41d5671925c9fbbda/evidence/function-space-programming/runs/r01-xor-pilot)
