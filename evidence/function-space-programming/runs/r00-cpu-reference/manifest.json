@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "commit": "cf1de5ccd9dd2298743a7d47f610534303f4e80f",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "torch": "2.15.0+cpu",
+  "torchvision": "0.29.2+cpu",
+  "settings": {
+    "train_limit": 60000,
+    "test_limit": 10000,
+    "alpha": 100.0,
+    "seed": 42
+  },
+  "sources": {
+    "baseline.py": "5e9e23980047dd7f7583c56ff23c529445d6d4a8107f9ddedcad4666ea43e1f9",
+    "pyproject.toml": "2f50af0bc35718e62bf03918022d29e694bd41fc1b72749441b2a8451ac57486",
+    "experiments/xor_function_space.py": "36c6c2e377ed24c9d306fd3d942f06f9b06a0e42409be9dbfffb2650aa396211",
+    "experiments/mnist_function_space.py": "69e3a995f4c232fc53d85fc34d204283f373a88599048c239752fdfeed2fcf9e"
+  },
+  "metrics": {
+    "xor_exact": true,
+    "pixels": {
+      "features": 784,
+      "correct": 8606,
+      "total": 10000
+    },
+    "designed": {
+      "features": 217,
+      "correct": 9606,
+      "total": 10000
+    },
+    "random_relu": {
+      "features": 217,
+      "correct": 8838,
+      "total": 10000
+    }
+  },
+  "files": {
+    "mnist.log": "60940ebf6db3df054f9cc06b25effe57f89efe4cbc66dcd8ea28fc27080dba9f",
+    "mnist.pt": "cfe316342fff021eccded1fd77758a22f3c3688748af29c251a8abed25c457d4",
+    "xor.log": "dcc22ee208d877b54cd227b93cb013be0865aecba21ddd084e513b6f4149e243",
+    "xor.pt": "a0205c333c65186a6cfb5bd63b42417458032d1c386924168065bc76c21c0a5a"
+  }
+}

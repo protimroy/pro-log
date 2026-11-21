@@ -1,0 +1,14 @@
+{
+  "proposer": "Codex in ChatGPT Work Mode",
+  "prompt": "For the frozen XOR score abs(x-y) in the unit square with threshold 0.5, propose eight (dx, dy, radius, amplitude) tuples for an additive signed Chebyshev tent centered at the given task center plus (dx,dy). The edit core is within distance 0.10 of the task center, protected points are at distance at least 0.25, and centers are (0,0), (1,0), (0.28,0.28). The sign points towards the flipped class. Offsets are within +/-0.15, radius in [0.08,0.40], and amplitude in [0.35,1.5]. Propose without seeing sampled inputs or scores. Aim for target success, then protected prediction agreement and low protected drift.",
+  "candidates": [
+    [0, 0, 0.20, 1.05],
+    [0, 0, 0.18, 1.20],
+    [0, 0, 0.16, 1.40],
+    [0, 0, 0.24, 0.95],
+    [0, 0, 0.22, 1.00],
+    [0, 0, 0.21, 1.10],
+    [0, 0, 0.25, 0.90],
+    [0, 0, 0.23, 0.95]
+  ]
+}
