@@ -92,6 +92,12 @@ The original in-domain gap was about 32,000-fold at eight examples. To test whet
 
 Unknown breakpoints in piecewise-linear models are a longstanding segmented regression problem. Muggeo provides prior work for the regression setup. The specific numerical comparison above comes from the linked experiment. [Muggeo, Estimating regression models with unknown break-points (2003)](https://doi.org/10.1002/sim.1545)
 
+###### R03 · Semantic routing on held-out compositions
+
+With eight deliberately ambiguous observations per task, correct descriptions helped the LLM choose all 12 held-out graphs. Shuffling the descriptions reduced recovery to 2 of 12, matching typed enumeration with a fixed tie rule. Semantic lookup and a ridge router with canonicalized descriptions also recovered all 12. The descriptions helped resolve ambiguity in this grammar, and the simple controls matched the LLM.
+
+Graph recovery and prediction quality differed. The eight inputs set the second coordinate to zero. For six multiplication graphs this left the fitted output gain unidentified, even when the oracle supplied the correct graph. With 32 observations, typed enumeration recovered all 12 graphs and their functions. The pilot used one in-session proposal batch and reused its selections across both sample budgets. [Per-task results, prior work and replay commands](https://github.com/protimroy/pro-log/tree/4eae7d30068aa32f20a157874a830ec4f862891a/evidence/function-space-programming/runs/r03-semantic-routing)
+
 ###### Code, evidence and reproduction
 
 The public snapshot contains the XOR and MNIST scripts, dependency lock, baseline metrics, R01 proposal batch, evaluator, and per-task results. The replay command evaluates the stored proposals. The R02 release records the executed comparison, including the labeled samples, frozen proposal batch, seed and checkpoint parameters. The original protocol documents the proposed setup and the R02 run notes record deviations. [Reproduction guide, literature review and protocol](https://github.com/protimroy/pro-log/tree/500c12999a40d4486df578d41d5671925c9fbbda/evidence/function-space-programming) · [R01 proposals and raw results](https://github.com/protimroy/pro-log/tree/500c12999a40d4486df578d41d5671925c9fbbda/evidence/function-space-programming/runs/r01-xor-pilot)
