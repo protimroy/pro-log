@@ -1,0 +1,823 @@
+{
+  "stepsPerBaseline": 250,
+  "parameters": 6563,
+  "gradientMaxError": 1.9459017838903414e-11,
+  "tasks": [
+    {
+      "id": 0,
+      "arms": {
+        "teacher": {
+          "updates": 0,
+          "train": {
+            "correct": 6,
+            "total": 6,
+            "ce": 0.00003686459461251695
+          },
+          "primitive": {
+            "correct": 8,
+            "total": 8,
+            "ce": 0.00003686459461251695
+          },
+          "composition": {
+            "correct": 28,
+            "total": 28,
+            "ce": 0.00003686459461251695
+          }
+        },
+        "symbolic": {
+          "updates": 0,
+          "train": {
+            "correct": 6,
+            "total": 6,
+            "ce": 0.00003686459461251695
+          },
+          "primitive": {
+            "correct": 8,
+            "total": 8,
+            "ce": 0.00003686459461251695
+          },
+          "composition": {
+            "correct": 28,
+            "total": 28,
+            "ce": 0.00003686459461251695
+          }
+        },
+        "oracle": {
+          "updates": 0,
+          "train": {
+            "correct": 6,
+            "total": 6,
+            "ce": 0.00003686459461251695
+          },
+          "primitive": {
+            "correct": 8,
+            "total": 8,
+            "ce": 0.00003686459461251695
+          },
+          "composition": {
+            "correct": 28,
+            "total": 28,
+            "ce": 0.00003686459461251695
+          }
+        },
+        "backprop": [
+          {
+            "seed": 17,
+            "updates": 250,
+            "train": {
+              "correct": 6,
+              "total": 6,
+              "ce": 0.000008044413941081524
+            },
+            "primitive": {
+              "correct": 0,
+              "total": 8,
+              "ce": 21.728488283372272
+            },
+            "composition": {
+              "correct": 4,
+              "total": 28,
+              "ce": 15.985735179783463
+            }
+          },
+          {
+            "seed": 31,
+            "updates": 250,
+            "train": {
+              "correct": 6,
+              "total": 6,
+              "ce": 0.000024553884404673706
+            },
+            "primitive": {
+              "correct": 0,
+              "total": 8,
+              "ce": 21.989524024205604
+            },
+            "composition": {
+              "correct": 4,
+              "total": 28,
+              "ce": 15.416261110935427
+            }
+          },
+          {
+            "seed": 57,
+            "updates": 250,
+            "train": {
+              "correct": 6,
+              "total": 6,
+              "ce": 0.000023428766631970413
+            },
+            "primitive": {
+              "correct": 0,
+              "total": 8,
+              "ce": 24.667221408988258
+            },
+            "composition": {
+              "correct": 6,
+              "total": 28,
+              "ce": 16.702186417733483
+            }
+          }
+        ],
+        "random": {
+          "updates": 0,
+          "train": {
+            "correct": 1,
+            "total": 6,
+            "ce": 1.9955875913196222
+          },
+          "primitive": {
+            "correct": 1,
+            "total": 8,
+            "ce": 1.9038774270265988
+          },
+          "composition": {
+            "correct": 9,
+            "total": 28,
+            "ce": 1.9418195157784233
+          }
+        }
+      }
+    },
+    {
+      "id": 1,
+      "arms": {
+        "teacher": {
+          "updates": 0,
+          "train": {
+            "correct": 6,
+            "total": 6,
+            "ce": 0.00003686459461251695
+          },
+          "primitive": {
+            "correct": 8,
+            "total": 8,
+            "ce": 0.00003686459461251695
+          },
+          "composition": {
+            "correct": 28,
+            "total": 28,
+            "ce": 0.00003686459461251695
+          }
+        },
+        "symbolic": {
+          "updates": 0,
+          "train": {
+            "correct": 6,
+            "total": 6,
+            "ce": 0.00003686459461251695
+          },
+          "primitive": {
+            "correct": 8,
+            "total": 8,
+            "ce": 0.00003686459461251695
+          },
+          "composition": {
+            "correct": 28,
+            "total": 28,
+            "ce": 0.00003686459461251695
+          }
+        },
+        "oracle": {
+          "updates": 0,
+          "train": {
+            "correct": 6,
+            "total": 6,
+            "ce": 0.00003686459461251695
+          },
+          "primitive": {
+            "correct": 8,
+            "total": 8,
+            "ce": 0.00003686459461251695
+          },
+          "composition": {
+            "correct": 28,
+            "total": 28,
+            "ce": 0.00003686459461251695
+          }
+        },
+        "backprop": [
+          {
+            "seed": 17,
+            "updates": 250,
+            "train": {
+              "correct": 6,
+              "total": 6,
+              "ce": 0.000013918819481644535
+            },
+            "primitive": {
+              "correct": 0,
+              "total": 8,
+              "ce": 19.83009608947645
+            },
+            "composition": {
+              "correct": 4,
+              "total": 28,
+              "ce": 14.929859891108064
+            }
+          },
+          {
+            "seed": 31,
+            "updates": 250,
+            "train": {
+              "correct": 6,
+              "total": 6,
+              "ce": 0.000006748537297038472
+            },
+            "primitive": {
+              "correct": 0,
+              "total": 8,
+              "ce": 20.00029892766802
+            },
+            "composition": {
+              "correct": 4,
+              "total": 28,
+              "ce": 17.241481221312387
+            }
+          },
+          {
+            "seed": 57,
+            "updates": 250,
+            "train": {
+              "correct": 6,
+              "total": 6,
+              "ce": 0.00001730464532451192
+            },
+            "primitive": {
+              "correct": 0,
+              "total": 8,
+              "ce": 25.051282989490367
+            },
+            "composition": {
+              "correct": 4,
+              "total": 28,
+              "ce": 16.731098546810262
+            }
+          }
+        ],
+        "random": {
+          "updates": 0,
+          "train": {
+            "correct": 2,
+            "total": 6,
+            "ce": 1.9256407902061383
+          },
+          "primitive": {
+            "correct": 1,
+            "total": 8,
+            "ce": 1.9357594280082908
+          },
+          "composition": {
+            "correct": 5,
+            "total": 28,
+            "ce": 1.9413627538232228
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "arms": {
+        "teacher": {
+          "updates": 0,
+          "train": {
+            "correct": 6,
+            "total": 6,
+            "ce": 0.00003686459461251695
+          },
+          "primitive": {
+            "correct": 8,
+            "total": 8,
+            "ce": 0.00003686459461251695
+          },
+          "composition": {
+            "correct": 28,
+            "total": 28,
+            "ce": 0.00003686459461251695
+          }
+        },
+        "symbolic": {
+          "updates": 0,
+          "train": {
+            "correct": 6,
+            "total": 6,
+            "ce": 0.00003686459461251695
+          },
+          "primitive": {
+            "correct": 8,
+            "total": 8,
+            "ce": 0.00003686459461251695
+          },
+          "composition": {
+            "correct": 28,
+            "total": 28,
+            "ce": 0.00003686459461251695
+          }
+        },
+        "oracle": {
+          "updates": 0,
+          "train": {
+            "correct": 6,
+            "total": 6,
+            "ce": 0.00003686459461251695
+          },
+          "primitive": {
+            "correct": 8,
+            "total": 8,
+            "ce": 0.00003686459461251695
+          },
+          "composition": {
+            "correct": 28,
+            "total": 28,
+            "ce": 0.00003686459461251695
+          }
+        },
+        "backprop": [
+          {
+            "seed": 17,
+            "updates": 250,
+            "train": {
+              "correct": 6,
+              "total": 6,
+              "ce": 0.000016482555923520098
+            },
+            "primitive": {
+              "correct": 0,
+              "total": 8,
+              "ce": 19.464513425133347
+            },
+            "composition": {
+              "correct": 3,
+              "total": 28,
+              "ce": 14.846295052341494
+            }
+          },
+          {
+            "seed": 31,
+            "updates": 250,
+            "train": {
+              "correct": 6,
+              "total": 6,
+              "ce": 0.000013625927430380654
+            },
+            "primitive": {
+              "correct": 0,
+              "total": 8,
+              "ce": 20.362509790264077
+            },
+            "composition": {
+              "correct": 4,
+              "total": 28,
+              "ce": 15.49395781460095
+            }
+          },
+          {
+            "seed": 57,
+            "updates": 250,
+            "train": {
+              "correct": 6,
+              "total": 6,
+              "ce": 0.000006496594342417964
+            },
+            "primitive": {
+              "correct": 0,
+              "total": 8,
+              "ce": 25.629020144824313
+            },
+            "composition": {
+              "correct": 2,
+              "total": 28,
+              "ce": 18.862862225836743
+            }
+          }
+        ],
+        "random": {
+          "updates": 0,
+          "train": {
+            "correct": 1,
+            "total": 6,
+            "ce": 1.9381057253371061
+          },
+          "primitive": {
+            "correct": 3,
+            "total": 8,
+            "ce": 1.9060860656552776
+          },
+          "composition": {
+            "correct": 4,
+            "total": 28,
+            "ce": 1.9512953111937337
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "arms": {
+        "teacher": {
+          "updates": 0,
+          "train": {
+            "correct": 6,
+            "total": 6,
+            "ce": 0.00003686459461251695
+          },
+          "primitive": {
+            "correct": 8,
+            "total": 8,
+            "ce": 0.00003686459461251695
+          },
+          "composition": {
+            "correct": 28,
+            "total": 28,
+            "ce": 0.00003686459461251695
+          }
+        },
+        "symbolic": {
+          "updates": 0,
+          "train": {
+            "correct": 6,
+            "total": 6,
+            "ce": 0.00003686459461251695
+          },
+          "primitive": {
+            "correct": 8,
+            "total": 8,
+            "ce": 0.00003686459461251695
+          },
+          "composition": {
+            "correct": 28,
+            "total": 28,
+            "ce": 0.00003686459461251695
+          }
+        },
+        "oracle": {
+          "updates": 0,
+          "train": {
+            "correct": 6,
+            "total": 6,
+            "ce": 0.00003686459461251695
+          },
+          "primitive": {
+            "correct": 8,
+            "total": 8,
+            "ce": 0.00003686459461251695
+          },
+          "composition": {
+            "correct": 28,
+            "total": 28,
+            "ce": 0.00003686459461251695
+          }
+        },
+        "backprop": [
+          {
+            "seed": 17,
+            "updates": 250,
+            "train": {
+              "correct": 6,
+              "total": 6,
+              "ce": 0.000005205450758899386
+            },
+            "primitive": {
+              "correct": 0,
+              "total": 8,
+              "ce": 20.669672011176246
+            },
+            "composition": {
+              "correct": 3,
+              "total": 28,
+              "ce": 19.75050766778739
+            }
+          },
+          {
+            "seed": 31,
+            "updates": 250,
+            "train": {
+              "correct": 6,
+              "total": 6,
+              "ce": 0.000017672271352973917
+            },
+            "primitive": {
+              "correct": 0,
+              "total": 8,
+              "ce": 22.235177094377644
+            },
+            "composition": {
+              "correct": 3,
+              "total": 28,
+              "ce": 17.699366554995866
+            }
+          },
+          {
+            "seed": 57,
+            "updates": 250,
+            "train": {
+              "correct": 6,
+              "total": 6,
+              "ce": 0.00001363563881873882
+            },
+            "primitive": {
+              "correct": 0,
+              "total": 8,
+              "ce": 25.78932430655506
+            },
+            "composition": {
+              "correct": 4,
+              "total": 28,
+              "ce": 19.114432652619143
+            }
+          }
+        ],
+        "random": {
+          "updates": 0,
+          "train": {
+            "correct": 0,
+            "total": 6,
+            "ce": 1.9624415356831546
+          },
+          "primitive": {
+            "correct": 1,
+            "total": 8,
+            "ce": 1.9252892308550682
+          },
+          "composition": {
+            "correct": 3,
+            "total": 28,
+            "ce": 1.956382316188632
+          }
+        }
+      }
+    },
+    {
+      "id": 4,
+      "arms": {
+        "teacher": {
+          "updates": 0,
+          "train": {
+            "correct": 6,
+            "total": 6,
+            "ce": 0.00003686459461251695
+          },
+          "primitive": {
+            "correct": 8,
+            "total": 8,
+            "ce": 0.00003686459461251695
+          },
+          "composition": {
+            "correct": 28,
+            "total": 28,
+            "ce": 0.00003686459461251695
+          }
+        },
+        "symbolic": {
+          "updates": 0,
+          "train": {
+            "correct": 6,
+            "total": 6,
+            "ce": 0.00003686459461251695
+          },
+          "primitive": {
+            "correct": 8,
+            "total": 8,
+            "ce": 0.00003686459461251695
+          },
+          "composition": {
+            "correct": 28,
+            "total": 28,
+            "ce": 0.00003686459461251695
+          }
+        },
+        "oracle": {
+          "updates": 0,
+          "train": {
+            "correct": 6,
+            "total": 6,
+            "ce": 0.00003686459461251695
+          },
+          "primitive": {
+            "correct": 8,
+            "total": 8,
+            "ce": 0.00003686459461251695
+          },
+          "composition": {
+            "correct": 28,
+            "total": 28,
+            "ce": 0.00003686459461251695
+          }
+        },
+        "backprop": [
+          {
+            "seed": 17,
+            "updates": 250,
+            "train": {
+              "correct": 6,
+              "total": 6,
+              "ce": 0.000008697271746386749
+            },
+            "primitive": {
+              "correct": 0,
+              "total": 8,
+              "ce": 15.484207241940117
+            },
+            "composition": {
+              "correct": 9,
+              "total": 28,
+              "ce": 8.271422698266628
+            }
+          },
+          {
+            "seed": 31,
+            "updates": 250,
+            "train": {
+              "correct": 6,
+              "total": 6,
+              "ce": 0.000019757001459712865
+            },
+            "primitive": {
+              "correct": 0,
+              "total": 8,
+              "ce": 17.74567718033193
+            },
+            "composition": {
+              "correct": 10,
+              "total": 28,
+              "ce": 9.187756017273125
+            }
+          },
+          {
+            "seed": 57,
+            "updates": 250,
+            "train": {
+              "correct": 6,
+              "total": 6,
+              "ce": 0.000031013432212411
+            },
+            "primitive": {
+              "correct": 0,
+              "total": 8,
+              "ce": 18.945831767204638
+            },
+            "composition": {
+              "correct": 10,
+              "total": 28,
+              "ce": 9.463453592299308
+            }
+          }
+        ],
+        "random": {
+          "updates": 0,
+          "train": {
+            "correct": 1,
+            "total": 6,
+            "ce": 1.9473949303472582
+          },
+          "primitive": {
+            "correct": 2,
+            "total": 8,
+            "ce": 1.9339681561565039
+          },
+          "composition": {
+            "correct": 5,
+            "total": 28,
+            "ce": 1.939468109509661
+          }
+        }
+      }
+    },
+    {
+      "id": 5,
+      "arms": {
+        "teacher": {
+          "updates": 0,
+          "train": {
+            "correct": 6,
+            "total": 6,
+            "ce": 0.00003686459461251695
+          },
+          "primitive": {
+            "correct": 8,
+            "total": 8,
+            "ce": 0.00003686459461251695
+          },
+          "composition": {
+            "correct": 28,
+            "total": 28,
+            "ce": 0.00003686459461251695
+          }
+        },
+        "symbolic": {
+          "updates": 0,
+          "train": {
+            "correct": 6,
+            "total": 6,
+            "ce": 0.00003686459461251695
+          },
+          "primitive": {
+            "correct": 8,
+            "total": 8,
+            "ce": 0.00003686459461251695
+          },
+          "composition": {
+            "correct": 28,
+            "total": 28,
+            "ce": 0.00003686459461251695
+          }
+        },
+        "oracle": {
+          "updates": 0,
+          "train": {
+            "correct": 6,
+            "total": 6,
+            "ce": 0.00003686459461251695
+          },
+          "primitive": {
+            "correct": 8,
+            "total": 8,
+            "ce": 0.00003686459461251695
+          },
+          "composition": {
+            "correct": 28,
+            "total": 28,
+            "ce": 0.00003686459461251695
+          }
+        },
+        "backprop": [
+          {
+            "seed": 17,
+            "updates": 250,
+            "train": {
+              "correct": 6,
+              "total": 6,
+              "ce": 0.000021814728727490875
+            },
+            "primitive": {
+              "correct": 0,
+              "total": 8,
+              "ce": 14.419904888402321
+            },
+            "composition": {
+              "correct": 3,
+              "total": 28,
+              "ce": 11.361863303434225
+            }
+          },
+          {
+            "seed": 31,
+            "updates": 250,
+            "train": {
+              "correct": 6,
+              "total": 6,
+              "ce": 0.000010789046523019745
+            },
+            "primitive": {
+              "correct": 0,
+              "total": 8,
+              "ce": 18.19482351675627
+            },
+            "composition": {
+              "correct": 2,
+              "total": 28,
+              "ce": 15.985277911933398
+            }
+          },
+          {
+            "seed": 57,
+            "updates": 250,
+            "train": {
+              "correct": 6,
+              "total": 6,
+              "ce": 0.000023361172610787885
+            },
+            "primitive": {
+              "correct": 0,
+              "total": 8,
+              "ce": 19.357330464820446
+            },
+            "composition": {
+              "correct": 0,
+              "total": 28,
+              "ce": 14.400673133805963
+            }
+          }
+        ],
+        "random": {
+          "updates": 0,
+          "train": {
+            "correct": 0,
+            "total": 6,
+            "ce": 1.965562325689737
+          },
+          "primitive": {
+            "correct": 1,
+            "total": 8,
+            "ce": 1.9698928657636834
+          },
+          "composition": {
+            "correct": 5,
+            "total": 28,
+            "ce": 1.9673686423202135
+          }
+        }
+      }
+    }
+  ]
+}
