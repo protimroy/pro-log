@@ -1,0 +1,5427 @@
+{
+  "summary": {
+    "8": {
+      "true/enumeration": {
+        "exact": 2,
+        "equivalent": 1,
+        "mean_rmse": 0.8547332873337942
+      },
+      "true/oracle": {
+        "exact": 12,
+        "equivalent": 6,
+        "mean_rmse": 0.5558173073366267
+      },
+      "true/semantic_lookup": {
+        "exact": 12,
+        "equivalent": 6,
+        "mean_rmse": 0.5558173073366267
+      },
+      "true/learned_router": {
+        "exact": 12,
+        "equivalent": 6,
+        "mean_rmse": 0.5558173073366267
+      },
+      "true/llm_frozen": {
+        "exact": 12,
+        "equivalent": 6,
+        "mean_rmse": 0.5558173073366267
+      },
+      "true/llm_rerank": {
+        "exact": 12,
+        "equivalent": 6,
+        "mean_rmse": 0.5558173073366267
+      },
+      "shuffled/enumeration": {
+        "exact": 2,
+        "equivalent": 1,
+        "mean_rmse": 0.8547332873337942
+      },
+      "shuffled/oracle": {
+        "exact": 12,
+        "equivalent": 6,
+        "mean_rmse": 0.5558173073366267
+      },
+      "shuffled/semantic_lookup": {
+        "exact": 3,
+        "equivalent": 2,
+        "mean_rmse": 0.9273012494649575
+      },
+      "shuffled/learned_router": {
+        "exact": 3,
+        "equivalent": 2,
+        "mean_rmse": 0.9273012494649575
+      },
+      "shuffled/llm_frozen": {
+        "exact": 2,
+        "equivalent": 1,
+        "mean_rmse": 1.199002203900097
+      },
+      "shuffled/llm_rerank": {
+        "exact": 2,
+        "equivalent": 1,
+        "mean_rmse": 0.8547332873337942
+      },
+      "labels/enumeration": {
+        "exact": 2,
+        "equivalent": 1,
+        "mean_rmse": 0.8547332873337942
+      },
+      "labels/oracle": {
+        "exact": 12,
+        "equivalent": 6,
+        "mean_rmse": 0.5558173073366267
+      },
+      "labels/tie_policy_frozen": {
+        "exact": 2,
+        "equivalent": 1,
+        "mean_rmse": 0.8547332873337942
+      },
+      "labels/tie_policy_rerank": {
+        "exact": 2,
+        "equivalent": 1,
+        "mean_rmse": 0.8547332873337942
+      }
+    },
+    "32": {
+      "true/enumeration": {
+        "exact": 12,
+        "equivalent": 12,
+        "mean_rmse": 4.802285589737659e-16
+      },
+      "true/oracle": {
+        "exact": 12,
+        "equivalent": 12,
+        "mean_rmse": 4.802285589737659e-16
+      },
+      "true/semantic_lookup": {
+        "exact": 12,
+        "equivalent": 12,
+        "mean_rmse": 4.802285589737659e-16
+      },
+      "true/learned_router": {
+        "exact": 12,
+        "equivalent": 12,
+        "mean_rmse": 4.802285589737659e-16
+      },
+      "true/llm_frozen": {
+        "exact": 12,
+        "equivalent": 12,
+        "mean_rmse": 4.802285589737659e-16
+      },
+      "true/llm_rerank": {
+        "exact": 12,
+        "equivalent": 12,
+        "mean_rmse": 4.802285589737659e-16
+      },
+      "shuffled/enumeration": {
+        "exact": 12,
+        "equivalent": 12,
+        "mean_rmse": 4.802285589737659e-16
+      },
+      "shuffled/oracle": {
+        "exact": 12,
+        "equivalent": 12,
+        "mean_rmse": 4.802285589737659e-16
+      },
+      "shuffled/semantic_lookup": {
+        "exact": 12,
+        "equivalent": 12,
+        "mean_rmse": 4.802285589737659e-16
+      },
+      "shuffled/learned_router": {
+        "exact": 12,
+        "equivalent": 12,
+        "mean_rmse": 4.802285589737659e-16
+      },
+      "shuffled/llm_frozen": {
+        "exact": 2,
+        "equivalent": 2,
+        "mean_rmse": 0.9479029214906852
+      },
+      "shuffled/llm_rerank": {
+        "exact": 12,
+        "equivalent": 12,
+        "mean_rmse": 4.802285589737659e-16
+      },
+      "labels/enumeration": {
+        "exact": 12,
+        "equivalent": 12,
+        "mean_rmse": 4.802285589737659e-16
+      },
+      "labels/oracle": {
+        "exact": 12,
+        "equivalent": 12,
+        "mean_rmse": 4.802285589737659e-16
+      },
+      "labels/tie_policy_frozen": {
+        "exact": 2,
+        "equivalent": 2,
+        "mean_rmse": 0.5785186394606971
+      },
+      "labels/tie_policy_rerank": {
+        "exact": 12,
+        "equivalent": 12,
+        "mean_rmse": 4.802285589737659e-16
+      }
+    }
+  },
+  "tasks": [
+    {
+      "task": 36,
+      "examples": 8,
+      "truth": [
+        0,
+        1,
+        2
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            0,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.4737462686583717,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "true/oracle": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/learned_router": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/llm_frozen": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/llm_rerank": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            0,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.4737462686583717,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "shuffled/oracle": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            0,
+            1,
+            1
+          ],
+          "exact": false,
+          "rmse": 1.9721387607672483,
+          "gain": 1.0,
+          "parity": 5.329070518200751e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            0,
+            1,
+            1
+          ],
+          "exact": false,
+          "rmse": 1.9721387607672483,
+          "gain": 1.0,
+          "parity": 5.329070518200751e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            0,
+            2,
+            1
+          ],
+          "exact": false,
+          "rmse": 2.0746331335279056,
+          "gain": -0.1247356648367448,
+          "parity": 3.885780586188048e-16,
+          "equivalent": false,
+          "tied": 4
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            0,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.4737462686583717,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "labels/enumeration": {
+          "graph": [
+            0,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.4737462686583717,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "labels/oracle": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            0,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.4737462686583717,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            0,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.4737462686583717,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": false,
+          "tied": 4
+        }
+      }
+    },
+    {
+      "task": 36,
+      "examples": 32,
+      "truth": [
+        0,
+        1,
+        2
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/oracle": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/learned_router": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_frozen": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_rerank": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/oracle": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            0,
+            2,
+            1
+          ],
+          "exact": false,
+          "rmse": 1.6904389892638387,
+          "gain": 0.4250615266217294,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": false,
+          "tied": 1
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/enumeration": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/oracle": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            0,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.4115869123846593,
+          "gain": 0.9192254963173496,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": false,
+          "tied": 1
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.364513366372502e-16,
+          "gain": 1.0,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": true,
+          "tied": 1
+        }
+      }
+    },
+    {
+      "task": 37,
+      "examples": 8,
+      "truth": [
+        2,
+        3,
+        0
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.157058713215946,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/oracle": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.157058713215946,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.157058713215946,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/learned_router": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.157058713215946,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/llm_frozen": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.157058713215946,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/llm_rerank": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.157058713215946,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.157058713215946,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/oracle": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.157058713215946,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            2,
+            0,
+            2
+          ],
+          "exact": false,
+          "rmse": 1.157058713215946,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            2,
+            0,
+            2
+          ],
+          "exact": false,
+          "rmse": 1.157058713215946,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            2,
+            0,
+            2
+          ],
+          "exact": false,
+          "rmse": 1.157058713215946,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            2,
+            0,
+            2
+          ],
+          "exact": false,
+          "rmse": 1.157058713215946,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.157058713215946,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/oracle": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.157058713215946,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.157058713215946,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.157058713215946,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        }
+      }
+    },
+    {
+      "task": 37,
+      "examples": 32,
+      "truth": [
+        2,
+        3,
+        0
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.238908251336831e-16,
+          "gain": 0.9999999999999996,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/oracle": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.238908251336831e-16,
+          "gain": 0.9999999999999996,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.238908251336831e-16,
+          "gain": 0.9999999999999996,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/learned_router": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.238908251336831e-16,
+          "gain": 0.9999999999999996,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_frozen": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.238908251336831e-16,
+          "gain": 0.9999999999999996,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_rerank": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.238908251336831e-16,
+          "gain": 0.9999999999999996,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.238908251336831e-16,
+          "gain": 0.9999999999999996,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/oracle": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.238908251336831e-16,
+          "gain": 0.9999999999999996,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.238908251336831e-16,
+          "gain": 0.9999999999999996,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.238908251336831e-16,
+          "gain": 0.9999999999999996,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            2,
+            0,
+            2
+          ],
+          "exact": false,
+          "rmse": 0.3067851826353833,
+          "gain": 1.3666966284954518,
+          "parity": 1.1102230246251565e-15,
+          "equivalent": false,
+          "tied": 1
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.238908251336831e-16,
+          "gain": 0.9999999999999996,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/enumeration": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.238908251336831e-16,
+          "gain": 0.9999999999999996,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/oracle": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.238908251336831e-16,
+          "gain": 0.9999999999999996,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.45289900029919544,
+          "gain": 1.1401375605220079,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": false,
+          "tied": 1
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            2,
+            3,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.238908251336831e-16,
+          "gain": 0.9999999999999996,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        }
+      }
+    },
+    {
+      "task": 38,
+      "examples": 8,
+      "truth": [
+        2,
+        0,
+        0
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.35141550363654,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/oracle": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.35141550363654,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.35141550363654,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/learned_router": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.35141550363654,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/llm_frozen": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.35141550363654,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/llm_rerank": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.35141550363654,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.35141550363654,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/oracle": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.35141550363654,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": false,
+          "rmse": 1.35141550363654,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": false,
+          "rmse": 1.35141550363654,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": false,
+          "rmse": 1.35141550363654,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": false,
+          "rmse": 1.35141550363654,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.35141550363654,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/oracle": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.35141550363654,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.35141550363654,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.35141550363654,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        }
+      }
+    },
+    {
+      "task": 38,
+      "examples": 32,
+      "truth": [
+        2,
+        0,
+        0
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.168291329630294e-16,
+          "gain": 1.0000000000000004,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/oracle": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.168291329630294e-16,
+          "gain": 1.0000000000000004,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.168291329630294e-16,
+          "gain": 1.0000000000000004,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/learned_router": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.168291329630294e-16,
+          "gain": 1.0000000000000004,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_frozen": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.168291329630294e-16,
+          "gain": 1.0000000000000004,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_rerank": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.168291329630294e-16,
+          "gain": 1.0000000000000004,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.168291329630294e-16,
+          "gain": 1.0000000000000004,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/oracle": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.168291329630294e-16,
+          "gain": 1.0000000000000004,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.168291329630294e-16,
+          "gain": 1.0000000000000004,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.168291329630294e-16,
+          "gain": 1.0000000000000004,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": false,
+          "rmse": 0.7762893704426844,
+          "gain": 0.6097530674868316,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": false,
+          "tied": 1
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.168291329630294e-16,
+          "gain": 1.0000000000000004,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.168291329630294e-16,
+          "gain": 1.0000000000000004,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/oracle": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.168291329630294e-16,
+          "gain": 1.0000000000000004,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.168291329630294e-16,
+          "gain": 1.0000000000000004,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 6.168291329630294e-16,
+          "gain": 1.0000000000000004,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        }
+      }
+    },
+    {
+      "task": 39,
+      "examples": 8,
+      "truth": [
+        0,
+        0,
+        3
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            0,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.2680708835546268,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": false,
+          "tied": 4
+        },
+        "true/oracle": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/learned_router": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/llm_frozen": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/llm_rerank": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            0,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.2680708835546268,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": false,
+          "tied": 4
+        },
+        "shuffled/oracle": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            0,
+            0,
+            2
+          ],
+          "exact": false,
+          "rmse": 0.288576403748819,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": false,
+          "tied": 4
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            0,
+            0,
+            2
+          ],
+          "exact": false,
+          "rmse": 0.288576403748819,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": false,
+          "tied": 4
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            0,
+            3,
+            2
+          ],
+          "exact": false,
+          "rmse": 0.4751917702780208,
+          "gain": 0.9112724056827975,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            0,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.2680708835546268,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": false,
+          "tied": 4
+        },
+        "labels/enumeration": {
+          "graph": [
+            0,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.2680708835546268,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": false,
+          "tied": 4
+        },
+        "labels/oracle": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            0,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.2680708835546268,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": false,
+          "tied": 4
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            0,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.2680708835546268,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": false,
+          "tied": 4
+        }
+      }
+    },
+    {
+      "task": 39,
+      "examples": 32,
+      "truth": [
+        0,
+        0,
+        3
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/oracle": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/learned_router": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_frozen": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_rerank": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/oracle": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            0,
+            3,
+            2
+          ],
+          "exact": false,
+          "rmse": 0.38988962595520776,
+          "gain": 1.0032113883667884,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": false,
+          "tied": 1
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/enumeration": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/oracle": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            0,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.3588882774502257,
+          "gain": 1.088258467581758,
+          "parity": 8.881784197001252e-16,
+          "equivalent": false,
+          "tied": 1
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            0,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.937668944848607e-16,
+          "gain": 1.0,
+          "parity": 1.7763568394002505e-15,
+          "equivalent": true,
+          "tied": 1
+        }
+      }
+    },
+    {
+      "task": 40,
+      "examples": 8,
+      "truth": [
+        0,
+        2,
+        3
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            0,
+            2,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.2696829289099016,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": false,
+          "tied": 4
+        },
+        "true/oracle": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/learned_router": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/llm_frozen": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/llm_rerank": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            0,
+            2,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.2696829289099016,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": false,
+          "tied": 4
+        },
+        "shuffled/oracle": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            0,
+            2,
+            2
+          ],
+          "exact": false,
+          "rmse": 0.2902843483075533,
+          "gain": 1.0,
+          "parity": 4.440892098500626e-16,
+          "equivalent": false,
+          "tied": 4
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            0,
+            2,
+            2
+          ],
+          "exact": false,
+          "rmse": 0.2902843483075533,
+          "gain": 1.0,
+          "parity": 4.440892098500626e-16,
+          "equivalent": false,
+          "tied": 4
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": false,
+          "rmse": 1.5115257980717627,
+          "gain": 0.6619088035742454,
+          "parity": 2.6645352591003757e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            0,
+            2,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.2696829289099016,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": false,
+          "tied": 4
+        },
+        "labels/enumeration": {
+          "graph": [
+            0,
+            2,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.2696829289099016,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": false,
+          "tied": 4
+        },
+        "labels/oracle": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            0,
+            2,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.2696829289099016,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": false,
+          "tied": 4
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            0,
+            2,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.2696829289099016,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": false,
+          "tied": 4
+        }
+      }
+    },
+    {
+      "task": 40,
+      "examples": 32,
+      "truth": [
+        0,
+        2,
+        3
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/oracle": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/learned_router": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_frozen": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_rerank": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/oracle": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            0,
+            1,
+            2
+          ],
+          "exact": false,
+          "rmse": 1.809089060861948,
+          "gain": 0.8826973580653918,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": false,
+          "tied": 1
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/enumeration": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/oracle": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            0,
+            2,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.3423608586012626,
+          "gain": 1.07799366519056,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": false,
+          "tied": 1
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            0,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.9767950884163164e-16,
+          "gain": 1.0,
+          "parity": 1.9984014443252818e-15,
+          "equivalent": true,
+          "tied": 1
+        }
+      }
+    },
+    {
+      "task": 41,
+      "examples": 8,
+      "truth": [
+        2,
+        2,
+        1
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.2733285474012546,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/oracle": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.2733285474012546,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.2733285474012546,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/learned_router": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.2733285474012546,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/llm_frozen": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.2733285474012546,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/llm_rerank": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.2733285474012546,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.2733285474012546,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/oracle": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.2733285474012546,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            2,
+            0,
+            1
+          ],
+          "exact": false,
+          "rmse": 1.2733285474012546,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            2,
+            0,
+            1
+          ],
+          "exact": false,
+          "rmse": 1.2733285474012546,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            2,
+            0,
+            1
+          ],
+          "exact": false,
+          "rmse": 1.2733285474012546,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            2,
+            0,
+            1
+          ],
+          "exact": false,
+          "rmse": 1.2733285474012546,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.2733285474012546,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/oracle": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.2733285474012546,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.2733285474012546,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.2733285474012546,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        }
+      }
+    },
+    {
+      "task": 41,
+      "examples": 32,
+      "truth": [
+        2,
+        2,
+        1
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 4.2074828517163463e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/oracle": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 4.2074828517163463e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 4.2074828517163463e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/learned_router": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 4.2074828517163463e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_frozen": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 4.2074828517163463e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_rerank": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 4.2074828517163463e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 4.2074828517163463e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/oracle": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 4.2074828517163463e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 4.2074828517163463e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 4.2074828517163463e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            2,
+            0,
+            1
+          ],
+          "exact": false,
+          "rmse": 0.4751380968452229,
+          "gain": 0.8146834555223591,
+          "parity": 3.552713678800501e-15,
+          "equivalent": false,
+          "tied": 1
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 4.2074828517163463e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/enumeration": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 4.2074828517163463e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/oracle": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 4.2074828517163463e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.3462554438387067,
+          "gain": 0.3501027382625284,
+          "parity": 3.3306690738754696e-16,
+          "equivalent": false,
+          "tied": 1
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            2,
+            2,
+            1
+          ],
+          "exact": true,
+          "rmse": 4.2074828517163463e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        }
+      }
+    },
+    {
+      "task": 42,
+      "examples": 8,
+      "truth": [
+        2,
+        0,
+        3
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.1642668363235165,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/oracle": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 1.1642668363235165,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 1.1642668363235165,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/learned_router": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 1.1642668363235165,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/llm_frozen": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 1.1642668363235165,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/llm_rerank": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 1.1642668363235165,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.1642668363235165,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/oracle": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 1.1642668363235165,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            2,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.1642668363235165,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            2,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.1642668363235165,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            2,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.1642668363235165,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            2,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.1642668363235165,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.1642668363235165,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/oracle": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 1.1642668363235165,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.1642668363235165,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.1642668363235165,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        }
+      }
+    },
+    {
+      "task": 42,
+      "examples": 32,
+      "truth": [
+        2,
+        0,
+        3
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 3.1403090042752167e-16,
+          "gain": 1.0,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/oracle": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 3.1403090042752167e-16,
+          "gain": 1.0,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 3.1403090042752167e-16,
+          "gain": 1.0,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/learned_router": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 3.1403090042752167e-16,
+          "gain": 1.0,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_frozen": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 3.1403090042752167e-16,
+          "gain": 1.0,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_rerank": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 3.1403090042752167e-16,
+          "gain": 1.0,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 3.1403090042752167e-16,
+          "gain": 1.0,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/oracle": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 3.1403090042752167e-16,
+          "gain": 1.0,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 3.1403090042752167e-16,
+          "gain": 1.0,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 3.1403090042752167e-16,
+          "gain": 1.0,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            2,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.9514240642251153,
+          "gain": -0.777661346545109,
+          "parity": 3.552713678800501e-15,
+          "equivalent": false,
+          "tied": 1
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 3.1403090042752167e-16,
+          "gain": 1.0,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/enumeration": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 3.1403090042752167e-16,
+          "gain": 1.0,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/oracle": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 3.1403090042752167e-16,
+          "gain": 1.0,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.5052533066805371,
+          "gain": 1.1775433580744354,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": false,
+          "tied": 1
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            2,
+            0,
+            3
+          ],
+          "exact": true,
+          "rmse": 3.1403090042752167e-16,
+          "gain": 1.0,
+          "parity": 2.220446049250313e-15,
+          "equivalent": true,
+          "tied": 1
+        }
+      }
+    },
+    {
+      "task": 43,
+      "examples": 8,
+      "truth": [
+        1,
+        1,
+        2
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            1,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.46353234684618577,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "true/oracle": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/learned_router": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/llm_frozen": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/llm_rerank": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            1,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.46353234684618577,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "shuffled/oracle": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            1,
+            0,
+            2
+          ],
+          "exact": false,
+          "rmse": 1.9836751301740851,
+          "gain": -0.11496375950029383,
+          "parity": 6.245004513516506e-17,
+          "equivalent": false,
+          "tied": 4
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            1,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.46353234684618577,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "labels/enumeration": {
+          "graph": [
+            1,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.46353234684618577,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "labels/oracle": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            1,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.46353234684618577,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            1,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.46353234684618577,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": false,
+          "tied": 4
+        }
+      }
+    },
+    {
+      "task": 43,
+      "examples": 32,
+      "truth": [
+        1,
+        1,
+        2
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/oracle": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/learned_router": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_frozen": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_rerank": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/oracle": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            1,
+            0,
+            2
+          ],
+          "exact": false,
+          "rmse": 1.9058902371473598,
+          "gain": 0.45695609358223954,
+          "parity": 2.498001805406602e-16,
+          "equivalent": false,
+          "tied": 1
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/enumeration": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/oracle": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            1,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.39228392244316584,
+          "gain": 0.8758029457379356,
+          "parity": 3.552713678800501e-15,
+          "equivalent": false,
+          "tied": 1
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": true,
+          "rmse": 5.396446165726821e-16,
+          "gain": 1.0,
+          "parity": 3.9968028886505635e-15,
+          "equivalent": true,
+          "tied": 1
+        }
+      }
+    },
+    {
+      "task": 44,
+      "examples": 8,
+      "truth": [
+        2,
+        3,
+        3
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.9984210370956127,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/oracle": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 0.9984210370956127,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 0.9984210370956127,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/learned_router": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 0.9984210370956127,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/llm_frozen": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 0.9984210370956127,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/llm_rerank": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 0.9984210370956127,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.9984210370956127,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/oracle": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 0.9984210370956127,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 0.9984210370956127,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 0.9984210370956127,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 0.9984210370956127,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 0.9984210370956127,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.9984210370956127,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/oracle": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 0.9984210370956127,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.9984210370956127,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.9984210370956127,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        }
+      }
+    },
+    {
+      "task": 44,
+      "examples": 32,
+      "truth": [
+        2,
+        3,
+        3
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 4.377662669556666e-16,
+          "gain": 1.0000000000000002,
+          "parity": 2.886579864025407e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/oracle": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 4.377662669556666e-16,
+          "gain": 1.0000000000000002,
+          "parity": 2.886579864025407e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 4.377662669556666e-16,
+          "gain": 1.0000000000000002,
+          "parity": 2.886579864025407e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/learned_router": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 4.377662669556666e-16,
+          "gain": 1.0000000000000002,
+          "parity": 2.886579864025407e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_frozen": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 4.377662669556666e-16,
+          "gain": 1.0000000000000002,
+          "parity": 2.886579864025407e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_rerank": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 4.377662669556666e-16,
+          "gain": 1.0000000000000002,
+          "parity": 2.886579864025407e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 4.377662669556666e-16,
+          "gain": 1.0000000000000002,
+          "parity": 2.886579864025407e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/oracle": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 4.377662669556666e-16,
+          "gain": 1.0000000000000002,
+          "parity": 2.886579864025407e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 4.377662669556666e-16,
+          "gain": 1.0000000000000002,
+          "parity": 2.886579864025407e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 4.377662669556666e-16,
+          "gain": 1.0000000000000002,
+          "parity": 2.886579864025407e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 4.377662669556666e-16,
+          "gain": 1.0000000000000002,
+          "parity": 2.886579864025407e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 4.377662669556666e-16,
+          "gain": 1.0000000000000002,
+          "parity": 2.886579864025407e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/enumeration": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 4.377662669556666e-16,
+          "gain": 1.0000000000000002,
+          "parity": 2.886579864025407e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/oracle": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 4.377662669556666e-16,
+          "gain": 1.0000000000000002,
+          "parity": 2.886579864025407e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.796817726783945,
+          "gain": 1.2816005405826496,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": false,
+          "tied": 1
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            2,
+            3,
+            3
+          ],
+          "exact": true,
+          "rmse": 4.377662669556666e-16,
+          "gain": 1.0000000000000002,
+          "parity": 2.886579864025407e-15,
+          "equivalent": true,
+          "tied": 1
+        }
+      }
+    },
+    {
+      "task": 45,
+      "examples": 8,
+      "truth": [
+        1,
+        0,
+        0
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.4421635332024144e-16,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/oracle": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.4421635332024144e-16,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.4421635332024144e-16,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/learned_router": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.4421635332024144e-16,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/llm_frozen": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.4421635332024144e-16,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/llm_rerank": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.4421635332024144e-16,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 4
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.4421635332024144e-16,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 4
+        },
+        "shuffled/oracle": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.4421635332024144e-16,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 4
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.4421635332024144e-16,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 4
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.4421635332024144e-16,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 4
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.4421635332024144e-16,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 4
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.4421635332024144e-16,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 4
+        },
+        "labels/enumeration": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.4421635332024144e-16,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 4
+        },
+        "labels/oracle": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.4421635332024144e-16,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 4
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.4421635332024144e-16,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 4
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 1.4421635332024144e-16,
+          "gain": 1.0,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 4
+        }
+      }
+    },
+    {
+      "task": 45,
+      "examples": 32,
+      "truth": [
+        1,
+        0,
+        0
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 3.917907422216514e-16,
+          "gain": 1.0000000000000002,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/oracle": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 3.917907422216514e-16,
+          "gain": 1.0000000000000002,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 3.917907422216514e-16,
+          "gain": 1.0000000000000002,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/learned_router": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 3.917907422216514e-16,
+          "gain": 1.0000000000000002,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_frozen": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 3.917907422216514e-16,
+          "gain": 1.0000000000000002,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_rerank": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 3.917907422216514e-16,
+          "gain": 1.0000000000000002,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 3.917907422216514e-16,
+          "gain": 1.0000000000000002,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/oracle": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 3.917907422216514e-16,
+          "gain": 1.0000000000000002,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 3.917907422216514e-16,
+          "gain": 1.0000000000000002,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 3.917907422216514e-16,
+          "gain": 1.0000000000000002,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 3.917907422216514e-16,
+          "gain": 1.0000000000000002,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 3.917907422216514e-16,
+          "gain": 1.0000000000000002,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/enumeration": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 3.917907422216514e-16,
+          "gain": 1.0000000000000002,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/oracle": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 3.917907422216514e-16,
+          "gain": 1.0000000000000002,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 3.917907422216514e-16,
+          "gain": 1.0000000000000002,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            1,
+            0,
+            0
+          ],
+          "exact": true,
+          "rmse": 3.917907422216514e-16,
+          "gain": 1.0000000000000002,
+          "parity": 8.881784197001252e-16,
+          "equivalent": true,
+          "tied": 1
+        }
+      }
+    },
+    {
+      "task": 46,
+      "examples": 8,
+      "truth": [
+        1,
+        1,
+        1
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            1,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 2.111959331996925,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "true/oracle": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 7.146886881845103e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 7.146886881845103e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/learned_router": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 7.146886881845103e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/llm_frozen": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 7.146886881845103e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "true/llm_rerank": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 7.146886881845103e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            1,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 2.111959331996925,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "shuffled/oracle": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 7.146886881845103e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": false,
+          "rmse": 1.90680779271635,
+          "gain": 1.0,
+          "parity": 3.552713678800501e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            1,
+            1,
+            2
+          ],
+          "exact": false,
+          "rmse": 1.90680779271635,
+          "gain": 1.0,
+          "parity": 3.552713678800501e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            1,
+            2,
+            2
+          ],
+          "exact": false,
+          "rmse": 1.6731929267098697,
+          "gain": 0.21268781143416046,
+          "parity": 1.1796119636642288e-16,
+          "equivalent": false,
+          "tied": 4
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            1,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 2.111959331996925,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "labels/enumeration": {
+          "graph": [
+            1,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 2.111959331996925,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "labels/oracle": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 7.146886881845103e-16,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 4
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            1,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 2.111959331996925,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": false,
+          "tied": 4
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            1,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 2.111959331996925,
+          "gain": 1.0,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": false,
+          "tied": 4
+        }
+      }
+    },
+    {
+      "task": 46,
+      "examples": 32,
+      "truth": [
+        1,
+        1,
+        1
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.0213812159997864e-15,
+          "gain": 1.0000000000000004,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/oracle": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.0213812159997864e-15,
+          "gain": 1.0000000000000004,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.0213812159997864e-15,
+          "gain": 1.0000000000000004,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/learned_router": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.0213812159997864e-15,
+          "gain": 1.0000000000000004,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_frozen": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.0213812159997864e-15,
+          "gain": 1.0000000000000004,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_rerank": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.0213812159997864e-15,
+          "gain": 1.0000000000000004,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.0213812159997864e-15,
+          "gain": 1.0000000000000004,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/oracle": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.0213812159997864e-15,
+          "gain": 1.0000000000000004,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.0213812159997864e-15,
+          "gain": 1.0000000000000004,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.0213812159997864e-15,
+          "gain": 1.0000000000000004,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            1,
+            2,
+            2
+          ],
+          "exact": false,
+          "rmse": 1.6582143094843098,
+          "gain": -0.12841868232631307,
+          "parity": 8.326672684688674e-17,
+          "equivalent": false,
+          "tied": 1
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.0213812159997864e-15,
+          "gain": 1.0000000000000004,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/enumeration": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.0213812159997864e-15,
+          "gain": 1.0000000000000004,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/oracle": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.0213812159997864e-15,
+          "gain": 1.0000000000000004,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            1,
+            1,
+            0
+          ],
+          "exact": false,
+          "rmse": 1.536344903949069,
+          "gain": 0.21886946323574133,
+          "parity": 7.216449660063518e-16,
+          "equivalent": false,
+          "tied": 1
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            1,
+            1,
+            1
+          ],
+          "exact": true,
+          "rmse": 1.0213812159997864e-15,
+          "gain": 1.0000000000000004,
+          "parity": 3.1086244689504383e-15,
+          "equivalent": true,
+          "tied": 1
+        }
+      }
+    },
+    {
+      "task": 47,
+      "examples": 8,
+      "truth": [
+        2,
+        2,
+        3
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.7253170503666487,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/oracle": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 0.7253170503666487,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 0.7253170503666487,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/learned_router": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 0.7253170503666487,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/llm_frozen": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 0.7253170503666487,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "true/llm_rerank": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 0.7253170503666487,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.7253170503666487,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/oracle": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 0.7253170503666487,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            2,
+            0,
+            2
+          ],
+          "exact": false,
+          "rmse": 0.7253170503666487,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            2,
+            0,
+            2
+          ],
+          "exact": false,
+          "rmse": 0.7253170503666487,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            2,
+            0,
+            2
+          ],
+          "exact": false,
+          "rmse": 0.7253170503666487,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            2,
+            0,
+            2
+          ],
+          "exact": false,
+          "rmse": 0.7253170503666487,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/enumeration": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.7253170503666487,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/oracle": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 0.7253170503666487,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.7253170503666487,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.7253170503666487,
+          "gain": 0.0,
+          "parity": 0.0,
+          "equivalent": false,
+          "tied": 16
+        }
+      }
+    },
+    {
+      "task": 47,
+      "examples": 32,
+      "truth": [
+        2,
+        2,
+        3
+      ],
+      "arms": {
+        "true/enumeration": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.687629822757928e-16,
+          "gain": 1.0000000000000002,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/oracle": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.687629822757928e-16,
+          "gain": 1.0000000000000002,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/semantic_lookup": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.687629822757928e-16,
+          "gain": 1.0000000000000002,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/learned_router": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.687629822757928e-16,
+          "gain": 1.0000000000000002,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_frozen": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.687629822757928e-16,
+          "gain": 1.0000000000000002,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "true/llm_rerank": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.687629822757928e-16,
+          "gain": 1.0000000000000002,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/enumeration": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.687629822757928e-16,
+          "gain": 1.0000000000000002,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/oracle": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.687629822757928e-16,
+          "gain": 1.0000000000000002,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/semantic_lookup": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.687629822757928e-16,
+          "gain": 1.0000000000000002,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/learned_router": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.687629822757928e-16,
+          "gain": 1.0000000000000002,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "shuffled/llm_frozen": {
+          "graph": [
+            2,
+            0,
+            2
+          ],
+          "exact": false,
+          "rmse": 0.41167612102715284,
+          "gain": 1.3127706893608813,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": false,
+          "tied": 1
+        },
+        "shuffled/llm_rerank": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.687629822757928e-16,
+          "gain": 1.0000000000000002,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/enumeration": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.687629822757928e-16,
+          "gain": 1.0000000000000002,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/oracle": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.687629822757928e-16,
+          "gain": 1.0000000000000002,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": true,
+          "tied": 1
+        },
+        "labels/tie_policy_frozen": {
+          "graph": [
+            2,
+            0,
+            0
+          ],
+          "exact": false,
+          "rmse": 0.7995333210975978,
+          "gain": 1.0953805448485645,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": false,
+          "tied": 1
+        },
+        "labels/tie_policy_rerank": {
+          "graph": [
+            2,
+            2,
+            3
+          ],
+          "exact": true,
+          "rmse": 2.687629822757928e-16,
+          "gain": 1.0000000000000002,
+          "parity": 1.3322676295501878e-15,
+          "equivalent": true,
+          "tied": 1
+        }
+      }
+    }
+  ],
+  "torch": "2.15.0+cpu"
+}

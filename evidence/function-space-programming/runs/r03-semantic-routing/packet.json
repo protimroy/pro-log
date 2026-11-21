@@ -1,0 +1,746 @@
+[
+  {
+    "id": 36,
+    "target_operation": "add",
+    "hints": [
+      "respond equally to either sign and grow faster at larger magnitude",
+      "keep the sign and level off at large magnitude"
+    ],
+    "library": {
+      "K": "linear signed response",
+      "H": "quadratic and sign-invariant",
+      "Q": "bounded signed saturation",
+      "M": "signed square-root compression"
+    },
+    "shuffled_library": {
+      "K": "signed square-root compression",
+      "H": "bounded signed saturation",
+      "Q": "quadratic and sign-invariant",
+      "M": "linear signed response"
+    },
+    "observations": [
+      [
+        0.5790909964326179,
+        0.0,
+        0.33558958962524765
+      ],
+      [
+        0.3031127046446891,
+        0.0,
+        0.09208254338278477
+      ],
+      [
+        0.6870405683474476,
+        0.0,
+        0.4720388887169271
+      ],
+      [
+        -0.9459541425488738,
+        0.0,
+        0.8950219592337834
+      ],
+      [
+        -0.5308294869083039,
+        0.0,
+        0.2817929083741151
+      ],
+      [
+        0.4783942951866582,
+        0.0,
+        0.22906947346208517
+      ],
+      [
+        -0.12843888033794149,
+        0.0,
+        0.016592185095036183
+      ],
+      [
+        0.06484568084852382,
+        0.0,
+        0.004272762632588162
+      ]
+    ]
+  },
+  {
+    "id": 37,
+    "target_operation": "multiply",
+    "hints": [
+      "keep the sign and compress magnitudes with a half-power law",
+      "preserve the sign and grow at a constant rate"
+    ],
+    "library": {
+      "K": "linear signed response",
+      "H": "quadratic and sign-invariant",
+      "Q": "bounded signed saturation",
+      "M": "signed square-root compression"
+    },
+    "shuffled_library": {
+      "K": "signed square-root compression",
+      "H": "bounded signed saturation",
+      "Q": "linear signed response",
+      "M": "quadratic and sign-invariant"
+    },
+    "observations": [
+      [
+        0.5882474932180544,
+        0.0,
+        0.0
+      ],
+      [
+        0.9349360020579134,
+        0.0,
+        0.0
+      ],
+      [
+        0.9256309522986561,
+        0.0,
+        0.0
+      ],
+      [
+        0.4195000993842217,
+        0.0,
+        0.0
+      ],
+      [
+        0.8802562369976927,
+        0.0,
+        0.0
+      ],
+      [
+        0.08614193904403811,
+        0.0,
+        0.0
+      ],
+      [
+        -0.34931406522273867,
+        0.0,
+        -0.0
+      ],
+      [
+        0.22503272789258633,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "id": 38,
+    "target_operation": "multiply",
+    "hints": [
+      "preserve the sign and grow at a constant rate",
+      "preserve the sign and grow at a constant rate"
+    ],
+    "library": {
+      "K": "linear signed response",
+      "H": "quadratic and sign-invariant",
+      "Q": "bounded signed saturation",
+      "M": "signed square-root compression"
+    },
+    "shuffled_library": {
+      "K": "signed square-root compression",
+      "H": "bounded signed saturation",
+      "Q": "quadratic and sign-invariant",
+      "M": "linear signed response"
+    },
+    "observations": [
+      [
+        -0.7892714964862022,
+        0.0,
+        -0.0
+      ],
+      [
+        -0.8019746568325337,
+        0.0,
+        -0.0
+      ],
+      [
+        -0.6584771105539817,
+        0.0,
+        -0.0
+      ],
+      [
+        0.0194210331506246,
+        0.0,
+        0.0
+      ],
+      [
+        0.09387350183256116,
+        0.0,
+        0.0
+      ],
+      [
+        0.2376363866924054,
+        0.0,
+        0.0
+      ],
+      [
+        -0.7894046921749629,
+        0.0,
+        -0.0
+      ],
+      [
+        0.5154165856011836,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "id": 39,
+    "target_operation": "add",
+    "hints": [
+      "preserve the sign and grow at a constant rate",
+      "keep the sign and compress magnitudes with a half-power law"
+    ],
+    "library": {
+      "K": "linear signed response",
+      "H": "quadratic and sign-invariant",
+      "Q": "bounded signed saturation",
+      "M": "signed square-root compression"
+    },
+    "shuffled_library": {
+      "K": "quadratic and sign-invariant",
+      "H": "bounded signed saturation",
+      "Q": "signed square-root compression",
+      "M": "linear signed response"
+    },
+    "observations": [
+      [
+        0.8581226152997259,
+        0.0,
+        0.8581226152997163
+      ],
+      [
+        0.8325878842289105,
+        0.0,
+        0.8325878842289046
+      ],
+      [
+        -0.9615719344206315,
+        0.0,
+        -0.9615719344206345
+      ],
+      [
+        0.8188667954318543,
+        0.0,
+        0.8188667954318498
+      ],
+      [
+        -0.7873266695970547,
+        0.0,
+        -0.787326669597038
+      ],
+      [
+        -0.8528864436003816,
+        0.0,
+        -0.8528864436003812
+      ],
+      [
+        0.19193057567789173,
+        0.0,
+        0.19193057567789476
+      ],
+      [
+        0.8799786670649188,
+        0.0,
+        0.8799786670649069
+      ]
+    ]
+  },
+  {
+    "id": 40,
+    "target_operation": "add",
+    "hints": [
+      "keep the sign and level off at large magnitude",
+      "keep the sign and compress magnitudes with a half-power law"
+    ],
+    "library": {
+      "K": "linear signed response",
+      "H": "quadratic and sign-invariant",
+      "Q": "bounded signed saturation",
+      "M": "signed square-root compression"
+    },
+    "shuffled_library": {
+      "K": "quadratic and sign-invariant",
+      "H": "bounded signed saturation",
+      "Q": "signed square-root compression",
+      "M": "linear signed response"
+    },
+    "observations": [
+      [
+        -0.05289376554037828,
+        0.0,
+        -0.05283436368886574
+      ],
+      [
+        0.97343533120575,
+        0.0,
+        0.7501694904404198
+      ],
+      [
+        0.45823362616493446,
+        0.0,
+        0.42856746878133667
+      ],
+      [
+        -0.5838861500959922,
+        0.0,
+        -0.5254040953209128
+      ],
+      [
+        0.9104625958370949,
+        0.0,
+        0.7213150399417829
+      ],
+      [
+        -0.3432578282482801,
+        0.0,
+        -0.33037837729667496
+      ],
+      [
+        -0.23987807500935276,
+        0.0,
+        -0.235333661730033
+      ],
+      [
+        0.005886562167924492,
+        0.0,
+        0.005884646717521496
+      ]
+    ]
+  },
+  {
+    "id": 41,
+    "target_operation": "multiply",
+    "hints": [
+      "keep the sign and level off at large magnitude",
+      "respond equally to either sign and grow faster at larger magnitude"
+    ],
+    "library": {
+      "K": "linear signed response",
+      "H": "quadratic and sign-invariant",
+      "Q": "bounded signed saturation",
+      "M": "signed square-root compression"
+    },
+    "shuffled_library": {
+      "K": "bounded signed saturation",
+      "H": "quadratic and sign-invariant",
+      "Q": "signed square-root compression",
+      "M": "linear signed response"
+    },
+    "observations": [
+      [
+        -0.7271263247043591,
+        0.0,
+        -0.0
+      ],
+      [
+        0.16861106601173592,
+        0.0,
+        0.0
+      ],
+      [
+        -0.5916353606699916,
+        0.0,
+        -0.0
+      ],
+      [
+        0.9559089531190985,
+        0.0,
+        0.0
+      ],
+      [
+        -0.636980950714195,
+        0.0,
+        -0.0
+      ],
+      [
+        -0.8064324338470128,
+        0.0,
+        -0.0
+      ],
+      [
+        0.890763851282391,
+        0.0,
+        0.0
+      ],
+      [
+        0.317145412185162,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "id": 42,
+    "target_operation": "multiply",
+    "hints": [
+      "preserve the sign and grow at a constant rate",
+      "keep the sign and compress magnitudes with a half-power law"
+    ],
+    "library": {
+      "K": "linear signed response",
+      "H": "quadratic and sign-invariant",
+      "Q": "bounded signed saturation",
+      "M": "signed square-root compression"
+    },
+    "shuffled_library": {
+      "K": "signed square-root compression",
+      "H": "linear signed response",
+      "Q": "bounded signed saturation",
+      "M": "quadratic and sign-invariant"
+    },
+    "observations": [
+      [
+        -0.505395807363096,
+        0.0,
+        -0.0
+      ],
+      [
+        0.40022172908874953,
+        0.0,
+        0.0
+      ],
+      [
+        -0.8975905382941658,
+        0.0,
+        -0.0
+      ],
+      [
+        0.7100465328589869,
+        0.0,
+        0.0
+      ],
+      [
+        0.7728915179702898,
+        0.0,
+        0.0
+      ],
+      [
+        -0.37289497207897404,
+        0.0,
+        -0.0
+      ],
+      [
+        -0.857723242034562,
+        0.0,
+        -0.0
+      ],
+      [
+        0.27413542424798676,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "id": 43,
+    "target_operation": "subtract",
+    "hints": [
+      "respond equally to either sign and grow faster at larger magnitude",
+      "keep the sign and level off at large magnitude"
+    ],
+    "library": {
+      "K": "linear signed response",
+      "H": "quadratic and sign-invariant",
+      "Q": "bounded signed saturation",
+      "M": "signed square-root compression"
+    },
+    "shuffled_library": {
+      "K": "quadratic and sign-invariant",
+      "H": "signed square-root compression",
+      "Q": "bounded signed saturation",
+      "M": "linear signed response"
+    },
+    "observations": [
+      [
+        -0.012928235291676415,
+        0.0,
+        0.00040400735287949435
+      ],
+      [
+        0.07425160828776933,
+        0.0,
+        0.005742438794983873
+      ],
+      [
+        0.3122964295296058,
+        0.0,
+        0.0975353800331964
+      ],
+      [
+        -0.8444051524049863,
+        0.0,
+        0.7130401056960727
+      ],
+      [
+        0.10094110743553109,
+        0.0,
+        0.010362117251571795
+      ],
+      [
+        0.725631800334406,
+        0.0,
+        0.5267092067412396
+      ],
+      [
+        0.18441560427854053,
+        0.0,
+        0.0340959889707389
+      ],
+      [
+        0.24754574049124045,
+        0.0,
+        0.06134956585529194
+      ]
+    ]
+  },
+  {
+    "id": 44,
+    "target_operation": "multiply",
+    "hints": [
+      "keep the sign and compress magnitudes with a half-power law",
+      "keep the sign and compress magnitudes with a half-power law"
+    ],
+    "library": {
+      "K": "linear signed response",
+      "H": "quadratic and sign-invariant",
+      "Q": "bounded signed saturation",
+      "M": "signed square-root compression"
+    },
+    "shuffled_library": {
+      "K": "linear signed response",
+      "H": "quadratic and sign-invariant",
+      "Q": "bounded signed saturation",
+      "M": "signed square-root compression"
+    },
+    "observations": [
+      [
+        -0.2817403900146074,
+        0.0,
+        -0.0
+      ],
+      [
+        -0.9631015161252083,
+        0.0,
+        -0.0
+      ],
+      [
+        -0.801797786779261,
+        0.0,
+        -0.0
+      ],
+      [
+        0.5621335719535046,
+        0.0,
+        0.0
+      ],
+      [
+        -0.7737802333628194,
+        0.0,
+        -0.0
+      ],
+      [
+        0.24934841881577463,
+        0.0,
+        0.0
+      ],
+      [
+        0.506435640767118,
+        0.0,
+        0.0
+      ],
+      [
+        0.8194155349739118,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "id": 45,
+    "target_operation": "subtract",
+    "hints": [
+      "preserve the sign and grow at a constant rate",
+      "preserve the sign and grow at a constant rate"
+    ],
+    "library": {
+      "K": "linear signed response",
+      "H": "quadratic and sign-invariant",
+      "Q": "bounded signed saturation",
+      "M": "signed square-root compression"
+    },
+    "shuffled_library": {
+      "K": "linear signed response",
+      "H": "bounded signed saturation",
+      "Q": "quadratic and sign-invariant",
+      "M": "signed square-root compression"
+    },
+    "observations": [
+      [
+        0.714104964988808,
+        0.0,
+        0.7141049649887916
+      ],
+      [
+        -0.29341597579147427,
+        0.0,
+        -0.2934159757914729
+      ],
+      [
+        -0.7164955760167537,
+        0.0,
+        -0.7164955760167578
+      ],
+      [
+        -0.9689044783042906,
+        0.0,
+        -0.9689044783042949
+      ],
+      [
+        0.9010328019545606,
+        0.0,
+        0.9010328019545496
+      ],
+      [
+        0.8436797642113019,
+        0.0,
+        0.843679764211295
+      ],
+      [
+        -0.7895835445805528,
+        0.0,
+        -0.7895835445805364
+      ],
+      [
+        0.8079008255399502,
+        0.0,
+        0.8079008255399454
+      ]
+    ]
+  },
+  {
+    "id": 46,
+    "target_operation": "subtract",
+    "hints": [
+      "respond equally to either sign and grow faster at larger magnitude",
+      "respond equally to either sign and grow faster at larger magnitude"
+    ],
+    "library": {
+      "K": "linear signed response",
+      "H": "quadratic and sign-invariant",
+      "Q": "bounded signed saturation",
+      "M": "signed square-root compression"
+    },
+    "shuffled_library": {
+      "K": "linear signed response",
+      "H": "bounded signed saturation",
+      "Q": "quadratic and sign-invariant",
+      "M": "signed square-root compression"
+    },
+    "observations": [
+      [
+        0.9995909903436171,
+        0.0,
+        0.9991947622390471
+      ],
+      [
+        -0.2155103979190529,
+        0.0,
+        0.046535474154588974
+      ],
+      [
+        0.13826927409560863,
+        0.0,
+        0.019356983339428036
+      ],
+      [
+        0.28350510662564465,
+        0.0,
+        0.08044053205899515
+      ],
+      [
+        -0.3007612120879397,
+        0.0,
+        0.09068634467721748
+      ],
+      [
+        -0.6050603525912159,
+        0.0,
+        0.366323554720535
+      ],
+      [
+        -0.5797650520881386,
+        0.0,
+        0.33636896647690107
+      ],
+      [
+        -0.3868824195407501,
+        0.0,
+        0.14990814026618338
+      ]
+    ]
+  },
+  {
+    "id": 47,
+    "target_operation": "multiply",
+    "hints": [
+      "keep the sign and level off at large magnitude",
+      "keep the sign and compress magnitudes with a half-power law"
+    ],
+    "library": {
+      "K": "linear signed response",
+      "H": "quadratic and sign-invariant",
+      "Q": "bounded signed saturation",
+      "M": "signed square-root compression"
+    },
+    "shuffled_library": {
+      "K": "bounded signed saturation",
+      "H": "linear signed response",
+      "Q": "signed square-root compression",
+      "M": "quadratic and sign-invariant"
+    },
+    "observations": [
+      [
+        -0.01954264271217876,
+        0.0,
+        -0.0
+      ],
+      [
+        0.3342246203991972,
+        0.0,
+        0.0
+      ],
+      [
+        -0.2682087331186498,
+        0.0,
+        -0.0
+      ],
+      [
+        -0.05961883366565068,
+        0.0,
+        -0.0
+      ],
+      [
+        0.5656263989820869,
+        0.0,
+        0.0
+      ],
+      [
+        -0.6401656249918504,
+        0.0,
+        -0.0
+      ],
+      [
+        0.6940315907610168,
+        0.0,
+        0.0
+      ],
+      [
+        0.2945089329733439,
+        0.0,
+        0.0
+      ]
+    ]
+  }
+]

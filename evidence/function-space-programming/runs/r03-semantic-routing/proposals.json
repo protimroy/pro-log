@@ -1,0 +1,18 @@
+{
+  "proposer": "Codex in ChatGPT Work Mode (GPT-6.2-sol), one batch",
+  "instructions": "Given each card's operation and its two slot hints, choose one opaque module code per slot using the presented catalogue. For the shuffled condition use the permuted catalogue. For the labels-only condition use the eight observations and the operation, omit both text hints and the catalogue meanings, and choose the first code in catalogue order for unidentified slots. The labels-only submissions below are a deterministic tie policy rather than a blinded LLM measurement.",
+  "proposals": {
+    "36":{"true":["add","H","Q"],"shuffled":["add","Q","H"],"labels":["add","H","K"]},
+    "37":{"true":["multiply","M","K"],"shuffled":["multiply","K","Q"],"labels":["multiply","K","K"]},
+    "38":{"true":["multiply","K","K"],"shuffled":["multiply","M","M"],"labels":["multiply","K","K"]},
+    "39":{"true":["add","K","M"],"shuffled":["add","M","Q"],"labels":["add","K","K"]},
+    "40":{"true":["add","Q","M"],"shuffled":["add","H","Q"],"labels":["add","Q","K"]},
+    "41":{"true":["multiply","Q","H"],"shuffled":["multiply","K","H"],"labels":["multiply","K","K"]},
+    "42":{"true":["multiply","K","M"],"shuffled":["multiply","H","K"],"labels":["multiply","K","K"]},
+    "43":{"true":["subtract","H","Q"],"shuffled":["subtract","K","Q"],"labels":["subtract","H","K"]},
+    "44":{"true":["multiply","M","M"],"shuffled":["multiply","M","M"],"labels":["multiply","K","K"]},
+    "45":{"true":["subtract","K","K"],"shuffled":["subtract","K","K"],"labels":["subtract","K","K"]},
+    "46":{"true":["subtract","H","H"],"shuffled":["subtract","Q","Q"],"labels":["subtract","H","K"]},
+    "47":{"true":["multiply","Q","M"],"shuffled":["multiply","K","Q"],"labels":["multiply","K","K"]}
+  }
+}
