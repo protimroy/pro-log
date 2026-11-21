@@ -144,6 +144,26 @@ The proposed rule improved on Witten–Bell and trailed two of the three AdamW s
 
 Chen and Goodman's empirical smoothing study motivated the n-gram controls. Tracr motivated checking compiled execution against a direct implementation. [Smoothing study](https://aclanthology.org/P96-1041/) · [Tracr](https://arxiv.org/abs/2301.05062)
 
+###### R10 · Longer context at the same parameter budget
+
+We kept the Transformer within R09’s 220,510-parameter budget and gave it eight characters of context. The assistant proposed a short-context Kneser–Ney base, corrections for frequently observed three-character suffixes, and independent logit corrections for symbols at lags three through eight. Each lag correction is reused across histories. The installed decoder has 220,483 parameters and uses zero optimizer steps.
+
+<div role="region" aria-label="R10 held-out character prediction" tabindex="0" style="max-width:100%;overflow-x:auto">
+<table class="table is-striped is-fullwidth">
+<caption>R10 test loss on 111,532 matched next-character predictions</caption>
+<thead><tr><th scope="col">Predictor</th><th scope="col">Bits per normalized character</th></tr></thead>
+<tbody>
+<tr><th scope="row">Two-character Kneser–Ney base</th><td>3.192652</td></tr>
+<tr><th scope="row">Base plus three-character suffix corrections</th><td>3.080894</td></tr>
+<tr><th scope="row">Combined suffix and lag program, compiled</th><td>3.077781</td></tr>
+<tr><th scope="row">Same decoder, AdamW mean across three starts</th><td>3.027555</td></tr>
+<tr><th scope="row">Kneser–Ney with six-character history</th><td>2.804546</td></tr>
+</tbody>
+</table>
+</div>
+
+The distant-character terms added 0.003113 BPC of improvement beyond the three-character suffix corrections. Compiled predictions matched direct execution within 2.38e-7 absolute probability error over all test positions. The Kneser–Ney control chose six characters on validation and stored 172,824 conditional entries without a memory cap. The larger gap motivates testing how much loss we can recover with a budgeted suffix hierarchy. The experiment used one corpus and one in-session program proposal. [R10 protocol, results and replay](https://github.com/protimroy/pro-log/tree/813299b9aa3be67f415f34c18297dd7647f0d8ba/evidence/function-space-programming/runs/r10) · [Goodman’s study of skipping and higher-order language models](https://www.microsoft.com/en-us/research/publication/a-bit-of-progress-in-language-modeling-extended-version/)
+
 ###### Code, evidence and reproduction
 
 The public snapshot contains the XOR and MNIST scripts, dependency lock, baseline metrics, R01 proposal batch, evaluator, and per-task results. The replay command evaluates the stored proposals. The R02 release records the executed comparison, including the labeled samples, frozen proposal batch, seed and checkpoint parameters. The original protocol documents the proposed setup and the R02 run notes record deviations. [Reproduction guide, literature review and protocol](https://github.com/protimroy/pro-log/tree/500c12999a40d4486df578d41d5671925c9fbbda/evidence/function-space-programming) · [R01 proposals and raw results](https://github.com/protimroy/pro-log/tree/500c12999a40d4486df578d41d5671925c9fbbda/evidence/function-space-programming/runs/r01-xor-pilot)
