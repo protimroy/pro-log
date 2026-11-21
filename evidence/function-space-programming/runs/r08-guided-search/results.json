@@ -1,0 +1,1243 @@
+{
+  "tasks": [
+    {
+      "id": 0,
+      "nominated": "parity",
+      "arms": {
+        "exhaustive": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              6,
+              2,
+              6,
+              0,
+              2
+            ]
+          },
+          "candidatesTested": 15591,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "fixedOrder": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              6,
+              2,
+              6,
+              0,
+              2
+            ]
+          },
+          "familyFits": 2,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "teacher": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              6,
+              2,
+              6,
+              0,
+              2
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "symbolicSignature": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              6,
+              2,
+              6,
+              0,
+              2
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "oracle": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              6,
+              2,
+              6,
+              0,
+              2
+            ]
+          },
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        }
+      }
+    },
+    {
+      "id": 1,
+      "nominated": "step",
+      "arms": {
+        "exhaustive": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              6,
+              4,
+              1,
+              6,
+              6
+            ]
+          },
+          "candidatesTested": 30415,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "fixedOrder": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              6,
+              4,
+              1,
+              6,
+              6
+            ]
+          },
+          "familyFits": 3,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "teacher": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              6,
+              4,
+              1,
+              6,
+              6
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "symbolicSignature": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              6,
+              4,
+              1,
+              6,
+              6
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "oracle": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              6,
+              4,
+              1,
+              6,
+              6
+            ]
+          },
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        }
+      }
+    },
+    {
+      "id": 2,
+      "nominated": "step",
+      "arms": {
+        "exhaustive": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              3,
+              1,
+              2,
+              5,
+              3
+            ]
+          },
+          "candidatesTested": 23392,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "fixedOrder": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              3,
+              1,
+              2,
+              5,
+              3
+            ]
+          },
+          "familyFits": 3,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "teacher": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              3,
+              1,
+              2,
+              5,
+              3
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "symbolicSignature": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              3,
+              1,
+              2,
+              5,
+              3
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "oracle": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              3,
+              1,
+              2,
+              5,
+              3
+            ]
+          },
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        }
+      }
+    },
+    {
+      "id": 3,
+      "nominated": "step",
+      "arms": {
+        "exhaustive": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              1,
+              0,
+              3,
+              2,
+              6
+            ]
+          },
+          "candidatesTested": 19009,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "fixedOrder": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              1,
+              0,
+              3,
+              2,
+              6
+            ]
+          },
+          "familyFits": 3,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "teacher": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              1,
+              0,
+              3,
+              2,
+              6
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "symbolicSignature": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              1,
+              0,
+              3,
+              2,
+              6
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "oracle": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              1,
+              0,
+              3,
+              2,
+              6
+            ]
+          },
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        }
+      }
+    },
+    {
+      "id": 4,
+      "nominated": "parity",
+      "arms": {
+        "exhaustive": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              0,
+              0,
+              5,
+              6,
+              3
+            ]
+          },
+          "candidatesTested": 2650,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "fixedOrder": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              0,
+              0,
+              5,
+              6,
+              3
+            ]
+          },
+          "familyFits": 2,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "teacher": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              0,
+              0,
+              5,
+              6,
+              3
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "symbolicSignature": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              0,
+              0,
+              5,
+              6,
+              3
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "oracle": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              0,
+              0,
+              5,
+              6,
+              3
+            ]
+          },
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        }
+      }
+    },
+    {
+      "id": 5,
+      "nominated": "parity",
+      "arms": {
+        "exhaustive": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              2,
+              5,
+              5,
+              5,
+              1
+            ]
+          },
+          "candidatesTested": 8228,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "fixedOrder": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              2,
+              5,
+              5,
+              5,
+              1
+            ]
+          },
+          "familyFits": 2,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "teacher": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              2,
+              5,
+              5,
+              5,
+              1
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "symbolicSignature": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              2,
+              5,
+              5,
+              5,
+              1
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "oracle": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              2,
+              5,
+              5,
+              5,
+              1
+            ]
+          },
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        }
+      }
+    },
+    {
+      "id": 6,
+      "nominated": "cubic",
+      "arms": {
+        "exhaustive": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              6,
+              6,
+              2,
+              2,
+              0
+            ]
+          },
+          "candidatesTested": 2369,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "fixedOrder": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              6,
+              6,
+              2,
+              2,
+              0
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "teacher": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              6,
+              6,
+              2,
+              2,
+              0
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "symbolicSignature": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              6,
+              6,
+              2,
+              2,
+              0
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "oracle": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              6,
+              6,
+              2,
+              2,
+              0
+            ]
+          },
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        }
+      }
+    },
+    {
+      "id": 7,
+      "nominated": "cubic",
+      "arms": {
+        "exhaustive": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              6,
+              1,
+              1,
+              0,
+              0
+            ]
+          },
+          "candidatesTested": 2115,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "fixedOrder": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              6,
+              1,
+              1,
+              0,
+              0
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "teacher": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              6,
+              1,
+              1,
+              0,
+              0
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "symbolicSignature": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              6,
+              1,
+              1,
+              0,
+              0
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "oracle": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              6,
+              1,
+              1,
+              0,
+              0
+            ]
+          },
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        }
+      }
+    },
+    {
+      "id": 8,
+      "nominated": "parity",
+      "arms": {
+        "exhaustive": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              0,
+              4,
+              3,
+              1,
+              6
+            ]
+          },
+          "candidatesTested": 3715,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "fixedOrder": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              0,
+              4,
+              3,
+              1,
+              6
+            ]
+          },
+          "familyFits": 2,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "teacher": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              0,
+              4,
+              3,
+              1,
+              6
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "symbolicSignature": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              0,
+              4,
+              3,
+              1,
+              6
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "oracle": {
+          "program": {
+            "family": "parity",
+            "coeff": [
+              0,
+              4,
+              3,
+              1,
+              6
+            ]
+          },
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        }
+      }
+    },
+    {
+      "id": 9,
+      "nominated": "step",
+      "arms": {
+        "exhaustive": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              0,
+              6,
+              4,
+              2,
+              2
+            ]
+          },
+          "candidatesTested": 18753,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "fixedOrder": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              0,
+              6,
+              4,
+              2,
+              2
+            ]
+          },
+          "familyFits": 3,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "teacher": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              0,
+              6,
+              4,
+              2,
+              2
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "symbolicSignature": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              0,
+              6,
+              4,
+              2,
+              2
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "oracle": {
+          "program": {
+            "family": "step",
+            "coeff": [
+              0,
+              6,
+              4,
+              2,
+              2
+            ]
+          },
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        }
+      }
+    },
+    {
+      "id": 10,
+      "nominated": "cubic",
+      "arms": {
+        "exhaustive": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              6,
+              1,
+              2,
+              5,
+              0
+            ]
+          },
+          "candidatesTested": 2127,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "fixedOrder": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              6,
+              1,
+              2,
+              5,
+              0
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "teacher": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              6,
+              1,
+              2,
+              5,
+              0
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "symbolicSignature": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              6,
+              1,
+              2,
+              5,
+              0
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "oracle": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              6,
+              1,
+              2,
+              5,
+              0
+            ]
+          },
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        }
+      }
+    },
+    {
+      "id": 11,
+      "nominated": "cubic",
+      "arms": {
+        "exhaustive": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              1,
+              0,
+              2,
+              6,
+              0
+            ]
+          },
+          "candidatesTested": 364,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "fixedOrder": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              1,
+              0,
+              2,
+              6,
+              0
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "teacher": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              1,
+              0,
+              2,
+              6,
+              0
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "symbolicSignature": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              1,
+              0,
+              2,
+              6,
+              0
+            ]
+          },
+          "familyFits": 1,
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        },
+        "oracle": {
+          "program": {
+            "family": "cubic",
+            "coeff": [
+              1,
+              0,
+              2,
+              6,
+              0
+            ]
+          },
+          "predictions": {
+            "correct": 22,
+            "total": 22,
+            "ce": 0.00003686459461251695
+          },
+          "exact": true
+        }
+      }
+    }
+  ],
+  "updates": 0,
+  "grammarSize": 31213,
+  "summary": {
+    "exhaustive": {
+      "exact": 12,
+      "correct": 264,
+      "total": 264,
+      "familyFits": 0,
+      "candidatesTested": 128728
+    },
+    "fixedOrder": {
+      "exact": 12,
+      "correct": 264,
+      "total": 264,
+      "familyFits": 24,
+      "candidatesTested": 0
+    },
+    "teacher": {
+      "exact": 12,
+      "correct": 264,
+      "total": 264,
+      "familyFits": 12,
+      "candidatesTested": 0
+    },
+    "symbolicSignature": {
+      "exact": 12,
+      "correct": 264,
+      "total": 264,
+      "familyFits": 12,
+      "candidatesTested": 0
+    },
+    "oracle": {
+      "exact": 12,
+      "correct": 264,
+      "total": 264,
+      "familyFits": 0,
+      "candidatesTested": 0
+    }
+  }
+}
