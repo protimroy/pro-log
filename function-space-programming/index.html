@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Function Space Programming</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.protimroy.com/pro-log/function-space-programming/"><meta name="description" content="An exact XOR construction, a fixed-feature MNIST baseline, and a controlled experiment for LLM-proposed behavior edits."><meta property="og:title" content="Function Space Programming"><meta property="og:type" content="article"><meta property="og:url" content="https://www.protimroy.com/pro-log/function-space-programming/"><meta property="og:description" content="An exact XOR construction, a fixed-feature MNIST baseline, and a controlled experiment for LLM-proposed behavior edits."><meta name="twitter:description" content="An exact XOR construction, a fixed-feature MNIST baseline, and a controlled experiment for LLM-proposed behavior edits."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Function Space Programming">
+    <link rel="stylesheet" type="text/css" href="/pro-log/bulma.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.10.0/styles/github.min.css">
+    <link rel="stylesheet" type="text/css" href="/pro-log/component.css" />
+    <style>
+      .article-shell {
+        max-width: 60rem;
+        margin: 0 auto;
+        padding: 2.5rem 1.5rem 4rem;
+      }
+      .article-topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid #dbdbdb;
+        font-size: 0.95rem;
+      }
+      .article-topbar a {
+        color: inherit;
+      }
+      .article-header {
+        margin-bottom: 2rem;
+      }
+      .article-kicker {
+        margin-bottom: 0.75rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #5c5c5c;
+      }
+      .article-title {
+        margin-bottom: 1rem;
+        line-height: 1.05;
+      }
+      .article-dek {
+        max-width: 44rem;
+        margin: 0;
+        color: #4a4a4a;
+        font-size: 1.15rem;
+      }
+      .article-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem 1.5rem;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: #5c5c5c;
+      }
+      .article-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2rem;
+      }
+      .article-toc {
+        padding: 1rem 1.1rem;
+        border: 1px solid #dbdbdb;
+        background: #fafaf8;
+      }
+      .article-toc:empty {
+        display: none;
+      }
+      .article-toc ul {
+        margin: 0;
+      }
+      .article-toc li + li {
+        margin-top: 0.45rem;
+      }
+      .article-content {
+        max-width: 46rem;
+      }
+      .article-content .content {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+      .article-content .content > h6 {
+        margin-top: 2.4rem;
+        margin-bottom: 0.8rem;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .article-content .content > p:first-child {
+        font-size: 1.08rem;
+      }
+      .article-content pre {
+        padding: 1rem 1.15rem;
+        overflow-x: auto;
+        border: 1px solid #dbdbdb;
+        background: #f7f7f4;
+      }
+      .admonition { margin: 1.5rem 0; padding: 1rem; border-left: 0.35rem solid #4a4a4a; background: #f7f7f4; }
+      .admonition-title { margin-bottom: 0.5rem; font-weight: 700; text-transform: uppercase; font-size: 0.8rem; }
+      .details-block { margin: 1.5rem 0; padding: 0; border: 1px solid #dbdbdb; border-radius: 0; overflow: hidden; }
+      .details-block > summary { display: block; list-style: none; position: relative; margin: 0; padding: 0.85rem 2.75rem 0.85rem 1rem; cursor: pointer; font-weight: 700; background: #fafaf8; user-select: none; }
+      .details-block > summary::-webkit-details-marker { display: none; }
+      .details-block > summary::after { content: "+"; position: absolute; top: 50%; right: 1rem; transform: translateY(-50%); font-size: 1rem; font-weight: 400; }
+      .details-block[open] > summary { border-bottom: 1px solid #dbdbdb; }
+      .details-block[open] > summary::after { content: "-"; }
+      .details-block > :not(summary) { margin: 0; padding: 0.85rem 1rem 1rem; }
+      .article-figure, .margin-figure, .interactive-figure { margin: 2rem 0; }
+      .article-figure img, .margin-figure img { display: block; width: 100%; border: 0; background: transparent; }
+      .interactive-figure img, .interactive-figure svg { display: block; width: 100%; border: 0; background: transparent; }
+      .article-figure figcaption, .margin-figure figcaption, .interactive-figure figcaption { margin-top: 0.75rem; color: #5c5c5c; font-size: 0.95rem; }
+      .interactive-figure-frame { padding: 1rem; border: 1px solid #dbdbdb; background: #ffffff; }
+      .citation-group, .footnote-ref { font-size: 0.9em; }
+      .sidenote { display: inline-block; margin: 0.15rem 0.35rem; padding-left: 0.75rem; border-left: 2px solid #dbdbdb; color: #5c5c5c; font-size: 0.9rem; }
+      .sidenote-number { margin-right: 0.35rem; font-weight: 700; }
+      @media screen and (min-width: 1024px) {
+        .article-grid {
+          grid-template-columns: minmax(0, 12rem) minmax(0, 1fr);
+          align-items: start;
+        }
+      }
+      @media screen and (min-width: 1216px) {
+        .sidenote { float: right; clear: right; width: 14rem; margin-right: -16rem; margin-left: 1rem; margin-top: 0.25rem; }
+        .margin-figure { float: right; clear: right; width: 16rem; margin-right: -18rem; margin-left: 1.5rem; margin-top: 0.35rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="article-shell">
+      <div class="article-topbar">
+        <a href="https://www.protimroy.com/">Back home</a>
+        <a href="/pro-log/">Pro-Log</a>
+      </div>
+      <header class="article-header">
+        <p class="article-kicker">Research Note</p>
+        <h1 class="title article-title">Function Space Programming</h1>
+        <p class="article-dek">An exact XOR construction, a fixed-feature MNIST baseline, and a controlled experiment for LLM-proposed behavior edits.</p>
+        <div class="article-meta">
+          <span>4 min read</span>
+        </div>
+      </header>
+      <div class="article-grid">
+        <aside class="article-toc">
+          <nav class="table-of-contents"><p class="menu-label">Contents</p><ul class="menu-list"><li class="toc-level-6"><a href="#specify-the-change-in-behavior">Specify the change in behavior</a></li><li class="toc-level-6"><a href="#xor-construct-a-function-exactly">XOR: construct a function exactly</a></li><li class="toc-level-6"><a href="#mnist-compare-three-fixed-feature-maps">MNIST: compare three fixed feature maps</a></li><li class="toc-level-6"><a href="#next-experiment-test-locality-on-continuous-xor">Next experiment: test locality on continuous XOR</a></li></ul></nav>
+        </aside>
+        <main class="article-content">
+          <div class="content">
+            <p>
+<strong>Protim Roy · November 21, 2026</strong></p><h6 id="specify-the-change-in-behavior">Specify the change in behavior</h6>
+<p>
+Suppose a classifier works on most inputs, but I want to change its answer in one part of the input space. I can describe the edit as a function: what should change, where it should change, and which behavior should be preserved. Can a language model translate that specification into a small executable patch?</p><p>
+I call this research direction <strong>LLM-assisted function space programming</strong>. Given a frozen predictor <code>f</code>, the language model proposes an explicit correction <code>delta</code>, and the edited predictor computes <code>f(x) + delta(x)</code>. A patch can be evaluated directly on a target slice and on inputs whose predictions should be preserved. This is a choice of interface. The correction can still be represented by neural-network weights.</p><p>
+The project was prompted by Takehi, Teoh, Zhang, and Khattab's <a href="https://rikiyat.github.io/blog/weight-space-programming/">Sparks of Weight-Space Programming</a>, which explores language models reading and editing weights as a program. My experiment asks what happens when the language model receives a behavior specification and emits a function in a constrained grammar. The name identifies the research direction. A broader comparison with prior model editing, symbolic regression, and program synthesis is still open.</p><h6 id="xor-construct-a-function-exactly">XOR: construct a function exactly</h6>
+<p>
+On Boolean inputs, XOR has a two-unit ReLU representation:</p><pre><code class="language-text">f(x1, x2) = ReLU(x1 - x2) + ReLU(x2 - x1) = |x1 - x2|
+</code></pre><p>
+The two hidden units each compute one direction of the difference, and the output adds them. I assigned the weights and biases to implement that expression directly. The network returned <code>[0, 1, 1, 0]</code> in lexicographic input order, matching all four cases exactly. The expression also defines a continuous score on the unit square, which gives a later editing experiment room to test nearby behavior.</p><h6 id="mnist-compare-three-fixed-feature-maps">MNIST: compare three fixed feature maps</h6>
+<p>
+The next baseline asks how much a specified feature map can do before any learned feature extractor enters the experiment. I used the standard 60,000 training and 10,000 test images. Each arm standardizes features using its training split and fits a ten-output ridge head with regularization coefficient 100 and an unpenalized intercept. The predicted class is the largest output score.</p><p>
+| Feature map | Dimensions | Test correct | Accuracy |
+| --- | ---: | ---: | ---: |
+| Raw pixels | 784 | 8,606 / 10,000 | 86.06% |
+| Designed | 217 | 9,606 / 10,000 | 96.06% |
+| Random ReLU | 217 | 8,838 / 10,000 | 88.38% |</p><p>
+The designed map uses ink statistics, center of mass, spatial pooling, image gradients, symmetry, and fixed directional stroke filters. The random ReLU arm uses a frozen Gaussian projection with seed 42 and matches the designed map's feature count. The designed map scored 7.68 percentage points higher than that particular projection. The raw-pixel arm provides a reference at a different dimensionality. Multiple projection seeds would be needed to estimate how much the dimension-matched comparison varies.</p><p>
+The full CPU reference and the WSL2 workstation run agreed on every correct count. I independently replayed the workstation artifacts, checked their hashes, and matched the checkpoint tensors within numerical tolerance. The source revision and the two run revisions were <code>cf1de5c</code>, <code>572bec2</code>, and <code>7eeb5cb</code>, respectively, in the research repository. These are baseline experiments with fixed computations and, on MNIST, a fitted readout. Neither run tests an LLM proposing or applying an edit.</p><h6 id="next-experiment-test-locality-on-continuous-xor">Next experiment: test locality on continuous XOR</h6>
+<p>
+I will freeze the XOR score function and define a local behavior change near one corner. The evaluation will include target samples, protected samples from across the square, and a separately reported band near the edit boundary. A wider patch can improve target accuracy while changing unrelated scores, so I will measure output drift even when the predicted class stays the same.</p><p>
+The candidate patch will be an additive residual from a bounded grammar shared by the language model and the controls. The first comparison will include the unedited predictor, a hand-designed patch, and search over the same grammar with the same development-evaluation budget as the language model. The patch will be selected on development examples before evaluating the fixed held-out split. The main outcomes are target success, protected-region prediction agreement, mean and maximum protected score drift, and patch size. A hand-designed patch that solves the task is a useful calibration point. To make a case for LLM assistance, the experiment needs to show when proposals use the search budget better than the non-LLM control.</p><p>
+If the XOR protocol can distinguish a good local edit from one that spills into the protected region, I will carry it to a predefined MNIST confusion slice. That experiment will measure correction of the selected errors alongside collateral changes to other classes and examples of the same classes that were already correct.</p>
+          </div>
+          
+        </main>
+      </div>
+    </div>
+    <script src="/pro-log/htmx.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.10.0/lib/highlight.min.js"></script><script>document.addEventListener('DOMContentLoaded', function () { if (window.hljs) { window.hljs.highlightAll(); } });</script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.17/dist/plot.umd.min.js"></script>
+    <script src="/pro-log/component.js"></script>
+  </body>
+</html>
