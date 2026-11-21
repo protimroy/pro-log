@@ -144,7 +144,7 @@
       </header>
       <div class="article-grid">
         <aside class="article-toc">
-          <nav class="table-of-contents"><p class="menu-label">Contents</p><ul class="menu-list"><li class="toc-level-6"><a href="#specify-the-change-in-behavior">Specify the change in behavior</a></li><li class="toc-level-6"><a href="#xor-construct-a-function-exactly">XOR: construct a function exactly</a></li><li class="toc-level-6"><a href="#mnist-compare-three-fixed-feature-maps">MNIST: compare three fixed feature maps</a></li><li class="toc-level-6"><a href="#next-experiment-test-locality-on-continuous-xor">Next experiment: test locality on continuous XOR</a></li></ul></nav>
+          <nav class="table-of-contents"><p class="menu-label">Contents</p><ul class="menu-list"><li class="toc-level-6"><a href="#specify-the-change-in-behavior">Specify the change in behavior</a></li><li class="toc-level-6"><a href="#xor-construct-a-function-exactly">XOR: construct a function exactly</a></li><li class="toc-level-6"><a href="#mnist-compare-three-fixed-feature-maps">MNIST: compare three fixed feature maps</a></li><li class="toc-level-6"><a href="#r01-local-edits-on-continuous-xor">R01: local edits on continuous XOR</a></li><li class="toc-level-6"><a href="#next-experiment-infer-an-edit-from-examples">Next experiment: infer an edit from examples</a></li></ul></nav>
         </aside>
         <main class="article-content">
           <div class="content">
@@ -159,18 +159,39 @@ On Boolean inputs, XOR has a two-unit ReLU representation:</p><pre><code class="
 </code></pre><p>
 The two hidden units each compute one direction of the difference, and the output adds them. I assigned the weights and biases to implement that expression directly. The network returned <code>[0, 1, 1, 0]</code> in lexicographic input order, matching all four cases exactly. The expression also defines a continuous score on the unit square, which gives a later editing experiment room to test nearby behavior.</p><h6 id="mnist-compare-three-fixed-feature-maps">MNIST: compare three fixed feature maps</h6>
 <p>
-The next baseline asks how much a specified feature map can do before any learned feature extractor enters the experiment. I used the standard 60,000 training and 10,000 test images. Each arm standardizes features using its training split and fits a ten-output ridge head with regularization coefficient 100 and an unpenalized intercept. The predicted class is the largest output score.</p><p>
-| Feature map | Dimensions | Test correct | Accuracy |
-| --- | ---: | ---: | ---: |
-| Raw pixels | 784 | 8,606 / 10,000 | 86.06% |
-| Designed | 217 | 9,606 / 10,000 | 96.06% |
-| Random ReLU | 217 | 8,838 / 10,000 | 88.38% |</p><p>
-The designed map uses ink statistics, center of mass, spatial pooling, image gradients, symmetry, and fixed directional stroke filters. The random ReLU arm uses a frozen Gaussian projection with seed 42 and matches the designed map's feature count. The designed map scored 7.68 percentage points higher than that particular projection. The raw-pixel arm provides a reference at a different dimensionality. Multiple projection seeds would be needed to estimate how much the dimension-matched comparison varies.</p><p>
-The full CPU reference and the WSL2 workstation run agreed on every correct count. I independently replayed the workstation artifacts, checked their hashes, and matched the checkpoint tensors within numerical tolerance. The source revision and the two run revisions were <code>cf1de5c</code>, <code>572bec2</code>, and <code>7eeb5cb</code>, respectively, in the research repository. These are baseline experiments with fixed computations and, on MNIST, a fitted readout. Neither run tests an LLM proposing or applying an edit.</p><h6 id="next-experiment-test-locality-on-continuous-xor">Next experiment: test locality on continuous XOR</h6>
+The next baseline asks how much a specified feature map can do before any learned feature extractor enters the experiment. I used the standard 60,000 training and 10,000 test images. Each arm standardizes features using its training split and fits a ten-output ridge head with regularization coefficient 100 and an unpenalized intercept. The predicted class is the largest output score.</p><div role="region" aria-label="MNIST held-out accuracy" tabindex="0" style="max-width:100%;overflow-x:auto">
+<table class="table is-striped is-fullwidth">
+<caption>MNIST held-out accuracy</caption>
+<thead><tr><th scope="col">Feature map</th><th scope="col">Dimensions</th><th scope="col">Test correct</th><th scope="col">Accuracy</th></tr></thead>
+<tbody>
+<tr><th scope="row">Raw pixels</th><td>784</td><td>8,606 / 10,000</td><td>86.06%</td></tr>
+<tr><th scope="row">Designed</th><td>217</td><td>9,606 / 10,000</td><td>96.06%</td></tr>
+<tr><th scope="row">Random ReLU</th><td>217</td><td>8,838 / 10,000</td><td>88.38%</td></tr>
+</tbody>
+</table>
+</div>
 <p>
-I will freeze the XOR score function and define a local behavior change near one corner. The evaluation will include target samples, protected samples from across the square, and a separately reported band near the edit boundary. A wider patch can improve target accuracy while changing unrelated scores, so I will measure output drift even when the predicted class stays the same.</p><p>
-The candidate patch will be an additive residual from a bounded grammar shared by the language model and the controls. The first comparison will include the unedited predictor, a hand-designed patch, and search over the same grammar with the same development-evaluation budget as the language model. The patch will be selected on development examples before evaluating the fixed held-out split. The main outcomes are target success, protected-region prediction agreement, mean and maximum protected score drift, and patch size. A hand-designed patch that solves the task is a useful calibration point. To make a case for LLM assistance, the experiment needs to show when proposals use the search budget better than the non-LLM control.</p><p>
-If the XOR protocol can distinguish a good local edit from one that spills into the protected region, I will carry it to a predefined MNIST confusion slice. That experiment will measure correction of the selected errors alongside collateral changes to other classes and examples of the same classes that were already correct.</p>
+The designed map uses ink statistics, center of mass, spatial pooling, image gradients, symmetry, and fixed directional stroke filters. The random ReLU arm uses a frozen Gaussian projection with seed 42 and matches the designed map's feature count. The designed map scored 7.68 percentage points higher than that particular projection. The raw-pixel arm provides a reference at a different dimensionality. Multiple projection seeds would be needed to estimate how much the dimension-matched comparison varies.</p><p>
+The full CPU reference and the WSL2 workstation run agreed on every correct count. I independently replayed the workstation artifacts, checked their hashes, and matched the checkpoint tensors within numerical tolerance. The source revision and the two run revisions were <code>cf1de5c</code>, <code>572bec2</code>, and <code>7eeb5cb</code>, respectively, in the research repository. These are baseline experiments with fixed computations and, on MNIST, a fitted readout. Neither run tests an LLM proposing or applying an edit.</p><h6 id="r01-local-edits-on-continuous-xor">R01: local edits on continuous XOR</h6>
+<p>
+I froze the XOR score and tested three edit locations on the unit square, near (0, 0), (1, 0), and (0.28, 0.28). A patch had to flip the thresholded class within Chebyshev distance 0.10 of the task center and preserve the score outside distance 0.25. I measured the intervening band separately. The patches were additive signed tents with bounded center offsets, radii, and amplitudes.</p><p>
+ChatGPT proposed eight parameter tuples from the task specification before seeing any sampled points or scores. Structured search and uniform random search also scored eight proposals per task on development samples. A closed-form patch served as an analytic reference. Each task used 256 development and 4,096 held-out points per region. Random search was repeated 20 times per task. The table averages held-out metrics across tasks and, for random search, across repetitions.</p><div role="region" aria-label="Continuous XOR pilot results" tabindex="0" style="max-width:100%;overflow-x:auto">
+<table class="table is-striped is-fullwidth">
+<caption>Continuous XOR pilot results</caption>
+<thead><tr><th scope="col">Method</th><th scope="col">Target success</th><th scope="col">Protected agreement</th><th scope="col">Protected mean drift</th><th scope="col">Boundary mean drift</th></tr></thead>
+<tbody>
+<tr><th scope="row">Unedited</th><td>0%</td><td>100%</td><td>0</td><td>0</td></tr>
+<tr><th scope="row">Analytic reference</th><td>100%</td><td>100%</td><td>0</td><td>0.140</td></tr>
+<tr><th scope="row">Structured search</th><td>100%</td><td>100%</td><td>0</td><td>0.122</td></tr>
+<tr><th scope="row">ChatGPT proposals</th><td>100%</td><td>100%</td><td>0</td><td>0.133</td></tr>
+<tr><th scope="row">Uniform random search</th><td>88.53%</td><td>96.82%</td><td>0.0169</td><td>0.386</td></tr>
+</tbody>
+</table>
+</div>
+<p>
+The selected ChatGPT patch reached 100% target success with zero protected score drift across all three tasks. Structured search matched both outcomes and had lower average drift in the band between the edit and protected regions. Giving every method the exact task center made this a useful locality check, and the structured control shows why uniform random search alone would overstate the evidence for LLM assistance. These were three tasks and one ChatGPT proposal batch.</p><h6 id="next-experiment-infer-an-edit-from-examples">Next experiment: infer an edit from examples</h6>
+<p>
+The next test will give the model and controls labeled examples of the desired changes and preservation constraints, with the location and shape of the edit left to infer. I will compare the language model with a fitted geometric control and budget-matched search before carrying the protocol to a predefined MNIST confusion slice.</p>
           </div>
           
         </main>
