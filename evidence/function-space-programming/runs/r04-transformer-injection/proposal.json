@@ -1,0 +1,6 @@
+{
+  "proposer": "Codex in ChatGPT Work Mode",
+  "instruction": "For a frozen tiny decoder, compose available operand readouts to teach a distinct next-token instruction. The new instruction should return the amount left when the second operand is removed from the first, wrapping into 0 through 16. Preserve the other commands.",
+  "operation": "subtract",
+  "expression": "(left - right) % 17"
+}

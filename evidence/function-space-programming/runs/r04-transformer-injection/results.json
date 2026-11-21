@@ -1,0 +1,228 @@
+{
+  "torch": "2.15.0+cpu",
+  "parameters": 20928,
+  "seeds": {
+    "17": {
+      "frozen": {
+        "correct": 4,
+        "total": 104,
+        "cross_entropy": 11.959656715393066
+      },
+      "injected": {
+        "correct": 27,
+        "total": 104,
+        "cross_entropy": 5.92842960357666
+      },
+      "position_local": {
+        "correct": 104,
+        "total": 104,
+        "cross_entropy": 0.005353011190891266
+      },
+      "position_local_max_logit_drift": 0.0,
+      "position_local_operand_accuracy": 1.0,
+      "protected": {
+        "correct": 253,
+        "total": 312,
+        "cross_entropy": 2.219707489013672
+      },
+      "protected_max_logit_drift": 0.0,
+      "held_out_operand_accuracy": 0.49038460850715637,
+      "output_head_rank": 17,
+      "base_parameter_sha256": "64c5312cd1b28e05f5a7d4dad6a681fa2381eabe8da42ddddd0dad3f175f1245",
+      "8": {
+        "symbolic_selected": "add",
+        "symbolic_candidates_fitting_all": [
+          "add",
+          "left",
+          "subtract"
+        ],
+        "symbolic": {
+          "correct": 4,
+          "total": 104,
+          "cross_entropy": 7.697659015655518
+        },
+        "fine_tune": {
+          "correct": 7,
+          "total": 104,
+          "cross_entropy": 12.280675888061523
+        },
+        "fine_tune_protected": {
+          "correct": 229,
+          "total": 312,
+          "cross_entropy": 2.6812903881073
+        },
+        "fine_tune_protected_max_logit_drift": 26.46677589416504
+      },
+      "32": {
+        "symbolic_selected": "subtract",
+        "symbolic_candidates_fitting_all": [
+          "subtract"
+        ],
+        "symbolic": {
+          "correct": 104,
+          "total": 104,
+          "cross_entropy": 0.005353011190891266
+        },
+        "fine_tune": {
+          "correct": 4,
+          "total": 104,
+          "cross_entropy": 11.673954010009766
+        },
+        "fine_tune_protected": {
+          "correct": 212,
+          "total": 312,
+          "cross_entropy": 2.8080620765686035
+        },
+        "fine_tune_protected_max_logit_drift": 22.127126693725586
+      }
+    },
+    "31": {
+      "frozen": {
+        "correct": 9,
+        "total": 104,
+        "cross_entropy": 10.562973976135254
+      },
+      "injected": {
+        "correct": 23,
+        "total": 104,
+        "cross_entropy": 6.2361226081848145
+      },
+      "position_local": {
+        "correct": 104,
+        "total": 104,
+        "cross_entropy": 0.005352996289730072
+      },
+      "position_local_max_logit_drift": 0.0,
+      "position_local_operand_accuracy": 1.0,
+      "protected": {
+        "correct": 238,
+        "total": 312,
+        "cross_entropy": 2.953073263168335
+      },
+      "protected_max_logit_drift": 0.0,
+      "held_out_operand_accuracy": 0.4759615361690521,
+      "output_head_rank": 17,
+      "base_parameter_sha256": "8123c7ff00011d58a1b7cacac20d0fdc5bc712154a097babb589477715f11e7f",
+      "8": {
+        "symbolic_selected": "add",
+        "symbolic_candidates_fitting_all": [
+          "add",
+          "left",
+          "subtract"
+        ],
+        "symbolic": {
+          "correct": 4,
+          "total": 104,
+          "cross_entropy": 7.697661399841309
+        },
+        "fine_tune": {
+          "correct": 3,
+          "total": 104,
+          "cross_entropy": 11.501158714294434
+        },
+        "fine_tune_protected": {
+          "correct": 218,
+          "total": 312,
+          "cross_entropy": 3.4860072135925293
+        },
+        "fine_tune_protected_max_logit_drift": 25.531307220458984
+      },
+      "32": {
+        "symbolic_selected": "subtract",
+        "symbolic_candidates_fitting_all": [
+          "subtract"
+        ],
+        "symbolic": {
+          "correct": 104,
+          "total": 104,
+          "cross_entropy": 0.005352996289730072
+        },
+        "fine_tune": {
+          "correct": 5,
+          "total": 104,
+          "cross_entropy": 10.289913177490234
+        },
+        "fine_tune_protected": {
+          "correct": 208,
+          "total": 312,
+          "cross_entropy": 3.0613954067230225
+        },
+        "fine_tune_protected_max_logit_drift": 19.651065826416016
+      }
+    },
+    "57": {
+      "frozen": {
+        "correct": 4,
+        "total": 104,
+        "cross_entropy": 11.095565795898438
+      },
+      "injected": {
+        "correct": 29,
+        "total": 104,
+        "cross_entropy": 5.774584770202637
+      },
+      "position_local": {
+        "correct": 104,
+        "total": 104,
+        "cross_entropy": 0.005353011190891266
+      },
+      "position_local_max_logit_drift": 0.0,
+      "position_local_operand_accuracy": 1.0,
+      "protected": {
+        "correct": 242,
+        "total": 312,
+        "cross_entropy": 2.7786009311676025
+      },
+      "protected_max_logit_drift": 0.0,
+      "held_out_operand_accuracy": 0.4423076808452606,
+      "output_head_rank": 17,
+      "base_parameter_sha256": "6418ca31138c9708977e1918d099f49dd496309e22f0ba2f46f8c52343785760",
+      "8": {
+        "symbolic_selected": "add",
+        "symbolic_candidates_fitting_all": [
+          "add",
+          "left",
+          "subtract"
+        ],
+        "symbolic": {
+          "correct": 4,
+          "total": 104,
+          "cross_entropy": 7.697662353515625
+        },
+        "fine_tune": {
+          "correct": 5,
+          "total": 104,
+          "cross_entropy": 10.530960083007812
+        },
+        "fine_tune_protected": {
+          "correct": 234,
+          "total": 312,
+          "cross_entropy": 2.674180746078491
+        },
+        "fine_tune_protected_max_logit_drift": 35.08512878417969
+      },
+      "32": {
+        "symbolic_selected": "subtract",
+        "symbolic_candidates_fitting_all": [
+          "subtract"
+        ],
+        "symbolic": {
+          "correct": 104,
+          "total": 104,
+          "cross_entropy": 0.005353011190891266
+        },
+        "fine_tune": {
+          "correct": 3,
+          "total": 104,
+          "cross_entropy": 10.885687828063965
+        },
+        "fine_tune_protected": {
+          "correct": 217,
+          "total": 312,
+          "cross_entropy": 2.9402389526367188
+        },
+        "fine_tune_protected_max_logit_drift": 30.381919860839844
+      }
+    }
+  }
+}
