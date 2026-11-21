@@ -1,0 +1,19 @@
+{
+  "proposer": "Codex in ChatGPT Work Mode",
+  "model": "gpt-6.2-sol",
+  "instruction": "From the first five labeled rows in packet.json and the shared grammar c + a*ReLU(x-u) + b*ReLU(y-v), return numerical tuples (c,a,b,u,v). The nested 32-example arm reuses each 8-example proposal because the fixed design already identifies the coefficients. Freeze tuples before opening seeds or test results.",
+  "candidates": [
+    [-0.09344,-1.23994,-1.08018,0.40878,-0.3173],
+    [0.39241,-1.4025,1.29448,-0.2815,0.40664],
+    [-0.16292,1.2049,-0.87734,0.37567,0.36187],
+    [-0.24389,-1.4727,0.89912,0.2412,0.37586],
+    [-0.31765,-0.9188,1.39728,0.36969,-0.15167],
+    [-0.24305,-0.80058,-1.05156,0.15148,-0.29879],
+    [-0.14344,1.1641,0.85876,-0.0094,-0.4300],
+    [-0.18122,-1.32918,0.79644,0.02116,-0.44134],
+    [-0.25441,-0.68164,1.4677,0.25308,0.21904],
+    [0.19743,-1.22682,-0.81278,-0.22326,-0.43991],
+    [-0.01465,-1.303,-0.88668,-0.05048,-0.10345],
+    [-0.10091,0.84418,-0.63806,0.42988,0.30498]
+  ]
+}
