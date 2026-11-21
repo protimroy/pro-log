@@ -122,6 +122,28 @@ Across 12 tasks, the teacher recovered 4, 7, and 12 exact functions at two, thre
 
 On 12 tasks from a grammar of 31,213 coefficient tuples, teacher guidance reduced coefficient fitting from 24 to 12 family fits versus fixed-order search. A deterministic fourth-difference rule also needed 12 fits. Both recovered every function and answered all 264 held-out prompts after compilation into fresh Transformer weights, at zero optimizer updates. Exhaustive first-match search checked 128,728 explicit coefficient tuples. These counts compare search work within each method. The pilot did not measure end-to-end teacher cost or demonstrate a gain over the strongest symbolic control. [Results, proposals and replay](https://github.com/protimroy/pro-log/tree/2362520f75081328ccd091914b7fa843c91ab3ef/evidence/function-space-programming/runs/r08-guided-search)
 
+###### R09 · Compile a predictor fit on real text
+
+On Tiny Shakespeare, the in-session assistant proposed a character trigram that gives the lower-order model more weight when many continuations occur only once. We estimated its probabilities from the same 100,000 normalized training characters used by the controls. A two-position Transformer with 220,510 parameters reproduced the predictor across all 1,369 contexts, to a maximum absolute probability error of 6.34e-8, with zero optimizer updates.
+
+<div role="region" aria-label="R09 held-out character prediction" tabindex="0" style="max-width:100%;overflow-x:auto">
+<table class="table is-striped is-fullwidth">
+<caption>R09 test loss on 111,538 next-character predictions</caption>
+<thead><tr><th scope="col">Predictor</th><th scope="col">Bits per normalized character</th></tr></thead>
+<tbody>
+<tr><th scope="row">Witten–Bell trigram</th><td>3.219215</td></tr>
+<tr><th scope="row">Assistant rule, compiled</th><td>3.212652</td></tr>
+<tr><th scope="row">Same Transformer, AdamW mean across three starts</th><td>3.208662</td></tr>
+<tr><th scope="row">Interpolated Kneser–Ney, direct</th><td>3.192476</td></tr>
+<tr><th scope="row">Interpolated Kneser–Ney, compiled</th><td>3.192476</td></tr>
+</tbody>
+</table>
+</div>
+
+The proposed rule improved on Witten–Bell and trailed two of the three AdamW starts. The validation-selected Kneser–Ney control gave the lowest test loss. A follow-up compiled that control into the same architecture with zero optimizer updates and a maximum probability error of 4.50e-8. The compiler preserved both predictors, so the quality difference comes from the fitted functions. The result covers one corpus, two-character context and one in-session proposal. The target bypassed backpropagation, while the rules still needed counts from training text. [R09 report, metrics and replay](https://github.com/protimroy/pro-log/tree/656176a393b8605d811a643e70758b54e324fadf/evidence/function-space-programming/runs/r09)
+
+Chen and Goodman's empirical smoothing study motivated the n-gram controls. Tracr motivated checking compiled execution against a direct implementation. [Smoothing study](https://aclanthology.org/P96-1041/) · [Tracr](https://arxiv.org/abs/2301.05062)
+
 ###### Code, evidence and reproduction
 
 The public snapshot contains the XOR and MNIST scripts, dependency lock, baseline metrics, R01 proposal batch, evaluator, and per-task results. The replay command evaluates the stored proposals. The R02 release records the executed comparison, including the labeled samples, frozen proposal batch, seed and checkpoint parameters. The original protocol documents the proposed setup and the R02 run notes record deviations. [Reproduction guide, literature review and protocol](https://github.com/protimroy/pro-log/tree/500c12999a40d4486df578d41d5671925c9fbbda/evidence/function-space-programming) · [R01 proposals and raw results](https://github.com/protimroy/pro-log/tree/500c12999a40d4486df578d41d5671925c9fbbda/evidence/function-space-programming/runs/r01-xor-pilot)
