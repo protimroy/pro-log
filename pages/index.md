@@ -61,6 +61,32 @@ template: page.html
   .alopex-index .post_text {
     display: block;
   }
+  .research-series-head td {
+    background: rgba(35, 55, 85, 0.10);
+    border-left: 4px solid #304d72;
+    padding: 20px 22px;
+  }
+  .research-series-head .post_title {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .research-series-label {
+    display: block;
+    font: 600 11px 'Inter', sans-serif;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+  }
+  .research-series-chapter td {
+    padding-left: 38px !important;
+    border-left: 2px solid rgba(48, 77, 114, .3);
+  }
+  .research-series-chapter .post_title {
+    font-size: 18px;
+    font-style: normal;
+  }
 </style>
 
 <table class="table alopex-index">
@@ -70,21 +96,22 @@ template: page.html
     </tr>
   </thead>
   <tbody>
-    <tr class="postcontainer">
+    <tr class="postcontainer research-series-head">
       <td>
-        <span class="post_title">Function Space Programming — Thread Index</span>
-        <span class="post_text"><a href="/pro-log/function-space-programming-thread/">Research questions, chapter map, and evidence status</a></span>
+        <span class="research-series-label">Research series</span>
+        <span class="post_title"><a href="/pro-log/function-space-programming-thread/">Function Space Programming</a></span>
+        <span class="post_text">Research questions, chapter map, and evidence status</span>
       </td>
     </tr>
-    <tr class="postcontainer">
+    <tr class="postcontainer research-series-chapter">
       <td>
-        <span class="post_title">I · Constructing Functions</span>
+        <span class="post_title">Part I · Constructing Functions</span>
         <span class="post_text"><a href="/pro-log/function-space-programming/">XOR, MNIST, LLM-proposed edits, and compiled Transformer functions</a></span>
       </td>
     </tr>
-    <tr class="postcontainer">
+    <tr class="postcontainer research-series-chapter">
       <td>
-        <span class="post_title">II · Shared Functions, Lost Information</span>
+        <span class="post_title">Part II · Shared Functions, Lost Information</span>
         <span class="post_text"><a href="/pro-log/function-space-programming-shared-functions/">R12–R13: KL clustering, sparse corrections, and negative results</a></span>
       </td>
     </tr>
