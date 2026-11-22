@@ -99,8 +99,8 @@ The source's separate schema-v2 campaign remains staging. It cannot support new 
 
 ###### Sources And Further Reading
 
-- [ALOPEX: A Partial Negative Result](/alopex-partial-negative-result/) contains the wider research narrative, derivations, evidence boundaries, references, and reader-data download.
-- [Frozen MNIST and parameter-JVP statistics](/assets/alopex/family-frozen-statistics-d86e9abd96be.json) are the source reader's frozen single-seed record, including the unexecuted large-model arm.
+- [ALOPEX: A Partial Negative Result](/pro-log/alopex-partial-negative-result/) contains the wider research narrative, derivations, evidence boundaries, references, and reader-data download.
+- [Frozen MNIST and parameter-JVP statistics](/pro-log/assets/alopex/family-frozen-statistics-d86e9abd96be.json) are the source reader's frozen single-seed record, including the unexecuted large-model arm.
 - [Harth and Tzanakou, 1974](https://doi.org/10.1016/0042-6989(74)90024-8), the original receptive-field ALOPEX record.
 - [Unnikrishnan and Venugopal, 1994](https://doi.org/10.1162/neco.1994.6.3.469), ALOPEX for feedforward and recurrent networks.
 - [Bia, 2001](https://doi.org/10.1142/S0129065701000928), ALOPEX-B.
