@@ -1,33 +1,5 @@
 ;(function() {
   'use strict';
-
-document.querySelectorAll('.family-evidence').forEach(function(root) {
-  var contents = document.querySelector('.article-toc .table-of-contents');
-  if (contents) {
-    var list = contents.querySelector('ul');
-    var label = contents.querySelector('.menu-label');
-    if (list && label) {
-      var details = document.createElement('details');
-      var summary = document.createElement('summary');
-      summary.textContent = label.textContent;
-      details.open = matchMedia('(min-width: 701px)').matches;
-      details.append(summary, list);
-      label.replaceWith(details);
-    }
-  }
-  var control = root.querySelector('.family-evidence-control');
-  var select = control.querySelector('select');
-  var cohorts = root.querySelectorAll('.family-cohort');
-  select.addEventListener('change', function() {
-    cohorts.forEach(function(cohort) {
-      cohort.hidden = select.value !== 'all' && cohort.dataset.cohort !== select.value;
-    });
-  });
-  control.hidden = false;
-});
-
-}());(function() {
-  'use strict';
 (() => {
   if (!document.querySelector('.alopex-native')) return;
   const svgNamespace = 'http://www.w3.org/2000/svg';
@@ -222,4 +194,32 @@ document.querySelectorAll('.family-evidence').forEach(function(root) {
     update();
   }
 })();
+}());(function() {
+  'use strict';
+
+document.querySelectorAll('.family-evidence').forEach(function(root) {
+  var contents = document.querySelector('.article-toc .table-of-contents');
+  if (contents) {
+    var list = contents.querySelector('ul');
+    var label = contents.querySelector('.menu-label');
+    if (list && label) {
+      var details = document.createElement('details');
+      var summary = document.createElement('summary');
+      summary.textContent = label.textContent;
+      details.open = matchMedia('(min-width: 701px)').matches;
+      details.append(summary, list);
+      label.replaceWith(details);
+    }
+  }
+  var control = root.querySelector('.family-evidence-control');
+  var select = control.querySelector('select');
+  var cohorts = root.querySelectorAll('.family-cohort');
+  select.addEventListener('change', function() {
+    cohorts.forEach(function(cohort) {
+      cohort.hidden = select.value !== 'all' && cohort.dataset.cohort !== select.value;
+    });
+  });
+  control.hidden = false;
+});
+
 }())
