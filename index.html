@@ -58,87 +58,64 @@
         <p class="subtitle" style="font-size:95%;" >Hi, this is Protim. I am documenting most of my learnings in the fields of artificial intelligence, machine learning, deep learning, generative ai, ..etc, here.</p>
         <section class="content" style="font-size:75%;" >
           <style>
-  .date {
-    font-family: 'Inter';
-    margin-left: -8.5px;
-  }
+  .date { font-family: 'Inter', sans-serif; }
 
-  .postcontainer {
-    background-color: rgba(230, 230, 250, 0.25);
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    width: 100%;
-    position: relative;
-    padding-left: 10px;
-    box-sizing: border-box;
+  /* Keep table rows in the table formatting model; style cells instead. */
+  .prolog-index { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  .prolog-index .postcontainer { display: table-row; height: auto; background: transparent; }
+  .prolog-index .postcontainer > td {
+    padding: 15px 20px;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(90, 100, 115, .16);
+    overflow-wrap: anywhere;
   }
-  .postcontainer:hover {
-    border-left: 2px solid black;
-  }
-  .firstpost {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-  }
-  .post_title {
-    font-family: 'Inter';
-    font-size: 24px;
-    font-style: italic;
-    margin-top: -5%;
-    margin-right: -11%;
-  }
-  .post_text {
-    font-family: 'Inter';
-  }
-  .alopex-index {
-    width: 100%;
-  }
-  .alopex-index .postcontainer {
-    height: auto;
-    min-height: 75px;
-    justify-content: flex-start;
-    padding: 12px 18px;
-  }
-  .alopex-index .post_title {
-    display: block;
-    margin: 0;
-    font-size: 20px;
-  }
-  .alopex-index .post_text {
-    display: block;
-  }
-  .research-series-head td {
-    background: rgba(35, 55, 85, 0.10);
+  .prolog-index .postcontainer:hover > td { background: rgba(90, 110, 140, .055); }
+  .prolog-index .post_title,
+  .prolog-index .post_text { display: block; font-family: 'Inter', sans-serif; margin: 0; }
+  .prolog-index .post_title { font-size: 19px; font-style: normal; font-weight: 600; line-height: 1.4; }
+  .prolog-index .post_text { font-size: 14px; line-height: 1.6; margin-top: 4px; }
+  .prolog-index .post_title a { color: inherit; text-decoration: none; }
+  .prolog-index .post_title a:hover,
+  .prolog-index .post_title a:focus-visible { text-decoration: underline; }
+
+  .prolog-index .research-series-head > td {
+    padding: 22px 24px;
+    background: rgba(35, 55, 85, .10);
     border-left: 4px solid #304d72;
-    padding: 20px 22px;
   }
-  .research-series-head .post_title {
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    margin-bottom: 5px;
+  .prolog-index .research-series-head:hover > td { background: rgba(35, 55, 85, .15); }
+  .prolog-index .research-series-head .post_title {
+    font-size: 26px;
+    font-weight: 750;
+    line-height: 1.25;
   }
-  .research-series-label {
+  .prolog-index .research-series-label {
     display: block;
-    font: 600 11px 'Inter', sans-serif;
+    font: 700 11px 'Inter', sans-serif;
     letter-spacing: .12em;
     text-transform: uppercase;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
   }
-  .research-series-chapter td {
-    padding-left: 38px !important;
-    border-left: 2px solid rgba(48, 77, 114, .3);
+  .prolog-index .research-series-chapter > td {
+    padding: 14px 20px 14px 40px;
+    border-left: 2px solid rgba(48, 77, 114, .30);
   }
-  .research-series-chapter .post_title {
-    font-size: 18px;
-    font-style: normal;
+  .prolog-index .research-series-chapter .post_title { font-size: 17px; font-weight: 600; }
+  .prolog-index .research-series-chapter .post_text { font-size: 13px; }
+  .prolog-index .research-series-chapter .post_title::before {
+    content: '↳';
+    margin-right: 9px;
+    opacity: .6;
+  }
+  @media (max-width: 600px) {
+    .prolog-index .postcontainer > td { padding: 13px 12px; }
+    .prolog-index .research-series-head > td { padding: 18px 15px; }
+    .prolog-index .research-series-head .post_title { font-size: 22px; }
+    .prolog-index .research-series-chapter > td { padding: 13px 12px 13px 23px; }
+    .prolog-index .research-series-chapter .post_title { font-size: 16px; }
   }
 </style>
-<table class="table alopex-index">
+<table class="table prolog-index">
   <thead>
     <tr>
       <th><div class="date">RESEARCH</div></th>
@@ -154,31 +131,30 @@
     </tr>
     <tr class="postcontainer research-series-chapter">
       <td>
-        <span class="post_title">Part I · Constructing Functions</span>
-        <span class="post_text"><a href="/pro-log/function-space-programming/">XOR, MNIST, LLM-proposed edits, and compiled Transformer functions</a></span>
+        <span class="post_title"><a href="/pro-log/function-space-programming/">Part I · Constructing Functions</a></span>
+        <span class="post_text">XOR, MNIST, LLM-proposed edits, and compiled Transformer functions</span>
       </td>
     </tr>
     <tr class="postcontainer research-series-chapter">
       <td>
-        <span class="post_title">Part II · Shared Functions, Lost Information</span>
-        <span class="post_text"><a href="/pro-log/function-space-programming-shared-functions/">R12–R13: KL clustering, sparse corrections, and negative results</a></span>
+        <span class="post_title"><a href="/pro-log/function-space-programming-shared-functions/">Part II · Shared Functions, Lost Information</a></span>
+        <span class="post_text">R12–R13: KL clustering, sparse corrections, and negative results</span>
       </td>
     </tr>
     <tr class="postcontainer">
       <td>
-        <span class="post_title">Activation-Space ALOPEX</span>
-        <span class="post_text"><a href="/pro-log/activation-space-alopex/">Activation-space learning and the ALOPEX family experiments</a></span>
+        <span class="post_title"><a href="/pro-log/activation-space-alopex/">Activation-Space ALOPEX</a></span>
+        <span class="post_text">Activation-space learning and the ALOPEX family experiments</span>
       </td>
     </tr>
     <tr class="postcontainer">
       <td>
-        <span class="post_title">ALOPEX</span>
-        <span class="post_text"><a href="/pro-log/alopex-partial-negative-result/">ALOPEX: A Partial Negative Result</a></span>
+        <span class="post_title"><a href="/pro-log/alopex-partial-negative-result/">ALOPEX: A Partial Negative Result</a></span>
       </td>
     </tr>
   </tbody>
 </table>
-<table class="table">
+<table class="table prolog-index">
   <thead>
     <tr>
       <th><div class="date">June 2025</div></th>
@@ -187,10 +163,8 @@
   <tbody>
     <tr class="postcontainer">
       <td>
-        <a href="https://github.com/protimroy/basis" class="firstpost">
-          <span class="post_title">Basis</span>
-          <span class="post_text"><br><br>Laboratory version for building neural networks from scratch in low-level PyTorch</span>
-        </a>
+        <span class="post_title"><a href="https://github.com/protimroy/basis">Basis</a></span>
+        <span class="post_text">Laboratory version for building neural networks from scratch in low-level PyTorch</span>
       </td>
     </tr>
   </tbody>
