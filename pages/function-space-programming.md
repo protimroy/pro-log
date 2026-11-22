@@ -8,6 +8,8 @@ options_toc: true
 template: article.html
 ---
 
+[← Research thread index](/pro-log/function-space-programming-thread/) · [Next chapter: Shared functions →](/pro-log/function-space-programming-shared-functions/)
+
 **Protim Roy · November 21, 2026**
 
 ###### Specify the change in behavior
