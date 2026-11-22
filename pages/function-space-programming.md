@@ -164,6 +164,27 @@ We kept the Transformer within R09’s 220,510-parameter budget and gave it eigh
 
 The distant-character terms added 0.003113 BPC of improvement beyond the three-character suffix corrections. Compiled predictions matched direct execution within 2.38e-7 absolute probability error over all test positions. The Kneser–Ney control chose six characters on validation and stored 172,824 conditional entries without a memory cap. The larger gap motivates testing how much loss we can recover with a budgeted suffix hierarchy. The experiment used one corpus and one in-session program proposal. [R10 protocol, results and replay](https://github.com/protimroy/pro-log/tree/813299b9aa3be67f415f34c18297dd7647f0d8ba/evidence/function-space-programming/runs/r10) · [Goodman’s study of skipping and higher-order language models](https://www.microsoft.com/en-us/research/publication/a-bit-of-progress-in-language-modeling-extended-version/)
 
+###### R11 · Prune longer suffixes and compare build cost
+
+At the same 220,483-parameter budget, we replaced R10's independent distant-character features with a hierarchy of retained suffixes up to six characters long. The criteria ranked suffixes by frequency, frequency times relative entropy to the immediate parent, or a support-shrunk version of the latter. The relative-entropy control won on validation. The installed decoder scored 3.009211 bits per character at zero optimizer steps, with a maximum probability error of 1.17e-7 against direct execution on the held-out set. [Stolcke's pruning study](https://arxiv.org/abs/cs/0006025)
+
+<div role="region" aria-label="R11 held-out character prediction" tabindex="0" style="max-width:100%;overflow-x:auto">
+<table class="table is-striped is-fullwidth">
+<caption>R11 quality at the R10 decoder parameter budget</caption>
+<thead><tr><th scope="col">Predictor</th><th scope="col">Test bits per normalized character</th></tr></thead>
+<tbody>
+<tr><th scope="row">R10 compiled program</th><td>3.077781</td></tr>
+<tr><th scope="row">Frequency-ranked suffixes</th><td>3.085818</td></tr>
+<tr><th scope="row">Support-shrunk relative-entropy suffixes</th><td>3.013591</td></tr>
+<tr><th scope="row">Relative-entropy-ranked suffixes, compiled</th><td>3.009211</td></tr>
+<tr><th scope="row">Same decoder, AdamW mean across three starts</th><td>3.036408</td></tr>
+<tr><th scope="row">Direct six-history Kneser–Ney, no memory cap</th><td>2.804546</td></tr>
+</tbody>
+</table>
+</div>
+
+At a shared validation threshold of 3.05 bits per character, the compilation workflow took 2.42 seconds including selection among three rules. AdamW seeds first reached the target in 2.21 to 5.51 seconds. The replay reproduced all non-timing results. The direct count model fit and passed validation in 0.028 seconds after shared data preparation. The standalone design prompt and spec contain 94 and 154 reference tokens, respectively. Total session token usage and provider energy were unavailable. The CPU host exposed no package energy counter, so the experiment reports no measured watts or joules. The replay harness records package energy on hosts that expose it, and the report gives the meter procedure and scope for whole-system electricity. [R11 protocol, measurements and replay](https://github.com/protimroy/pro-log/tree/7378ff52fdeae5278f96e7b0c8c483d77f33f347/evidence/function-space-programming/runs/r11)
+
 ###### Code, evidence and reproduction
 
 The public snapshot contains the XOR and MNIST scripts, dependency lock, baseline metrics, R01 proposal batch, evaluator, and per-task results. The replay command evaluates the stored proposals. The R02 release records the executed comparison, including the labeled samples, frozen proposal batch, seed and checkpoint parameters. The original protocol documents the proposed setup and the R02 run notes record deviations. [Reproduction guide, literature review and protocol](https://github.com/protimroy/pro-log/tree/500c12999a40d4486df578d41d5671925c9fbbda/evidence/function-space-programming) · [R01 proposals and raw results](https://github.com/protimroy/pro-log/tree/500c12999a40d4486df578d41d5671925c9fbbda/evidence/function-space-programming/runs/r01-xor-pilot)
