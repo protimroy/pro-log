@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.10.0/styles/github.min.css">
     <link rel="stylesheet" type="text/css" href="/pro-log/component.css" />
     <style>
+      :root { color-scheme: light dark; --article-fg: #24272d; --article-muted: #555e6b; --article-line: #d7dce3; --article-panel: #f6f7f9; --article-paper: #fff; --article-accent: #304d72; --article-link: #245b9a; }
+      @media (prefers-color-scheme: dark) { :root { --article-fg: #e7ebf1; --article-muted: #b9c2cf; --article-line: #485363; --article-panel: #242c37; --article-paper: #1b222d; --article-accent: #a5c4ec; --article-link: #9ac7ff; } }
+      .article-shell { color: var(--article-fg); }
+      .article-shell a { color: var(--article-link); }
+      .article-shell .article-topbar a { color: var(--article-fg); }
+      .article-shell .article-toc, .article-shell .admonition, .article-shell .details-block, .article-shell .interactive-figure-frame, .article-shell pre { color: var(--article-fg); }
       .article-shell {
         width: 100%;
         box-sizing: border-box;
@@ -23,7 +29,7 @@
         gap: 1rem;
         margin-bottom: 2rem;
         padding-bottom: 0.75rem;
-        border-bottom: 1px solid #dbdbdb;
+        border-bottom: 1px solid var(--article-line);
         font-size: 0.95rem;
       }
       .article-topbar a {
@@ -38,7 +44,7 @@
         font-weight: 700;
         letter-spacing: 0.12em;
         text-transform: uppercase;
-        color: #5c5c5c;
+        color: var(--article-muted);
       }
       .article-title {
         margin-bottom: 1rem;
@@ -47,7 +53,7 @@
       .article-dek {
         max-width: 44rem;
         margin: 0;
-        color: #4a4a4a;
+        color: var(--article-muted);
         font-size: 1.15rem;
       }
       .article-meta {
@@ -56,7 +62,7 @@
         gap: 0.75rem 1.5rem;
         margin-top: 1rem;
         font-size: 0.9rem;
-        color: #5c5c5c;
+        color: var(--article-muted);
       }
       .article-grid {
         min-width: 0;
@@ -66,8 +72,8 @@
       }
       .article-toc {
         padding: 1rem 1.1rem;
-        border: 1px solid #dbdbdb;
-        background: #fafaf8;
+        border: 1px solid var(--article-line);
+        background: var(--article-panel);
       }
       .article-toc:empty {
         display: none;
@@ -90,7 +96,7 @@
       .article-content .content img, .article-content .content svg { max-width: 100%; height: auto; }
       .article-content .content table { display: block; max-width: 100%; overflow-x: auto; }
       .article-content .content pre { max-width: 100%; overflow-x: auto; }
-      .article-content .content .research-thread-nav { box-sizing: border-box; width: 100%; margin: 0 0 1.5rem; padding: .85rem 1rem; border-left: 3px solid #304d72; background: rgba(35,55,85,.07); font: 14px/1.65 'Inter', sans-serif; }
+      .article-content .content .research-thread-nav { box-sizing: border-box; width: 100%; margin: 0 0 1.5rem; padding: .85rem 1rem; border-left: 3px solid var(--article-accent); background: var(--article-panel); font: 14px/1.65 'Inter', sans-serif; }
       .article-content .content .research-thread-nav a { text-decoration: underline; text-underline-offset: 2px; }
       .article-content .content .research-thread-nav .research-thread-meta { display: block; font-size: 12px; opacity: .8; margin-top: .25rem; }
       @media(max-width: 600px) { .article-shell { padding: 1.5rem 1rem 3rem; } .article-grid { gap: 1rem; } .article-content .content .research-thread-nav { padding: .7rem .8rem; } }
@@ -112,25 +118,25 @@
       .article-content pre {
         padding: 1rem 1.15rem;
         overflow-x: auto;
-        border: 1px solid #dbdbdb;
-        background: #f7f7f4;
+        border: 1px solid var(--article-line);
+        background: var(--article-panel);
       }
-      .admonition { margin: 1.5rem 0; padding: 1rem; border-left: 0.35rem solid #4a4a4a; background: #f7f7f4; }
+      .admonition { margin: 1.5rem 0; padding: 1rem; border-left: 0.35rem solid var(--article-accent); background: var(--article-panel); }
       .admonition-title { margin-bottom: 0.5rem; font-weight: 700; text-transform: uppercase; font-size: 0.8rem; }
-      .details-block { margin: 1.5rem 0; padding: 0; border: 1px solid #dbdbdb; border-radius: 0; overflow: hidden; }
-      .details-block > summary { display: block; list-style: none; position: relative; margin: 0; padding: 0.85rem 2.75rem 0.85rem 1rem; cursor: pointer; font-weight: 700; background: #fafaf8; user-select: none; }
+      .details-block { margin: 1.5rem 0; padding: 0; border: 1px solid var(--article-line); border-radius: 0; overflow: hidden; }
+      .details-block > summary { display: block; list-style: none; position: relative; margin: 0; padding: 0.85rem 2.75rem 0.85rem 1rem; cursor: pointer; font-weight: 700; background: var(--article-panel); user-select: none; }
       .details-block > summary::-webkit-details-marker { display: none; }
       .details-block > summary::after { content: "+"; position: absolute; top: 50%; right: 1rem; transform: translateY(-50%); font-size: 1rem; font-weight: 400; }
-      .details-block[open] > summary { border-bottom: 1px solid #dbdbdb; }
+      .details-block[open] > summary { border-bottom: 1px solid var(--article-line); }
       .details-block[open] > summary::after { content: "-"; }
       .details-block > :not(summary) { margin: 0; padding: 0.85rem 1rem 1rem; }
       .article-figure, .margin-figure, .interactive-figure { margin: 2rem 0; }
       .article-figure img, .margin-figure img { display: block; width: 100%; border: 0; background: transparent; }
       .interactive-figure img, .interactive-figure svg { display: block; width: 100%; border: 0; background: transparent; }
-      .article-figure figcaption, .margin-figure figcaption, .interactive-figure figcaption { margin-top: 0.75rem; color: #5c5c5c; font-size: 0.95rem; }
-      .interactive-figure-frame { padding: 1rem; border: 1px solid #dbdbdb; background: #ffffff; }
+      .article-figure figcaption, .margin-figure figcaption, .interactive-figure figcaption { margin-top: 0.75rem; color: var(--article-muted); font-size: 0.95rem; }
+      .interactive-figure-frame { padding: 1rem; border: 1px solid var(--article-line); background: var(--article-paper); }
       .citation-group, .footnote-ref { font-size: 0.9em; }
-      .sidenote { display: inline-block; margin: 0.15rem 0.35rem; padding-left: 0.75rem; border-left: 2px solid #dbdbdb; color: #5c5c5c; font-size: 0.9rem; }
+      .sidenote { display: inline-block; margin: 0.15rem 0.35rem; padding-left: 0.75rem; border-left: 2px solid var(--article-line); color: var(--article-muted); font-size: 0.9rem; }
       .sidenote-number { margin-right: 0.35rem; font-weight: 700; }
       @media screen and (min-width: 1024px) {
         .article-grid {
