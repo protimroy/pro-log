@@ -1,0 +1,799 @@
+{
+  "sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+  "threads": 4,
+  "parameters": 220483,
+  "matched_validation_bpc": 3.05,
+  "splits": [
+    99992,
+    111531,
+    111532
+  ],
+  "shared_preparation": {
+    "wall_seconds": 0.162360002000014,
+    "process_cpu_seconds": 0.1622886590000001,
+    "package_joules": null,
+    "mean_package_watts": null
+  },
+  "energy_domains": [],
+  "dense_forward_projection_and_attention_flops_per_window": 548050,
+  "llm_tokens": {
+    "encoding": "o200k_base",
+    "actual_session_tokens": null,
+    "reference_prompt_tokens": 94,
+    "reference_spec_tokens": 154
+  },
+  "direct_kn": {
+    "validation_subset_bpc": 2.7022448557305565,
+    "cost": {
+      "wall_seconds": 0.027848850999987462,
+      "process_cpu_seconds": 0.027850451999999803,
+      "package_joules": null,
+      "mean_package_watts": null
+    },
+    "test_bpc": 2.8045456634102885
+  },
+  "compiled": {
+    "selection": "relative_entropy",
+    "total_cost": {
+      "wall_seconds": 2.4229221680000137,
+      "process_cpu_seconds": 2.8313621389999994,
+      "package_joules": null,
+      "mean_package_watts": null
+    },
+    "optimizer_steps": 0,
+    "methods": {
+      "frequency": {
+        "validation_subset_bpc": 3.039521663943705,
+        "active_gates": 1909,
+        "long_gates_by_length": {
+          "3": 567,
+          "4": 337,
+          "5": 180,
+          "6": 95
+        },
+        "incremental_cost": {
+          "wall_seconds": 0.1515900219999935,
+          "process_cpu_seconds": 0.286158774,
+          "package_joules": null,
+          "mean_package_watts": null
+        },
+        "test_bpc": 3.0858176172709766,
+        "max_probability_error_test": 1.0409846862291516e-07,
+        "max_probability_error_random": 7.090290177202974e-08
+      },
+      "relative_entropy": {
+        "validation_subset_bpc": 2.9449871509022945,
+        "active_gates": 1909,
+        "long_gates_by_length": {
+          "3": 506,
+          "4": 302,
+          "5": 138,
+          "6": 233
+        },
+        "incremental_cost": {
+          "wall_seconds": 0.1635510570000065,
+          "process_cpu_seconds": 0.2971428009999997,
+          "package_joules": null,
+          "mean_package_watts": null
+        },
+        "test_bpc": 3.009210966807932,
+        "max_probability_error_test": 1.1700411972626057e-07,
+        "max_probability_error_random": 7.090290177202974e-08
+      },
+      "support_shrunk": {
+        "validation_subset_bpc": 2.9469018201985873,
+        "active_gates": 1909,
+        "long_gates_by_length": {
+          "3": 519,
+          "4": 298,
+          "5": 138,
+          "6": 224
+        },
+        "incremental_cost": {
+          "wall_seconds": 0.17169741800000793,
+          "process_cpu_seconds": 0.31821592300000034,
+          "package_joules": null,
+          "mean_package_watts": null
+        },
+        "test_bpc": 3.0135913457533747,
+        "max_probability_error_test": 1.0409846862291516e-07,
+        "max_probability_error_random": 7.090290177202974e-08
+      }
+    }
+  },
+  "adamw": [
+    {
+      "seed": 17,
+      "total_cost": {
+        "wall_seconds": 9.202087352000035,
+        "process_cpu_seconds": 34.232588115,
+        "package_joules": null,
+        "mean_package_watts": null
+      },
+      "best": {
+        "step": 1100,
+        "validation_subset_bpc": 2.9701429884046973,
+        "training_windows_processed": 281392,
+        "validation_windows_processed": 98304,
+        "cost": {
+          "wall_seconds": 6.9799705519999975,
+          "process_cpu_seconds": 25.342065417,
+          "package_joules": null,
+          "mean_package_watts": null
+        },
+        "test_bpc": 3.021913818509241
+      },
+      "first_target": {
+        "step": 700,
+        "validation_subset_bpc": 3.0416973689357327,
+        "training_windows_processed": 179096,
+        "validation_windows_processed": 65536,
+        "cost": {
+          "wall_seconds": 4.785939589000009,
+          "process_cpu_seconds": 16.57429015,
+          "package_joules": null,
+          "mean_package_watts": null
+        },
+        "test_bpc": 3.083434796528971
+      },
+      "curve": [
+        {
+          "step": 0,
+          "validation_subset_bpc": 5.221988888947786,
+          "training_windows_processed": 0,
+          "validation_windows_processed": 8192,
+          "cost": {
+            "wall_seconds": 0.8852628150000328,
+            "process_cpu_seconds": 0.995188859999999,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 100,
+          "validation_subset_bpc": 3.436359518263411,
+          "training_windows_processed": 25600,
+          "validation_windows_processed": 16384,
+          "cost": {
+            "wall_seconds": 1.4491241059999993,
+            "process_cpu_seconds": 3.249623969,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 200,
+          "validation_subset_bpc": 3.229480786856598,
+          "training_windows_processed": 51200,
+          "validation_windows_processed": 24576,
+          "cost": {
+            "wall_seconds": 2.0143931659999907,
+            "process_cpu_seconds": 5.510617968999998,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 300,
+          "validation_subset_bpc": 3.1391262631499326,
+          "training_windows_processed": 76800,
+          "validation_windows_processed": 32768,
+          "cost": {
+            "wall_seconds": 2.570844539999996,
+            "process_cpu_seconds": 7.734553513999998,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 400,
+          "validation_subset_bpc": 3.1213804904387725,
+          "training_windows_processed": 102296,
+          "validation_windows_processed": 40960,
+          "cost": {
+            "wall_seconds": 3.1268455180000387,
+            "process_cpu_seconds": 9.938830463999999,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 500,
+          "validation_subset_bpc": 3.0729096094135335,
+          "training_windows_processed": 127896,
+          "validation_windows_processed": 49152,
+          "cost": {
+            "wall_seconds": 3.679717991000018,
+            "process_cpu_seconds": 12.145413208,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 600,
+          "validation_subset_bpc": 3.106991476096317,
+          "training_windows_processed": 153496,
+          "validation_windows_processed": 57344,
+          "cost": {
+            "wall_seconds": 4.232419083000025,
+            "process_cpu_seconds": 14.353496415999999,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 700,
+          "validation_subset_bpc": 3.0416973689357327,
+          "training_windows_processed": 179096,
+          "validation_windows_processed": 65536,
+          "cost": {
+            "wall_seconds": 4.785939589000009,
+            "process_cpu_seconds": 16.57429015,
+            "package_joules": null,
+            "mean_package_watts": null
+          },
+          "test_bpc": 3.083434796528971
+        },
+        {
+          "step": 800,
+          "validation_subset_bpc": 3.0379614333904854,
+          "training_windows_processed": 204592,
+          "validation_windows_processed": 73728,
+          "cost": {
+            "wall_seconds": 5.329292599000041,
+            "process_cpu_seconds": 18.738398333,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 900,
+          "validation_subset_bpc": 3.06632256066657,
+          "training_windows_processed": 230192,
+          "validation_windows_processed": 81920,
+          "cost": {
+            "wall_seconds": 5.875108272000034,
+            "process_cpu_seconds": 20.926471528,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 1000,
+          "validation_subset_bpc": 3.044862668111884,
+          "training_windows_processed": 255792,
+          "validation_windows_processed": 90112,
+          "cost": {
+            "wall_seconds": 6.429311076000033,
+            "process_cpu_seconds": 23.137414111,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 1100,
+          "validation_subset_bpc": 2.9701429884046973,
+          "training_windows_processed": 281392,
+          "validation_windows_processed": 98304,
+          "cost": {
+            "wall_seconds": 6.9799705519999975,
+            "process_cpu_seconds": 25.342065417,
+            "package_joules": null,
+            "mean_package_watts": null
+          },
+          "test_bpc": 3.021913818509241
+        },
+        {
+          "step": 1200,
+          "validation_subset_bpc": 3.0167558782701653,
+          "training_windows_processed": 306888,
+          "validation_windows_processed": 106496,
+          "cost": {
+            "wall_seconds": 7.535263272000009,
+            "process_cpu_seconds": 27.565395868000003,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 1300,
+          "validation_subset_bpc": 3.0044925559585427,
+          "training_windows_processed": 332488,
+          "validation_windows_processed": 114688,
+          "cost": {
+            "wall_seconds": 8.096933960000001,
+            "process_cpu_seconds": 29.804713870999997,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 1400,
+          "validation_subset_bpc": 2.993235212033095,
+          "training_windows_processed": 358088,
+          "validation_windows_processed": 122880,
+          "cost": {
+            "wall_seconds": 8.648172308000028,
+            "process_cpu_seconds": 32.010596539,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 1500,
+          "validation_subset_bpc": 3.0006564255260626,
+          "training_windows_processed": 383688,
+          "validation_windows_processed": 131072,
+          "cost": {
+            "wall_seconds": 9.202074541000002,
+            "process_cpu_seconds": 34.232577785,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "total_cost": {
+        "wall_seconds": 8.171314369000015,
+        "process_cpu_seconds": 32.635784873000006,
+        "package_joules": null,
+        "mean_package_watts": null
+      },
+      "best": {
+        "step": 1100,
+        "validation_subset_bpc": 2.97126098467081,
+        "training_windows_processed": 281392,
+        "validation_windows_processed": 98304,
+        "cost": {
+          "wall_seconds": 6.0433808680000425,
+          "process_cpu_seconds": 24.137423279000004,
+          "package_joules": null,
+          "mean_package_watts": null
+        },
+        "test_bpc": 3.0495467951382005
+      },
+      "first_target": {
+        "step": 1000,
+        "validation_subset_bpc": 2.9950873627391394,
+        "training_windows_processed": 255792,
+        "validation_windows_processed": 90112,
+        "cost": {
+          "wall_seconds": 5.508977439000034,
+          "process_cpu_seconds": 21.997783628000008,
+          "package_joules": null,
+          "mean_package_watts": null
+        },
+        "test_bpc": 3.084661813461884
+      },
+      "curve": [
+        {
+          "step": 0,
+          "validation_subset_bpc": 5.228597332470907,
+          "training_windows_processed": 0,
+          "validation_windows_processed": 8192,
+          "cost": {
+            "wall_seconds": 0.043059282999990955,
+            "process_cpu_seconds": 0.15107703600000377,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 100,
+          "validation_subset_bpc": 3.4377319817435015,
+          "training_windows_processed": 25600,
+          "validation_windows_processed": 16384,
+          "cost": {
+            "wall_seconds": 0.6069092609999984,
+            "process_cpu_seconds": 2.400671752000001,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 200,
+          "validation_subset_bpc": 3.232221429592462,
+          "training_windows_processed": 51200,
+          "validation_windows_processed": 24576,
+          "cost": {
+            "wall_seconds": 1.1703125450000016,
+            "process_cpu_seconds": 4.651606691000005,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 300,
+          "validation_subset_bpc": 3.2091035272745017,
+          "training_windows_processed": 76800,
+          "validation_windows_processed": 32768,
+          "cost": {
+            "wall_seconds": 1.711645954000005,
+            "process_cpu_seconds": 6.813191699000001,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 400,
+          "validation_subset_bpc": 3.17446562491939,
+          "training_windows_processed": 102296,
+          "validation_windows_processed": 40960,
+          "cost": {
+            "wall_seconds": 2.2554507390000254,
+            "process_cpu_seconds": 8.987693275000005,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 500,
+          "validation_subset_bpc": 3.120139432196772,
+          "training_windows_processed": 127896,
+          "validation_windows_processed": 49152,
+          "cost": {
+            "wall_seconds": 2.7975930640000115,
+            "process_cpu_seconds": 11.161687011000005,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 600,
+          "validation_subset_bpc": 3.061958639039346,
+          "training_windows_processed": 153496,
+          "validation_windows_processed": 57344,
+          "cost": {
+            "wall_seconds": 3.338169327999992,
+            "process_cpu_seconds": 13.322292950000005,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 700,
+          "validation_subset_bpc": 3.0780449897996007,
+          "training_windows_processed": 179096,
+          "validation_windows_processed": 65536,
+          "cost": {
+            "wall_seconds": 3.890336106999996,
+            "process_cpu_seconds": 15.529496463000001,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 800,
+          "validation_subset_bpc": 3.0536909300855326,
+          "training_windows_processed": 204592,
+          "validation_windows_processed": 73728,
+          "cost": {
+            "wall_seconds": 4.432756685000015,
+            "process_cpu_seconds": 17.694275078000004,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 900,
+          "validation_subset_bpc": 3.1163137528091394,
+          "training_windows_processed": 230192,
+          "validation_windows_processed": 81920,
+          "cost": {
+            "wall_seconds": 4.971203836000029,
+            "process_cpu_seconds": 19.85043921100001,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 1000,
+          "validation_subset_bpc": 2.9950873627391394,
+          "training_windows_processed": 255792,
+          "validation_windows_processed": 90112,
+          "cost": {
+            "wall_seconds": 5.508977439000034,
+            "process_cpu_seconds": 21.997783628000008,
+            "package_joules": null,
+            "mean_package_watts": null
+          },
+          "test_bpc": 3.084661813461884
+        },
+        {
+          "step": 1100,
+          "validation_subset_bpc": 2.97126098467081,
+          "training_windows_processed": 281392,
+          "validation_windows_processed": 98304,
+          "cost": {
+            "wall_seconds": 6.0433808680000425,
+            "process_cpu_seconds": 24.137423279000004,
+            "package_joules": null,
+            "mean_package_watts": null
+          },
+          "test_bpc": 3.0495467951382005
+        },
+        {
+          "step": 1200,
+          "validation_subset_bpc": 3.023192102167489,
+          "training_windows_processed": 306888,
+          "validation_windows_processed": 106496,
+          "cost": {
+            "wall_seconds": 6.571442144000002,
+            "process_cpu_seconds": 26.249609430999996,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 1300,
+          "validation_subset_bpc": 3.0163468133750126,
+          "training_windows_processed": 332488,
+          "validation_windows_processed": 114688,
+          "cost": {
+            "wall_seconds": 7.098327326999993,
+            "process_cpu_seconds": 28.36040543,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 1400,
+          "validation_subset_bpc": 2.97440756319812,
+          "training_windows_processed": 358088,
+          "validation_windows_processed": 122880,
+          "cost": {
+            "wall_seconds": 7.6419344110000225,
+            "process_cpu_seconds": 30.535902984000003,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 1500,
+          "validation_subset_bpc": 2.9986283324016685,
+          "training_windows_processed": 383688,
+          "validation_windows_processed": 131072,
+          "cost": {
+            "wall_seconds": 8.171303002000002,
+            "process_cpu_seconds": 32.635776315,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "total_cost": {
+        "wall_seconds": 7.194174024000006,
+        "process_cpu_seconds": 28.742899625000007,
+        "package_joules": null,
+        "mean_package_watts": null
+      },
+      "best": {
+        "step": 1500,
+        "validation_subset_bpc": 2.9057422002142212,
+        "training_windows_processed": 383688,
+        "validation_windows_processed": 131072,
+        "cost": {
+          "wall_seconds": 7.193952545999991,
+          "process_cpu_seconds": 28.742681032000007,
+          "package_joules": null,
+          "mean_package_watts": null
+        },
+        "test_bpc": 3.037763045212127
+      },
+      "first_target": {
+        "step": 500,
+        "validation_subset_bpc": 3.0458773029702084,
+        "training_windows_processed": 127896,
+        "validation_windows_processed": 49152,
+        "cost": {
+          "wall_seconds": 2.214019459000042,
+          "process_cpu_seconds": 8.835210286000006,
+          "package_joules": null,
+          "mean_package_watts": null
+        },
+        "test_bpc": 3.0920688421275155
+      },
+      "curve": [
+        {
+          "step": 0,
+          "validation_subset_bpc": 5.200914109146952,
+          "training_windows_processed": 0,
+          "validation_windows_processed": 8192,
+          "cost": {
+            "wall_seconds": 0.037525130999995326,
+            "process_cpu_seconds": 0.14091822500000717,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 100,
+          "validation_subset_bpc": 3.4150216255107577,
+          "training_windows_processed": 25600,
+          "validation_windows_processed": 16384,
+          "cost": {
+            "wall_seconds": 0.5525323450000315,
+            "process_cpu_seconds": 2.2039826720000093,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 200,
+          "validation_subset_bpc": 3.255294783816741,
+          "training_windows_processed": 51200,
+          "validation_windows_processed": 24576,
+          "cost": {
+            "wall_seconds": 0.9898449450000157,
+            "process_cpu_seconds": 3.9431090490000003,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 300,
+          "validation_subset_bpc": 3.181155874746504,
+          "training_windows_processed": 76800,
+          "validation_windows_processed": 32768,
+          "cost": {
+            "wall_seconds": 1.395264313000041,
+            "process_cpu_seconds": 5.560221835000007,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 400,
+          "validation_subset_bpc": 3.101362384542506,
+          "training_windows_processed": 102296,
+          "validation_windows_processed": 40960,
+          "cost": {
+            "wall_seconds": 1.8096807390000436,
+            "process_cpu_seconds": 7.219344206000002,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 500,
+          "validation_subset_bpc": 3.0458773029702084,
+          "training_windows_processed": 127896,
+          "validation_windows_processed": 49152,
+          "cost": {
+            "wall_seconds": 2.214019459000042,
+            "process_cpu_seconds": 8.835210286000006,
+            "package_joules": null,
+            "mean_package_watts": null
+          },
+          "test_bpc": 3.0920688421275155
+        },
+        {
+          "step": 600,
+          "validation_subset_bpc": 3.0226343368095394,
+          "training_windows_processed": 153496,
+          "validation_windows_processed": 57344,
+          "cost": {
+            "wall_seconds": 2.6258387510000034,
+            "process_cpu_seconds": 10.483064141,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 700,
+          "validation_subset_bpc": 3.0086498926563334,
+          "training_windows_processed": 179096,
+          "validation_windows_processed": 65536,
+          "cost": {
+            "wall_seconds": 3.0413797510000222,
+            "process_cpu_seconds": 12.145333986000011,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 800,
+          "validation_subset_bpc": 3.066747978522934,
+          "training_windows_processed": 204592,
+          "validation_windows_processed": 73728,
+          "cost": {
+            "wall_seconds": 3.454216379999991,
+            "process_cpu_seconds": 13.791801003000003,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 900,
+          "validation_subset_bpc": 3.017226973845835,
+          "training_windows_processed": 230192,
+          "validation_windows_processed": 81920,
+          "cost": {
+            "wall_seconds": 3.887388950000002,
+            "process_cpu_seconds": 15.517621915000007,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 1000,
+          "validation_subset_bpc": 2.963533532275801,
+          "training_windows_processed": 255792,
+          "validation_windows_processed": 90112,
+          "cost": {
+            "wall_seconds": 4.3974306090000255,
+            "process_cpu_seconds": 17.562337025000005,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 1100,
+          "validation_subset_bpc": 2.9888831974671213,
+          "training_windows_processed": 281392,
+          "validation_windows_processed": 98304,
+          "cost": {
+            "wall_seconds": 4.951980237000043,
+            "process_cpu_seconds": 19.772212867000007,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 1200,
+          "validation_subset_bpc": 2.981666539594653,
+          "training_windows_processed": 306888,
+          "validation_windows_processed": 106496,
+          "cost": {
+            "wall_seconds": 5.520160696999994,
+            "process_cpu_seconds": 22.045915752000013,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 1300,
+          "validation_subset_bpc": 3.023002425071061,
+          "training_windows_processed": 332488,
+          "validation_windows_processed": 114688,
+          "cost": {
+            "wall_seconds": 6.077154016999998,
+            "process_cpu_seconds": 24.280049231000007,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 1400,
+          "validation_subset_bpc": 2.9724756803245853,
+          "training_windows_processed": 358088,
+          "validation_windows_processed": 122880,
+          "cost": {
+            "wall_seconds": 6.636670258000038,
+            "process_cpu_seconds": 26.519153585000012,
+            "package_joules": null,
+            "mean_package_watts": null
+          }
+        },
+        {
+          "step": 1500,
+          "validation_subset_bpc": 2.9057422002142212,
+          "training_windows_processed": 383688,
+          "validation_windows_processed": 131072,
+          "cost": {
+            "wall_seconds": 7.193952545999991,
+            "process_cpu_seconds": 28.742681032000007,
+            "package_joules": null,
+            "mean_package_watts": null
+          },
+          "test_bpc": 3.037763045212127
+        }
+      ]
+    }
+  ]
+}

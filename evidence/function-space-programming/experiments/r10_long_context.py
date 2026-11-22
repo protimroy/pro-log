@@ -125,7 +125,7 @@ def one_hot_bits():
 
 
 @torch.no_grad()
-def compile_program(program, hidden, suffix_weight, lag_weight):
+def compile_program(program, hidden, suffix_weight, lag_weight, *, history_deltas=()):
     model = Decoder(hidden)
     for param in model.parameters():
         param.zero_()
@@ -166,6 +166,9 @@ def compile_program(program, hidden, suffix_weight, lag_weight):
         for position, ratios in enumerate(program.lag_delta):
             for char, logits in enumerate(ratios):
                 write([(position, char)], lag_weight * logits)
+    for length, key, delta in history_deltas:
+        symbols = [(HISTORY - 1 - offset, key // V**offset % V) for offset in range(length)]
+        write(symbols, delta)
     return model, gate
 
 
