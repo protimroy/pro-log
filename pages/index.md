@@ -72,8 +72,20 @@ template: page.html
   <tbody>
     <tr class="postcontainer">
       <td>
-        <span class="post_title">Function Space Programming — Research Thread</span>
-        <span class="post_text"><a href="/pro-log/function-space-programming-thread/">Read the linked chapters: exact constructions, Transformer compilation, and R12–R13 shared-function results</a></span>
+        <span class="post_title">Function Space Programming — Thread Index</span>
+        <span class="post_text"><a href="/pro-log/function-space-programming-thread/">Research questions, chapter map, and evidence status</a></span>
+      </td>
+    </tr>
+    <tr class="postcontainer">
+      <td>
+        <span class="post_title">I · Constructing Functions</span>
+        <span class="post_text"><a href="/pro-log/function-space-programming/">XOR, MNIST, LLM-proposed edits, and compiled Transformer functions</a></span>
+      </td>
+    </tr>
+    <tr class="postcontainer">
+      <td>
+        <span class="post_title">II · Shared Functions, Lost Information</span>
+        <span class="post_text"><a href="/pro-log/function-space-programming-shared-functions/">R12–R13: KL clustering, sparse corrections, and negative results</a></span>
       </td>
     </tr>
     <tr class="postcontainer">
