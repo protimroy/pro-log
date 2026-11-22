@@ -72,8 +72,8 @@ template: page.html
   <tbody>
     <tr class="postcontainer">
       <td>
-        <span class="post_title">Function Space Programming</span>
-        <span class="post_text"><a href="/pro-log/function-space-programming/">Verified XOR and MNIST baselines for LLM-assisted function edits</a></span>
+        <span class="post_title">Function Space Programming — Research Thread</span>
+        <span class="post_text"><a href="/pro-log/function-space-programming-thread/">Read the linked chapters: exact constructions, Transformer compilation, and R12–R13 shared-function results</a></span>
       </td>
     </tr>
     <tr class="postcontainer">
