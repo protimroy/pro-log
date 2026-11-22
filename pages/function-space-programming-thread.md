@@ -8,7 +8,7 @@ options_toc: true
 template: article.html
 ---
 
-# Function Space Programming
+## Function Space Programming
 
 *Research thread · Updated November 22, 2026*
 

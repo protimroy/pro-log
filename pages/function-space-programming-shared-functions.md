@@ -10,7 +10,7 @@ template: article.html
 
 [← Thread index](/pro-log/function-space-programming-thread/) · [Part I: Constructing functions](/pro-log/function-space-programming/)
 
-# Shared Functions, Lost Information
+## Shared Functions, Lost Information
 
 *Function Space Programming · Part II · November 22, 2026*
 
