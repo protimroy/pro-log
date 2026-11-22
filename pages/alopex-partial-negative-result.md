@@ -8,6 +8,18 @@ options_toc: true
 template: article.html
 ---
 
+
+<style>
+  .research-thread-nav { margin: 0 0 1.5rem; padding: .8rem 1rem; border-left: 3px solid #304d72; background: rgba(35,55,85,.07); font: 14px/1.65 'Inter', sans-serif; }
+  .research-thread-nav a { text-decoration: underline; text-underline-offset: 2px; }
+  .research-thread-nav .research-thread-meta { display: block; font-size: 12px; opacity: .8; margin-top: .25rem; }
+  @media(max-width:600px) { .research-thread-nav { padding: .7rem .8rem; } }
+</style>
+<nav class="research-thread-nav" aria-label="ALOPEX research series">
+  <a href="/pro-log/alopex-thread/">ALOPEX research thread</a> · <a href="/pro-log/activation-space-alopex/">Activation-space experiments</a>
+  <span class="research-thread-meta">Research series · Updated November 22, 2026</span>
+</nav>
+
 <link rel="stylesheet" href="/pro-log/assets/alopex/katex.min-b4834341aeb6.css"><link rel="stylesheet" href="/pro-log/assets/alopex/article-9f0f7a524f10.css">
 
 ###### Constrain the claim before scaling again
