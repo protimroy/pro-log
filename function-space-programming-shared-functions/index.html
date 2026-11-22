@@ -10,7 +10,9 @@
     <link rel="stylesheet" type="text/css" href="/pro-log/component.css" />
     <style>
       .article-shell {
-        max-width: 60rem;
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 72rem;
         margin: 0 auto;
         padding: 2.5rem 1.5rem 4rem;
       }
@@ -57,6 +59,7 @@
         color: #5c5c5c;
       }
       .article-grid {
+        min-width: 0;
         display: grid;
         grid-template-columns: minmax(0, 1fr);
         gap: 2rem;
@@ -76,8 +79,21 @@
         margin-top: 0.45rem;
       }
       .article-content {
+        min-width: 0;
+        width: 100%;
         max-width: 46rem;
       }
+      /* The ALOPEX synthesis contains wide figures and data tables. */
+      .article-shell:has(.paper-section) { max-width: 90rem; }
+      .article-shell:has(.paper-section) .article-content { max-width: none; }
+      .article-content .content { min-width: 0; overflow-wrap: anywhere; }
+      .article-content .content img, .article-content .content svg { max-width: 100%; height: auto; }
+      .article-content .content table { display: block; max-width: 100%; overflow-x: auto; }
+      .article-content .content pre { max-width: 100%; overflow-x: auto; }
+      .article-content .content .research-thread-nav { box-sizing: border-box; width: 100%; margin: 0 0 1.5rem; padding: .85rem 1rem; border-left: 3px solid #304d72; background: rgba(35,55,85,.07); font: 14px/1.65 'Inter', sans-serif; }
+      .article-content .content .research-thread-nav a { text-decoration: underline; text-underline-offset: 2px; }
+      .article-content .content .research-thread-nav .research-thread-meta { display: block; font-size: 12px; opacity: .8; margin-top: .25rem; }
+      @media(max-width: 600px) { .article-shell { padding: 1.5rem 1rem 3rem; } .article-grid { gap: 1rem; } .article-content .content .research-thread-nav { padding: .7rem .8rem; } }
       .article-content .content {
         font-size: 1rem;
         line-height: 1.7;
