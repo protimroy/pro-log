@@ -70,11 +70,6 @@ template: page.html
 </style>
 
 <table class="table prolog-index">
-  <thead>
-    <tr>
-      <th><div class="date">RESEARCH</div></th>
-    </tr>
-  </thead>
   <tbody>
     <tr class="postcontainer research-series-head">
       <td>
