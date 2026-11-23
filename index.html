@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/pro-log/bulma.css" />
     <link rel="stylesheet" type="text/css" href="/pro-log/component.css" />
-    <style>a[href^="https://"]::after {
-        content: " [*]";
-      }
-      .navbar-menu {
-        box-shadow: none;
-      }</style>
+    <style>
+      .navbar-menu { box-shadow: none; }
+      .prolog-page { max-width: 46rem !important; margin-inline: auto; }
+      .prolog-page .navbar { min-height: 0; margin-bottom: 1.5rem !important; }
+      .prolog-page .navbar-item { padding: 0; min-height: 0; font-size: .875rem; }
+      .prolog-page .navbar-menu { padding: 0; background: transparent; }
+      .prolog-page .title { font-size: clamp(1.75rem, 4vw, 2.25rem); line-height: 1.2; margin-bottom: .45rem; }
+      .prolog-page .subtitle { max-width: 39rem; font-size: .95rem !important; line-height: 1.65; margin-bottom: 1.75rem; }
+      .prolog-page .content { font-size: 1rem !important; }
+      .prolog-page .content table { background: transparent; }
+      @media (max-width: 600px) { .prolog-page .navbar { margin-bottom: 1rem !important; } }
+    </style>
   </head>
   <body>
-    <section class="section">
+    <section class="section prolog-page">
       <div class="container">
         <nav class="navbar mb-4" role="navigation">
           <div class="navbar-menu is-active">
@@ -28,22 +34,7 @@
       </div>
       <div class="container" id="content">
         <h1 class="title">
-          <span class="icon-text"><svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z" />
-  <path d="M10 2c1 .5 2 2 2 5" />
-</svg>
-
-            <span>Pro-Log</span></span>
+          Pro-Log
         </h1>
         <style>.meta-container { font-size: .7rem; }</style>
 <div class="table-container meta-container">
@@ -51,22 +42,22 @@
 <thead>
 <tr><th colspan="2">Meta</th></tr>
 </thead>
-<tbody><tr><th>slug</th><td>/</td><tr><th>title</th><td>Pro-Log</td><tr><th>template</th><td>page.html</td><tr><th>description</th><td>Hi, this is Protim. I am documenting most of my learnings in the fields of artificial intelligence, machine learning, deep learning, generative ai, ..etc, here.</td><tr><th>canonical_url</th><td>https://www.protimroy.com/pro-log/</td></tbody>
+<tbody><tr><th>slug</th><td>/</td><tr><th>title</th><td>Pro-Log</td><tr><th>template</th><td>page.html</td><tr><th>description</th><td>Research notes on machine learning, neural networks, and optimization.</td><tr><th>canonical_url</th><td>https://www.protimroy.com/pro-log/</td></tbody>
 </table>
 </div>
         
-        <p class="subtitle" style="font-size:95%;" >Hi, this is Protim. I am documenting most of my learnings in the fields of artificial intelligence, machine learning, deep learning, generative ai, ..etc, here.</p>
-        <section class="content" style="font-size:75%;" >
+        <p class="subtitle">Research notes on machine learning, neural networks, and optimization.</p>
+        <section class="content">
           <style>
-  .prolog-index { --index-line: rgba(60,75,95,.20); --index-hover: rgba(90,110,140,.07); --index-feature: rgba(35,55,85,.10); --index-feature-hover: rgba(35,55,85,.16); --index-accent: #304d72; --index-muted: #526071; }
-  @media (prefers-color-scheme: dark) { .prolog-index { --index-line: rgba(190,204,226,.25); --index-hover: rgba(180,200,230,.10); --index-feature: rgba(135,166,209,.15); --index-feature-hover: rgba(135,166,209,.23); --index-accent: #9fc4f4; --index-muted: #b7c3d2; } }
+  .prolog-index { --index-line: rgba(60,75,95,.18); --index-hover: rgba(90,110,140,.045); --index-feature: transparent; --index-feature-hover: rgba(90,110,140,.045); --index-accent: #304d72; --index-muted: #526071; }
+  @media (prefers-color-scheme: dark) { .prolog-index { --index-line: rgba(190,204,226,.22); --index-hover: rgba(180,200,230,.065); --index-feature: transparent; --index-feature-hover: rgba(180,200,230,.065); --index-accent: #9fc4f4; --index-muted: #b7c3d2; } }
   .date { font-family: 'Inter', sans-serif; }
 
   /* Keep table rows in the table formatting model; style cells instead. */
   .prolog-index { width: 100%; border-collapse: collapse; table-layout: fixed; }
   .prolog-index .postcontainer { display: table-row; height: auto; background: transparent; }
   .prolog-index .postcontainer > td {
-    padding: 15px 20px;
+    padding: 11px 0;
     vertical-align: middle;
     border-bottom: 1px solid var(--index-line);
     overflow-wrap: anywhere;
@@ -74,22 +65,22 @@
   .prolog-index .postcontainer:hover > td { background: var(--index-hover); }
   .prolog-index .post_title,
   .prolog-index .post_text { display: block; font-family: 'Inter', sans-serif; margin: 0; }
-  .prolog-index .post_title { font-size: 19px; font-style: normal; font-weight: 600; line-height: 1.4; }
-  .prolog-index .post_text { font-size: 14px; line-height: 1.6; margin-top: 4px; }
-  .prolog-index .post_date { display: block; margin-top: 5px; font: 500 12px/1.5 'Inter', sans-serif; color: var(--index-muted); }
+  .prolog-index .post_title { font-size: 16px; font-style: normal; font-weight: 600; line-height: 1.4; }
+  .prolog-index .post_text { font-size: 13px; line-height: 1.55; margin-top: 2px; }
+  .prolog-index .post_date { display: block; margin-top: 3px; font: 400 12px/1.5 'Inter', sans-serif; color: var(--index-muted); }
   .prolog-index .post_title a { color: inherit; text-decoration: none; }
   .prolog-index .post_title a:hover,
   .prolog-index .post_title a:focus-visible { text-decoration: underline; }
 
   .prolog-index .research-series-head > td {
-    padding: 22px 24px;
+    padding: 17px 0 10px;
     background: var(--index-feature);
-    border-left: 4px solid var(--index-accent);
+    border-left: none;
   }
   .prolog-index .research-series-head:hover > td { background: var(--index-feature-hover); }
   .prolog-index .research-series-head .post_title {
-    font-size: 26px;
-    font-weight: 750;
+    font-size: 19px;
+    font-weight: 650;
     line-height: 1.25;
   }
   .prolog-index .research-series-label {
@@ -97,33 +88,28 @@
     font: 700 11px 'Inter', sans-serif;
     letter-spacing: .12em;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
   }
   .prolog-index .research-series-chapter > td {
-    padding: 14px 20px 14px 40px;
-    border-left: 2px solid var(--index-line);
+    padding: 9px 0 9px 18px;
+    border-left: none;
   }
-  .prolog-index .research-series-chapter .post_title { font-size: 17px; font-weight: 600; }
-  .prolog-index .research-series-chapter .post_text { font-size: 13px; }
+  .prolog-index .research-series-chapter .post_title { font-size: 15px; font-weight: 500; }
+  .prolog-index .research-series-chapter .post_text { font-size: 12px; }
   .prolog-index .research-series-chapter .post_title::before {
     content: '↳';
-    margin-right: 9px;
+    margin-right: 7px;
     opacity: .6;
   }
   @media (max-width: 600px) {
-    .prolog-index .postcontainer > td { padding: 13px 12px; }
-    .prolog-index .research-series-head > td { padding: 18px 15px; }
-    .prolog-index .research-series-head .post_title { font-size: 22px; }
-    .prolog-index .research-series-chapter > td { padding: 13px 12px 13px 23px; }
+    .prolog-index .postcontainer > td { padding: 10px 0; }
+    .prolog-index .research-series-head > td { padding: 15px 0 9px; }
+    .prolog-index .research-series-head .post_title { font-size: 19px; }
+    .prolog-index .research-series-chapter > td { padding: 9px 0 9px 12px; }
     .prolog-index .research-series-chapter .post_title { font-size: 16px; }
   }
 </style>
-<table class="table prolog-index">
-  <thead>
-    <tr>
-      <th><div class="date">RESEARCH</div></th>
-    </tr>
-  </thead>
+<table class="prolog-index">
   <tbody>
     <tr class="postcontainer research-series-head">
       <td>
@@ -186,7 +172,7 @@
     </tr>
   </tbody>
 </table>
-<h4 id="about-this-thread-project">About this Thread Project</h4>
+<h4 id="about">About</h4>
 <p>
 Inspired by [1],[2],[3],[4].<br>
 This is an ever growing list.<br></p><p>
