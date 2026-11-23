@@ -5,21 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{& theme.head}}
     {{& component.head}}
-    <style>
-      .navbar-menu { box-shadow: none; }
-      .prolog-page { max-width: 46rem !important; margin-inline: auto; }
-      .prolog-page .navbar { min-height: 0; margin-bottom: 1.5rem !important; }
-      .prolog-page .navbar-item { padding: 0; min-height: 0; font-size: .875rem; }
-      .prolog-page .navbar-menu { padding: 0; background: transparent; }
-      .prolog-page .title { font-size: clamp(1.75rem, 4vw, 2.25rem); line-height: 1.2; margin-bottom: .45rem; }
-      .prolog-page .subtitle { max-width: 39rem; font-size: .95rem !important; line-height: 1.65; margin-bottom: 1.75rem; }
-      .prolog-page .content { font-size: 1rem !important; }
-      .prolog-page .content table { background: transparent; }
-      @media (max-width: 600px) { .prolog-page .navbar { margin-bottom: 1rem !important; } }
-    </style>
+    <style>a[href^="https://"]::after {
+        content: " [*]";
+      }
+      .navbar-menu {
+        box-shadow: none;
+      }</style>
   </head>
   <body>
-    <section class="section prolog-page">
+    <section class="section">
       <div class="container">
         <nav class="navbar mb-4" role="navigation">
           <div class="navbar-menu is-active">
@@ -34,12 +28,13 @@
       </div>
       <div class="container" id="content">
         <h1 class="title">
-          {{title}}
+          <span class="icon-text">{{& lucide.apple}}
+            <span>{{title}}</span></span>
         </h1>
         {{& meta }}
         
-        <p class="subtitle">{{ description }}</p>
-        <section class="content">
+        <p class="subtitle" style="font-size:95%;" >{{ description }}</p>
+        <section class="content" style="font-size:75%;" >
           {{& content}}
         </section>
       </div>
