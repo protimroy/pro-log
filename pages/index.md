@@ -8,64 +8,21 @@ template: page.html
 ---
 
 <style>
-  .prolog-index { --index-line: rgba(60,75,95,.18); --index-hover: rgba(90,110,140,.045); --index-feature: transparent; --index-feature-hover: rgba(90,110,140,.045); --index-accent: #304d72; --index-muted: #526071; }
-  @media (prefers-color-scheme: dark) { .prolog-index { --index-line: rgba(190,204,226,.22); --index-hover: rgba(180,200,230,.065); --index-feature: transparent; --index-feature-hover: rgba(180,200,230,.065); --index-accent: #9fc4f4; --index-muted: #b7c3d2; } }
-  .date { font-family: 'Inter', sans-serif; }
-
-  /* Keep table rows in the table formatting model; style cells instead. */
-  .prolog-index { width: 100%; border-collapse: collapse; table-layout: fixed; }
-  .prolog-index .postcontainer { display: table-row; height: auto; background: transparent; }
-  .prolog-index .postcontainer > td {
-    padding: 11px 0;
-    vertical-align: middle;
-    border-bottom: 1px solid var(--index-line);
-    overflow-wrap: anywhere;
-  }
-  .prolog-index .postcontainer:hover > td { background: var(--index-hover); }
+  /* The main site supplies typography, colors, and table rhythm via Goku. */
+  .prolog-index { width: 100%; border-collapse: collapse; }
+  .prolog-index .postcontainer { display: table-row; background: transparent; }
+  .prolog-index .postcontainer > td { vertical-align: top; overflow-wrap: anywhere; }
   .prolog-index .post_title,
-  .prolog-index .post_text { display: block; font-family: 'Inter', sans-serif; margin: 0; }
-  .prolog-index .post_title { font-size: 16px; font-style: normal; font-weight: 600; line-height: 1.4; }
-  .prolog-index .post_text { font-size: 13px; line-height: 1.55; margin-top: 2px; }
-  .prolog-index .post_date { display: block; margin-top: 3px; font: 400 12px/1.5 'Inter', sans-serif; color: var(--index-muted); }
-  .prolog-index .post_title a { color: inherit; text-decoration: none; }
-  .prolog-index .post_title a:hover,
-  .prolog-index .post_title a:focus-visible { text-decoration: underline; }
-
-  .prolog-index .research-series-head > td {
-    padding: 17px 0 10px;
-    background: var(--index-feature);
-    border-left: none;
-  }
-  .prolog-index .research-series-head:hover > td { background: var(--index-feature-hover); }
-  .prolog-index .research-series-head .post_title {
-    font-size: 19px;
-    font-weight: 650;
-    line-height: 1.25;
-  }
-  .prolog-index .research-series-label {
-    display: block;
-    font: 700 11px 'Inter', sans-serif;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    margin-bottom: 4px;
-  }
-  .prolog-index .research-series-chapter > td {
-    padding: 9px 0 9px 18px;
-    border-left: none;
-  }
-  .prolog-index .research-series-chapter .post_title { font-size: 15px; font-weight: 500; }
-  .prolog-index .research-series-chapter .post_text { font-size: 12px; }
-  .prolog-index .research-series-chapter .post_title::before {
-    content: '↳';
-    margin-right: 7px;
-    opacity: .6;
-  }
+  .prolog-index .post_text,
+  .prolog-index .post_date { display: block; font: inherit; }
+  .prolog-index .post_title { font-weight: 600; }
+  .prolog-index .post_text,
+  .prolog-index .post_date { font-size: inherit; font-weight: normal; }
+  .prolog-index .research-series-head .post_title { font-weight: 700; }
+  .prolog-index .research-series-chapter > td { padding-left: 1.25rem; }
+  .prolog-index .research-series-label { display: none; }
   @media (max-width: 600px) {
-    .prolog-index .postcontainer > td { padding: 10px 0; }
-    .prolog-index .research-series-head > td { padding: 15px 0 9px; }
-    .prolog-index .research-series-head .post_title { font-size: 19px; }
-    .prolog-index .research-series-chapter > td { padding: 9px 0 9px 12px; }
-    .prolog-index .research-series-chapter .post_title { font-size: 16px; }
+    .prolog-index .research-series-chapter > td { padding-left: .75rem; }
   }
 </style>
 
@@ -118,7 +75,7 @@ template: page.html
   </tbody>
 </table>
 
-<table class="table prolog-index">
+<table class="prolog-index">
   <thead>
     <tr>
       <th><div class="date">June 2025</div></th>
