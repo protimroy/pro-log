@@ -10,7 +10,7 @@ template: article.html
 
 ## Function Space Programming
 
-*Research thread · Updated November 22, 2026*
+*Research thread · Updated November 23, 2026*
 
 **Can we construct the functions a neural network would otherwise learn, install them into its architecture, and reduce the training required to acquire a capability?**
 
@@ -20,7 +20,8 @@ This thread follows the question through increasingly demanding tests. It distin
 
 1. **[Part I — From XOR to neural function injection](/pro-log/function-space-programming/)**. Exact Boolean construction, MNIST fixed features, LLM-proposed edits, symbolic controls, and finite-domain Transformer compilation. The experiments demonstrate mechanisms, not GPT-scale language acquisition.
 2. **[Part II — Sharing predictive functions: R12 and R13](/pro-log/function-space-programming-shared-functions/)**. A negative result for naive suffix sharing, followed by KL clustering and sparse residual corrections. Compression is substantial; the accuracy threshold is missed.
-3. **[Part III — Frozen functions before backpropagation](/pro-log/function-space-programming-frozen-functions/)**. R19–R25: compiled MNIST features, teacher-representation PCA, exploratory 32-function synthesis, and stronger randomization controls. Independent LLM synthesis remains pending.\n4. **Part IV — Transformer function injection (planned).** Compare random training, zero-update compilation, residual adaptation, and full fine-tuning in an autoregressive Transformer. No result is claimed yet.
+3. **[Part III — Frozen functions before backpropagation](/pro-log/function-space-programming-frozen-functions/)**. R19–R28: compiled MNIST features, teacher-representation PCA, 32-function synthesis and matched controls, spatial-placement search, and ten-seed AdamW initialization comparisons. The results do not yet demonstrate an LLM-specific advantage or end-to-end training-cost savings.
+4. **Part IV — Transformer function injection (planned).** Compare random training, zero-update compilation, residual adaptation, and full fine-tuning in an autoregressive Transformer. No result is claimed yet.
 
 ## Reading guide
 
