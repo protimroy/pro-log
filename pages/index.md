@@ -28,6 +28,13 @@ template: page.html
 
 <table class="prolog-index">
   <tbody>
+    <tr class="postcontainer research-series-chapter">
+      <td>
+        <span class="post_title"><a href="/pro-log/function-space-programming-noise/">Function Space Programming · Noise Application</a></span>
+        <span class="post_text">R32–R33 evidence and the local-first N-FSP-01 experiment</span>
+        <time class="post_date" datetime="2026-11-23">November 23, 2026</time>
+      </td>
+    </tr>
     <tr class="postcontainer research-series-head">
       <td>
         <span class="research-series-label">Research series</span>
