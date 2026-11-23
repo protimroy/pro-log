@@ -1,0 +1,4502 @@
+[
+  {
+    "page": "/",
+    "theme": "light",
+    "width": 390,
+    "status": 200,
+    "screenshot": "home-light-390.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Pro-Log",
+    "viewport": 390,
+    "documentWidth": 390,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".research-series-head td": {
+        "color": "rgb(46, 51, 61)",
+        "background": "rgba(35, 55, 85, 0.1)",
+        "width": 340
+      },
+      "table": {
+        "color": "rgb(46, 51, 61)",
+        "background": "rgb(255, 255, 255)",
+        "width": 342
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".research-series-head .post_title",
+        "ratio": 10.61,
+        "fg": "rgb(46, 51, 61)",
+        "bg": [
+          233,
+          235,
+          238
+        ]
+      },
+      {
+        "selector": ".post_date",
+        "ratio": 5.38,
+        "fg": "rgb(82, 96, 113)",
+        "bg": [
+          233,
+          235,
+          238
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "function-space-programming-thread/",
+    "theme": "light",
+    "width": 390,
+    "status": 200,
+    "screenshot": "function-space-programming-thread-light-390.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Function Space Programming \u2014 Research Thread",
+    "viewport": 390,
+    "documentWidth": 390,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-shell": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-toc": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 358
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 6.12,
+        "fg": "rgb(85, 94, 107)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 6.91,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "function-space-programming/",
+    "theme": "light",
+    "width": 390,
+    "status": 200,
+    "screenshot": "function-space-programming-light-390.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Function Space Programming",
+    "viewport": 390,
+    "documentWidth": 390,
+    "overflow": false,
+    "wide": [
+      {
+        "tag": "CODE",
+        "className": "language-text",
+        "text": "f(x1, x2) = ReLU(x1 - x2) + ReLU(x2 - x1) = |x1 - x2|\n",
+        "right": 406
+      }
+    ],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-shell": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-toc": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 358
+      },
+      "pre": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 358
+      },
+      "table": {
+        "color": "rgb(46, 51, 61)",
+        "background": "rgb(255, 255, 255)",
+        "width": 358
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 6.12,
+        "fg": "rgb(85, 94, 107)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 6.91,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "function-space-programming-shared-functions/",
+    "theme": "light",
+    "width": 390,
+    "status": 200,
+    "screenshot": "function-space-programming-shared-functions-light-390.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Shared Functions, Lost Information",
+    "viewport": 390,
+    "documentWidth": 390,
+    "overflow": false,
+    "wide": [
+      {
+        "tag": "CODE",
+        "className": "language-text",
+        "text": "logits(context, token) =\n    log(shared_distribution[cluster(context),",
+        "right": 406
+      }
+    ],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-shell": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-toc": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 358
+      },
+      "pre": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 358
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 6.12,
+        "fg": "rgb(85, 94, 107)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 6.91,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "alopex-thread/",
+    "theme": "light",
+    "width": 390,
+    "status": 200,
+    "screenshot": "alopex-thread-light-390.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "ALOPEX \u2014 Research Thread",
+    "viewport": 390,
+    "documentWidth": 390,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-shell": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-toc": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 358
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 6.12,
+        "fg": "rgb(85, 94, 107)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 6.91,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "activation-space-alopex/",
+    "theme": "light",
+    "width": 390,
+    "status": 200,
+    "screenshot": "activation-space-alopex-light-390.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Activation-Space ALOPEX",
+    "viewport": 390,
+    "documentWidth": 390,
+    "overflow": false,
+    "wide": [
+      {
+        "tag": "CODE",
+        "className": "language-text",
+        "text": "useful credit = credit in the measured span + credit outside it\n",
+        "right": 476
+      }
+    ],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-shell": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-toc": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 358
+      },
+      ".research-thread-nav": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 358
+      },
+      "pre": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 358
+      },
+      "table": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 324
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 15.03,
+        "fg": "rgb(29, 41, 38)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 15.03,
+        "fg": "rgb(29, 41, 38)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 5.72,
+        "fg": "rgb(89, 106, 100)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".research-thread-nav",
+        "ratio": 13.96,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".research-thread-nav a",
+        "ratio": 6.45,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 6.45,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "alopex-partial-negative-result/",
+    "theme": "light",
+    "width": 390,
+    "status": 200,
+    "screenshot": "alopex-partial-negative-result-light-390.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "ALOPEX: A Partial Negative Result",
+    "viewport": 390,
+    "documentWidth": 390,
+    "overflow": false,
+    "wide": [
+      {
+        "tag": "semantics",
+        "className": "",
+        "text": "",
+        "right": 539
+      },
+      {
+        "tag": "mrow",
+        "className": "",
+        "text": "",
+        "right": 539
+      },
+      {
+        "tag": "msub",
+        "className": "",
+        "text": "",
+        "right": 427
+      },
+      {
+        "tag": "mrow",
+        "className": "",
+        "text": "",
+        "right": 426
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 395
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 400
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 407
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 412
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 419
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 426
+      },
+      {
+        "tag": "mo",
+        "className": "",
+        "text": "",
+        "right": 435
+      },
+      {
+        "tag": "msub",
+        "className": "",
+        "text": "",
+        "right": 473
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 444
+      },
+      {
+        "tag": "mrow",
+        "className": "",
+        "text": "",
+        "right": 472
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 449
+      },
+      {
+        "tag": "mo",
+        "className": "",
+        "text": "",
+        "right": 462
+      },
+      {
+        "tag": "mn",
+        "className": "",
+        "text": "",
+        "right": 472
+      },
+      {
+        "tag": "mo",
+        "className": "",
+        "text": "",
+        "right": 479
+      },
+      {
+        "tag": "msub",
+        "className": "",
+        "text": "",
+        "right": 526
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 497
+      },
+      {
+        "tag": "mrow",
+        "className": "",
+        "text": "",
+        "right": 525
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 501
+      },
+      {
+        "tag": "mo",
+        "className": "",
+        "text": "",
+        "right": 515
+      },
+      {
+        "tag": "mn",
+        "className": "",
+        "text": "",
+        "right": 525
+      },
+      {
+        "tag": "mo",
+        "className": "",
+        "text": "",
+        "right": 534
+      }
+    ],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-shell": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-toc": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 358
+      },
+      ".research-thread-nav": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 358
+      },
+      ".paper-section": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 358
+      },
+      ".claim": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(250, 246, 244)",
+        "width": 358
+      },
+      ".in-brief": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(245, 248, 246)",
+        "width": 358
+      },
+      "table": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 358
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 6.56,
+        "fg": "rgb(85, 94, 107)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".research-thread-nav",
+        "ratio": 13.96,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".research-thread-nav a",
+        "ratio": 6.45,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".paper-section p",
+        "ratio": 14,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          245,
+          248,
+          246
+        ]
+      },
+      {
+        "selector": ".in-brief p",
+        "ratio": 14,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          245,
+          248,
+          246
+        ]
+      },
+      {
+        "selector": ".claim p",
+        "ratio": 13.94,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          250,
+          246,
+          244
+        ]
+      },
+      {
+        "selector": ".claim strong",
+        "ratio": 11.8,
+        "fg": "rgb(46, 51, 61)",
+        "bg": [
+          250,
+          246,
+          244
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 6.45,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "/",
+    "theme": "light",
+    "width": 768,
+    "status": 200,
+    "screenshot": "home-light-768.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Pro-Log",
+    "viewport": 768,
+    "documentWidth": 768,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".research-series-head td": {
+        "color": "rgb(46, 51, 61)",
+        "background": "rgba(35, 55, 85, 0.1)",
+        "width": 718
+      },
+      "table": {
+        "color": "rgb(46, 51, 61)",
+        "background": "rgb(255, 255, 255)",
+        "width": 720
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".research-series-head .post_title",
+        "ratio": 10.61,
+        "fg": "rgb(46, 51, 61)",
+        "bg": [
+          233,
+          235,
+          238
+        ]
+      },
+      {
+        "selector": ".post_date",
+        "ratio": 5.38,
+        "fg": "rgb(82, 96, 113)",
+        "bg": [
+          233,
+          235,
+          238
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "function-space-programming-thread/",
+    "theme": "light",
+    "width": 768,
+    "status": 200,
+    "screenshot": "function-space-programming-thread-light-768.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Function Space Programming \u2014 Research Thread",
+    "viewport": 768,
+    "documentWidth": 768,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-shell": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-toc": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 720
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 6.12,
+        "fg": "rgb(85, 94, 107)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 6.91,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "function-space-programming/",
+    "theme": "light",
+    "width": 768,
+    "status": 200,
+    "screenshot": "function-space-programming-light-768.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Function Space Programming",
+    "viewport": 768,
+    "documentWidth": 768,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-shell": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-toc": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 720
+      },
+      "pre": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 720
+      },
+      "table": {
+        "color": "rgb(46, 51, 61)",
+        "background": "rgb(255, 255, 255)",
+        "width": 720
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 6.12,
+        "fg": "rgb(85, 94, 107)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 6.91,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "function-space-programming-shared-functions/",
+    "theme": "light",
+    "width": 768,
+    "status": 200,
+    "screenshot": "function-space-programming-shared-functions-light-768.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Shared Functions, Lost Information",
+    "viewport": 768,
+    "documentWidth": 768,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-shell": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-toc": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 720
+      },
+      "pre": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 720
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 6.12,
+        "fg": "rgb(85, 94, 107)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 6.91,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "alopex-thread/",
+    "theme": "light",
+    "width": 768,
+    "status": 200,
+    "screenshot": "alopex-thread-light-768.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "ALOPEX \u2014 Research Thread",
+    "viewport": 768,
+    "documentWidth": 768,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-shell": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-toc": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 720
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 6.12,
+        "fg": "rgb(85, 94, 107)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 6.91,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "activation-space-alopex/",
+    "theme": "light",
+    "width": 768,
+    "status": 200,
+    "screenshot": "activation-space-alopex-light-768.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Activation-Space ALOPEX",
+    "viewport": 768,
+    "documentWidth": 768,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-shell": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-toc": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 720
+      },
+      ".research-thread-nav": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 720
+      },
+      "pre": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 720
+      },
+      "table": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 686
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 15.03,
+        "fg": "rgb(29, 41, 38)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 15.03,
+        "fg": "rgb(29, 41, 38)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 5.72,
+        "fg": "rgb(89, 106, 100)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".research-thread-nav",
+        "ratio": 13.96,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".research-thread-nav a",
+        "ratio": 6.45,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 6.45,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "alopex-partial-negative-result/",
+    "theme": "light",
+    "width": 768,
+    "status": 200,
+    "screenshot": "alopex-partial-negative-result-light-768.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "ALOPEX: A Partial Negative Result",
+    "viewport": 768,
+    "documentWidth": 768,
+    "overflow": false,
+    "wide": [
+      {
+        "tag": "semantics",
+        "className": "",
+        "text": "",
+        "right": 889
+      },
+      {
+        "tag": "mrow",
+        "className": "",
+        "text": "",
+        "right": 889
+      },
+      {
+        "tag": "msubsup",
+        "className": "",
+        "text": "",
+        "right": 774
+      },
+      {
+        "tag": "mrow",
+        "className": "",
+        "text": "",
+        "right": 773
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 773
+      },
+      {
+        "tag": "mo",
+        "className": "",
+        "text": "",
+        "right": 794
+      },
+      {
+        "tag": "mfrac",
+        "className": "",
+        "text": "",
+        "right": 818
+      },
+      {
+        "tag": "mn",
+        "className": "",
+        "text": "",
+        "right": 813
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 817
+      },
+      {
+        "tag": "munderover",
+        "className": "",
+        "text": "",
+        "right": 853
+      },
+      {
+        "tag": "mo",
+        "className": "",
+        "text": "",
+        "right": 851
+      },
+      {
+        "tag": "mrow",
+        "className": "",
+        "text": "",
+        "right": 853
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 828
+      },
+      {
+        "tag": "mo",
+        "className": "",
+        "text": "",
+        "right": 842
+      },
+      {
+        "tag": "mn",
+        "className": "",
+        "text": "",
+        "right": 853
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 843
+      },
+      {
+        "tag": "msub",
+        "className": "",
+        "text": "",
+        "right": 873
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 865
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 872
+      },
+      {
+        "tag": "msub",
+        "className": "",
+        "text": "",
+        "right": 889
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 881
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 888
+      },
+      {
+        "tag": "semantics",
+        "className": "",
+        "text": "",
+        "right": 780
+      },
+      {
+        "tag": "mrow",
+        "className": "",
+        "text": "",
+        "right": 780
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 773
+      }
+    ],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-shell": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-toc": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 720
+      },
+      ".research-thread-nav": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 720
+      },
+      ".paper-section": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 720
+      },
+      ".claim": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(250, 246, 244)",
+        "width": 720
+      },
+      ".in-brief": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(245, 248, 246)",
+        "width": 720
+      },
+      "table": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 720
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 6.56,
+        "fg": "rgb(85, 94, 107)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".research-thread-nav",
+        "ratio": 13.96,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".research-thread-nav a",
+        "ratio": 6.45,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".paper-section p",
+        "ratio": 14,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          245,
+          248,
+          246
+        ]
+      },
+      {
+        "selector": ".in-brief p",
+        "ratio": 14,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          245,
+          248,
+          246
+        ]
+      },
+      {
+        "selector": ".claim p",
+        "ratio": 13.94,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          250,
+          246,
+          244
+        ]
+      },
+      {
+        "selector": ".claim strong",
+        "ratio": 11.8,
+        "fg": "rgb(46, 51, 61)",
+        "bg": [
+          250,
+          246,
+          244
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 6.45,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "/",
+    "theme": "light",
+    "width": 1440,
+    "status": 200,
+    "screenshot": "home-light-1440.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Pro-Log",
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1440
+      },
+      ".research-series-head td": {
+        "color": "rgb(46, 51, 61)",
+        "background": "rgba(35, 55, 85, 0.1)",
+        "width": 1342
+      },
+      "table": {
+        "color": "rgb(46, 51, 61)",
+        "background": "rgb(255, 255, 255)",
+        "width": 870
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".research-series-head .post_title",
+        "ratio": 10.61,
+        "fg": "rgb(46, 51, 61)",
+        "bg": [
+          233,
+          235,
+          238
+        ]
+      },
+      {
+        "selector": ".post_date",
+        "ratio": 5.38,
+        "fg": "rgb(82, 96, 113)",
+        "bg": [
+          233,
+          235,
+          238
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "function-space-programming-thread/",
+    "theme": "light",
+    "width": 1440,
+    "status": 200,
+    "screenshot": "function-space-programming-thread-light-1440.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Function Space Programming \u2014 Research Thread",
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1440
+      },
+      ".article-shell": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1152
+      },
+      ".article-toc": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 192
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 6.12,
+        "fg": "rgb(85, 94, 107)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 6.91,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "function-space-programming/",
+    "theme": "light",
+    "width": 1440,
+    "status": 200,
+    "screenshot": "function-space-programming-light-1440.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Function Space Programming",
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1440
+      },
+      ".article-shell": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1152
+      },
+      ".article-toc": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 192
+      },
+      "pre": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 736
+      },
+      "table": {
+        "color": "rgb(46, 51, 61)",
+        "background": "rgb(255, 255, 255)",
+        "width": 736
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 6.12,
+        "fg": "rgb(85, 94, 107)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 6.91,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "function-space-programming-shared-functions/",
+    "theme": "light",
+    "width": 1440,
+    "status": 200,
+    "screenshot": "function-space-programming-shared-functions-light-1440.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Shared Functions, Lost Information",
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1440
+      },
+      ".article-shell": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1152
+      },
+      ".article-toc": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 192
+      },
+      "pre": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 736
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 6.12,
+        "fg": "rgb(85, 94, 107)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 6.91,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "alopex-thread/",
+    "theme": "light",
+    "width": 1440,
+    "status": 200,
+    "screenshot": "alopex-thread-light-1440.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "ALOPEX \u2014 Research Thread",
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1440
+      },
+      ".article-shell": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1152
+      },
+      ".article-toc": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 192
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 6.12,
+        "fg": "rgb(85, 94, 107)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 6.91,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "activation-space-alopex/",
+    "theme": "light",
+    "width": 1440,
+    "status": 200,
+    "screenshot": "activation-space-alopex-light-1440.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Activation-Space ALOPEX",
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1440
+      },
+      ".article-shell": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1152
+      },
+      ".article-toc": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 224
+      },
+      ".research-thread-nav": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 736
+      },
+      "pre": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 736
+      },
+      "table": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 702
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 15.03,
+        "fg": "rgb(29, 41, 38)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 15.03,
+        "fg": "rgb(29, 41, 38)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 5.72,
+        "fg": "rgb(89, 106, 100)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".research-thread-nav",
+        "ratio": 13.96,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".research-thread-nav a",
+        "ratio": 6.45,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 6.45,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "alopex-partial-negative-result/",
+    "theme": "light",
+    "width": 1440,
+    "status": 200,
+    "screenshot": "alopex-partial-negative-result-light-1440.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "ALOPEX: A Partial Negative Result",
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "overflow": false,
+    "wide": [
+      {
+        "tag": "text",
+        "className": "[object SVGAnimatedString]",
+        "text": "",
+        "right": 1522
+      }
+    ],
+    "samples": {
+      "body": {
+        "color": "rgb(64, 70, 84)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1440
+      },
+      ".article-shell": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1440
+      },
+      ".article-toc": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 224
+      },
+      ".research-thread-nav": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(246, 247, 249)",
+        "width": 1120
+      },
+      ".paper-section": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1120
+      },
+      ".claim": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(250, 246, 244)",
+        "width": 1120
+      },
+      ".in-brief": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgb(245, 248, 246)",
+        "width": 1120
+      },
+      "table": {
+        "color": "rgb(36, 39, 45)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1120
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 14.97,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 6.56,
+        "fg": "rgb(85, 94, 107)",
+        "bg": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "selector": ".research-thread-nav",
+        "ratio": 13.96,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".research-thread-nav a",
+        "ratio": 6.45,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      },
+      {
+        "selector": ".paper-section p",
+        "ratio": 14,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          245,
+          248,
+          246
+        ]
+      },
+      {
+        "selector": ".in-brief p",
+        "ratio": 14,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          245,
+          248,
+          246
+        ]
+      },
+      {
+        "selector": ".claim p",
+        "ratio": 13.94,
+        "fg": "rgb(36, 39, 45)",
+        "bg": [
+          250,
+          246,
+          244
+        ]
+      },
+      {
+        "selector": ".claim strong",
+        "ratio": 11.8,
+        "fg": "rgb(46, 51, 61)",
+        "bg": [
+          250,
+          246,
+          244
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 6.45,
+        "fg": "rgb(36, 91, 154)",
+        "bg": [
+          246,
+          247,
+          249
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "/",
+    "theme": "dark",
+    "width": 390,
+    "status": 200,
+    "screenshot": "home-dark-390.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Pro-Log",
+    "viewport": 390,
+    "documentWidth": 390,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".research-series-head td": {
+        "color": "rgb(235, 236, 240)",
+        "background": "rgba(135, 166, 209, 0.15)",
+        "width": 340
+      },
+      "table": {
+        "color": "rgb(235, 236, 240)",
+        "background": "rgb(20, 22, 26)",
+        "width": 342
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".research-series-head .post_title",
+        "ratio": 11.97,
+        "fg": "rgb(235, 236, 240)",
+        "bg": [
+          37,
+          44,
+          53
+        ]
+      },
+      {
+        "selector": ".post_date",
+        "ratio": 7.91,
+        "fg": "rgb(183, 195, 210)",
+        "bg": [
+          37,
+          44,
+          53
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "function-space-programming-thread/",
+    "theme": "dark",
+    "width": 390,
+    "status": 200,
+    "screenshot": "function-space-programming-thread-dark-390.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Function Space Programming \u2014 Research Thread",
+    "viewport": 390,
+    "documentWidth": 390,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-shell": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-toc": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 358
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 7.84,
+        "fg": "rgb(185, 194, 207)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 10.34,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "function-space-programming/",
+    "theme": "dark",
+    "width": 390,
+    "status": 200,
+    "screenshot": "function-space-programming-dark-390.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Function Space Programming",
+    "viewport": 390,
+    "documentWidth": 390,
+    "overflow": false,
+    "wide": [
+      {
+        "tag": "CODE",
+        "className": "language-text",
+        "text": "f(x1, x2) = ReLU(x1 - x2) + ReLU(x2 - x1) = |x1 - x2|\n",
+        "right": 406
+      }
+    ],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-shell": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-toc": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 358
+      },
+      "pre": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 358
+      },
+      "table": {
+        "color": "rgb(235, 236, 240)",
+        "background": "rgb(20, 22, 26)",
+        "width": 358
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 7.84,
+        "fg": "rgb(185, 194, 207)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 10.34,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "function-space-programming-shared-functions/",
+    "theme": "dark",
+    "width": 390,
+    "status": 200,
+    "screenshot": "function-space-programming-shared-functions-dark-390.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Shared Functions, Lost Information",
+    "viewport": 390,
+    "documentWidth": 390,
+    "overflow": false,
+    "wide": [
+      {
+        "tag": "CODE",
+        "className": "language-text",
+        "text": "logits(context, token) =\n    log(shared_distribution[cluster(context),",
+        "right": 406
+      }
+    ],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-shell": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-toc": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 358
+      },
+      "pre": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 358
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 7.84,
+        "fg": "rgb(185, 194, 207)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 10.34,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "alopex-thread/",
+    "theme": "dark",
+    "width": 390,
+    "status": 200,
+    "screenshot": "alopex-thread-dark-390.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "ALOPEX \u2014 Research Thread",
+    "viewport": 390,
+    "documentWidth": 390,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-shell": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-toc": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 358
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 7.84,
+        "fg": "rgb(185, 194, 207)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 10.34,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "activation-space-alopex/",
+    "theme": "dark",
+    "width": 390,
+    "status": 200,
+    "screenshot": "activation-space-alopex-dark-390.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Activation-Space ALOPEX",
+    "viewport": 390,
+    "documentWidth": 390,
+    "overflow": false,
+    "wide": [
+      {
+        "tag": "CODE",
+        "className": "language-text",
+        "text": "useful credit = credit in the measured span + credit outside it\n",
+        "right": 476
+      }
+    ],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-shell": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-toc": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 358
+      },
+      ".research-thread-nav": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 358
+      },
+      "pre": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 358
+      },
+      "table": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 324
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 1.21,
+        "fg": "rgb(29, 41, 38)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 1.21,
+        "fg": "rgb(29, 41, 38)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 3.17,
+        "fg": "rgb(89, 106, 100)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".research-thread-nav",
+        "ratio": 11.78,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".research-thread-nav a",
+        "ratio": 8.04,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 8.04,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "alopex-partial-negative-result/",
+    "theme": "dark",
+    "width": 390,
+    "status": 200,
+    "screenshot": "alopex-partial-negative-result-dark-390.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "ALOPEX: A Partial Negative Result",
+    "viewport": 390,
+    "documentWidth": 390,
+    "overflow": false,
+    "wide": [
+      {
+        "tag": "semantics",
+        "className": "",
+        "text": "",
+        "right": 539
+      },
+      {
+        "tag": "mrow",
+        "className": "",
+        "text": "",
+        "right": 539
+      },
+      {
+        "tag": "msub",
+        "className": "",
+        "text": "",
+        "right": 427
+      },
+      {
+        "tag": "mrow",
+        "className": "",
+        "text": "",
+        "right": 426
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 395
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 400
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 407
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 412
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 419
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 426
+      },
+      {
+        "tag": "mo",
+        "className": "",
+        "text": "",
+        "right": 435
+      },
+      {
+        "tag": "msub",
+        "className": "",
+        "text": "",
+        "right": 473
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 444
+      },
+      {
+        "tag": "mrow",
+        "className": "",
+        "text": "",
+        "right": 472
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 449
+      },
+      {
+        "tag": "mo",
+        "className": "",
+        "text": "",
+        "right": 462
+      },
+      {
+        "tag": "mn",
+        "className": "",
+        "text": "",
+        "right": 472
+      },
+      {
+        "tag": "mo",
+        "className": "",
+        "text": "",
+        "right": 479
+      },
+      {
+        "tag": "msub",
+        "className": "",
+        "text": "",
+        "right": 526
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 497
+      },
+      {
+        "tag": "mrow",
+        "className": "",
+        "text": "",
+        "right": 525
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 501
+      },
+      {
+        "tag": "mo",
+        "className": "",
+        "text": "",
+        "right": 515
+      },
+      {
+        "tag": "mn",
+        "className": "",
+        "text": "",
+        "right": 525
+      },
+      {
+        "tag": "mo",
+        "className": "",
+        "text": "",
+        "right": 534
+      }
+    ],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-shell": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 390
+      },
+      ".article-toc": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 358
+      },
+      ".research-thread-nav": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 358
+      },
+      ".paper-section": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 358
+      },
+      ".claim": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(48, 41, 39)",
+        "width": 358
+      },
+      ".in-brief": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(32, 44, 41)",
+        "width": 358
+      },
+      "table": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 358
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 10.07,
+        "fg": "rgb(185, 194, 207)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".research-thread-nav",
+        "ratio": 11.78,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".research-thread-nav a",
+        "ratio": 8.04,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".paper-section p",
+        "ratio": 12.07,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          32,
+          44,
+          41
+        ]
+      },
+      {
+        "selector": ".in-brief p",
+        "ratio": 12.07,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          32,
+          44,
+          41
+        ]
+      },
+      {
+        "selector": ".claim p",
+        "ratio": 11.92,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          48,
+          41,
+          39
+        ]
+      },
+      {
+        "selector": ".claim strong",
+        "ratio": 12.08,
+        "fg": "rgb(235, 236, 240)",
+        "bg": [
+          48,
+          41,
+          39
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 8.04,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "/",
+    "theme": "dark",
+    "width": 768,
+    "status": 200,
+    "screenshot": "home-dark-768.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Pro-Log",
+    "viewport": 768,
+    "documentWidth": 768,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".research-series-head td": {
+        "color": "rgb(235, 236, 240)",
+        "background": "rgba(135, 166, 209, 0.15)",
+        "width": 718
+      },
+      "table": {
+        "color": "rgb(235, 236, 240)",
+        "background": "rgb(20, 22, 26)",
+        "width": 720
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".research-series-head .post_title",
+        "ratio": 11.97,
+        "fg": "rgb(235, 236, 240)",
+        "bg": [
+          37,
+          44,
+          53
+        ]
+      },
+      {
+        "selector": ".post_date",
+        "ratio": 7.91,
+        "fg": "rgb(183, 195, 210)",
+        "bg": [
+          37,
+          44,
+          53
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "function-space-programming-thread/",
+    "theme": "dark",
+    "width": 768,
+    "status": 200,
+    "screenshot": "function-space-programming-thread-dark-768.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Function Space Programming \u2014 Research Thread",
+    "viewport": 768,
+    "documentWidth": 768,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-shell": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-toc": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 720
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 7.84,
+        "fg": "rgb(185, 194, 207)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 10.34,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "function-space-programming/",
+    "theme": "dark",
+    "width": 768,
+    "status": 200,
+    "screenshot": "function-space-programming-dark-768.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Function Space Programming",
+    "viewport": 768,
+    "documentWidth": 768,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-shell": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-toc": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 720
+      },
+      "pre": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 720
+      },
+      "table": {
+        "color": "rgb(235, 236, 240)",
+        "background": "rgb(20, 22, 26)",
+        "width": 720
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 7.84,
+        "fg": "rgb(185, 194, 207)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 10.34,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "function-space-programming-shared-functions/",
+    "theme": "dark",
+    "width": 768,
+    "status": 200,
+    "screenshot": "function-space-programming-shared-functions-dark-768.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Shared Functions, Lost Information",
+    "viewport": 768,
+    "documentWidth": 768,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-shell": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-toc": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 720
+      },
+      "pre": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 720
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 7.84,
+        "fg": "rgb(185, 194, 207)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 10.34,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "alopex-thread/",
+    "theme": "dark",
+    "width": 768,
+    "status": 200,
+    "screenshot": "alopex-thread-dark-768.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "ALOPEX \u2014 Research Thread",
+    "viewport": 768,
+    "documentWidth": 768,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-shell": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-toc": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 720
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 7.84,
+        "fg": "rgb(185, 194, 207)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 10.34,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "activation-space-alopex/",
+    "theme": "dark",
+    "width": 768,
+    "status": 200,
+    "screenshot": "activation-space-alopex-dark-768.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Activation-Space ALOPEX",
+    "viewport": 768,
+    "documentWidth": 768,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-shell": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-toc": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 720
+      },
+      ".research-thread-nav": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 720
+      },
+      "pre": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 720
+      },
+      "table": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 686
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 1.21,
+        "fg": "rgb(29, 41, 38)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 1.21,
+        "fg": "rgb(29, 41, 38)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 3.17,
+        "fg": "rgb(89, 106, 100)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".research-thread-nav",
+        "ratio": 11.78,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".research-thread-nav a",
+        "ratio": 8.04,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 8.04,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "alopex-partial-negative-result/",
+    "theme": "dark",
+    "width": 768,
+    "status": 200,
+    "screenshot": "alopex-partial-negative-result-dark-768.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "ALOPEX: A Partial Negative Result",
+    "viewport": 768,
+    "documentWidth": 768,
+    "overflow": false,
+    "wide": [
+      {
+        "tag": "semantics",
+        "className": "",
+        "text": "",
+        "right": 889
+      },
+      {
+        "tag": "mrow",
+        "className": "",
+        "text": "",
+        "right": 889
+      },
+      {
+        "tag": "msubsup",
+        "className": "",
+        "text": "",
+        "right": 774
+      },
+      {
+        "tag": "mrow",
+        "className": "",
+        "text": "",
+        "right": 773
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 773
+      },
+      {
+        "tag": "mo",
+        "className": "",
+        "text": "",
+        "right": 794
+      },
+      {
+        "tag": "mfrac",
+        "className": "",
+        "text": "",
+        "right": 818
+      },
+      {
+        "tag": "mn",
+        "className": "",
+        "text": "",
+        "right": 813
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 817
+      },
+      {
+        "tag": "munderover",
+        "className": "",
+        "text": "",
+        "right": 853
+      },
+      {
+        "tag": "mo",
+        "className": "",
+        "text": "",
+        "right": 851
+      },
+      {
+        "tag": "mrow",
+        "className": "",
+        "text": "",
+        "right": 853
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 828
+      },
+      {
+        "tag": "mo",
+        "className": "",
+        "text": "",
+        "right": 842
+      },
+      {
+        "tag": "mn",
+        "className": "",
+        "text": "",
+        "right": 853
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 843
+      },
+      {
+        "tag": "msub",
+        "className": "",
+        "text": "",
+        "right": 873
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 865
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 872
+      },
+      {
+        "tag": "msub",
+        "className": "",
+        "text": "",
+        "right": 889
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 881
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 888
+      },
+      {
+        "tag": "semantics",
+        "className": "",
+        "text": "",
+        "right": 780
+      },
+      {
+        "tag": "mrow",
+        "className": "",
+        "text": "",
+        "right": 780
+      },
+      {
+        "tag": "mi",
+        "className": "",
+        "text": "",
+        "right": 773
+      }
+    ],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-shell": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 768
+      },
+      ".article-toc": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 720
+      },
+      ".research-thread-nav": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 720
+      },
+      ".paper-section": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 720
+      },
+      ".claim": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(48, 41, 39)",
+        "width": 720
+      },
+      ".in-brief": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(32, 44, 41)",
+        "width": 720
+      },
+      "table": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 720
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 10.07,
+        "fg": "rgb(185, 194, 207)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".research-thread-nav",
+        "ratio": 11.78,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".research-thread-nav a",
+        "ratio": 8.04,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".paper-section p",
+        "ratio": 12.07,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          32,
+          44,
+          41
+        ]
+      },
+      {
+        "selector": ".in-brief p",
+        "ratio": 12.07,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          32,
+          44,
+          41
+        ]
+      },
+      {
+        "selector": ".claim p",
+        "ratio": 11.92,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          48,
+          41,
+          39
+        ]
+      },
+      {
+        "selector": ".claim strong",
+        "ratio": 12.08,
+        "fg": "rgb(235, 236, 240)",
+        "bg": [
+          48,
+          41,
+          39
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 8.04,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "/",
+    "theme": "dark",
+    "width": 1440,
+    "status": 200,
+    "screenshot": "home-dark-1440.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Pro-Log",
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1440
+      },
+      ".research-series-head td": {
+        "color": "rgb(235, 236, 240)",
+        "background": "rgba(135, 166, 209, 0.15)",
+        "width": 1342
+      },
+      "table": {
+        "color": "rgb(235, 236, 240)",
+        "background": "rgb(20, 22, 26)",
+        "width": 870
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".research-series-head .post_title",
+        "ratio": 11.97,
+        "fg": "rgb(235, 236, 240)",
+        "bg": [
+          37,
+          44,
+          53
+        ]
+      },
+      {
+        "selector": ".post_date",
+        "ratio": 7.91,
+        "fg": "rgb(183, 195, 210)",
+        "bg": [
+          37,
+          44,
+          53
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "function-space-programming-thread/",
+    "theme": "dark",
+    "width": 1440,
+    "status": 200,
+    "screenshot": "function-space-programming-thread-dark-1440.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Function Space Programming \u2014 Research Thread",
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1440
+      },
+      ".article-shell": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1152
+      },
+      ".article-toc": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 192
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 7.84,
+        "fg": "rgb(185, 194, 207)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 10.34,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "function-space-programming/",
+    "theme": "dark",
+    "width": 1440,
+    "status": 200,
+    "screenshot": "function-space-programming-dark-1440.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Function Space Programming",
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1440
+      },
+      ".article-shell": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1152
+      },
+      ".article-toc": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 192
+      },
+      "pre": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 736
+      },
+      "table": {
+        "color": "rgb(235, 236, 240)",
+        "background": "rgb(20, 22, 26)",
+        "width": 736
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 7.84,
+        "fg": "rgb(185, 194, 207)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 10.34,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "function-space-programming-shared-functions/",
+    "theme": "dark",
+    "width": 1440,
+    "status": 200,
+    "screenshot": "function-space-programming-shared-functions-dark-1440.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Shared Functions, Lost Information",
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1440
+      },
+      ".article-shell": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1152
+      },
+      ".article-toc": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 192
+      },
+      "pre": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 736
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 7.84,
+        "fg": "rgb(185, 194, 207)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 10.34,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "alopex-thread/",
+    "theme": "dark",
+    "width": 1440,
+    "status": 200,
+    "screenshot": "alopex-thread-dark-1440.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "ALOPEX \u2014 Research Thread",
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1440
+      },
+      ".article-shell": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1152
+      },
+      ".article-toc": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 192
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 7.84,
+        "fg": "rgb(185, 194, 207)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 10.34,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "activation-space-alopex/",
+    "theme": "dark",
+    "width": 1440,
+    "status": 200,
+    "screenshot": "activation-space-alopex-dark-1440.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "Activation-Space ALOPEX",
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "overflow": false,
+    "wide": [],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1440
+      },
+      ".article-shell": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1152
+      },
+      ".article-toc": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 224
+      },
+      ".research-thread-nav": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 736
+      },
+      "pre": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 736
+      },
+      "table": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 702
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 1.21,
+        "fg": "rgb(29, 41, 38)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 1.21,
+        "fg": "rgb(29, 41, 38)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 3.17,
+        "fg": "rgb(89, 106, 100)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".research-thread-nav",
+        "ratio": 11.78,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".research-thread-nav a",
+        "ratio": 8.04,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 8.04,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  },
+  {
+    "page": "alopex-partial-negative-result/",
+    "theme": "dark",
+    "width": 1440,
+    "status": 200,
+    "screenshot": "alopex-partial-negative-result-dark-1440.png",
+    "errors": [],
+    "badResponses": [],
+    "title": "ALOPEX: A Partial Negative Result",
+    "viewport": 1440,
+    "documentWidth": 1440,
+    "overflow": false,
+    "wide": [
+      {
+        "tag": "text",
+        "className": "[object SVGAnimatedString]",
+        "text": "",
+        "right": 1522
+      }
+    ],
+    "samples": {
+      "body": {
+        "color": "rgb(171, 177, 191)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1440
+      },
+      ".article-shell": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1440
+      },
+      ".article-toc": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 224
+      },
+      ".research-thread-nav": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(36, 44, 55)",
+        "width": 1120
+      },
+      ".paper-section": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1120
+      },
+      ".claim": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(48, 41, 39)",
+        "width": 1120
+      },
+      ".in-brief": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgb(32, 44, 41)",
+        "width": 1120
+      },
+      "table": {
+        "color": "rgb(231, 235, 241)",
+        "background": "rgba(0, 0, 0, 0)",
+        "width": 1120
+      }
+    },
+    "contrast": [
+      {
+        "selector": ".article-content .content",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-content .content p",
+        "ratio": 15.14,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".article-toc a",
+        "ratio": 10.07,
+        "fg": "rgb(185, 194, 207)",
+        "bg": [
+          20,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": ".research-thread-nav",
+        "ratio": 11.78,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".research-thread-nav a",
+        "ratio": 8.04,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      },
+      {
+        "selector": ".paper-section p",
+        "ratio": 12.07,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          32,
+          44,
+          41
+        ]
+      },
+      {
+        "selector": ".in-brief p",
+        "ratio": 12.07,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          32,
+          44,
+          41
+        ]
+      },
+      {
+        "selector": ".claim p",
+        "ratio": 11.92,
+        "fg": "rgb(231, 235, 241)",
+        "bg": [
+          48,
+          41,
+          39
+        ]
+      },
+      {
+        "selector": ".claim strong",
+        "ratio": 12.08,
+        "fg": "rgb(235, 236, 240)",
+        "bg": [
+          48,
+          41,
+          39
+        ]
+      },
+      {
+        "selector": ".article-content .content a",
+        "ratio": 8.04,
+        "fg": "rgb(154, 199, 255)",
+        "bg": [
+          36,
+          44,
+          55
+        ]
+      }
+    ],
+    "brokenImages": [],
+    "missingLinks": 0
+  }
+]
