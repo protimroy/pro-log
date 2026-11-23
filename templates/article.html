@@ -11,6 +11,19 @@
     <style>
       :root { color-scheme: light dark; --article-fg: #24272d; --article-muted: #555e6b; --article-line: #d7dce3; --article-panel: #f6f7f9; --article-paper: #fff; --article-accent: #304d72; --article-link: #245b9a; }
       @media (prefers-color-scheme: dark) { :root { --article-fg: #e7ebf1; --article-muted: #b9c2cf; --article-line: #485363; --article-panel: #242c37; --article-paper: #1b222d; --article-accent: #a5c4ec; --article-link: #9ac7ff; } }
+      /* The global theme and frozen ALOPEX CSS can both set .content colors.
+         Give the article surface an explicit readable foreground in each scheme. */
+      .article-shell .article-content .content { color: var(--article-fg); }
+      .article-shell .article-toc a { color: var(--article-muted); }
+      .article-shell .article-toc a:hover,
+      .article-shell .article-toc a:focus-visible { color: var(--article-link); }
+      .article-shell .article-content .content .research-thread-nav { color: var(--article-fg); }
+      .article-shell .article-content .content .research-thread-nav a { color: var(--article-link); }
+      @media (prefers-color-scheme: dark) {
+        .article-shell .article-content .content { color: var(--article-fg); }
+        .article-shell .article-content .content p,
+        .article-shell .article-content .content li { color: inherit; }
+      }
       .article-shell { color: var(--article-fg); }
       .article-shell a { color: var(--article-link); }
       .article-shell .article-topbar a { color: var(--article-fg); }
