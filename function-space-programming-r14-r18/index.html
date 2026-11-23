@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Function Synthesis Between Sharing and Compilation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.protimroy.com/pro-log/function-space-programming-r14-r18/"><meta name="description" content="R14–R18: Transformer injection, MNIST function proposals, reconstruction, teacher-free synthesis, and control design."><meta property="og:title" content="Function Synthesis Between Sharing and Compilation"><meta property="og:type" content="article"><meta property="og:url" content="https://www.protimroy.com/pro-log/function-space-programming-r14-r18/"><meta property="og:description" content="R14–R18: Transformer injection, MNIST function proposals, reconstruction, teacher-free synthesis, and control design."><meta name="twitter:description" content="R14–R18: Transformer injection, MNIST function proposals, reconstruction, teacher-free synthesis, and control design."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Function Synthesis Between Sharing and Compilation">
+    <link rel="stylesheet" type="text/css" href="/pro-log/bulma.css" />
+    
+    <link rel="stylesheet" type="text/css" href="/pro-log/component.css" />
+    <style>
+      :root { color-scheme: light dark; --article-fg: #24272d; --article-muted: #555e6b; --article-line: #d7dce3; --article-panel: #f6f7f9; --article-paper: #fff; --article-accent: #304d72; --article-link: #245b9a; }
+      @media (prefers-color-scheme: dark) { :root { --article-fg: #e7ebf1; --article-muted: #b9c2cf; --article-line: #485363; --article-panel: #242c37; --article-paper: #1b222d; --article-accent: #a5c4ec; --article-link: #9ac7ff; } }
+      /* The global theme and frozen ALOPEX CSS can both set .content colors.
+         Give the article surface an explicit readable foreground in each scheme. */
+      .article-shell .article-content .content { color: var(--article-fg); }
+      .article-shell .article-toc a { color: var(--article-muted); }
+      .article-shell .article-toc a:hover,
+      .article-shell .article-toc a:focus-visible { color: var(--article-link); }
+      .article-shell .article-content .content .research-thread-nav { color: var(--article-fg); }
+      .article-shell .article-content .content .research-thread-nav a { color: var(--article-link); }
+      @media (prefers-color-scheme: dark) {
+        /* Activation-Space ALOPEX inherits the frozen ALOPEX ink variables,
+           which are light-only. Override those at the article boundary. */
+        .article-shell .article-content .content { color: #e7ebf1 !important; }
+        .article-shell .article-content .content p,
+        .article-shell .article-content .content li { color: inherit; }
+        .article-shell .article-toc a { color: #b9c2cf !important; }
+        .article-shell .article-toc a:hover,
+        .article-shell .article-toc a:focus-visible { color: #9ac7ff !important; }
+      }
+      .article-shell { color: var(--article-fg); }
+      .article-shell a { color: var(--article-link); }
+      .article-shell .article-topbar a { color: var(--article-fg); }
+      .article-shell .article-toc, .article-shell .admonition, .article-shell .details-block, .article-shell .interactive-figure-frame, .article-shell pre { color: var(--article-fg); }
+      .article-shell {
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 72rem;
+        margin: 0 auto;
+        padding: 2.5rem 1.5rem 4rem;
+      }
+      .article-topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid var(--article-line);
+        font-size: 0.95rem;
+      }
+      .article-topbar a {
+        color: inherit;
+      }
+      .article-header {
+        margin-bottom: 2rem;
+      }
+      .article-kicker {
+        margin-bottom: 0.75rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--article-muted);
+      }
+      .article-title {
+        margin-bottom: 1rem;
+        line-height: 1.05;
+      }
+      .article-dek {
+        max-width: 44rem;
+        margin: 0;
+        color: var(--article-muted);
+        font-size: 1.15rem;
+      }
+      .article-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem 1.5rem;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: var(--article-muted);
+      }
+      .article-grid {
+        min-width: 0;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2rem;
+      }
+      .article-toc {
+        padding: 1rem 1.1rem;
+        border: 1px solid var(--article-line);
+        background: var(--article-panel);
+      }
+      .article-toc:empty {
+        display: none;
+      }
+      .article-toc ul {
+        margin: 0;
+      }
+      .article-toc li + li {
+        margin-top: 0.45rem;
+      }
+      .article-content {
+        min-width: 0;
+        width: 100%;
+        max-width: 46rem;
+      }
+      /* The ALOPEX synthesis contains wide figures and data tables. */
+      .article-shell:has(.paper-section) { max-width: 90rem; }
+      .article-shell:has(.paper-section) .article-content { max-width: none; }
+      .article-content .content { min-width: 0; overflow-wrap: anywhere; }
+      .article-content .content img, .article-content .content svg { max-width: 100%; height: auto; }
+      .article-content .content table { display: block; max-width: 100%; overflow-x: auto; }
+      .article-content .content pre { max-width: 100%; overflow-x: auto; }
+      .article-content .content .research-thread-nav { box-sizing: border-box; width: 100%; margin: 0 0 1.5rem; padding: .85rem 1rem; border-left: 3px solid var(--article-accent); background: var(--article-panel); font: 14px/1.65 'Inter', sans-serif; }
+      .article-content .content .research-thread-nav a { text-decoration: underline; text-underline-offset: 2px; }
+      .article-content .content .research-thread-nav .research-thread-meta { display: block; font-size: 12px; opacity: .8; margin-top: .25rem; }
+      @media(max-width: 600px) { .article-shell { padding: 1.5rem 1rem 3rem; } .article-grid { gap: 1rem; } .article-content .content .research-thread-nav { padding: .7rem .8rem; } }
+      .article-content .content {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+      .article-content .content > h6 {
+        margin-top: 2.4rem;
+        margin-bottom: 0.8rem;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .article-content .content > p:first-child {
+        font-size: 1.08rem;
+      }
+      .article-content pre {
+        padding: 1rem 1.15rem;
+        overflow-x: auto;
+        border: 1px solid var(--article-line);
+        background: var(--article-panel);
+      }
+      .admonition { margin: 1.5rem 0; padding: 1rem; border-left: 0.35rem solid var(--article-accent); background: var(--article-panel); }
+      .admonition-title { margin-bottom: 0.5rem; font-weight: 700; text-transform: uppercase; font-size: 0.8rem; }
+      .details-block { margin: 1.5rem 0; padding: 0; border: 1px solid var(--article-line); border-radius: 0; overflow: hidden; }
+      .details-block > summary { display: block; list-style: none; position: relative; margin: 0; padding: 0.85rem 2.75rem 0.85rem 1rem; cursor: pointer; font-weight: 700; background: var(--article-panel); user-select: none; }
+      .details-block > summary::-webkit-details-marker { display: none; }
+      .details-block > summary::after { content: "+"; position: absolute; top: 50%; right: 1rem; transform: translateY(-50%); font-size: 1rem; font-weight: 400; }
+      .details-block[open] > summary { border-bottom: 1px solid var(--article-line); }
+      .details-block[open] > summary::after { content: "-"; }
+      .details-block > :not(summary) { margin: 0; padding: 0.85rem 1rem 1rem; }
+      .article-figure, .margin-figure, .interactive-figure { margin: 2rem 0; }
+      .article-figure img, .margin-figure img { display: block; width: 100%; border: 0; background: transparent; }
+      .interactive-figure img, .interactive-figure svg { display: block; width: 100%; border: 0; background: transparent; }
+      .article-figure figcaption, .margin-figure figcaption, .interactive-figure figcaption { margin-top: 0.75rem; color: var(--article-muted); font-size: 0.95rem; }
+      .interactive-figure-frame { padding: 1rem; border: 1px solid var(--article-line); background: var(--article-paper); }
+      .citation-group, .footnote-ref { font-size: 0.9em; }
+      .sidenote { display: inline-block; margin: 0.15rem 0.35rem; padding-left: 0.75rem; border-left: 2px solid var(--article-line); color: var(--article-muted); font-size: 0.9rem; }
+      .sidenote-number { margin-right: 0.35rem; font-weight: 700; }
+      @media screen and (min-width: 1024px) {
+        .article-grid {
+          grid-template-columns: minmax(0, 12rem) minmax(0, 1fr);
+          align-items: start;
+        }
+      }
+      @media screen and (min-width: 1216px) {
+        .sidenote { float: right; clear: right; width: 14rem; margin-right: -16rem; margin-left: 1rem; margin-top: 0.25rem; }
+        .margin-figure { float: right; clear: right; width: 16rem; margin-right: -18rem; margin-left: 1.5rem; margin-top: 0.35rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="article-shell">
+      <div class="article-topbar">
+        <a href="https://www.protimroy.com/">Back home</a>
+        <a href="/pro-log/">Pro-Log</a>
+      </div>
+      <header class="article-header">
+        <p class="article-kicker">Research Note</p>
+        <h1 class="title article-title">Function Synthesis Between Sharing and Compilation</h1>
+        <p class="article-dek">R14–R18: Transformer injection, MNIST function proposals, reconstruction, teacher-free synthesis, and control design.</p>
+        <div class="article-meta">
+          <span>2 min read</span>
+        </div>
+      </header>
+      <div class="article-grid">
+        <aside class="article-toc">
+          <nav class="table-of-contents"><p class="menu-label">Contents</p><ul class="menu-list"><li class="toc-level-2"><a href="#why-these-experiments-matter">Why these experiments matter</a></li><li class="toc-level-2"><a href="#r14-transformer-function-injection">R14 — Transformer function injection</a></li><li class="toc-level-2"><a href="#r15-llm-specified-functions-on-mnist">R15 — LLM-specified functions on MNIST</a></li><li class="toc-level-2"><a href="#r16-reconstruct-learned-mnist-functions">R16 — Reconstruct learned MNIST functions</a></li><li class="toc-level-2"><a href="#r17-teacher-free-function-synthesis">R17 — Teacher-free function synthesis</a></li><li class="toc-level-2"><a href="#r18-controlled-function-prior-pilot">R18 — Controlled function-prior pilot</a></li><li class="toc-level-2"><a href="#what-the-sequence-establishes">What the sequence establishes</a></li></ul></nav>
+        </aside>
+        <main class="article-content">
+          <div class="content">
+            <p>
+<a href="/pro-log/pro-log/function-space-programming-thread/">← Research thread</a> · <a href="/pro-log/pro-log/function-space-programming-frozen-functions/">Next: Frozen Functions →</a></p><p>
+<strong>Research note · November 23, 2026</strong></p><h2 id="why-these-experiments-matter">Why these experiments matter</h2>
+<p>
+R12–R13 examined whether predictive functions can be shared and compressed. R14–R18 shifted toward proposing, reconstructing, and testing explicit functions before the R19–R28 compiled-feature experiments. This is a <strong>protocol and evidence-status record</strong>, not a claim that all five experiments produced successful results.</p><h2 id="r14-transformer-function-injection">R14 — Transformer function injection</h2>
+<p>
+The <a href="https://github.com/protimroy/function_space_programming/tree/research/r14-transformer-function-injection">R14 branch</a> investigates inserting a specified function into a Transformer. The branch exists, but a completed R14 result and its measured comparison have <strong>not yet been independently verified for this article</strong>. No accuracy or training-cost claim is made here.</p><h2 id="r15-llm-specified-functions-on-mnist">R15 — LLM-specified functions on MNIST</h2>
+<p>
+<a href="https://github.com/protimroy/function_space_programming/blob/research/r15-mnist-llm-function-synthesis/experiments/R15_README.md">R15 protocol</a> defines an assistant-authored seven-segment spatial hypothesis. It separates a <strong>zero-fit</strong> rule classifier, a ridge readout fitted on those same features, and a 217-feature designed ridge baseline. The zero-fit program was <strong>not yet a compiled MLP weight tensor</strong> in the documented protocol. The protocol requires recording prompts, candidates, token costs, and interventions before claiming LLM synthesis advantage. No numerical result is reported here without a verified run artifact.</p><h2 id="r16-reconstruct-learned-mnist-functions">R16 — Reconstruct learned MNIST functions</h2>
+<p>
+<a href="https://github.com/protimroy/function_space_programming/blob/research/r16-mnist-learned-function-reconstruction/experiments/R16_README.md">R16 protocol</a> trains a 784→128→10 ReLU teacher, then studies hidden-layer reconstruction and rank-8/16/32/64 SVD controls. The proposed LLM reconstruction stage uses a compressed teacher inspection, while reusing the teacher's output layer and hidden biases. <strong>SVD is not LLM synthesis</strong>, and teacher-conditioned reconstruction cannot establish that teacher training was avoided. No unverified numerical reconstruction results are asserted.</p><h2 id="r17-teacher-free-function-synthesis">R17 — Teacher-free function synthesis</h2>
+<p>
+<a href="https://github.com/protimroy/function_space_programming/blob/research/r17-teacher-free-function-synthesis/experiments/R17_README.md">R17 protocol</a> specifies one assistant-authored deterministic image-processing classifier: foreground crop, interpolation to a 7×5 grid, and fixed digit-template matching with translation tolerance. It does not fit MNIST weights, but <strong>was not yet compiled into neural-network weights</strong>. Zero fitted parameters also does not mean zero authoring or inference cost.</p><h2 id="r18-controlled-function-prior-pilot">R18 — Controlled function-prior pilot</h2>
+<p>
+<a href="https://github.com/protimroy/function_space_programming/blob/research/r18-function-prior-controlled/experiments/R18_README.md">R18 protocol</a> defines a common binary-glyph program schema and a harness for comparing the R17 authored candidate with seeded random glyphs and any externally generated candidates. The checked-in README explicitly says <strong>evaluation harness committed; no R18 results or LLM API calls yet</strong>. Equal evaluation counts would still not match the random candidates' structural prior.</p><h2 id="what-the-sequence-establishes">What the sequence establishes</h2>
+<p>
+These branches document a progression in experimental design: function injection, handcrafted or assistant-authored feature proposals, teacher-conditioned reconstruction, teacher-free rule systems, and controlled comparisons. <strong>They do not, by themselves, demonstrate an independent LLM-specific advantage, a compiled training-free MNIST classifier, or lower end-to-end training cost.</strong></p><p>
+<a href="/pro-log/pro-log/function-space-programming-frozen-functions/">Next chapter: R19–R28 compiled functions and initialization controls →</a></p>
+          </div>
+          
+        </main>
+      </div>
+    </div>
+    <script src="/pro-log/htmx.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.17/dist/plot.umd.min.js"></script>
+    <script src="/pro-log/component.js"></script>
+  </body>
+</html>
