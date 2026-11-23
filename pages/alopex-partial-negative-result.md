@@ -17,6 +17,53 @@ template: article.html
 
 <link rel="stylesheet" href="/pro-log/assets/alopex/katex.min-b4834341aeb6.css"><link rel="stylesheet" href="/pro-log/assets/alopex/article-9f0f7a524f10.css">
 
+<!-- Theme compatibility for the frozen ALOPEX article bundle. Keep the historical asset immutable. -->
+<style>
+  /* The generated bundle uses light-only custom properties; dark mode must redefine them. */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --alopex-ink: #e7ebf1;
+      --alopex-muted: #b9c5c0;
+      --alopex-accent: #8bdac8;
+      --alopex-warm: #f0aa91;
+      --alopex-line: #485951;
+      --alopex-paper: #202c29;
+    }
+    .article-content .content .in-brief,
+    .article-content .content .claim-frozen { background: var(--alopex-paper); }
+    .article-content .content .claim,
+    .article-content .content .paper-margin-note { background: #302927; }
+    .article-content .content .claim-hypothesis { background: #342f23; }
+    .article-content .content .data-toolbar input,
+    .article-content .content .data-toolbar select,
+    .article-content .content .bibliography-toolbar input,
+    .article-content .content .data-toolbar button,
+    .article-content .content .bibliography-toolbar button {
+      background: #25312d;
+      color: var(--alopex-ink);
+      border-color: var(--alopex-line);
+    }
+    .article-content .content .data-toolbar button[aria-pressed="true"],
+    .article-content .content .bibliography-toolbar button[aria-pressed="true"] {
+      background: var(--alopex-accent);
+      color: #14221e;
+    }
+    .article-content .content .quality-track { background: #3a4742; }
+    .article-content .content .slm-band { fill: #283a32; }
+    .article-content .content .chart-grid,
+    .article-content .content .curve-grid,
+    .article-content .content .scale-grid { stroke: #506159; }
+    .article-content .content .chart-series-1 { fill: #8bdac8; background: #8bdac8; }
+    .article-content .content .chart-series-2 { fill: #f0aa91; background: #f0aa91; }
+    .article-content .content .scale-spine,
+    .article-content .content .scale-stem { stroke: #93a99d; }
+  }
+  /* The thread bar is shared by both articles; avoid inheriting the old bundle's ink. */
+  .article-content .content .research-thread-nav { color: var(--alopex-ink, var(--article-fg)); }
+  .article-content .content .research-thread-nav a { color: var(--alopex-accent, var(--article-link)); }
+</style>
+
+
 ###### Constrain the claim before scaling again
 
 <section id="prologue" class="paper-section" data-section="01" aria-label="Constrain the claim before scaling again"><aside class="in-brief" aria-label="Section summary"><span>In brief</span><div><p>This article reconstructs the ALOPEX neural-training program from source code, frozen experiment records, verified arithmetic, and external literature. The sequence of experiments changed four components of the learning system: <strong>measurement</strong>, <strong>credit space</strong>, <strong>persistent state</strong>, and <strong>actuation</strong>. The recorded results establish parameter-scale feasibility for some variants and bounded neural-network learning for Learned Credit-Map Hybrid. They do not establish ALOPEX as a competitive general-purpose alternative to gradient-based training.</p></div></aside><p>The article uses chronological reconstruction only where source records establish the sequence. It does not assign undocumented intent to missing experiments or reinterpret unrecovered versions as successful or failed ablations.</p><p>The documented sequence is: global consequence measurements; temporal reuse of consequence; same-batch replay; block-local interventions; hidden activation interventions; exact directional measurements; and finally a learned output-to-hidden credit operator. Each transition changed the information available to the learner or the representation in which that information was stored.</p><aside id="claim-prologue-close" class="claim claim-derived" data-claim-kind="derived"><header><span>Derived / analytical conclusion</span><code>claim-prologue-close</code></header><div class="claim-body"><p>The experiments support treating <strong>measurement, credit space, persistent state, and actuation as separate algorithmic components</strong>. Changes to one component did not by themselves determine the behavior of the complete optimizer.</p></div></aside><p>The historical ALOPEX lineage itself is older than neural-network optimization. Harth and Tzanakou used adaptive perturbation and correlation to identify visual receptive fields. <span class="citation-cluster"><a class="citation" href="#ref-harth1974alopex" id="citation-harth1974alopex-1">Harth &amp; Tzanakou, 1974</a></span> Unnikrishnan and Venugopal later formulated ALOPEX for feedforward and recurrent neural networks, assigning learning signal from correlations between parameter changes and changes in global error. <span class="citation-cluster"><a class="citation" href="#ref-unnikrishnan1994alopex" id="citation-unnikrishnan1994alopex-1">Unnikrishnan &amp; Venugopal, 1994</a></span> Bia simplified that neural ALOPEX family further. <span class="citation-cluster"><a class="citation" href="#ref-bia2001alopexb" id="citation-bia2001alopexb-1">Bia, 2001</a></span></p><p>Those papers establish the historical family around repeated perturbation, observed consequence, and retained correlation. Later variants in this repository alter the state representation, measurement channel, and actuator and are therefore described by their explicit mechanisms rather than by name alone.</p><p>The primary historical baseline is now available rather than inferred from recovered code alone. Roy's 2023 MSc thesis reports that mini-batch ALOPEX-B on a 784→10 MNIST logistic model improved over SGD but did not converge as quickly as Adam, while a gradient-seeded direction variant reported lower training loss in fewer epochs than both Adam and SGD in that small-model experiment. The thesis also identifies the one-global-error/high-dimensional search problem explicitly and proposes fused GPU execution and momentum as future work. <span class="citation-cluster"><a class="citation" href="#ref-roy2023thesis" id="citation-roy2023thesis-1">Roy, 2023</a></span> These results are important historical evidence, but they are not evidence for hidden-layer credit assignment or SLM-scale training.</p><p>The general neural-training claim is evaluated below using the repository's own quality, depth, scale, and timing results together with external methods that address the same credit-assignment problem.</p><p>The five research threads are connected, but they answer different questions. Threads I–III are retrospective and evidence-led. Thread IV separates the strong general-competitiveness claim from the narrower hypotheses that remain unresolved. Thread V is prospective: it asks for the missing SLM-scale test rather than redirecting the programme to a different optimization problem.</p><div class="evidence-legend" aria-label="Claim evidence legend"><span class="legend-literature"><i></i>Literature / external evidence</span><span class="legend-frozen"><i></i>Frozen empirical evidence</span><span class="legend-derived"><i></i>Derived / analytical conclusion</span><span class="legend-hypothesis"><i></i>Hypothesis / future test</span><span class="legend-limitation"><i></i>Limitation / evidence boundary</span></div><h3>Research questions</h3><p>This retrospective is organized around four empirical questions rather than one optimizer leaderboard:</p><ol>
