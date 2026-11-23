@@ -20,9 +20,14 @@
       .article-shell .article-content .content .research-thread-nav { color: var(--article-fg); }
       .article-shell .article-content .content .research-thread-nav a { color: var(--article-link); }
       @media (prefers-color-scheme: dark) {
-        .article-shell .article-content .content { color: var(--article-fg); }
+        /* Activation-Space ALOPEX inherits the frozen ALOPEX ink variables,
+           which are light-only. Override those at the article boundary. */
+        .article-shell .article-content .content { color: #e7ebf1 !important; }
         .article-shell .article-content .content p,
         .article-shell .article-content .content li { color: inherit; }
+        .article-shell .article-toc a { color: #b9c2cf !important; }
+        .article-shell .article-toc a:hover,
+        .article-shell .article-toc a:focus-visible { color: #9ac7ff !important; }
       }
       .article-shell { color: var(--article-fg); }
       .article-shell a { color: var(--article-link); }
