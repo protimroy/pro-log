@@ -39,9 +39,9 @@ JS = r"""() => {
     samples[selector] = { color: s.color, background: s.backgroundColor, width: Math.round(el.getBoundingClientRect().width) };
   }
   const parse = s => {
-    const m = s.match(/rgba?\\(([^)]+)\\)/);
+    const m = s.match(/rgba?\(([^)]+)\)/);
     if (!m) return null;
-    const a = m[1].split(/[,\\s/]+/).filter(Boolean).map(Number);
+    const a = m[1].split(/[,\s/]+/).filter(Boolean).map(Number);
     return a.length >= 3 ? [a[0], a[1], a[2], a[3] ?? 1] : null;
   };
   const blend = (front, back) => front.slice(0, 3).map((v, i) => v * front[3] + back[i] * (1 - front[3]));
