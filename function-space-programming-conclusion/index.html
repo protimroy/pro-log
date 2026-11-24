@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Function Space Programming: A Partial Negative Result</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.protimroy.com/pro-log/function-space-programming-conclusion/"><meta name="description" content="What explicit neural function construction achieved, where stronger controls prevailed, and why the training-replacement investigation is concluding."><meta property="og:title" content="Function Space Programming: A Partial Negative Result"><meta property="og:type" content="article"><meta property="og:url" content="https://www.protimroy.com/pro-log/function-space-programming-conclusion/"><meta property="og:description" content="What explicit neural function construction achieved, where stronger controls prevailed, and why the training-replacement investigation is concluding."><meta name="twitter:description" content="What explicit neural function construction achieved, where stronger controls prevailed, and why the training-replacement investigation is concluding."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Function Space Programming: A Partial Negative Result">
+    <link rel="stylesheet" type="text/css" href="/pro-log/bulma.css" />
+    
+    <link rel="stylesheet" type="text/css" href="/pro-log/component.css" />
+    <style>
+      :root { color-scheme: light dark; --article-fg: #24272d; --article-muted: #555e6b; --article-line: #d7dce3; --article-panel: #f6f7f9; --article-paper: #fff; --article-accent: #304d72; --article-link: #245b9a; }
+      @media (prefers-color-scheme: dark) { :root { --article-fg: #e7ebf1; --article-muted: #b9c2cf; --article-line: #485363; --article-panel: #242c37; --article-paper: #1b222d; --article-accent: #a5c4ec; --article-link: #9ac7ff; } }
+      /* The global theme and frozen ALOPEX CSS can both set .content colors.
+         Give the article surface an explicit readable foreground in each scheme. */
+      .article-shell .article-content .content { color: var(--article-fg); }
+      .article-shell .article-toc a { color: var(--article-muted); }
+      .article-shell .article-toc a:hover,
+      .article-shell .article-toc a:focus-visible { color: var(--article-link); }
+      .article-shell .article-content .content .research-thread-nav { color: var(--article-fg); }
+      .article-shell .article-content .content .research-thread-nav a { color: var(--article-link); }
+      @media (prefers-color-scheme: dark) {
+        /* Activation-Space ALOPEX inherits the frozen ALOPEX ink variables,
+           which are light-only. Override those at the article boundary. */
+        .article-shell .article-content .content { color: #e7ebf1 !important; }
+        .article-shell .article-content .content p,
+        .article-shell .article-content .content li { color: inherit; }
+        .article-shell .article-toc a { color: #b9c2cf !important; }
+        .article-shell .article-toc a:hover,
+        .article-shell .article-toc a:focus-visible { color: #9ac7ff !important; }
+      }
+      .article-shell { color: var(--article-fg); }
+      .article-shell a { color: var(--article-link); }
+      .article-shell .article-topbar a { color: var(--article-fg); }
+      .article-shell .article-toc, .article-shell .admonition, .article-shell .details-block, .article-shell .interactive-figure-frame, .article-shell pre { color: var(--article-fg); }
+      .article-shell {
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 72rem;
+        margin: 0 auto;
+        padding: 2.5rem 1.5rem 4rem;
+      }
+      .article-topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid var(--article-line);
+        font-size: 0.95rem;
+      }
+      .article-topbar a {
+        color: inherit;
+      }
+      .article-header {
+        margin-bottom: 2rem;
+      }
+      .article-kicker {
+        margin-bottom: 0.75rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--article-muted);
+      }
+      .article-title {
+        margin-bottom: 1rem;
+        line-height: 1.05;
+      }
+      .article-dek {
+        max-width: 44rem;
+        margin: 0;
+        color: var(--article-muted);
+        font-size: 1.15rem;
+      }
+      .article-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem 1.5rem;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: var(--article-muted);
+      }
+      .article-grid {
+        min-width: 0;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2rem;
+      }
+      .article-toc {
+        padding: 1rem 1.1rem;
+        border: 1px solid var(--article-line);
+        background: var(--article-panel);
+      }
+      .article-toc:empty {
+        display: none;
+      }
+      .article-toc ul {
+        margin: 0;
+      }
+      .article-toc li + li {
+        margin-top: 0.45rem;
+      }
+      .article-content {
+        min-width: 0;
+        width: 100%;
+        max-width: 46rem;
+      }
+      /* The ALOPEX synthesis contains wide figures and data tables. */
+      .article-shell:has(.paper-section) { max-width: 90rem; }
+      .article-shell:has(.paper-section) .article-content { max-width: none; }
+      .article-content .content { min-width: 0; overflow-wrap: anywhere; }
+      .article-content .content img, .article-content .content svg { max-width: 100%; height: auto; }
+      .article-content .content table { display: block; max-width: 100%; overflow-x: auto; }
+      .article-content .content pre { max-width: 100%; overflow-x: auto; }
+      .article-content .content .research-thread-nav { box-sizing: border-box; width: 100%; margin: 0 0 1.5rem; padding: .85rem 1rem; border-left: 3px solid var(--article-accent); background: var(--article-panel); font: 14px/1.65 'Inter', sans-serif; }
+      .article-content .content .research-thread-nav a { text-decoration: underline; text-underline-offset: 2px; }
+      .article-content .content .research-thread-nav .research-thread-meta { display: block; font-size: 12px; opacity: .8; margin-top: .25rem; }
+      @media(max-width: 600px) { .article-shell { padding: 1.5rem 1rem 3rem; } .article-grid { gap: 1rem; } .article-content .content .research-thread-nav { padding: .7rem .8rem; } }
+      .article-content .content {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+      .article-content .content > h6 {
+        margin-top: 2.4rem;
+        margin-bottom: 0.8rem;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .article-content .content > p:first-child {
+        font-size: 1.08rem;
+      }
+      .article-content pre {
+        padding: 1rem 1.15rem;
+        overflow-x: auto;
+        border: 1px solid var(--article-line);
+        background: var(--article-panel);
+      }
+      .admonition { margin: 1.5rem 0; padding: 1rem; border-left: 0.35rem solid var(--article-accent); background: var(--article-panel); }
+      .admonition-title { margin-bottom: 0.5rem; font-weight: 700; text-transform: uppercase; font-size: 0.8rem; }
+      .details-block { margin: 1.5rem 0; padding: 0; border: 1px solid var(--article-line); border-radius: 0; overflow: hidden; }
+      .details-block > summary { display: block; list-style: none; position: relative; margin: 0; padding: 0.85rem 2.75rem 0.85rem 1rem; cursor: pointer; font-weight: 700; background: var(--article-panel); user-select: none; }
+      .details-block > summary::-webkit-details-marker { display: none; }
+      .details-block > summary::after { content: "+"; position: absolute; top: 50%; right: 1rem; transform: translateY(-50%); font-size: 1rem; font-weight: 400; }
+      .details-block[open] > summary { border-bottom: 1px solid var(--article-line); }
+      .details-block[open] > summary::after { content: "-"; }
+      .details-block > :not(summary) { margin: 0; padding: 0.85rem 1rem 1rem; }
+      .article-figure, .margin-figure, .interactive-figure { margin: 2rem 0; }
+      .article-figure img, .margin-figure img { display: block; width: 100%; border: 0; background: transparent; }
+      .interactive-figure img, .interactive-figure svg { display: block; width: 100%; border: 0; background: transparent; }
+      .article-figure figcaption, .margin-figure figcaption, .interactive-figure figcaption { margin-top: 0.75rem; color: var(--article-muted); font-size: 0.95rem; }
+      .interactive-figure-frame { padding: 1rem; border: 1px solid var(--article-line); background: var(--article-paper); }
+      .citation-group, .footnote-ref { font-size: 0.9em; }
+      .sidenote { display: inline-block; margin: 0.15rem 0.35rem; padding-left: 0.75rem; border-left: 2px solid var(--article-line); color: var(--article-muted); font-size: 0.9rem; }
+      .sidenote-number { margin-right: 0.35rem; font-weight: 700; }
+      @media screen and (min-width: 1024px) {
+        .article-grid {
+          grid-template-columns: minmax(0, 12rem) minmax(0, 1fr);
+          align-items: start;
+        }
+      }
+      @media screen and (min-width: 1216px) {
+        .sidenote { float: right; clear: right; width: 14rem; margin-right: -16rem; margin-left: 1rem; margin-top: 0.25rem; }
+        .margin-figure { float: right; clear: right; width: 16rem; margin-right: -18rem; margin-left: 1.5rem; margin-top: 0.35rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="article-shell">
+      <div class="article-topbar">
+        <a href="https://www.protimroy.com/">Back home</a>
+        <a href="/pro-log/">Pro-Log</a>
+      </div>
+      <header class="article-header">
+        <p class="article-kicker">Research Note</p>
+        <h1 class="title article-title">Function Space Programming: A Partial Negative Result</h1>
+        <p class="article-dek">What explicit neural function construction achieved, where stronger controls prevailed, and why the training-replacement investigation is concluding.</p>
+        <div class="article-meta">
+          <span>4 min read</span>
+        </div>
+      </header>
+      <div class="article-grid">
+        <aside class="article-toc">
+          <nav class="table-of-contents"><p class="menu-label">Contents</p><ul class="menu-list"><li class="toc-level-2"><a href="#the-original-hypothesis">The original hypothesis</a></li><li class="toc-level-2"><a href="#what-worked">What worked</a></li><li class="toc-level-2"><a href="#where-the-hypothesis-failed-to-gain-support">Where the hypothesis failed to gain support</a></li><li class="toc-level-3"><a href="#discovery">Discovery</a></li><li class="toc-level-3"><a href="#sharing-and-representation">Sharing and representation</a></li><li class="toc-level-3"><a href="#initialization-a-modest-benefit-ambiguous-mechanism">Initialization: a modest benefit, ambiguous mechanism</a></li><li class="toc-level-3"><a href="#cost-and-language-model-scale">Cost and language-model scale</a></li><li class="toc-level-2"><a href="#conclusion-and-scope">Conclusion and scope</a></li><li class="toc-level-2"><a href="#evidence">Evidence</a></li></ul></nav>
+        </aside>
+        <main class="article-content">
+          <div class="content">
+            <p>
+<a href="/pro-log/pro-log/function-space-programming-thread/">Research thread</a> · <a href="/pro-log/pro-log/function-space-programming-frozen-functions/">Previous chapter</a></p><p>
+Research conclusion · November 23, 2026</p><h2 id="the-original-hypothesis">The original hypothesis</h2>
+<p>
+Can a language model discover useful functions from data, compile them into neural parameters, and replace or reduce the target model's training? We investigated this through behavioral edits, exact constructions, statistical language prediction, feature synthesis and initialization. The experiments established several bounded capabilities, but did not establish an LLM-specific advantage or a general reduction in end-to-end training cost. This is a partial negative result, not evidence that explicit neural computation is impossible.</p><h2 id="what-worked">What worked</h2>
+<p>
+| Experiment | Result | Scope |
+| --- | --- | --- |
+| XOR | All four Boolean cases correct with zero updates | Analytic construction of a known function |
+| R01 | 100% target edit success, zero protected-score drift | Structured search matched the LLM on three local edits |
+| R04 | 312/312 held-out subtraction predictions after injection into a frozen Transformer | Used learned operand representations, calibrated probes and a gated residual write |
+| R06–R08 | Correct unseen arithmetic compositions at zero optimizer updates | Restricted grammars and finite-domain compilation; symbolic controls matched |
+| R09–R11 | Statistical text predictors executed in compiled Transformer weights | Short-context character prediction, not general language competence |
+| R32 | 40/40 validation and 41/41 audit predictions | Blind affine modular discovery; a matched symbolic solver also achieved every answer |</p><p>
+The R11 compiled decoder achieved 3.009211 test bits per character, versus 3.036408 for the mean of three AdamW starts at the matched decoder parameter budget. Its maximum probability discrepancy from the direct predictor was 1.17e-7. Compilation worked; that does not establish that the underlying statistical function was novel or cheaper than the best alternatives.</p><h2 id="where-the-hypothesis-failed-to-gain-support">Where the hypothesis failed to gain support</h2>
+<h3 id="discovery">Discovery</h3>
+<p>
+R02's known structural grammar allowed algebraic fitting and matched L-BFGS to outperform direct LLM proposals. R03's semantic lookup and ridge router matched the LLM. In R06–R08 and R32, symbolic controls recovered the functions. These results support explicit structural priors, not a distinctive LLM discovery advantage.</p><h3 id="sharing-and-representation">Sharing and representation</h3>
+<p>
+R12's suffix clustering degraded test loss. R13 reduced accounted storage to 33.69% of the independent-context reference, but test loss increased from 3.5342 to 3.6719 bits per character, missing the prespecified 3.55 threshold. Sharing can save capacity while losing predictive distinctions.</p><p>
+R22's ten synthesized frozen MNIST features reached 36.46% development accuracy with a fitted ridge readout, versus 41.01% averaged over three random controls. R25's final candidates all fell below their respective mean position-permutation controls. A plausible feature description is not sufficient evidence of useful neural representation.</p><h3 id="initialization-a-modest-benefit-ambiguous-mechanism">Initialization: a modest benefit, ambiguous mechanism</h3>
+<p>
+R29 repeats the small pooled-MNIST 49→32→10 ReLU experiment with ten paired seeds and additional structure-matched controls. Values below are arithmetic means recomputed from the recorded run artifact.</p><p>
+| First-layer initialization | Steps to 85% validation accuracy | Terminal audit accuracy |
+| --- | ---: | ---: |
+| Standard random | 250 | 91.044% |
+| Norm-matched random | 227.5 | 91.311% |
+| Activation-matched random | 237.5 | 91.331% |
+| Original synthesized functions | 215 | 91.913% |
+| Function weights, zero biases | 212.5 | 91.797% |
+| Shuffled spatial positions | 210 | 91.769% |
+| Support-shuffled | 225 | 91.628% |
+| Support-signed | 227.5 | 91.573% |
+| Support-randomized | 225 | 91.427% |</p><p>
+The original program has the highest mean terminal accuracy in this comparison. Several variants retain much of its improvement, and two reach the threshold sooner. These are descriptive paired-run means, not a demonstration of statistical significance or of the causal benefit of the precise synthesized functions. All weights were trained after initialization; the official test split was not used in this protocol.</p><h3 id="cost-and-language-model-scale">Cost and language-model scale</h3>
+<p>
+In R11, compilation and selection took 2.42 seconds; the three AdamW starts reached the common validation target in 2.21–5.51 seconds. The direct count-model workflow took 0.028 seconds after shared data preparation. Total LLM synthesis cost and energy were unavailable. No general end-to-end cost advantage follows from zero target-model updates.</p><p>
+Later language-model transfer work and the Noise integration pilot did not establish a validated training-cost advantage. Structured Hadamard initialization in Noise is not a data-discovered function. These exploratory efforts are not treated as a test of the full synthesis hypothesis. R30–R31 and R33–R34 are retained as research branches; no new quantitative claims from them are made in this conclusion without checked result artifacts.</p><h2 id="conclusion-and-scope">Conclusion and scope</h2>
+<p>
+The strong training-replacement claim remains unsupported by these experiments. The tested LLM proposals frequently failed to outperform structural, symbolic or statistical controls. A few useful compiled functions and initialization priors were demonstrated, but their discovery cost, composition in learned representations, and transfer to realistic language modelling were not established.</p><p>
+We are concluding the training-replacement and speedrun phase rather than claiming impossibility. We retain exact construction, function editing, compilation, and the negative evidence as research tools. The next program asks a different question: what distinguishes a deliberately constructed computation from the computation a neural network actually learns?</p><p>
+The <a href="/pro-log/pro-log/mechanisms-of-neural-computation/">Mechanisms of Neural Computation</a> overview introduces that question. It does not retroactively reinterpret FSP as a successful mechanistic interpretability result.</p><h2 id="evidence">Evidence</h2>
+<p>
+<a href="https://github.com/protimroy/pro-log/blob/master/evidence/function-space-programming/runs/fsp-conclusion/r29-r32-extract.json">Public R29/R32 evidence extract</a> includes per-seed R29 threshold and terminal results, R32 counts, source blob identifiers, and limitations. The figures were recomputed from archived artifacts, not independently rerun. The original research-repository links below may require access.</p><ul>
+<li>
+<a href="/pro-log/pro-log/function-space-programming/">Part I — exact construction, edits and language prediction</a></li><li>
+<a href="/pro-log/pro-log/function-space-programming-shared-functions/">Part II — representation sharing</a></li><li>
+<a href="/pro-log/pro-log/function-space-programming-r14-r18/">Part III — protocols and evidence status</a></li><li>
+<a href="/pro-log/pro-log/function-space-programming-frozen-functions/">Part IV — frozen features and initialization</a></li><li>
+<a href="https://github.com/protimroy/function_space_programming/blob/research/r29-structure-matched-controls/runs/r29/results.json">R29 recorded results</a></li><li>
+<a href="https://github.com/protimroy/function_space_programming/blob/research/r32-blind-function-discovery/runs/r32/results.json">R32 recorded results</a></li></ul>
+<p>
+<a href="/pro-log/pro-log/function-space-programming-thread/">Research thread</a> · <a href="/pro-log/pro-log/mechanisms-of-neural-computation/">Next research program</a></p>
+          </div>
+          
+        </main>
+      </div>
+    </div>
+    <script src="/pro-log/htmx.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.17/dist/plot.umd.min.js"></script>
+    <script src="/pro-log/component.js"></script>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Mechanisms of Neural Computation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.protimroy.com/pro-log/mechanisms-of-neural-computation/"><meta name="description" content="A research program on learned algorithms, neural representations, causal equivalence, and function construction."><meta property="og:title" content="Mechanisms of Neural Computation"><meta property="og:type" content="article"><meta property="og:url" content="https://www.protimroy.com/pro-log/mechanisms-of-neural-computation/"><meta property="og:description" content="A research program on learned algorithms, neural representations, causal equivalence, and function construction."><meta name="twitter:description" content="A research program on learned algorithms, neural representations, causal equivalence, and function construction."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Mechanisms of Neural Computation">
+    <link rel="stylesheet" type="text/css" href="/pro-log/bulma.css" />
+    
+    <link rel="stylesheet" type="text/css" href="/pro-log/component.css" />
+    <style>
+      :root { color-scheme: light dark; --article-fg: #24272d; --article-muted: #555e6b; --article-line: #d7dce3; --article-panel: #f6f7f9; --article-paper: #fff; --article-accent: #304d72; --article-link: #245b9a; }
+      @media (prefers-color-scheme: dark) { :root { --article-fg: #e7ebf1; --article-muted: #b9c2cf; --article-line: #485363; --article-panel: #242c37; --article-paper: #1b222d; --article-accent: #a5c4ec; --article-link: #9ac7ff; } }
+      /* The global theme and frozen ALOPEX CSS can both set .content colors.
+         Give the article surface an explicit readable foreground in each scheme. */
+      .article-shell .article-content .content { color: var(--article-fg); }
+      .article-shell .article-toc a { color: var(--article-muted); }
+      .article-shell .article-toc a:hover,
+      .article-shell .article-toc a:focus-visible { color: var(--article-link); }
+      .article-shell .article-content .content .research-thread-nav { color: var(--article-fg); }
+      .article-shell .article-content .content .research-thread-nav a { color: var(--article-link); }
+      @media (prefers-color-scheme: dark) {
+        /* Activation-Space ALOPEX inherits the frozen ALOPEX ink variables,
+           which are light-only. Override those at the article boundary. */
+        .article-shell .article-content .content { color: #e7ebf1 !important; }
+        .article-shell .article-content .content p,
+        .article-shell .article-content .content li { color: inherit; }
+        .article-shell .article-toc a { color: #b9c2cf !important; }
+        .article-shell .article-toc a:hover,
+        .article-shell .article-toc a:focus-visible { color: #9ac7ff !important; }
+      }
+      .article-shell { color: var(--article-fg); }
+      .article-shell a { color: var(--article-link); }
+      .article-shell .article-topbar a { color: var(--article-fg); }
+      .article-shell .article-toc, .article-shell .admonition, .article-shell .details-block, .article-shell .interactive-figure-frame, .article-shell pre { color: var(--article-fg); }
+      .article-shell {
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 72rem;
+        margin: 0 auto;
+        padding: 2.5rem 1.5rem 4rem;
+      }
+      .article-topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid var(--article-line);
+        font-size: 0.95rem;
+      }
+      .article-topbar a {
+        color: inherit;
+      }
+      .article-header {
+        margin-bottom: 2rem;
+      }
+      .article-kicker {
+        margin-bottom: 0.75rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--article-muted);
+      }
+      .article-title {
+        margin-bottom: 1rem;
+        line-height: 1.05;
+      }
+      .article-dek {
+        max-width: 44rem;
+        margin: 0;
+        color: var(--article-muted);
+        font-size: 1.15rem;
+      }
+      .article-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem 1.5rem;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: var(--article-muted);
+      }
+      .article-grid {
+        min-width: 0;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2rem;
+      }
+      .article-toc {
+        padding: 1rem 1.1rem;
+        border: 1px solid var(--article-line);
+        background: var(--article-panel);
+      }
+      .article-toc:empty {
+        display: none;
+      }
+      .article-toc ul {
+        margin: 0;
+      }
+      .article-toc li + li {
+        margin-top: 0.45rem;
+      }
+      .article-content {
+        min-width: 0;
+        width: 100%;
+        max-width: 46rem;
+      }
+      /* The ALOPEX synthesis contains wide figures and data tables. */
+      .article-shell:has(.paper-section) { max-width: 90rem; }
+      .article-shell:has(.paper-section) .article-content { max-width: none; }
+      .article-content .content { min-width: 0; overflow-wrap: anywhere; }
+      .article-content .content img, .article-content .content svg { max-width: 100%; height: auto; }
+      .article-content .content table { display: block; max-width: 100%; overflow-x: auto; }
+      .article-content .content pre { max-width: 100%; overflow-x: auto; }
+      .article-content .content .research-thread-nav { box-sizing: border-box; width: 100%; margin: 0 0 1.5rem; padding: .85rem 1rem; border-left: 3px solid var(--article-accent); background: var(--article-panel); font: 14px/1.65 'Inter', sans-serif; }
+      .article-content .content .research-thread-nav a { text-decoration: underline; text-underline-offset: 2px; }
+      .article-content .content .research-thread-nav .research-thread-meta { display: block; font-size: 12px; opacity: .8; margin-top: .25rem; }
+      @media(max-width: 600px) { .article-shell { padding: 1.5rem 1rem 3rem; } .article-grid { gap: 1rem; } .article-content .content .research-thread-nav { padding: .7rem .8rem; } }
+      .article-content .content {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+      .article-content .content > h6 {
+        margin-top: 2.4rem;
+        margin-bottom: 0.8rem;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .article-content .content > p:first-child {
+        font-size: 1.08rem;
+      }
+      .article-content pre {
+        padding: 1rem 1.15rem;
+        overflow-x: auto;
+        border: 1px solid var(--article-line);
+        background: var(--article-panel);
+      }
+      .admonition { margin: 1.5rem 0; padding: 1rem; border-left: 0.35rem solid var(--article-accent); background: var(--article-panel); }
+      .admonition-title { margin-bottom: 0.5rem; font-weight: 700; text-transform: uppercase; font-size: 0.8rem; }
+      .details-block { margin: 1.5rem 0; padding: 0; border: 1px solid var(--article-line); border-radius: 0; overflow: hidden; }
+      .details-block > summary { display: block; list-style: none; position: relative; margin: 0; padding: 0.85rem 2.75rem 0.85rem 1rem; cursor: pointer; font-weight: 700; background: var(--article-panel); user-select: none; }
+      .details-block > summary::-webkit-details-marker { display: none; }
+      .details-block > summary::after { content: "+"; position: absolute; top: 50%; right: 1rem; transform: translateY(-50%); font-size: 1rem; font-weight: 400; }
+      .details-block[open] > summary { border-bottom: 1px solid var(--article-line); }
+      .details-block[open] > summary::after { content: "-"; }
+      .details-block > :not(summary) { margin: 0; padding: 0.85rem 1rem 1rem; }
+      .article-figure, .margin-figure, .interactive-figure { margin: 2rem 0; }
+      .article-figure img, .margin-figure img { display: block; width: 100%; border: 0; background: transparent; }
+      .interactive-figure img, .interactive-figure svg { display: block; width: 100%; border: 0; background: transparent; }
+      .article-figure figcaption, .margin-figure figcaption, .interactive-figure figcaption { margin-top: 0.75rem; color: var(--article-muted); font-size: 0.95rem; }
+      .interactive-figure-frame { padding: 1rem; border: 1px solid var(--article-line); background: var(--article-paper); }
+      .citation-group, .footnote-ref { font-size: 0.9em; }
+      .sidenote { display: inline-block; margin: 0.15rem 0.35rem; padding-left: 0.75rem; border-left: 2px solid var(--article-line); color: var(--article-muted); font-size: 0.9rem; }
+      .sidenote-number { margin-right: 0.35rem; font-weight: 700; }
+      @media screen and (min-width: 1024px) {
+        .article-grid {
+          grid-template-columns: minmax(0, 12rem) minmax(0, 1fr);
+          align-items: start;
+        }
+      }
+      @media screen and (min-width: 1216px) {
+        .sidenote { float: right; clear: right; width: 14rem; margin-right: -16rem; margin-left: 1rem; margin-top: 0.25rem; }
+        .margin-figure { float: right; clear: right; width: 16rem; margin-right: -18rem; margin-left: 1.5rem; margin-top: 0.35rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="article-shell">
+      <div class="article-topbar">
+        <a href="https://www.protimroy.com/">Back home</a>
+        <a href="/pro-log/">Pro-Log</a>
+      </div>
+      <header class="article-header">
+        <p class="article-kicker">Research Note</p>
+        <h1 class="title article-title">Mechanisms of Neural Computation</h1>
+        <p class="article-dek">A research program on learned algorithms, neural representations, causal equivalence, and function construction.</p>
+        <div class="article-meta">
+          <span>3 min read</span>
+        </div>
+      </header>
+      <div class="article-grid">
+        <aside class="article-toc">
+          <nav class="table-of-contents"><p class="menu-label">Contents</p><ul class="menu-list"><li class="toc-level-2"><a href="#from-function-programming-to-neural-mechanisms">From function programming to neural mechanisms</a></li><li class="toc-level-2"><a href="#research-questions">Research questions</a></li><li class="toc-level-2"><a href="#first-investigation-learned-and-constructed-arithmetic">First investigation: learned and constructed arithmetic</a></li><li class="toc-level-2"><a href="#related-work">Related work</a></li><li class="toc-level-2"><a href="#research-threads">Research threads</a></li></ul></nav>
+        </aside>
+        <main class="article-content">
+          <div class="content">
+            <p>
+Research program · November 23, 2026</p><p>
+How do neural networks implement computations, and what would it take to understand those computations well enough to reproduce or modify them?</p><p>
+This program studies the relationship between mathematical functions, internal representations, and neural parameters. Mechanistic interpretability investigates how learned parameters implement a computation; function construction investigates the reverse direction. Neither behavioral agreement nor a plausible activation description alone establishes that two networks use the same algorithm.</p><h2 id="from-function-programming-to-neural-mechanisms">From function programming to neural mechanisms</h2>
+<p>
+The <a href="/pro-log/pro-log/function-space-programming-thread/">Function Space Programming thread</a> began with exact neural constructions and LLM-proposed behavioral edits, then explored function discovery, compilation, shared predictive representations, and initialization. These experiments demonstrate bounded instances of function construction, including finite-domain arithmetic and statistical character prediction in small Transformers.</p><p>
+Stronger symbolic and statistical controls often matched or exceeded LLM proposals. Sharing predictive functions incurred a loss penalty in R12–R13, and the initialization studies did not establish that the particular synthesized functions caused the improvement. No general training-cost reduction or speedrun record was demonstrated.</p><p>
+These findings motivate a different question: when learned and constructed networks compute the same input-output function, what determines whether their internal mechanisms are equivalent? The original experiments remain available with their original objectives and limitations. The <a href="/pro-log/pro-log/function-space-programming-conclusion/">concluding chapter</a> reports both positive and negative evidence; the training-replacement phase is concluded.</p><h2 id="research-questions">Research questions</h2>
+<ul>
+<li>
+<strong>Discovery:</strong> What computations do learned networks implement, and which causal interventions support an explanation?</li><li>
+<strong>Construction:</strong> Can a specified computation be implemented directly in neural parameters?</li><li>
+<strong>Equivalence:</strong> When two networks agree behaviorally, do their intermediate computations and counterfactual responses also agree under an appropriate correspondence?</li><li>
+<strong>Organization:</strong> How do computations share representations, compose, interfere, and develop during learning?</li></ul>
+<p>
+Function Space Programming remains a construction methodology. LLM assistance is an experimental variable, not a prerequisite for the broader program.</p><h2 id="first-investigation-learned-and-constructed-arithmetic">First investigation: learned and constructed arithmetic</h2>
+<p>
+The proposed starting point is modular addition. Compare trained networks with analytically constructed lookup and Fourier-based solutions, under explicitly matched or reported architectural budgets. An independently synthesized solution can serve as an additional arm if its computational specification can be verified.</p><p>
+The constructed networks provide known mechanisms against which to test interpretation methods. Compare behavioral agreement, representation geometry, causal interventions, and the fidelity of mechanistic explanations on held-out counterfactuals. Circuit exchange is a further test, not by itself proof of identical algorithms.</p><p>
+This is a proposed experiment, not a reported result. The aim is to establish a diagnostic methodology before moving to natural-language models.</p><h2 id="related-work">Related work</h2>
+<ul>
+<li>
+<p>
+<a href="https://arxiv.org/abs/2301.05217">Progress Measures for Grokking via Mechanistic Interpretability</a> — learned Fourier-based modular arithmetic.</p></li><li>
+<p>
+<a href="https://arxiv.org/abs/2301.05062">Tracr: Compiled Transformers as a Laboratory for Interpretability</a> — program compilation and known mechanisms.</p></li><li>
+<p>
+<a href="https://transformer-circuits.pub/2022/toy_model/index.html">Toy Models of Superposition</a> — shared neural feature representations.</p></li><li>
+<p>
+<a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/a8f7d43ae092d9a5295775eb17f3f4f7-Abstract-Datasets_and_Benchmarks_Track.html">InterpBench</a> — semi-synthetic Transformers with known circuits for testing interpretability methods.</p></li><li>
+<p>
+<a href="https://arxiv.org/abs/2504.13151">MIB</a> — mechanistic interpretability evaluation.</p></li></ul>
+<p>
+Known-circuit benchmarks already exist. The proposed arithmetic comparison is a diagnostic starting point, not a novel benchmark claim. A potential research question is whether causal correspondence and exchangeability tests distinguish functionally identical but algorithmically distinct networks, especially when representations are mixed or redundant.</p><p>
+These are precedents for the program, not evidence of its novelty. Any contribution must be established against the relevant literature and empirical controls.</p><h2 id="research-threads">Research threads</h2>
+<p>
+<a href="/pro-log/pro-log/function-space-programming-thread/">Function Space Programming</a> — prior experiments in explicit function discovery, compilation, and representation sharing.</p><p>
+<a href="/pro-log/pro-log/alopex-thread/">ALOPEX</a> — earlier research into correlative learning and activation-space credit assignment.</p><p>
+<a href="/pro-log/pro-log/">Pro-Log index</a></p>
+          </div>
+          
+        </main>
+      </div>
+    </div>
+    <script src="/pro-log/htmx.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.17/dist/plot.umd.min.js"></script>
+    <script src="/pro-log/component.js"></script>
+  </body>
+</html>
