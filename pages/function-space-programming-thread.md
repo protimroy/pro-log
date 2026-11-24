@@ -14,7 +14,7 @@ Research thread · Updated November 23, 2026
 
 This thread records the original research question through increasingly demanding tests. It distinguishes three claims: a function can be constructed exactly; an externally proposed function can be compiled into a neural network; and doing so can improve generalization or end-to-end compute relative to training. The first two have bounded demonstrations. The third remains unresolved.
 
-The subsequent [Mechanisms of Neural Computation](/pro-log/mechanisms-of-neural-computation/) program shifts the emphasis toward learned versus constructed computation, causal equivalence, and representational organization. FSP remains a construction methodology within that program. Training acceleration and speedrun records are no longer its primary objectives.
+The subsequent [Mechanisms of Neural Computation](/pro-log/mechanisms-of-neural-computation/) program shifts the emphasis toward learned versus constructed computation, causal equivalence, and representational organization. FSP remains a construction methodology within that program. The training-replacement and speedrun phase is concluded; see the [partial negative result](/pro-log/function-space-programming-conclusion/) for the evidence and limits.
 
 ## Read the thread
 
@@ -22,6 +22,8 @@ The subsequent [Mechanisms of Neural Computation](/pro-log/mechanisms-of-neural-
 2. **[Part II — Sharing predictive functions: R12 and R13](/pro-log/function-space-programming-shared-functions/)**. A negative result for naive suffix sharing, followed by KL clustering and sparse residual corrections. Compression is substantial; the accuracy threshold is missed.
 3. **[Part III — Function synthesis between sharing and compilation: R14–R18](/pro-log/function-space-programming-r14-r18/)**. Transformer function injection, assistant-authored MNIST hypotheses, teacher reconstruction, teacher-free rules, and control protocols. Results are not asserted without verified artifacts.
 4. **[Part IV — Frozen functions before backpropagation](/pro-log/function-space-programming-frozen-functions/)**. R19–R28: compiled MNIST features, teacher-representation PCA, 32-function synthesis and matched controls, spatial-placement search, and ten-seed AdamW initialization comparisons. The results do not yet demonstrate an LLM-specific advantage or end-to-end training-cost savings.
+
+5. **[Part V — A partial negative result](/pro-log/function-space-programming-conclusion/)**. Positive demonstrations, stronger controls, R29 and R32 evidence, unresolved cost claims, and the conclusion of the training-replacement investigation.
 
 ## Reading guide
 
@@ -33,4 +35,4 @@ The sequence is inspired by the linked, cumulative research exposition of [Disti
 
 The [research code](https://github.com/protimroy/function_space_programming) is the primary executable record. R12 and R13 measurements were supplied from a local workstation run; this editorial update did not independently rerun them. The reported CPU timings are not electrical-energy measurements.
 
-**Latest published chapter:** [Part IV — Frozen functions before backpropagation](/pro-log/function-space-programming-frozen-functions/).
+**Conclusion:** [Part V — A partial negative result](/pro-log/function-space-programming-conclusion/).
