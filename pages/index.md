@@ -30,6 +30,13 @@ template: page.html
   <tbody>
     <tr class="postcontainer research-series-head">
       <td>
+        <span class="post_title"><a href="/pro-log/agent-dynamics/">Agent Dynamics</a></span>
+        <span class="post_text">Research program on orchestration, harness control, and agent execution dynamics</span>
+        <time class="post_date" datetime="2026-11-24">November 24, 2026</time>
+      </td>
+    </tr>
+    <tr class="postcontainer research-series-head">
+      <td>
         <span class="post_title"><a href="/pro-log/mechanisms-of-neural-computation/">Mechanisms of Neural Computation</a></span>
         <span class="post_text">Learned algorithms, representations, and causal understanding through construction</span>
         <time class="post_date" datetime="2026-11-23">November 23, 2026</time>
