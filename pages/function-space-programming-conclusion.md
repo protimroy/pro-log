@@ -75,6 +75,8 @@ The [Mechanisms of Neural Computation](/pro-log/mechanisms-of-neural-computation
 
 ## Evidence
 
+[Public R29/R32 evidence extract](https://github.com/protimroy/pro-log/blob/master/evidence/function-space-programming/runs/fsp-conclusion/r29-r32-extract.json) includes per-seed R29 threshold and terminal results, R32 counts, source blob identifiers, and limitations. The figures were recomputed from archived artifacts, not independently rerun. The original research-repository links below may require access.
+
 - [Part I — exact construction, edits and language prediction](/pro-log/function-space-programming/)
 - [Part II — representation sharing](/pro-log/function-space-programming-shared-functions/)
 - [Part III — protocols and evidence status](/pro-log/function-space-programming-r14-r18/)
