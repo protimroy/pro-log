@@ -12,8 +12,12 @@ from urllib.parse import urlparse
 from playwright.sync_api import sync_playwright
 
 PAGES = [
-    "", "function-space-programming-thread/", "function-space-programming/",
-    "function-space-programming-shared-functions/", "alopex-thread/",
+    "", "mechanisms-of-neural-computation/",
+    "function-space-programming-thread/", "function-space-programming/",
+    "function-space-programming-shared-functions/",
+    "function-space-programming-r14-r18/", "function-space-programming-frozen-functions/",
+    "function-space-programming-conclusion/",
+    "alopex-thread/",
     "activation-space-alopex/", "alopex-partial-negative-result/",
 ]
 JS = r"""() => {
