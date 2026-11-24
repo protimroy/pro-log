@@ -20,7 +20,7 @@ The [Function Space Programming thread](/pro-log/function-space-programming-thre
 
 Stronger symbolic and statistical controls often matched or exceeded LLM proposals. Sharing predictive functions incurred a loss penalty in R12–R13, and the initialization studies did not establish that the particular synthesized functions caused the improvement. No general training-cost reduction or speedrun record was demonstrated.
 
-These findings motivate a different question: when learned and constructed networks compute the same input-output function, what determines whether their internal mechanisms are equivalent? The original experiments remain available with their original objectives and limitations.
+These findings motivate a different question: when learned and constructed networks compute the same input-output function, what determines whether their internal mechanisms are equivalent? The original experiments remain available with their original objectives and limitations. The [concluding chapter](/pro-log/function-space-programming-conclusion/) reports both positive and negative evidence; the training-replacement phase is concluded.
 
 ## Research questions
 
@@ -44,6 +44,11 @@ This is a proposed experiment, not a reported result. The aim is to establish a 
 - [Progress Measures for Grokking via Mechanistic Interpretability](https://arxiv.org/abs/2301.05217) — learned Fourier-based modular arithmetic.
 - [Tracr: Compiled Transformers as a Laboratory for Interpretability](https://arxiv.org/abs/2301.05062) — program compilation and known mechanisms.
 - [Toy Models of Superposition](https://transformer-circuits.pub/2022/toy_model/index.html) — shared neural feature representations.
+
+- [InterpBench](https://proceedings.neurips.cc/paper_files/paper/2024/hash/a8f7d43ae092d9a5295775eb17f3f4f7-Abstract-Datasets_and_Benchmarks_Track.html) — semi-synthetic Transformers with known circuits for testing interpretability methods.
+- [MIB](https://arxiv.org/abs/2504.13151) — mechanistic interpretability evaluation.
+
+Known-circuit benchmarks already exist. The proposed arithmetic comparison is a diagnostic starting point, not a novel benchmark claim. A potential research question is whether causal correspondence and exchangeability tests distinguish functionally identical but algorithmically distinct networks, especially when representations are mixed or redundant.
 
 These are precedents for the program, not evidence of its novelty. Any contribution must be established against the relevant literature and empirical controls.
 
