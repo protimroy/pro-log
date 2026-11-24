@@ -90,4 +90,4 @@ The original follow-up proposed larger models, sparsity/support-matched controls
 
 No speedrun record or end-to-end cost reduction was demonstrated. The current [Mechanisms of Neural Computation](/pro-log/mechanisms-of-neural-computation/) program instead investigates why constructed and learned computations differ and whether their mechanisms can be compared causally. The initialization experiments remain part of the historical evidence, not proof of mechanistic equivalence.
 
-[Research repository](https://github.com/protimroy/function_space_programming) · [Research thread index](/pro-log/function-space-programming-thread/)
+[Next: Part V — A partial negative result](/pro-log/function-space-programming-conclusion/) · [Research repository](https://github.com/protimroy/function_space_programming) · [Research thread index](/pro-log/function-space-programming-thread/)
