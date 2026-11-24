@@ -1,7 +1,7 @@
 ---
 slug: /agent-dynamics
 title: "Agent Dynamics"
-description: "An empirical research program on agent orchestration, harness control, and execution dynamics."
+description: "A research program on agent execution dynamics, causal interventions and computational control."
 canonical_url: "https://www.protimroy.com/pro-log/agent-dynamics/"
 allow_html: true
 options_toc: true
@@ -10,34 +10,18 @@ template: article.html
 
 Research program · November 24, 2026
 
-How does the design of an agent harness change the behavior of a fixed language model? Agent Dynamics investigates orchestration, state, feedback, verification and inference-time resource allocation through controlled experiments.
+How does the harness surrounding a fixed language model influence the reliability and computational efficiency of sequential execution? Agent Dynamics studies this question through controlled experiments, with emphasis on error propagation, uncertainty and adaptive allocation of inference.
 
-## Research questions
+## Literature and research direction
 
-- When do planning, reflection and multi-agent coordination improve task completion rather than consume unnecessary computation?
-- How do stale observations, incorrect handoffs and tool faults propagate through execution trajectories?
-- Can trace-conditioned verification and bounded recovery improve the success-cost frontier?
-- Can harness revisions transfer across held-out tasks rather than overfit the tasks used to optimize them?
+[Agent Dynamics: From Orchestration to Computational Control](/pro-log/agent-dynamics-literature-review/) examines the foundational and competing research, including agent scaling, causal replay, dependency-guided failure attribution and selective verification. The review narrows the first candidate hypothesis and identifies controls and rejection criteria.
 
-## First investigation: the cost of unnecessary agent computation
+## Research progression
 
-Use a synthetic commerce and customer-service environment with executable ground truth and a shared local 4B model on an RTX 3080. Compare ReAct, plan-and-execute, periodic reflection, hub-and-spoke, and verification-triggered execution under matched model, tool and inference budgets. Include deterministic and direct controls where feasible. Begin with a small smoke test before expanding to 30 tasks and three repetitions per configuration.
+1. Abstract mechanisms: parameterized environments and controlled interventions, with explicit resource budgets.
+2. Applied validation: software engineering and scientific investigation.
+3. Industry translation: a domain chosen after evidence of useful transfer.
 
-Measure exact task success, policy violations, repeated states, model/tool calls, tokens, latency and recovery. Deterministic execution checks are primary; rubric and judge scores are secondary. Record model digest, prompts, configuration, seed, code revision, task splits and event traces.
+The initial hypothesis concerns the incremental prospective value of causally estimated downstream error effects beyond simpler verification policies. Neither the hypothesis nor novelty has been established. No experimental success claims are made.
 
-## Related work
-
-- [ReAct](https://arxiv.org/abs/2210.03629) — interleaved reasoning and action.
-- [Reflexion](https://arxiv.org/abs/2303.11366) — feedback and episodic memory.
-- [Why Do Multi-Agent LLM Systems Fail?](https://arxiv.org/abs/2503.13657) — failure taxonomy.
-- [Towards a Science of Scaling Agent Systems](https://arxiv.org/abs/2512.08296) — topology and coordination tradeoffs.
-- [OrchestraBench](https://arxiv.org/abs/2608.05263) — failure and recovery metrics.
-- [Recursive Harness Self-Improvement](https://arxiv.org/abs/2607.15524) — iterative harness revision.
-
-These precedents motivate the experiments; they do not establish novelty. Pattern comparisons are baselines. A proposed extension is trace-conditioned control followed by bounded, typed graph-level harness optimization with held-out evaluation and optimization-cost accounting.
-
-## Evidence and status
-
-This is a research charter, not a results article. No performance or novelty claim is made. The repository and experiments are in setup. Negative results and limitations will be retained alongside positive results. Synthetic task performance is not evidence of production reliability.
-
-[Pro-Log index](/pro-log/)
+[Pro-log index](/pro-log/)
