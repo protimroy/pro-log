@@ -84,10 +84,10 @@ The original function initialization reduced observed steps to 85% by **14%** re
 
 These experiments used feedback-informed function candidates, a small pooled-MNIST MLP, and no independently measured LLM synthesis cost, electricity, or FLOPs. The official test split remained untouched. They support a narrow initialization advantage, **not** a proven LLM-specific advantage or a speedrun record.
 
-## What must happen next?
+## Open questions and research transition
 
-R29 will test scaling locally: larger MNIST MLPs, a CNN, and then a small causal language model, adding sparsity/support-matched coefficient controls. Compare time-to-target, validation loss, FLOPs, wall time, and (where measurable) energy. Independent LLM synthesis remains a separate unresolved novelty test: freeze the prompt, record all candidates and generation costs, and compare with human-designed and algorithmic controls.
+The original follow-up proposed larger models, sparsity/support-matched controls, and matched time-to-target comparisons. Independent LLM synthesis remains an unresolved novelty test: freeze the prompt, record all candidates and generation costs, and compare with human-designed and algorithmic controls.
 
-Noise and nanoGPT speedrun transfer requires a benchmark-specific rules audit and comparison against the current accepted implementation, not a generic baseline. Noise forbids backpropagation, so R28's AdamW procedure is not a legal Noise submission. No speedrun record or end-to-end cost reduction has yet been demonstrated.
+No speedrun record or end-to-end cost reduction was demonstrated. The current [Mechanisms of Neural Computation](/pro-log/mechanisms-of-neural-computation/) program instead investigates why constructed and learned computations differ and whether their mechanisms can be compared causally. The initialization experiments remain part of the historical evidence, not proof of mechanistic equivalence.
 
 [Research repository](https://github.com/protimroy/function_space_programming) · [Research thread index](/pro-log/function-space-programming-thread/)
