@@ -10,6 +10,8 @@ template: article.html
 
 Research thread · Updated November 23, 2026
 
+Archived research thread · November 24, 2026. The concluded investigation and its original experimental evidence remain available. [Research archive](/pro-log/archive/).
+
 **Can we construct the functions a neural network would otherwise learn, install them into its architecture, and reduce the training required to acquire a capability?**
 
 This thread records the original research question through increasingly demanding tests. It distinguishes three claims: a function can be constructed exactly; an externally proposed function can be compiled into a neural network; and doing so can improve generalization or end-to-end compute relative to training. The first two have bounded demonstrations. The third remains unresolved.
