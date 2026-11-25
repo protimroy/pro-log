@@ -10,6 +10,8 @@ template: article.html
 
 Research program · November 23, 2026
 
+Archived research direction · November 24, 2026. This program is inactive; the original research questions and evidence are preserved. [Research archive](/pro-log/archive/).
+
 How do neural networks implement computations, and what would it take to understand those computations well enough to reproduce or modify them?
 
 This program studies the relationship between mathematical functions, internal representations, and neural parameters. Mechanistic interpretability investigates how learned parameters implement a computation; function construction investigates the reverse direction. Neither behavioral agreement nor a plausible activation description alone establishes that two networks use the same algorithm.
