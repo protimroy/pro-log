@@ -24,4 +24,10 @@ How does the harness surrounding a fixed language model influence the reliabilit
 
 The initial hypothesis concerns the incremental prospective value of causally estimated downstream error effects beyond simpler verification policies. Neither the hypothesis nor novelty has been established. No experimental success claims are made.
 
+## Research workflow: a bounded orchestration pilot
+
+The research workflow itself is a candidate applied setting for Agent Dynamics. A preliminary supervisor–critic exchange between two language models identified implementation defects in a local experiment controller, including revision drift, unbounded output and incomplete recovery/provenance. Both reviewers converged on a smaller design: validate a deterministic, trusted-code execution controller before introducing adaptive research decisions.
+
+The immediate goal is one unattended, preapproved batch with immutable experiment specifications, resource limits and reviewable evidence. Adaptive branching and multi-agent policy comparisons are deferred until this baseline exposes a concrete need. Cross-model agreement is not evidence of correctness or independent scientific validity. No orchestrator tests or real research batches have yet been validated for this pilot, and no performance or novelty claim is made.
+
 [Pro-log index](/pro-log/)
